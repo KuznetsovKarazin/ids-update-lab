@@ -1,0 +1,95 @@
+{
+  "estimand": "Paced USB end-to-end accepted update, including fixed200ms quiet, not isolatedflashenergy",
+  "independent_board_count": 1,
+  "rows": [
+    {
+      "family": "lr",
+      "policy": "bundle",
+      "n_blocks": 10,
+      "accepted_per_block": 128,
+      "median_block_duration_s": 36.73692725000001,
+      "median_gross_mJ_per_update": 56.17430597292561,
+      "median_net_mJ_per_update": 7.970310005593985,
+      "minimum_net_sensitivity_mJ_per_update": 7.335652568792823,
+      "maximum_net_sensitivity_mJ_per_update": 9.048397938922141
+    },
+    {
+      "family": "lr",
+      "policy": "whole",
+      "n_blocks": 10,
+      "accepted_per_block": 4,
+      "median_block_duration_s": 43.524217500000276,
+      "median_gross_mJ_per_update": 2249.2100282898377,
+      "median_net_mJ_per_update": 401.21635232011266,
+      "minimum_net_sensitivity_mJ_per_update": 381.2984984715211,
+      "maximum_net_sensitivity_mJ_per_update": 407.4345158472239
+    },
+    {
+      "family": "dt",
+      "policy": "bundle",
+      "n_blocks": 10,
+      "accepted_per_block": 128,
+      "median_block_duration_s": 37.23309899999981,
+      "median_gross_mJ_per_update": 57.69853086784016,
+      "median_net_mJ_per_update": 8.623801170687665,
+      "minimum_net_sensitivity_mJ_per_update": 7.53394264232414,
+      "maximum_net_sensitivity_mJ_per_update": 9.921721597161342
+    },
+    {
+      "family": "dt",
+      "policy": "whole",
+      "n_blocks": 10,
+      "accepted_per_block": 4,
+      "median_block_duration_s": 43.54156195000019,
+      "median_gross_mJ_per_update": 2253.3977076657907,
+      "median_net_mJ_per_update": 402.53143978503823,
+      "minimum_net_sensitivity_mJ_per_update": 375.09908687927896,
+      "maximum_net_sensitivity_mJ_per_update": 412.9825541149514
+    },
+    {
+      "family": "mlp_float",
+      "policy": "bundle",
+      "n_blocks": 10,
+      "accepted_per_block": 128,
+      "median_block_duration_s": 37.35026924999988,
+      "median_gross_mJ_per_update": 58.20683166387525,
+      "median_net_mJ_per_update": 8.985842147996731,
+      "minimum_net_sensitivity_mJ_per_update": 7.926081789993836,
+      "maximum_net_sensitivity_mJ_per_update": 9.860099182944767
+    },
+    {
+      "family": "mlp_float",
+      "policy": "whole",
+      "n_blocks": 10,
+      "accepted_per_block": 4,
+      "median_block_duration_s": 43.52792189999991,
+      "median_gross_mJ_per_update": 2249.509536274928,
+      "median_net_mJ_per_update": 403.588734242005,
+      "minimum_net_sensitivity_mJ_per_update": 377.7667036269867,
+      "maximum_net_sensitivity_mJ_per_update": 412.68785526789344
+    },
+    {
+      "family": "mlp_int8",
+      "policy": "bundle",
+      "n_blocks": 10,
+      "accepted_per_block": 128,
+      "median_block_duration_s": 37.196308550000026,
+      "median_gross_mJ_per_update": 57.20426640407128,
+      "median_net_mJ_per_update": 8.205968359817948,
+      "minimum_net_sensitivity_mJ_per_update": 7.572034511802626,
+      "maximum_net_sensitivity_mJ_per_update": 8.941023230145506
+    },
+    {
+      "family": "mlp_int8",
+      "policy": "whole",
+      "n_blocks": 10,
+      "accepted_per_block": 4,
+      "median_block_duration_s": 43.48826725000026,
+      "median_gross_mJ_per_update": 2247.9094365378314,
+      "median_net_mJ_per_update": 401.2782639638711,
+      "minimum_net_sensitivity_mJ_per_update": 376.0523670692022,
+      "maximum_net_sensitivity_mJ_per_update": 410.39920459591616
+    }
+  ],
+  "all_blocks_additional_energy_resolved": true
+}

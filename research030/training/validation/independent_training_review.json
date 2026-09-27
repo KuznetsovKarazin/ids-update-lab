@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "measurement_origin": "host_software_validation",
+  "hardware_access_attempted": false,
+  "real_detector_quality_measured": false,
+  "full23_file_training_performed": false,
+  "tests_run": 19,
+  "failures": 0,
+  "errors": 0,
+  "duration_seconds": 0.13300292199710384,
+  "python": "3.12.14",
+  "reviewed_file_sha256": {
+    "model030.py": "31be2167aea816114c3d8d8a27b2fda364374f4716739f7c16472cf624b0e0c8",
+    "run_training030.py": "291428ec9075c26950db9ff4fbeb2c80d37017811239436da9de647215b4b4c4",
+    "test_training030.py": "1ebac76828a415468c4339ac518124203c0144a8da448c8898bdd3df72f02342",
+    "test_independent_review030.py": "f9c72ce874be14228287199336394cb4e9aa75a317dcf1e3efaab31fa855cd9a",
+    "coverage_selection.json": "4f128069573f70ebc04af863a116c47f3b6d89c48f71a78b8de5b54214a52bb2"
+  },
+  "review_notes": [
+    "Atomic timestamp roles, 60-second margins and flow-end containment verified.",
+    "Synthetic CSV integration confirms that A/B calibration and common future test are excluded from fitting. B fitting population includes A; capped sample membership need not be nested.",
+    "Deterministic BottomK preserves row identity and chunk-order invariance; the union of local bottom-K samples yields the global bottom-K sample.",
+    "Threshold calibration uses runtime float32 scores, strict floating comparison and finite 0..1 endpoints; an always-normal operating point is permitted.",
+    "Integer threshold transfer preserves logit units and always-normal/always-attack endpoints; raw integer-code staleness is labelled separately.",
+    "Primary test retains all eligible rows. Conflicting labels retain proportional contributions. Row, vector and capped weights were checked against explicit weighted rows.",
+    "The selected future test has no known-A attack group; four-way attack coverage is not claimed.",
+    "Confidence intervals are suppressed on the selected four test days. Leave-one-day-out sensitivity is descriptive and is not a confidence interval.",
+    "Quantizer ranges and normalization use fitting samples only; operating-point selection uses calibration normals only. All fixed model families are reported."
+  ]
+}

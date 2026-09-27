@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, cite its exact archived release. Cite the associated article separately when discussing the study."
+type: software
+title: "IDS Update Lab: Software and Experimental Evidence for Preserving Detector Semantics in TinyML Updates"
+authors:
+  - family-names: "Kuznetsov"
+    given-names: "Oleksandr"
+    orcid: "https://orcid.org/0000-0003-2331-6326"
+    affiliation: "eCampus University, Italy; V. N. Karazin Kharkiv National University, Ukraine"
+abstract: "Research software for studying semantic consistency in TinyML intrusion-detector updates. It implements signed pipeline bundles, compatible parameter exports, ESP32-S3 update experiments, and analysis of derived evidence."
+keywords:
+  - TinyML
+  - intrusion detection
+  - semantic consistency
+  - pipeline updates
+  - compatible export
+  - quantization
+  - ESP32-S3
+  - reproducibility
+repository-code: "https://github.com/KuznetsovKarazin/ids-update-lab"
+version: "1.0.0"
+date-released: "2026-09-26"
+doi: "10.5281/zenodo.22978008"
+license: MIT
+# Original software: MIT. Original non-code study material: CC-BY-4.0.
+# See LICENSE_SCOPE.md; manuscript authorship is separate in AUTHORS.md.

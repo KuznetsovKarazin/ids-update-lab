@@ -1,0 +1,22 @@
+test_C_B_parameters (test_tree_package.TreeTests.test_C_B_parameters) ... ok
+test_LR_compatible_golden_decisions (test_tree_package.TreeTests.test_LR_compatible_golden_decisions) ... ok
+test_all_golden_agree_native (test_tree_package.TreeTests.test_all_golden_agree_native) ... ok
+test_contract_semantics (test_tree_package.TreeTests.test_contract_semantics) ... ok
+test_disconnected_cycle_rejected (test_tree_package.TreeTests.test_disconnected_cycle_rejected) ... ok
+test_duplicate_parent_rejected (test_tree_package.TreeTests.test_duplicate_parent_rejected) ... ok
+test_float32_floor_is_directed (test_tree_package.TreeTests.test_float32_floor_is_directed) ... ok
+test_frozen_LR_A_B_bytes_unchanged (test_tree_package.TreeTests.test_frozen_LR_A_B_bytes_unchanged) ... ok
+test_mutated_body_rejected_host_native (test_tree_package.TreeTests.test_mutated_body_rejected_host_native) ... ok
+test_original_split_predicate_boundary (test_tree_package.TreeTests.test_original_split_predicate_boundary) ... ok
+test_real_engine_signed_updates_reboot (test_tree_package.TreeTests.test_real_engine_signed_updates_reboot) ... ok
+test_reject_domain (test_tree_package.TreeTests.test_reject_domain) ... ok
+test_signed_roundtrip (test_tree_package.TreeTests.test_signed_roundtrip) ... ok
+test_threshold_strict (test_tree_package.TreeTests.test_threshold_strict) ... ok
+test_wrong_abi (test_tree_package.TreeTests.test_wrong_abi) ... ok
+test_wrong_contract (test_tree_package.TreeTests.test_wrong_contract) ... ok
+test_wrong_signature (test_tree_package.TreeTests.test_wrong_signature) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 2.482s
+
+OK

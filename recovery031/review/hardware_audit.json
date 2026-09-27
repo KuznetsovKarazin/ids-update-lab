@@ -1,0 +1,270 @@
+{
+  "archive_sha256": "628dbd4d78f6715f945dd056517b9121a14f57b361497cc698ad7ecb06f19549",
+  "checks": 60021,
+  "checks_by_kind": {
+    "archive_sha256": 2288,
+    "bundle_flash_work": 5208,
+    "bundle_stage_time_sum": 5208,
+    "cost_analysis_exact_reproduction": 1,
+    "firmware_bundle_embedding": 28,
+    "firmware_checksum_sha_binding": 28,
+    "frozen_kit_sha256": 175,
+    "host_golden_recomputed": 24,
+    "inference_payload_identity": 7664,
+    "initial_status_per_session": 112,
+    "model_to_payload_binding": 540,
+    "negative_bundle_reason": 36,
+    "negative_bundle_zero_flash": 36,
+    "negative_ota_reason": 12,
+    "numerical_observation": 7664,
+    "observation_command_binding": 112,
+    "observation_golden_binding": 7664,
+    "ota_stage_time_sum": 204,
+    "ota_transfer_size": 204,
+    "phase_sha256": 2275,
+    "primary_reboot_count": 40,
+    "provisioning_image_binding": 112,
+    "provisioning_result": 380,
+    "provisioning_rom_identity": 112,
+    "raw_serial_response_binding": 112,
+    "reconstructed_campaign_counters": 1,
+    "response_identity": 13440,
+    "running_image_template_identity": 5776,
+    "signed_bundle_binding": 540,
+    "software_fault_recovery": 24,
+    "summary_reconstructed_counters": 1
+  },
+  "cost_table": [
+    {
+      "bundle_bytes": 1104,
+      "bundle_device_ms": 31.736,
+      "bundle_host_s": 0.08836084999999999,
+      "family": "dt",
+      "whole_bytes": 339504,
+      "whole_device_ms": 1210.1455,
+      "whole_host_s": 10.6955136,
+      "whole_to_bundle_bytes": 307.5217391304348
+    },
+    {
+      "bundle_bytes": 448,
+      "bundle_device_ms": 28.718,
+      "bundle_host_s": 0.0825483,
+      "family": "lr",
+      "whole_bytes": 339504,
+      "whole_device_ms": 1209.1345,
+      "whole_host_s": 10.69476725,
+      "whole_to_bundle_bytes": 757.8214285714286
+    },
+    {
+      "bundle_bytes": 1588,
+      "bundle_device_ms": 29.31,
+      "bundle_host_s": 0.0886816,
+      "family": "mlp_float",
+      "whole_bytes": 339504,
+      "whole_device_ms": 1206.1395,
+      "whole_host_s": 10.6922999,
+      "whole_to_bundle_bytes": 213.7934508816121
+    },
+    {
+      "bundle_bytes": 840,
+      "bundle_device_ms": 31.49,
+      "bundle_host_s": 0.0870642,
+      "family": "mlp_int8",
+      "whole_bytes": 339504,
+      "whole_device_ms": 1207.1105,
+      "whole_host_s": 10.68881085,
+      "whole_to_bundle_bytes": 404.1714285714286
+    }
+  ],
+  "energy_original_status": {
+    "energy_measured": false,
+    "error": "ValueError: Marker waveform too noisy: calibration_before",
+    "status": "failed"
+  },
+  "excluded_cache": [
+    "training/test_vectors.sqlite"
+  ],
+  "family_counters": {
+    "dt": {
+      "accepted_updates": 1350,
+      "inferred_records": 1142
+    },
+    "lr": {
+      "accepted_updates": 1354,
+      "inferred_records": 2174
+    },
+    "mlp_float": {
+      "accepted_updates": 1353,
+      "inferred_records": 1916
+    },
+    "mlp_int8": {
+      "accepted_updates": 1355,
+      "inferred_records": 2432
+    }
+  },
+  "faults": [
+    {
+      "checkpoint": "after_commit",
+      "family": "dt",
+      "recovered_version": 3
+    },
+    {
+      "checkpoint": "after_erase",
+      "family": "dt",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_journal_body",
+      "family": "dt",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_slot_commit",
+      "family": "dt",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_verify",
+      "family": "dt",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_write",
+      "family": "dt",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_commit",
+      "family": "lr",
+      "recovered_version": 3
+    },
+    {
+      "checkpoint": "after_erase",
+      "family": "lr",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_journal_body",
+      "family": "lr",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_slot_commit",
+      "family": "lr",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_verify",
+      "family": "lr",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_write",
+      "family": "lr",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_commit",
+      "family": "mlp_float",
+      "recovered_version": 3
+    },
+    {
+      "checkpoint": "after_erase",
+      "family": "mlp_float",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_journal_body",
+      "family": "mlp_float",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_slot_commit",
+      "family": "mlp_float",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_verify",
+      "family": "mlp_float",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_write",
+      "family": "mlp_float",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_commit",
+      "family": "mlp_int8",
+      "recovered_version": 3
+    },
+    {
+      "checkpoint": "after_erase",
+      "family": "mlp_int8",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_journal_body",
+      "family": "mlp_int8",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_slot_commit",
+      "family": "mlp_int8",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_verify",
+      "family": "mlp_int8",
+      "recovered_version": 2
+    },
+    {
+      "checkpoint": "after_write",
+      "family": "mlp_int8",
+      "recovered_version": 2
+    }
+  ],
+  "hardware_summary": {
+    "accepted_updates": 5412,
+    "board_id": "esp32s3-a0f262ebb558",
+    "completed_trials": 112,
+    "energy_analysis_pending": true,
+    "energy_measured": false,
+    "energy_recording_requested": true,
+    "faults_verified": 24,
+    "finished_utc_ns": 1790361054796443400,
+    "hardware_access_attempted": true,
+    "inferred_records": 7664,
+    "label_mismatches": 0,
+    "max_probability_abs_error": 3.2798345944717866e-07,
+    "measurement_origin": "actual_mcu",
+    "negative_controls_passed": 48,
+    "physical_power_loss_tested": false,
+    "stage": "030",
+    "status": "complete",
+    "verified_reboots": 236
+  },
+  "host_reference_cross_platform_max_error": 4.6193599700927734e-07,
+  "negative_controls": {
+    "feature_contract": 4,
+    "ota_image_sha256": 4,
+    "ota_non_monotonic_version": 4,
+    "ota_signature": 4,
+    "replay_or_downgrade": 28,
+    "signature": 4
+  },
+  "physical_hardware_access_by_auditor": false,
+  "read_only_audit": true,
+  "reconstructed_counters": {
+    "accepted_updates": 5412,
+    "completed_trials": 112,
+    "faults_verified": 24,
+    "inferred_records": 7664,
+    "label_mismatches": 0,
+    "negative_controls_passed": 48,
+    "verified_reboots": 236
+  },
+  "status": "pass",
+  "unique_raw_input_vectors_across_all_7664_calls": 258,
+  "whole_primary_reboot_command_to_status_median_s": 0.35091025
+}

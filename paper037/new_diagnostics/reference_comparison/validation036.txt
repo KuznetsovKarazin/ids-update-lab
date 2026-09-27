@@ -1,0 +1,1 @@
+PASS: independent neuron-wise evaluation agrees on all 102088 calibration rows for each of eight frozen models (816704 decisions); all 13 pairwise disagreement counts match.

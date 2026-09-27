@@ -1,0 +1,5607 @@
+{
+  "analysis": "posthoc_host_only_fixed_99.9_percentile",
+  "full_test_evaluated": false,
+  "new_hardware_evaluated": false,
+  "calibration_scope": "resubstitution diagnostics; thresholds selected using normal B_cal rows",
+  "percentile": 99.9,
+  "percentile_method": "linear",
+  "activation_ranges_source": "B_fit only; float-network activations flattened across rows/channels",
+  "weight_grid": "per-tensor maxabs, unchanged rule",
+  "maxabs_reproduces_reference_numeric_fields": true,
+  "maxabs_reproduces_frozen_export_numeric_fields": false,
+  "maxabs_recomputed_vs_frozen_field_differences": {
+    "input_scale": {
+      "recomputed": 0.39812690019607544,
+      "frozen": 0.39812684059143066
+    },
+    "layer_1.multiplier": {
+      "recomputed": 1380265366,
+      "frozen": 1380265160
+    }
+  },
+  "maxabs_recomputed_vs_frozen_score_differences": {
+    "B_fit": {
+      "n": 251373,
+      "different_codes": 0,
+      "different_decisions_at_frozen_cut": 0
+    },
+    "B_cal": {
+      "n": 102088,
+      "different_codes": 1,
+      "different_decisions_at_frozen_cut": 0
+    },
+    "check258": {
+      "n": 258,
+      "different_codes": 0,
+      "different_decisions_at_frozen_cut": 0
+    },
+    "target": {
+      "n": 1,
+      "different_codes": 0,
+      "different_decisions_at_frozen_cut": 0
+    }
+  },
+  "fitting_rows": 251373,
+  "calibration_rows": 102088,
+  "calibration_unique_vectors": 68515,
+  "equal_vector_definition": "each raw float32 vector total weight one; labels retain within-vector proportions",
+  "equal_vector_normal_mass": 1591.0396590588898,
+  "equal_vector_attack_mass": 66923.96034094112,
+  "check_vector_selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+  "target_calibration_occurrences": {
+    "normal": 380,
+    "attack": 0
+  },
+  "ranges": {
+    "maxabs": [
+      {
+        "tensor": "input",
+        "extent": 50.56211471557617,
+        "max_absolute": 50.56211471557617,
+        "scale": 0.39812690019607544
+      },
+      {
+        "tensor": "layer_1",
+        "extent": 48.93916702270508,
+        "max_absolute": 48.93916702270508,
+        "scale": 0.38534778356552124,
+        "accumulator_abs_bound": 48015,
+        "product_abs_bound": 66273441548490
+      },
+      {
+        "tensor": "layer_2",
+        "extent": 43.76624298095703,
+        "max_absolute": 43.76624298095703,
+        "scale": 0.3446160852909088,
+        "accumulator_abs_bound": 55881,
+        "product_abs_bound": 63613526501637
+      },
+      {
+        "tensor": "layer_3",
+        "extent": 37.744930267333984,
+        "max_absolute": 37.744930267333984,
+        "scale": 0.2972041666507721,
+        "accumulator_abs_bound": 67970,
+        "product_abs_bound": 134022319976720
+      }
+    ],
+    "percentile999": [
+      {
+        "tensor": "input",
+        "extent": 11.391385078430176,
+        "max_absolute": 50.56211471557617,
+        "scale": 0.08969594538211823
+      },
+      {
+        "tensor": "layer_1",
+        "extent": 11.60520076751709,
+        "max_absolute": 48.93916702270508,
+        "scale": 0.09137953072786331,
+        "accumulator_abs_bound": 48047,
+        "product_abs_bound": 63006317560636
+      },
+      {
+        "tensor": "layer_2",
+        "extent": 9.779505729675293,
+        "max_absolute": 43.76624298095703,
+        "scale": 0.07700398564338684,
+        "accumulator_abs_bound": 55884,
+        "product_abs_bound": 67513587368448
+      },
+      {
+        "tensor": "layer_3",
+        "extent": 12.628385543823242,
+        "max_absolute": 37.744930267333984,
+        "scale": 0.09943610429763794,
+        "accumulator_abs_bound": 68059,
+        "product_abs_bound": 89625971769836
+      }
+    ]
+  },
+  "rows": [
+    {
+      "variant": "B_original",
+      "q_threshold": 10,
+      "input_scale": 0.37240979075431824,
+      "output_scale": 0.2972041666507721,
+      "normal_n": 2088,
+      "attack_n": 100000,
+      "false_positives": 19,
+      "true_positives": 73531,
+      "calibration_FPR": 0.009099616858237548,
+      "calibration_recall": 0.73531,
+      "equal_vector_FPR": 0.011941877056187664,
+      "equal_vector_recall": 0.7253605398230285,
+      "changed_vs_B": 0,
+      "row_changed_fraction": 0.0,
+      "equal_vector_changed_fraction": 0.0,
+      "check_n": 258,
+      "check_changed_vs_B": 0
+    },
+    {
+      "variant": "maxabs_transferred",
+      "q_threshold": 10,
+      "input_scale": 0.39812684059143066,
+      "output_scale": 0.2972041666507721,
+      "normal_n": 2088,
+      "attack_n": 100000,
+      "false_positives": 421,
+      "true_positives": 71623,
+      "calibration_FPR": 0.20162835249042146,
+      "calibration_recall": 0.71623,
+      "equal_vector_FPR": 0.021394601237674053,
+      "equal_vector_recall": 0.683282341749981,
+      "changed_vs_B": 6692,
+      "row_changed_fraction": 0.06555128908392759,
+      "equal_vector_changed_fraction": 0.07827483032912501,
+      "check_n": 258,
+      "check_changed_vs_B": 0
+    },
+    {
+      "variant": "maxabs_recalibrated",
+      "q_threshold": 22,
+      "input_scale": 0.39812684059143066,
+      "output_scale": 0.2972041666507721,
+      "normal_n": 2088,
+      "attack_n": 100000,
+      "false_positives": 1,
+      "true_positives": 23933,
+      "calibration_FPR": 0.0004789272030651341,
+      "calibration_recall": 0.23933,
+      "equal_vector_FPR": 0.0006285198450625086,
+      "equal_vector_recall": 0.06674739476329655,
+      "changed_vs_B": 49702,
+      "row_changed_fraction": 0.4868544784891466,
+      "equal_vector_changed_fraction": 0.6448368970298475,
+      "check_n": 258,
+      "check_changed_vs_B": 3
+    },
+    {
+      "variant": "per_channel_transferred",
+      "q_threshold": 10,
+      "input_scale": 0.39812684059143066,
+      "output_scale": 0.2972041666507721,
+      "normal_n": 2088,
+      "attack_n": 100000,
+      "false_positives": 419,
+      "true_positives": 72198,
+      "calibration_FPR": 0.2006704980842912,
+      "calibration_recall": 0.72198,
+      "equal_vector_FPR": 0.020137561547549036,
+      "equal_vector_recall": 0.6918592400249155,
+      "changed_vs_B": 6637,
+      "row_changed_fraction": 0.06501253820233524,
+      "equal_vector_changed_fraction": 0.07748668174852222,
+      "check_n": 258,
+      "check_changed_vs_B": 0
+    },
+    {
+      "variant": "per_channel_recalibrated",
+      "q_threshold": 21,
+      "input_scale": 0.39812684059143066,
+      "output_scale": 0.2972041666507721,
+      "normal_n": 2088,
+      "attack_n": 100000,
+      "false_positives": 0,
+      "true_positives": 23564,
+      "calibration_FPR": 0.0,
+      "calibration_recall": 0.23564,
+      "equal_vector_FPR": 0.0,
+      "equal_vector_recall": 0.06097965480837547,
+      "changed_vs_B": 50070,
+      "row_changed_fraction": 0.4904592116605282,
+      "equal_vector_changed_fraction": 0.6504561045026637,
+      "check_n": 258,
+      "check_changed_vs_B": 3
+    },
+    {
+      "variant": "percentile999_transferred",
+      "q_threshold": 30,
+      "input_scale": 0.08969594538211823,
+      "output_scale": 0.09943610429763794,
+      "normal_n": 2088,
+      "attack_n": 100000,
+      "false_positives": 13,
+      "true_positives": 70189,
+      "calibration_FPR": 0.006226053639846743,
+      "calibration_recall": 0.70189,
+      "equal_vector_FPR": 0.008170757985812613,
+      "equal_vector_recall": 0.7052780463012307,
+      "changed_vs_B": 7490,
+      "row_changed_fraction": 0.07336807460230389,
+      "equal_vector_changed_fraction": 0.08004086696343866,
+      "check_n": 258,
+      "check_changed_vs_B": 3
+    },
+    {
+      "variant": "percentile999_recalibrated",
+      "q_threshold": 27,
+      "input_scale": 0.08969594538211823,
+      "output_scale": 0.09943610429763794,
+      "normal_n": 2088,
+      "attack_n": 100000,
+      "false_positives": 15,
+      "true_positives": 71631,
+      "calibration_FPR": 0.007183908045977011,
+      "calibration_recall": 0.71631,
+      "equal_vector_FPR": 0.00942779767593763,
+      "equal_vector_recall": 0.7267501766515457,
+      "changed_vs_B": 7606,
+      "row_changed_fraction": 0.07450434918893503,
+      "equal_vector_changed_fraction": 0.08174852222141137,
+      "check_n": 258,
+      "check_changed_vs_B": 3
+    }
+  ],
+  "target_vector": {
+    "B_original": {
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        63.0,
+        0.0,
+        0.0
+      ],
+      "probability": 0.8154802322387695,
+      "decision": 0,
+      "code": 5,
+      "threshold_code": 10,
+      "dequantized_logit": 1.4860208332538605,
+      "tensors": [
+        {
+          "tensor": "input",
+          "elements": 8,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -2,
+          "unclipped_code_max": 0,
+          "codes": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1,
+              0,
+              -2,
+              -2
+            ]
+          ],
+          "float_values": [
+            [
+              -0.24869611859321594,
+              -0.3742525577545166,
+              -0.36958956718444824,
+              -0.05454622209072113,
+              -0.28148946166038513,
+              0.16263869404792786,
+              -0.6411624550819397,
+              -0.7554988861083984
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_1",
+          "elements": 16,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -5,
+          "unclipped_code_max": 4,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 254,
+          "codes": [
+            [
+              3,
+              0,
+              1,
+              1,
+              0,
+              1,
+              4,
+              0,
+              2,
+              1,
+              2,
+              0,
+              0,
+              0,
+              4,
+              0
+            ]
+          ],
+          "accumulator": [
+            [
+              159,
+              -70,
+              58,
+              27,
+              -9,
+              53,
+              219,
+              -254,
+              92,
+              55,
+              103,
+              -27,
+              -20,
+              8,
+              222,
+              -1
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_2",
+          "elements": 8,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -5,
+          "unclipped_code_max": 7,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 199,
+          "codes": [
+            [
+              2,
+              0,
+              0,
+              4,
+              0,
+              3,
+              7,
+              0
+            ]
+          ],
+          "accumulator": [
+            [
+              50,
+              6,
+              -82,
+              116,
+              -13,
+              87,
+              199,
+              -165
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_3",
+          "elements": 1,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": 5,
+          "unclipped_code_max": 5,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 158,
+          "codes": [
+            [
+              5
+            ]
+          ],
+          "accumulator": [
+            [
+              158
+            ]
+          ]
+        }
+      ]
+    },
+    "maxabs_transferred": {
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        63.0,
+        0.0,
+        0.0
+      ],
+      "probability": 0.9980564117431641,
+      "decision": 1,
+      "code": 21,
+      "threshold_code": 10,
+      "dequantized_logit": 6.241287499666214,
+      "tensors": [
+        {
+          "tensor": "input",
+          "elements": 8,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -2,
+          "unclipped_code_max": 0,
+          "codes": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1,
+              0,
+              -2,
+              -2
+            ]
+          ],
+          "float_values": [
+            [
+              -0.20676501095294952,
+              -0.3704227805137634,
+              -0.3630905747413635,
+              -0.04571285471320152,
+              -0.27791649103164673,
+              0.1702846735715866,
+              -0.615943193435669,
+              -0.7228586673736572
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_1",
+          "elements": 16,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -5,
+          "unclipped_code_max": 5,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 248,
+          "codes": [
+            [
+              3,
+              0,
+              1,
+              0,
+              0,
+              1,
+              4,
+              0,
+              2,
+              1,
+              2,
+              0,
+              0,
+              0,
+              5,
+              0
+            ]
+          ],
+          "accumulator": [
+            [
+              153,
+              -72,
+              52,
+              21,
+              -25,
+              57,
+              213,
+              -248,
+              87,
+              51,
+              102,
+              -31,
+              -18,
+              7,
+              225,
+              -4
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_2",
+          "elements": 8,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -6,
+          "unclipped_code_max": 6,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 185,
+          "codes": [
+            [
+              5,
+              0,
+              0,
+              6,
+              0,
+              4,
+              6,
+              0
+            ]
+          ],
+          "accumulator": [
+            [
+              146,
+              -7,
+              -95,
+              168,
+              -49,
+              109,
+              184,
+              -185
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_3",
+          "elements": 1,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": 21,
+          "unclipped_code_max": 21,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 716,
+          "codes": [
+            [
+              21
+            ]
+          ],
+          "accumulator": [
+            [
+              716
+            ]
+          ]
+        }
+      ]
+    },
+    "maxabs_recalibrated": {
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        63.0,
+        0.0,
+        0.0
+      ],
+      "probability": 0.9980564117431641,
+      "decision": 0,
+      "code": 21,
+      "threshold_code": 22,
+      "dequantized_logit": 6.241287499666214,
+      "tensors": [
+        {
+          "tensor": "input",
+          "elements": 8,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -2,
+          "unclipped_code_max": 0,
+          "codes": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1,
+              0,
+              -2,
+              -2
+            ]
+          ],
+          "float_values": [
+            [
+              -0.20676501095294952,
+              -0.3704227805137634,
+              -0.3630905747413635,
+              -0.04571285471320152,
+              -0.27791649103164673,
+              0.1702846735715866,
+              -0.615943193435669,
+              -0.7228586673736572
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_1",
+          "elements": 16,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -5,
+          "unclipped_code_max": 5,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 248,
+          "codes": [
+            [
+              3,
+              0,
+              1,
+              0,
+              0,
+              1,
+              4,
+              0,
+              2,
+              1,
+              2,
+              0,
+              0,
+              0,
+              5,
+              0
+            ]
+          ],
+          "accumulator": [
+            [
+              153,
+              -72,
+              52,
+              21,
+              -25,
+              57,
+              213,
+              -248,
+              87,
+              51,
+              102,
+              -31,
+              -18,
+              7,
+              225,
+              -4
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_2",
+          "elements": 8,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -6,
+          "unclipped_code_max": 6,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 185,
+          "codes": [
+            [
+              5,
+              0,
+              0,
+              6,
+              0,
+              4,
+              6,
+              0
+            ]
+          ],
+          "accumulator": [
+            [
+              146,
+              -7,
+              -95,
+              168,
+              -49,
+              109,
+              184,
+              -185
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_3",
+          "elements": 1,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": 21,
+          "unclipped_code_max": 21,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 716,
+          "codes": [
+            [
+              21
+            ]
+          ],
+          "accumulator": [
+            [
+              716
+            ]
+          ]
+        }
+      ]
+    },
+    "per_channel_transferred": {
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        63.0,
+        0.0,
+        0.0
+      ],
+      "probability": 0.997385561466217,
+      "decision": 1,
+      "code": 20,
+      "threshold_code": 10,
+      "dequantized_logit": 5.944083333015442,
+      "tensors": [
+        {
+          "tensor": "input",
+          "elements": 8,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -2,
+          "unclipped_code_max": 0,
+          "codes": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1,
+              0,
+              -2,
+              -2
+            ]
+          ],
+          "float_values": [
+            [
+              -0.20676501095294952,
+              -0.3704227805137634,
+              -0.3630905747413635,
+              -0.04571285471320152,
+              -0.27791649103164673,
+              0.1702846735715866,
+              -0.615943193435669,
+              -0.7228586673736572
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_1",
+          "elements": 16,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -5,
+          "unclipped_code_max": 5,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 684,
+          "codes": [
+            [
+              3,
+              0,
+              1,
+              0,
+              0,
+              1,
+              4,
+              0,
+              2,
+              1,
+              2,
+              0,
+              0,
+              0,
+              5,
+              0
+            ]
+          ],
+          "accumulator": [
+            [
+              556,
+              -215,
+              120,
+              23,
+              -67,
+              65,
+              684,
+              -438,
+              194,
+              114,
+              190,
+              -31,
+              -21,
+              7,
+              513,
+              -24
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_2",
+          "elements": 8,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -6,
+          "unclipped_code_max": 6,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 845,
+          "codes": [
+            [
+              5,
+              0,
+              0,
+              5,
+              0,
+              4,
+              6,
+              0
+            ]
+          ],
+          "accumulator": [
+            [
+              146,
+              -15,
+              -845,
+              559,
+              -156,
+              196,
+              564,
+              -478
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_3",
+          "elements": 1,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": 20,
+          "unclipped_code_max": 20,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 680,
+          "codes": [
+            [
+              20
+            ]
+          ],
+          "accumulator": [
+            [
+              680
+            ]
+          ]
+        }
+      ]
+    },
+    "per_channel_recalibrated": {
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        63.0,
+        0.0,
+        0.0
+      ],
+      "probability": 0.997385561466217,
+      "decision": 0,
+      "code": 20,
+      "threshold_code": 21,
+      "dequantized_logit": 5.944083333015442,
+      "tensors": [
+        {
+          "tensor": "input",
+          "elements": 8,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -2,
+          "unclipped_code_max": 0,
+          "codes": [
+            [
+              -1,
+              -1,
+              -1,
+              0,
+              -1,
+              0,
+              -2,
+              -2
+            ]
+          ],
+          "float_values": [
+            [
+              -0.20676501095294952,
+              -0.3704227805137634,
+              -0.3630905747413635,
+              -0.04571285471320152,
+              -0.27791649103164673,
+              0.1702846735715866,
+              -0.615943193435669,
+              -0.7228586673736572
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_1",
+          "elements": 16,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -5,
+          "unclipped_code_max": 5,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 684,
+          "codes": [
+            [
+              3,
+              0,
+              1,
+              0,
+              0,
+              1,
+              4,
+              0,
+              2,
+              1,
+              2,
+              0,
+              0,
+              0,
+              5,
+              0
+            ]
+          ],
+          "accumulator": [
+            [
+              556,
+              -215,
+              120,
+              23,
+              -67,
+              65,
+              684,
+              -438,
+              194,
+              114,
+              190,
+              -31,
+              -21,
+              7,
+              513,
+              -24
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_2",
+          "elements": 8,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -6,
+          "unclipped_code_max": 6,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 845,
+          "codes": [
+            [
+              5,
+              0,
+              0,
+              5,
+              0,
+              4,
+              6,
+              0
+            ]
+          ],
+          "accumulator": [
+            [
+              146,
+              -15,
+              -845,
+              559,
+              -156,
+              196,
+              564,
+              -478
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_3",
+          "elements": 1,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": 20,
+          "unclipped_code_max": 20,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 680,
+          "codes": [
+            [
+              20
+            ]
+          ],
+          "accumulator": [
+            [
+              680
+            ]
+          ]
+        }
+      ]
+    },
+    "percentile999_transferred": {
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        63.0,
+        0.0,
+        0.0
+      ],
+      "probability": 0.01512275729328394,
+      "decision": 0,
+      "code": -42,
+      "threshold_code": 30,
+      "dequantized_logit": -4.1763163805007935,
+      "tensors": [
+        {
+          "tensor": "input",
+          "elements": 8,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -8,
+          "unclipped_code_max": 2,
+          "codes": [
+            [
+              -2,
+              -4,
+              -4,
+              -1,
+              -3,
+              2,
+              -7,
+              -8
+            ]
+          ],
+          "float_values": [
+            [
+              -0.20676501095294952,
+              -0.3704227805137634,
+              -0.3630905747413635,
+              -0.04571285471320152,
+              -0.27791649103164673,
+              0.1702846735715866,
+              -0.615943193435669,
+              -0.7228586673736572
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_1",
+          "elements": 16,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -18,
+          "unclipped_code_max": 18,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 946,
+          "codes": [
+            [
+              12,
+              0,
+              2,
+              0,
+              0,
+              0,
+              15,
+              0,
+              7,
+              2,
+              6,
+              4,
+              2,
+              3,
+              18,
+              0
+            ]
+          ],
+          "accumulator": [
+            [
+              611,
+              -174,
+              123,
+              -188,
+              -19,
+              26,
+              768,
+              -946,
+              386,
+              104,
+              312,
+              185,
+              127,
+              182,
+              932,
+              -46
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_2",
+          "elements": 8,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -17,
+          "unclipped_code_max": 25,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 720,
+          "codes": [
+            [
+              0,
+              15,
+              0,
+              19,
+              0,
+              6,
+              25,
+              0
+            ]
+          ],
+          "accumulator": [
+            [
+              -2,
+              427,
+              -235,
+              550,
+              -3,
+              184,
+              720,
+              -487
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_3",
+          "elements": 1,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -42,
+          "unclipped_code_max": -42,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 2183,
+          "codes": [
+            [
+              -42
+            ]
+          ],
+          "accumulator": [
+            [
+              -2183
+            ]
+          ]
+        }
+      ]
+    },
+    "percentile999_recalibrated": {
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        63.0,
+        0.0,
+        0.0
+      ],
+      "probability": 0.01512275729328394,
+      "decision": 0,
+      "code": -42,
+      "threshold_code": 27,
+      "dequantized_logit": -4.1763163805007935,
+      "tensors": [
+        {
+          "tensor": "input",
+          "elements": 8,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -8,
+          "unclipped_code_max": 2,
+          "codes": [
+            [
+              -2,
+              -4,
+              -4,
+              -1,
+              -3,
+              2,
+              -7,
+              -8
+            ]
+          ],
+          "float_values": [
+            [
+              -0.20676501095294952,
+              -0.3704227805137634,
+              -0.3630905747413635,
+              -0.04571285471320152,
+              -0.27791649103164673,
+              0.1702846735715866,
+              -0.615943193435669,
+              -0.7228586673736572
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_1",
+          "elements": 16,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -18,
+          "unclipped_code_max": 18,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 946,
+          "codes": [
+            [
+              12,
+              0,
+              2,
+              0,
+              0,
+              0,
+              15,
+              0,
+              7,
+              2,
+              6,
+              4,
+              2,
+              3,
+              18,
+              0
+            ]
+          ],
+          "accumulator": [
+            [
+              611,
+              -174,
+              123,
+              -188,
+              -19,
+              26,
+              768,
+              -946,
+              386,
+              104,
+              312,
+              185,
+              127,
+              182,
+              932,
+              -46
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_2",
+          "elements": 8,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -17,
+          "unclipped_code_max": 25,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 720,
+          "codes": [
+            [
+              0,
+              15,
+              0,
+              19,
+              0,
+              6,
+              25,
+              0
+            ]
+          ],
+          "accumulator": [
+            [
+              -2,
+              427,
+              -235,
+              550,
+              -3,
+              184,
+              720,
+              -487
+            ]
+          ]
+        },
+        {
+          "tensor": "layer_3",
+          "elements": 1,
+          "clipped_elements": 0,
+          "clipped_fraction": 0.0,
+          "rows_with_clipping": 0,
+          "unclipped_code_min": -42,
+          "unclipped_code_max": -42,
+          "effective_clipped_elements_after_relu": 0,
+          "effective_clipped_rows_after_relu": 0,
+          "max_abs_accumulator": 2183,
+          "codes": [
+            [
+              -42
+            ]
+          ],
+          "accumulator": [
+            [
+              -2183
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "saturation": {
+    "B_original:B_fit": [
+      {
+        "tensor": "input",
+        "elements": 2010984,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -4,
+        "unclipped_code_max": 127
+      },
+      {
+        "tensor": "layer_1",
+        "elements": 4021968,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -100,
+        "unclipped_code_max": 127,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 6854
+      },
+      {
+        "tensor": "layer_2",
+        "elements": 2010984,
+        "clipped_elements": 90,
+        "clipped_fraction": 4.475420987934265e-05,
+        "rows_with_clipping": 89,
+        "unclipped_code_min": -218,
+        "unclipped_code_max": 128,
+        "effective_clipped_elements_after_relu": 1,
+        "effective_clipped_rows_after_relu": 1,
+        "max_abs_accumulator": 6585
+      },
+      {
+        "tensor": "layer_3",
+        "elements": 251373,
+        "clipped_elements": 1,
+        "clipped_fraction": 3.9781519892749025e-06,
+        "rows_with_clipping": 1,
+        "unclipped_code_min": -129,
+        "unclipped_code_max": 100,
+        "effective_clipped_elements_after_relu": 1,
+        "effective_clipped_rows_after_relu": 1,
+        "max_abs_accumulator": 4504
+      }
+    ],
+    "B_original:B_cal": [
+      {
+        "tensor": "input",
+        "elements": 816704,
+        "clipped_elements": 9,
+        "clipped_fraction": 1.1019904396207193e-05,
+        "rows_with_clipping": 9,
+        "unclipped_code_min": -4,
+        "unclipped_code_max": 131
+      },
+      {
+        "tensor": "layer_1",
+        "elements": 1633408,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -66,
+        "unclipped_code_max": 108,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 5796
+      },
+      {
+        "tensor": "layer_2",
+        "elements": 816704,
+        "clipped_elements": 267,
+        "clipped_fraction": 0.0003269238304208134,
+        "rows_with_clipping": 267,
+        "unclipped_code_min": -157,
+        "unclipped_code_max": 101,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 4732
+      },
+      {
+        "tensor": "layer_3",
+        "elements": 102088,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -52,
+        "unclipped_code_max": 58,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 2028
+      }
+    ],
+    "maxabs_transferred:B_fit": [
+      {
+        "tensor": "input",
+        "elements": 2010984,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -4,
+        "unclipped_code_max": 127
+      },
+      {
+        "tensor": "layer_1",
+        "elements": 4021968,
+        "clipped_elements": 1,
+        "clipped_fraction": 2.486344993296814e-07,
+        "rows_with_clipping": 1,
+        "unclipped_code_min": -100,
+        "unclipped_code_max": 128,
+        "effective_clipped_elements_after_relu": 1,
+        "effective_clipped_rows_after_relu": 1,
+        "max_abs_accumulator": 6382
+      },
+      {
+        "tensor": "layer_2",
+        "elements": 2010984,
+        "clipped_elements": 88,
+        "clipped_fraction": 4.375967188202393e-05,
+        "rows_with_clipping": 87,
+        "unclipped_code_min": -215,
+        "unclipped_code_max": 128,
+        "effective_clipped_elements_after_relu": 1,
+        "effective_clipped_rows_after_relu": 1,
+        "max_abs_accumulator": 6478
+      },
+      {
+        "tensor": "layer_3",
+        "elements": 251373,
+        "clipped_elements": 1,
+        "clipped_fraction": 3.9781519892749025e-06,
+        "rows_with_clipping": 1,
+        "unclipped_code_min": -128,
+        "unclipped_code_max": 116,
+        "effective_clipped_elements_after_relu": 1,
+        "effective_clipped_rows_after_relu": 1,
+        "max_abs_accumulator": 4451
+      }
+    ],
+    "maxabs_transferred:B_cal": [
+      {
+        "tensor": "input",
+        "elements": 816704,
+        "clipped_elements": 9,
+        "clipped_fraction": 1.1019904396207193e-05,
+        "rows_with_clipping": 9,
+        "unclipped_code_min": -4,
+        "unclipped_code_max": 131
+      },
+      {
+        "tensor": "layer_1",
+        "elements": 1633408,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -66,
+        "unclipped_code_max": 107,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 5330
+      },
+      {
+        "tensor": "layer_2",
+        "elements": 816704,
+        "clipped_elements": 262,
+        "clipped_fraction": 0.0003208016613118094,
+        "rows_with_clipping": 262,
+        "unclipped_code_min": -154,
+        "unclipped_code_max": 102,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 4644
+      },
+      {
+        "tensor": "layer_3",
+        "elements": 102088,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -51,
+        "unclipped_code_max": 58,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 2033
+      }
+    ],
+    "maxabs_recalibrated:B_fit": [
+      {
+        "tensor": "input",
+        "elements": 2010984,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -4,
+        "unclipped_code_max": 127
+      },
+      {
+        "tensor": "layer_1",
+        "elements": 4021968,
+        "clipped_elements": 1,
+        "clipped_fraction": 2.486344993296814e-07,
+        "rows_with_clipping": 1,
+        "unclipped_code_min": -100,
+        "unclipped_code_max": 128,
+        "effective_clipped_elements_after_relu": 1,
+        "effective_clipped_rows_after_relu": 1,
+        "max_abs_accumulator": 6382
+      },
+      {
+        "tensor": "layer_2",
+        "elements": 2010984,
+        "clipped_elements": 88,
+        "clipped_fraction": 4.375967188202393e-05,
+        "rows_with_clipping": 87,
+        "unclipped_code_min": -215,
+        "unclipped_code_max": 128,
+        "effective_clipped_elements_after_relu": 1,
+        "effective_clipped_rows_after_relu": 1,
+        "max_abs_accumulator": 6478
+      },
+      {
+        "tensor": "layer_3",
+        "elements": 251373,
+        "clipped_elements": 1,
+        "clipped_fraction": 3.9781519892749025e-06,
+        "rows_with_clipping": 1,
+        "unclipped_code_min": -128,
+        "unclipped_code_max": 116,
+        "effective_clipped_elements_after_relu": 1,
+        "effective_clipped_rows_after_relu": 1,
+        "max_abs_accumulator": 4451
+      }
+    ],
+    "maxabs_recalibrated:B_cal": [
+      {
+        "tensor": "input",
+        "elements": 816704,
+        "clipped_elements": 9,
+        "clipped_fraction": 1.1019904396207193e-05,
+        "rows_with_clipping": 9,
+        "unclipped_code_min": -4,
+        "unclipped_code_max": 131
+      },
+      {
+        "tensor": "layer_1",
+        "elements": 1633408,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -66,
+        "unclipped_code_max": 107,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 5330
+      },
+      {
+        "tensor": "layer_2",
+        "elements": 816704,
+        "clipped_elements": 262,
+        "clipped_fraction": 0.0003208016613118094,
+        "rows_with_clipping": 262,
+        "unclipped_code_min": -154,
+        "unclipped_code_max": 102,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 4644
+      },
+      {
+        "tensor": "layer_3",
+        "elements": 102088,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -51,
+        "unclipped_code_max": 58,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 2033
+      }
+    ],
+    "per_channel_transferred:B_fit": [
+      {
+        "tensor": "input",
+        "elements": 2010984,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -4,
+        "unclipped_code_max": 127
+      },
+      {
+        "tensor": "layer_1",
+        "elements": 4021968,
+        "clipped_elements": 1,
+        "clipped_fraction": 2.486344993296814e-07,
+        "rows_with_clipping": 1,
+        "unclipped_code_min": -100,
+        "unclipped_code_max": 128,
+        "effective_clipped_elements_after_relu": 1,
+        "effective_clipped_rows_after_relu": 1,
+        "max_abs_accumulator": 16406
+      },
+      {
+        "tensor": "layer_2",
+        "elements": 2010984,
+        "clipped_elements": 92,
+        "clipped_fraction": 4.5748747876661374e-05,
+        "rows_with_clipping": 92,
+        "unclipped_code_min": -217,
+        "unclipped_code_max": 126,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 24727
+      },
+      {
+        "tensor": "layer_3",
+        "elements": 251373,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -124,
+        "unclipped_code_max": 119,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 4333
+      }
+    ],
+    "per_channel_transferred:B_cal": [
+      {
+        "tensor": "input",
+        "elements": 816704,
+        "clipped_elements": 9,
+        "clipped_fraction": 1.1019904396207193e-05,
+        "rows_with_clipping": 9,
+        "unclipped_code_min": -4,
+        "unclipped_code_max": 131
+      },
+      {
+        "tensor": "layer_1",
+        "elements": 1633408,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -66,
+        "unclipped_code_max": 106,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 15800
+      },
+      {
+        "tensor": "layer_2",
+        "elements": 816704,
+        "clipped_elements": 262,
+        "clipped_fraction": 0.0003208016613118094,
+        "rows_with_clipping": 262,
+        "unclipped_code_min": -154,
+        "unclipped_code_max": 102,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 25306
+      },
+      {
+        "tensor": "layer_3",
+        "elements": 102088,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -51,
+        "unclipped_code_max": 61,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 2128
+      }
+    ],
+    "per_channel_recalibrated:B_fit": [
+      {
+        "tensor": "input",
+        "elements": 2010984,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -4,
+        "unclipped_code_max": 127
+      },
+      {
+        "tensor": "layer_1",
+        "elements": 4021968,
+        "clipped_elements": 1,
+        "clipped_fraction": 2.486344993296814e-07,
+        "rows_with_clipping": 1,
+        "unclipped_code_min": -100,
+        "unclipped_code_max": 128,
+        "effective_clipped_elements_after_relu": 1,
+        "effective_clipped_rows_after_relu": 1,
+        "max_abs_accumulator": 16406
+      },
+      {
+        "tensor": "layer_2",
+        "elements": 2010984,
+        "clipped_elements": 92,
+        "clipped_fraction": 4.5748747876661374e-05,
+        "rows_with_clipping": 92,
+        "unclipped_code_min": -217,
+        "unclipped_code_max": 126,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 24727
+      },
+      {
+        "tensor": "layer_3",
+        "elements": 251373,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -124,
+        "unclipped_code_max": 119,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 4333
+      }
+    ],
+    "per_channel_recalibrated:B_cal": [
+      {
+        "tensor": "input",
+        "elements": 816704,
+        "clipped_elements": 9,
+        "clipped_fraction": 1.1019904396207193e-05,
+        "rows_with_clipping": 9,
+        "unclipped_code_min": -4,
+        "unclipped_code_max": 131
+      },
+      {
+        "tensor": "layer_1",
+        "elements": 1633408,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -66,
+        "unclipped_code_max": 106,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 15800
+      },
+      {
+        "tensor": "layer_2",
+        "elements": 816704,
+        "clipped_elements": 262,
+        "clipped_fraction": 0.0003208016613118094,
+        "rows_with_clipping": 262,
+        "unclipped_code_min": -154,
+        "unclipped_code_max": 102,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 25306
+      },
+      {
+        "tensor": "layer_3",
+        "elements": 102088,
+        "clipped_elements": 0,
+        "clipped_fraction": 0.0,
+        "rows_with_clipping": 0,
+        "unclipped_code_min": -51,
+        "unclipped_code_max": 61,
+        "effective_clipped_elements_after_relu": 0,
+        "effective_clipped_rows_after_relu": 0,
+        "max_abs_accumulator": 2128
+      }
+    ],
+    "percentile999_transferred:B_fit": [
+      {
+        "tensor": "input",
+        "elements": 2010984,
+        "clipped_elements": 1971,
+        "clipped_fraction": 0.000980117196357604,
+        "rows_with_clipping": 1756,
+        "unclipped_code_min": -17,
+        "unclipped_code_max": 564
+      },
+      {
+        "tensor": "layer_1",
+        "elements": 4021968,
+        "clipped_elements": 4833,
+        "clipped_fraction": 0.0012016505352603502,
+        "rows_with_clipping": 3179,
+        "unclipped_code_min": -246,
+        "unclipped_code_max": 319,
+        "effective_clipped_elements_after_relu": 3406,
+        "effective_clipped_rows_after_relu": 2879,
+        "max_abs_accumulator": 16692
+      },
+      {
+        "tensor": "layer_2",
+        "elements": 2010984,
+        "clipped_elements": 84331,
+        "clipped_fraction": 0.04193519192594272,
+        "rows_with_clipping": 73858,
+        "unclipped_code_min": -647,
+        "unclipped_code_max": 264,
+        "effective_clipped_elements_after_relu": 1137,
+        "effective_clipped_rows_after_relu": 947,
+        "max_abs_accumulator": 18388
+      },
+      {
+        "tensor": "layer_3",
+        "elements": 251373,
+        "clipped_elements": 476,
+        "clipped_fraction": 0.0018936003468948534,
+        "rows_with_clipping": 476,
+        "unclipped_code_min": -286,
+        "unclipped_code_max": 318,
+        "effective_clipped_elements_after_relu": 476,
+        "effective_clipped_rows_after_relu": 476,
+        "max_abs_accumulator": 16606
+      }
+    ],
+    "percentile999_transferred:B_cal": [
+      {
+        "tensor": "input",
+        "elements": 816704,
+        "clipped_elements": 996,
+        "clipped_fraction": 0.0012195360865135962,
+        "rows_with_clipping": 824,
+        "unclipped_code_min": -17,
+        "unclipped_code_max": 583
+      },
+      {
+        "tensor": "layer_1",
+        "elements": 1633408,
+        "clipped_elements": 9554,
+        "clipped_fraction": 0.005849120366742419,
+        "rows_with_clipping": 7169,
+        "unclipped_code_min": -225,
+        "unclipped_code_max": 295,
+        "effective_clipped_elements_after_relu": 7786,
+        "effective_clipped_rows_after_relu": 7082,
+        "max_abs_accumulator": 15447
+      },
+      {
+        "tensor": "layer_2",
+        "elements": 816704,
+        "clipped_elements": 38864,
+        "clipped_fraction": 0.047586396050466266,
+        "rows_with_clipping": 32258,
+        "unclipped_code_min": -584,
+        "unclipped_code_max": 248,
+        "effective_clipped_elements_after_relu": 195,
+        "effective_clipped_rows_after_relu": 163,
+        "max_abs_accumulator": 16609
+      },
+      {
+        "tensor": "layer_3",
+        "elements": 102088,
+        "clipped_elements": 21,
+        "clipped_fraction": 0.00020570488206253428,
+        "rows_with_clipping": 21,
+        "unclipped_code_min": -216,
+        "unclipped_code_max": 117,
+        "effective_clipped_elements_after_relu": 21,
+        "effective_clipped_rows_after_relu": 21,
+        "max_abs_accumulator": 11270
+      }
+    ],
+    "percentile999_recalibrated:B_fit": [
+      {
+        "tensor": "input",
+        "elements": 2010984,
+        "clipped_elements": 1971,
+        "clipped_fraction": 0.000980117196357604,
+        "rows_with_clipping": 1756,
+        "unclipped_code_min": -17,
+        "unclipped_code_max": 564
+      },
+      {
+        "tensor": "layer_1",
+        "elements": 4021968,
+        "clipped_elements": 4833,
+        "clipped_fraction": 0.0012016505352603502,
+        "rows_with_clipping": 3179,
+        "unclipped_code_min": -246,
+        "unclipped_code_max": 319,
+        "effective_clipped_elements_after_relu": 3406,
+        "effective_clipped_rows_after_relu": 2879,
+        "max_abs_accumulator": 16692
+      },
+      {
+        "tensor": "layer_2",
+        "elements": 2010984,
+        "clipped_elements": 84331,
+        "clipped_fraction": 0.04193519192594272,
+        "rows_with_clipping": 73858,
+        "unclipped_code_min": -647,
+        "unclipped_code_max": 264,
+        "effective_clipped_elements_after_relu": 1137,
+        "effective_clipped_rows_after_relu": 947,
+        "max_abs_accumulator": 18388
+      },
+      {
+        "tensor": "layer_3",
+        "elements": 251373,
+        "clipped_elements": 476,
+        "clipped_fraction": 0.0018936003468948534,
+        "rows_with_clipping": 476,
+        "unclipped_code_min": -286,
+        "unclipped_code_max": 318,
+        "effective_clipped_elements_after_relu": 476,
+        "effective_clipped_rows_after_relu": 476,
+        "max_abs_accumulator": 16606
+      }
+    ],
+    "percentile999_recalibrated:B_cal": [
+      {
+        "tensor": "input",
+        "elements": 816704,
+        "clipped_elements": 996,
+        "clipped_fraction": 0.0012195360865135962,
+        "rows_with_clipping": 824,
+        "unclipped_code_min": -17,
+        "unclipped_code_max": 583
+      },
+      {
+        "tensor": "layer_1",
+        "elements": 1633408,
+        "clipped_elements": 9554,
+        "clipped_fraction": 0.005849120366742419,
+        "rows_with_clipping": 7169,
+        "unclipped_code_min": -225,
+        "unclipped_code_max": 295,
+        "effective_clipped_elements_after_relu": 7786,
+        "effective_clipped_rows_after_relu": 7082,
+        "max_abs_accumulator": 15447
+      },
+      {
+        "tensor": "layer_2",
+        "elements": 816704,
+        "clipped_elements": 38864,
+        "clipped_fraction": 0.047586396050466266,
+        "rows_with_clipping": 32258,
+        "unclipped_code_min": -584,
+        "unclipped_code_max": 248,
+        "effective_clipped_elements_after_relu": 195,
+        "effective_clipped_rows_after_relu": 163,
+        "max_abs_accumulator": 16609
+      },
+      {
+        "tensor": "layer_3",
+        "elements": 102088,
+        "clipped_elements": 21,
+        "clipped_fraction": 0.00020570488206253428,
+        "rows_with_clipping": 21,
+        "unclipped_code_min": -216,
+        "unclipped_code_max": 117,
+        "effective_clipped_elements_after_relu": 21,
+        "effective_clipped_rows_after_relu": 21,
+        "max_abs_accumulator": 11270
+      }
+    ]
+  },
+  "score_histograms": {
+    "B_original": {
+      "-52": {
+        "normal": 0,
+        "attack": 1
+      },
+      "-47": {
+        "normal": 1,
+        "attack": 0
+      },
+      "-45": {
+        "normal": 1,
+        "attack": 0
+      },
+      "-43": {
+        "normal": 1,
+        "attack": 1
+      },
+      "-42": {
+        "normal": 87,
+        "attack": 0
+      },
+      "-40": {
+        "normal": 12,
+        "attack": 0
+      },
+      "-39": {
+        "normal": 1,
+        "attack": 0
+      },
+      "-38": {
+        "normal": 48,
+        "attack": 0
+      },
+      "-34": {
+        "normal": 4,
+        "attack": 0
+      },
+      "-33": {
+        "normal": 46,
+        "attack": 0
+      },
+      "-32": {
+        "normal": 40,
+        "attack": 80
+      },
+      "-31": {
+        "normal": 115,
+        "attack": 0
+      },
+      "-30": {
+        "normal": 202,
+        "attack": 0
+      },
+      "-29": {
+        "normal": 69,
+        "attack": 0
+      },
+      "-28": {
+        "normal": 30,
+        "attack": 3
+      },
+      "-27": {
+        "normal": 71,
+        "attack": 2
+      },
+      "-26": {
+        "normal": 12,
+        "attack": 1
+      },
+      "-25": {
+        "normal": 33,
+        "attack": 0
+      },
+      "-24": {
+        "normal": 26,
+        "attack": 10
+      },
+      "-23": {
+        "normal": 6,
+        "attack": 4
+      },
+      "-22": {
+        "normal": 18,
+        "attack": 9
+      },
+      "-21": {
+        "normal": 27,
+        "attack": 27
+      },
+      "-20": {
+        "normal": 28,
+        "attack": 1
+      },
+      "-19": {
+        "normal": 113,
+        "attack": 13
+      },
+      "-18": {
+        "normal": 10,
+        "attack": 30
+      },
+      "-17": {
+        "normal": 2,
+        "attack": 10
+      },
+      "-16": {
+        "normal": 4,
+        "attack": 37
+      },
+      "-15": {
+        "normal": 9,
+        "attack": 11
+      },
+      "-14": {
+        "normal": 10,
+        "attack": 25
+      },
+      "-13": {
+        "normal": 27,
+        "attack": 21
+      },
+      "-12": {
+        "normal": 117,
+        "attack": 77
+      },
+      "-11": {
+        "normal": 9,
+        "attack": 30
+      },
+      "-10": {
+        "normal": 13,
+        "attack": 65
+      },
+      "-9": {
+        "normal": 17,
+        "attack": 12
+      },
+      "-8": {
+        "normal": 30,
+        "attack": 103
+      },
+      "-7": {
+        "normal": 15,
+        "attack": 72
+      },
+      "-6": {
+        "normal": 2,
+        "attack": 169
+      },
+      "-5": {
+        "normal": 4,
+        "attack": 57
+      },
+      "-4": {
+        "normal": 159,
+        "attack": 13660
+      },
+      "-3": {
+        "normal": 75,
+        "attack": 163
+      },
+      "-2": {
+        "normal": 23,
+        "attack": 221
+      },
+      "-1": {
+        "normal": 82,
+        "attack": 34
+      },
+      "0": {
+        "normal": 19,
+        "attack": 229
+      },
+      "1": {
+        "normal": 29,
+        "attack": 116
+      },
+      "2": {
+        "normal": 0,
+        "attack": 213
+      },
+      "3": {
+        "normal": 1,
+        "attack": 1530
+      },
+      "4": {
+        "normal": 2,
+        "attack": 777
+      },
+      "5": {
+        "normal": 391,
+        "attack": 1258
+      },
+      "6": {
+        "normal": 17,
+        "attack": 7212
+      },
+      "7": {
+        "normal": 6,
+        "attack": 58
+      },
+      "8": {
+        "normal": 3,
+        "attack": 92
+      },
+      "9": {
+        "normal": 2,
+        "attack": 35
+      },
+      "10": {
+        "normal": 3,
+        "attack": 3541
+      },
+      "11": {
+        "normal": 2,
+        "attack": 54
+      },
+      "12": {
+        "normal": 2,
+        "attack": 27191
+      },
+      "13": {
+        "normal": 0,
+        "attack": 3630
+      },
+      "14": {
+        "normal": 3,
+        "attack": 2461
+      },
+      "15": {
+        "normal": 1,
+        "attack": 50
+      },
+      "16": {
+        "normal": 0,
+        "attack": 1274
+      },
+      "17": {
+        "normal": 1,
+        "attack": 23857
+      },
+      "18": {
+        "normal": 0,
+        "attack": 1421
+      },
+      "19": {
+        "normal": 0,
+        "attack": 279
+      },
+      "20": {
+        "normal": 7,
+        "attack": 8874
+      },
+      "21": {
+        "normal": 0,
+        "attack": 152
+      },
+      "22": {
+        "normal": 0,
+        "attack": 76
+      },
+      "23": {
+        "normal": 0,
+        "attack": 109
+      },
+      "24": {
+        "normal": 0,
+        "attack": 10
+      },
+      "25": {
+        "normal": 0,
+        "attack": 358
+      },
+      "26": {
+        "normal": 0,
+        "attack": 5
+      },
+      "27": {
+        "normal": 0,
+        "attack": 23
+      },
+      "28": {
+        "normal": 0,
+        "attack": 4
+      },
+      "29": {
+        "normal": 0,
+        "attack": 21
+      },
+      "30": {
+        "normal": 0,
+        "attack": 31
+      },
+      "31": {
+        "normal": 0,
+        "attack": 12
+      },
+      "32": {
+        "normal": 0,
+        "attack": 9
+      },
+      "33": {
+        "normal": 0,
+        "attack": 55
+      },
+      "34": {
+        "normal": 0,
+        "attack": 2
+      },
+      "35": {
+        "normal": 0,
+        "attack": 2
+      },
+      "37": {
+        "normal": 0,
+        "attack": 2
+      },
+      "39": {
+        "normal": 0,
+        "attack": 4
+      },
+      "40": {
+        "normal": 0,
+        "attack": 1
+      },
+      "41": {
+        "normal": 0,
+        "attack": 17
+      },
+      "44": {
+        "normal": 0,
+        "attack": 1
+      },
+      "45": {
+        "normal": 0,
+        "attack": 1
+      },
+      "46": {
+        "normal": 0,
+        "attack": 1
+      },
+      "48": {
+        "normal": 0,
+        "attack": 1
+      },
+      "53": {
+        "normal": 0,
+        "attack": 1
+      },
+      "58": {
+        "normal": 0,
+        "attack": 1
+      }
+    },
+    "maxabs_transferred": {
+      "-51": {
+        "normal": 87,
+        "attack": 0
+      },
+      "-46": {
+        "normal": 3,
+        "attack": 0
+      },
+      "-45": {
+        "normal": 0,
+        "attack": 1
+      },
+      "-43": {
+        "normal": 2,
+        "attack": 0
+      },
+      "-42": {
+        "normal": 0,
+        "attack": 1
+      },
+      "-40": {
+        "normal": 79,
+        "attack": 0
+      },
+      "-39": {
+        "normal": 24,
+        "attack": 26
+      },
+      "-37": {
+        "normal": 13,
+        "attack": 0
+      },
+      "-36": {
+        "normal": 122,
+        "attack": 0
+      },
+      "-35": {
+        "normal": 56,
+        "attack": 0
+      },
+      "-34": {
+        "normal": 11,
+        "attack": 0
+      },
+      "-33": {
+        "normal": 7,
+        "attack": 0
+      },
+      "-32": {
+        "normal": 22,
+        "attack": 0
+      },
+      "-31": {
+        "normal": 15,
+        "attack": 0
+      },
+      "-30": {
+        "normal": 60,
+        "attack": 0
+      },
+      "-29": {
+        "normal": 18,
+        "attack": 2
+      },
+      "-28": {
+        "normal": 67,
+        "attack": 0
+      },
+      "-27": {
+        "normal": 31,
+        "attack": 0
+      },
+      "-26": {
+        "normal": 54,
+        "attack": 15
+      },
+      "-25": {
+        "normal": 35,
+        "attack": 1
+      },
+      "-24": {
+        "normal": 25,
+        "attack": 7
+      },
+      "-23": {
+        "normal": 35,
+        "attack": 1
+      },
+      "-22": {
+        "normal": 4,
+        "attack": 4
+      },
+      "-21": {
+        "normal": 77,
+        "attack": 31
+      },
+      "-20": {
+        "normal": 7,
+        "attack": 12
+      },
+      "-19": {
+        "normal": 7,
+        "attack": 2
+      },
+      "-18": {
+        "normal": 9,
+        "attack": 17
+      },
+      "-17": {
+        "normal": 12,
+        "attack": 1
+      },
+      "-16": {
+        "normal": 79,
+        "attack": 66
+      },
+      "-15": {
+        "normal": 95,
+        "attack": 19
+      },
+      "-14": {
+        "normal": 109,
+        "attack": 35
+      },
+      "-13": {
+        "normal": 25,
+        "attack": 11
+      },
+      "-12": {
+        "normal": 35,
+        "attack": 28
+      },
+      "-11": {
+        "normal": 24,
+        "attack": 43
+      },
+      "-10": {
+        "normal": 61,
+        "attack": 36
+      },
+      "-9": {
+        "normal": 7,
+        "attack": 36
+      },
+      "-8": {
+        "normal": 1,
+        "attack": 82
+      },
+      "-7": {
+        "normal": 207,
+        "attack": 2795
+      },
+      "-6": {
+        "normal": 3,
+        "attack": 21
+      },
+      "-5": {
+        "normal": 5,
+        "attack": 50
+      },
+      "-4": {
+        "normal": 10,
+        "attack": 5409
+      },
+      "-3": {
+        "normal": 10,
+        "attack": 167
+      },
+      "-2": {
+        "normal": 47,
+        "attack": 5570
+      },
+      "-1": {
+        "normal": 15,
+        "attack": 67
+      },
+      "0": {
+        "normal": 3,
+        "attack": 1489
+      },
+      "1": {
+        "normal": 14,
+        "attack": 371
+      },
+      "2": {
+        "normal": 5,
+        "attack": 328
+      },
+      "3": {
+        "normal": 11,
+        "attack": 160
+      },
+      "4": {
+        "normal": 4,
+        "attack": 159
+      },
+      "5": {
+        "normal": 5,
+        "attack": 4533
+      },
+      "6": {
+        "normal": 1,
+        "attack": 4819
+      },
+      "7": {
+        "normal": 2,
+        "attack": 87
+      },
+      "8": {
+        "normal": 2,
+        "attack": 103
+      },
+      "9": {
+        "normal": 5,
+        "attack": 1772
+      },
+      "10": {
+        "normal": 9,
+        "attack": 397
+      },
+      "11": {
+        "normal": 5,
+        "attack": 60
+      },
+      "12": {
+        "normal": 2,
+        "attack": 433
+      },
+      "13": {
+        "normal": 0,
+        "attack": 2745
+      },
+      "14": {
+        "normal": 2,
+        "attack": 733
+      },
+      "15": {
+        "normal": 1,
+        "attack": 2110
+      },
+      "16": {
+        "normal": 0,
+        "attack": 3726
+      },
+      "17": {
+        "normal": 0,
+        "attack": 24527
+      },
+      "18": {
+        "normal": 2,
+        "attack": 6274
+      },
+      "19": {
+        "normal": 0,
+        "attack": 431
+      },
+      "20": {
+        "normal": 8,
+        "attack": 5261
+      },
+      "21": {
+        "normal": 391,
+        "attack": 993
+      },
+      "22": {
+        "normal": 0,
+        "attack": 796
+      },
+      "23": {
+        "normal": 1,
+        "attack": 397
+      },
+      "24": {
+        "normal": 0,
+        "attack": 880
+      },
+      "25": {
+        "normal": 0,
+        "attack": 21570
+      },
+      "26": {
+        "normal": 0,
+        "attack": 108
+      },
+      "27": {
+        "normal": 0,
+        "attack": 15
+      },
+      "28": {
+        "normal": 0,
+        "attack": 9
+      },
+      "29": {
+        "normal": 0,
+        "attack": 19
+      },
+      "30": {
+        "normal": 0,
+        "attack": 5
+      },
+      "31": {
+        "normal": 0,
+        "attack": 13
+      },
+      "32": {
+        "normal": 0,
+        "attack": 4
+      },
+      "33": {
+        "normal": 0,
+        "attack": 76
+      },
+      "34": {
+        "normal": 0,
+        "attack": 2
+      },
+      "35": {
+        "normal": 0,
+        "attack": 6
+      },
+      "36": {
+        "normal": 0,
+        "attack": 3
+      },
+      "37": {
+        "normal": 0,
+        "attack": 4
+      },
+      "38": {
+        "normal": 0,
+        "attack": 1
+      },
+      "40": {
+        "normal": 0,
+        "attack": 2
+      },
+      "41": {
+        "normal": 0,
+        "attack": 14
+      },
+      "44": {
+        "normal": 0,
+        "attack": 5
+      },
+      "45": {
+        "normal": 0,
+        "attack": 1
+      },
+      "48": {
+        "normal": 0,
+        "attack": 1
+      },
+      "57": {
+        "normal": 0,
+        "attack": 1
+      },
+      "58": {
+        "normal": 0,
+        "attack": 1
+      }
+    },
+    "maxabs_recalibrated": {
+      "-51": {
+        "normal": 87,
+        "attack": 0
+      },
+      "-46": {
+        "normal": 3,
+        "attack": 0
+      },
+      "-45": {
+        "normal": 0,
+        "attack": 1
+      },
+      "-43": {
+        "normal": 2,
+        "attack": 0
+      },
+      "-42": {
+        "normal": 0,
+        "attack": 1
+      },
+      "-40": {
+        "normal": 79,
+        "attack": 0
+      },
+      "-39": {
+        "normal": 24,
+        "attack": 26
+      },
+      "-37": {
+        "normal": 13,
+        "attack": 0
+      },
+      "-36": {
+        "normal": 122,
+        "attack": 0
+      },
+      "-35": {
+        "normal": 56,
+        "attack": 0
+      },
+      "-34": {
+        "normal": 11,
+        "attack": 0
+      },
+      "-33": {
+        "normal": 7,
+        "attack": 0
+      },
+      "-32": {
+        "normal": 22,
+        "attack": 0
+      },
+      "-31": {
+        "normal": 15,
+        "attack": 0
+      },
+      "-30": {
+        "normal": 60,
+        "attack": 0
+      },
+      "-29": {
+        "normal": 18,
+        "attack": 2
+      },
+      "-28": {
+        "normal": 67,
+        "attack": 0
+      },
+      "-27": {
+        "normal": 31,
+        "attack": 0
+      },
+      "-26": {
+        "normal": 54,
+        "attack": 15
+      },
+      "-25": {
+        "normal": 35,
+        "attack": 1
+      },
+      "-24": {
+        "normal": 25,
+        "attack": 7
+      },
+      "-23": {
+        "normal": 35,
+        "attack": 1
+      },
+      "-22": {
+        "normal": 4,
+        "attack": 4
+      },
+      "-21": {
+        "normal": 77,
+        "attack": 31
+      },
+      "-20": {
+        "normal": 7,
+        "attack": 12
+      },
+      "-19": {
+        "normal": 7,
+        "attack": 2
+      },
+      "-18": {
+        "normal": 9,
+        "attack": 17
+      },
+      "-17": {
+        "normal": 12,
+        "attack": 1
+      },
+      "-16": {
+        "normal": 79,
+        "attack": 66
+      },
+      "-15": {
+        "normal": 95,
+        "attack": 19
+      },
+      "-14": {
+        "normal": 109,
+        "attack": 35
+      },
+      "-13": {
+        "normal": 25,
+        "attack": 11
+      },
+      "-12": {
+        "normal": 35,
+        "attack": 28
+      },
+      "-11": {
+        "normal": 24,
+        "attack": 43
+      },
+      "-10": {
+        "normal": 61,
+        "attack": 36
+      },
+      "-9": {
+        "normal": 7,
+        "attack": 36
+      },
+      "-8": {
+        "normal": 1,
+        "attack": 82
+      },
+      "-7": {
+        "normal": 207,
+        "attack": 2795
+      },
+      "-6": {
+        "normal": 3,
+        "attack": 21
+      },
+      "-5": {
+        "normal": 5,
+        "attack": 50
+      },
+      "-4": {
+        "normal": 10,
+        "attack": 5409
+      },
+      "-3": {
+        "normal": 10,
+        "attack": 167
+      },
+      "-2": {
+        "normal": 47,
+        "attack": 5570
+      },
+      "-1": {
+        "normal": 15,
+        "attack": 67
+      },
+      "0": {
+        "normal": 3,
+        "attack": 1489
+      },
+      "1": {
+        "normal": 14,
+        "attack": 371
+      },
+      "2": {
+        "normal": 5,
+        "attack": 328
+      },
+      "3": {
+        "normal": 11,
+        "attack": 160
+      },
+      "4": {
+        "normal": 4,
+        "attack": 159
+      },
+      "5": {
+        "normal": 5,
+        "attack": 4533
+      },
+      "6": {
+        "normal": 1,
+        "attack": 4819
+      },
+      "7": {
+        "normal": 2,
+        "attack": 87
+      },
+      "8": {
+        "normal": 2,
+        "attack": 103
+      },
+      "9": {
+        "normal": 5,
+        "attack": 1772
+      },
+      "10": {
+        "normal": 9,
+        "attack": 397
+      },
+      "11": {
+        "normal": 5,
+        "attack": 60
+      },
+      "12": {
+        "normal": 2,
+        "attack": 433
+      },
+      "13": {
+        "normal": 0,
+        "attack": 2745
+      },
+      "14": {
+        "normal": 2,
+        "attack": 733
+      },
+      "15": {
+        "normal": 1,
+        "attack": 2110
+      },
+      "16": {
+        "normal": 0,
+        "attack": 3726
+      },
+      "17": {
+        "normal": 0,
+        "attack": 24527
+      },
+      "18": {
+        "normal": 2,
+        "attack": 6274
+      },
+      "19": {
+        "normal": 0,
+        "attack": 431
+      },
+      "20": {
+        "normal": 8,
+        "attack": 5261
+      },
+      "21": {
+        "normal": 391,
+        "attack": 993
+      },
+      "22": {
+        "normal": 0,
+        "attack": 796
+      },
+      "23": {
+        "normal": 1,
+        "attack": 397
+      },
+      "24": {
+        "normal": 0,
+        "attack": 880
+      },
+      "25": {
+        "normal": 0,
+        "attack": 21570
+      },
+      "26": {
+        "normal": 0,
+        "attack": 108
+      },
+      "27": {
+        "normal": 0,
+        "attack": 15
+      },
+      "28": {
+        "normal": 0,
+        "attack": 9
+      },
+      "29": {
+        "normal": 0,
+        "attack": 19
+      },
+      "30": {
+        "normal": 0,
+        "attack": 5
+      },
+      "31": {
+        "normal": 0,
+        "attack": 13
+      },
+      "32": {
+        "normal": 0,
+        "attack": 4
+      },
+      "33": {
+        "normal": 0,
+        "attack": 76
+      },
+      "34": {
+        "normal": 0,
+        "attack": 2
+      },
+      "35": {
+        "normal": 0,
+        "attack": 6
+      },
+      "36": {
+        "normal": 0,
+        "attack": 3
+      },
+      "37": {
+        "normal": 0,
+        "attack": 4
+      },
+      "38": {
+        "normal": 0,
+        "attack": 1
+      },
+      "40": {
+        "normal": 0,
+        "attack": 2
+      },
+      "41": {
+        "normal": 0,
+        "attack": 14
+      },
+      "44": {
+        "normal": 0,
+        "attack": 5
+      },
+      "45": {
+        "normal": 0,
+        "attack": 1
+      },
+      "48": {
+        "normal": 0,
+        "attack": 1
+      },
+      "57": {
+        "normal": 0,
+        "attack": 1
+      },
+      "58": {
+        "normal": 0,
+        "attack": 1
+      }
+    },
+    "per_channel_transferred": {
+      "-51": {
+        "normal": 87,
+        "attack": 0
+      },
+      "-49": {
+        "normal": 0,
+        "attack": 1
+      },
+      "-46": {
+        "normal": 3,
+        "attack": 0
+      },
+      "-45": {
+        "normal": 0,
+        "attack": 1
+      },
+      "-43": {
+        "normal": 2,
+        "attack": 0
+      },
+      "-41": {
+        "normal": 77,
+        "attack": 0
+      },
+      "-39": {
+        "normal": 1,
+        "attack": 0
+      },
+      "-38": {
+        "normal": 29,
+        "attack": 26
+      },
+      "-37": {
+        "normal": 1,
+        "attack": 0
+      },
+      "-36": {
+        "normal": 6,
+        "attack": 0
+      },
+      "-35": {
+        "normal": 55,
+        "attack": 0
+      },
+      "-34": {
+        "normal": 25,
+        "attack": 0
+      },
+      "-33": {
+        "normal": 52,
+        "attack": 0
+      },
+      "-32": {
+        "normal": 15,
+        "attack": 0
+      },
+      "-31": {
+        "normal": 12,
+        "attack": 0
+      },
+      "-30": {
+        "normal": 71,
+        "attack": 0
+      },
+      "-29": {
+        "normal": 10,
+        "attack": 0
+      },
+      "-28": {
+        "normal": 11,
+        "attack": 0
+      },
+      "-27": {
+        "normal": 87,
+        "attack": 6
+      },
+      "-26": {
+        "normal": 105,
+        "attack": 4
+      },
+      "-25": {
+        "normal": 65,
+        "attack": 5
+      },
+      "-24": {
+        "normal": 17,
+        "attack": 12
+      },
+      "-23": {
+        "normal": 36,
+        "attack": 0
+      },
+      "-22": {
+        "normal": 7,
+        "attack": 5
+      },
+      "-21": {
+        "normal": 66,
+        "attack": 29
+      },
+      "-20": {
+        "normal": 14,
+        "attack": 12
+      },
+      "-19": {
+        "normal": 3,
+        "attack": 2
+      },
+      "-18": {
+        "normal": 8,
+        "attack": 13
+      },
+      "-17": {
+        "normal": 5,
+        "attack": 2
+      },
+      "-16": {
+        "normal": 75,
+        "attack": 2
+      },
+      "-15": {
+        "normal": 89,
+        "attack": 67
+      },
+      "-14": {
+        "normal": 100,
+        "attack": 41
+      },
+      "-13": {
+        "normal": 41,
+        "attack": 22
+      },
+      "-12": {
+        "normal": 42,
+        "attack": 17
+      },
+      "-11": {
+        "normal": 33,
+        "attack": 31
+      },
+      "-10": {
+        "normal": 62,
+        "attack": 64
+      },
+      "-9": {
+        "normal": 3,
+        "attack": 28
+      },
+      "-8": {
+        "normal": 2,
+        "attack": 40
+      },
+      "-7": {
+        "normal": 206,
+        "attack": 2827
+      },
+      "-6": {
+        "normal": 4,
+        "attack": 58
+      },
+      "-5": {
+        "normal": 6,
+        "attack": 30
+      },
+      "-4": {
+        "normal": 17,
+        "attack": 5414
+      },
+      "-3": {
+        "normal": 41,
+        "attack": 201
+      },
+      "-2": {
+        "normal": 5,
+        "attack": 5581
+      },
+      "-1": {
+        "normal": 12,
+        "attack": 61
+      },
+      "0": {
+        "normal": 3,
+        "attack": 61
+      },
+      "1": {
+        "normal": 9,
+        "attack": 1645
+      },
+      "2": {
+        "normal": 17,
+        "attack": 125
+      },
+      "3": {
+        "normal": 3,
+        "attack": 3369
+      },
+      "4": {
+        "normal": 2,
+        "attack": 343
+      },
+      "5": {
+        "normal": 9,
+        "attack": 2579
+      },
+      "6": {
+        "normal": 6,
+        "attack": 2090
+      },
+      "7": {
+        "normal": 2,
+        "attack": 1801
+      },
+      "8": {
+        "normal": 6,
+        "attack": 391
+      },
+      "9": {
+        "normal": 4,
+        "attack": 796
+      },
+      "10": {
+        "normal": 3,
+        "attack": 1152
+      },
+      "11": {
+        "normal": 4,
+        "attack": 2750
+      },
+      "12": {
+        "normal": 2,
+        "attack": 324
+      },
+      "13": {
+        "normal": 2,
+        "attack": 31
+      },
+      "14": {
+        "normal": 7,
+        "attack": 959
+      },
+      "15": {
+        "normal": 8,
+        "attack": 24787
+      },
+      "16": {
+        "normal": 0,
+        "attack": 2623
+      },
+      "17": {
+        "normal": 1,
+        "attack": 2190
+      },
+      "18": {
+        "normal": 0,
+        "attack": 4329
+      },
+      "19": {
+        "normal": 0,
+        "attack": 7023
+      },
+      "20": {
+        "normal": 392,
+        "attack": 2466
+      },
+      "21": {
+        "normal": 0,
+        "attack": 1589
+      },
+      "22": {
+        "normal": 0,
+        "attack": 8
+      },
+      "23": {
+        "normal": 0,
+        "attack": 75
+      },
+      "24": {
+        "normal": 0,
+        "attack": 21413
+      },
+      "25": {
+        "normal": 0,
+        "attack": 108
+      },
+      "26": {
+        "normal": 0,
+        "attack": 9
+      },
+      "27": {
+        "normal": 0,
+        "attack": 201
+      },
+      "28": {
+        "normal": 0,
+        "attack": 7
+      },
+      "29": {
+        "normal": 0,
+        "attack": 19
+      },
+      "30": {
+        "normal": 0,
+        "attack": 7
+      },
+      "31": {
+        "normal": 0,
+        "attack": 14
+      },
+      "32": {
+        "normal": 0,
+        "attack": 2
+      },
+      "33": {
+        "normal": 0,
+        "attack": 20
+      },
+      "34": {
+        "normal": 0,
+        "attack": 46
+      },
+      "35": {
+        "normal": 0,
+        "attack": 16
+      },
+      "36": {
+        "normal": 0,
+        "attack": 5
+      },
+      "38": {
+        "normal": 0,
+        "attack": 1
+      },
+      "40": {
+        "normal": 0,
+        "attack": 2
+      },
+      "43": {
+        "normal": 0,
+        "attack": 2
+      },
+      "44": {
+        "normal": 0,
+        "attack": 12
+      },
+      "45": {
+        "normal": 0,
+        "attack": 5
+      },
+      "47": {
+        "normal": 0,
+        "attack": 1
+      },
+      "55": {
+        "normal": 0,
+        "attack": 1
+      },
+      "61": {
+        "normal": 0,
+        "attack": 1
+      }
+    },
+    "per_channel_recalibrated": {
+      "-51": {
+        "normal": 87,
+        "attack": 0
+      },
+      "-49": {
+        "normal": 0,
+        "attack": 1
+      },
+      "-46": {
+        "normal": 3,
+        "attack": 0
+      },
+      "-45": {
+        "normal": 0,
+        "attack": 1
+      },
+      "-43": {
+        "normal": 2,
+        "attack": 0
+      },
+      "-41": {
+        "normal": 77,
+        "attack": 0
+      },
+      "-39": {
+        "normal": 1,
+        "attack": 0
+      },
+      "-38": {
+        "normal": 29,
+        "attack": 26
+      },
+      "-37": {
+        "normal": 1,
+        "attack": 0
+      },
+      "-36": {
+        "normal": 6,
+        "attack": 0
+      },
+      "-35": {
+        "normal": 55,
+        "attack": 0
+      },
+      "-34": {
+        "normal": 25,
+        "attack": 0
+      },
+      "-33": {
+        "normal": 52,
+        "attack": 0
+      },
+      "-32": {
+        "normal": 15,
+        "attack": 0
+      },
+      "-31": {
+        "normal": 12,
+        "attack": 0
+      },
+      "-30": {
+        "normal": 71,
+        "attack": 0
+      },
+      "-29": {
+        "normal": 10,
+        "attack": 0
+      },
+      "-28": {
+        "normal": 11,
+        "attack": 0
+      },
+      "-27": {
+        "normal": 87,
+        "attack": 6
+      },
+      "-26": {
+        "normal": 105,
+        "attack": 4
+      },
+      "-25": {
+        "normal": 65,
+        "attack": 5
+      },
+      "-24": {
+        "normal": 17,
+        "attack": 12
+      },
+      "-23": {
+        "normal": 36,
+        "attack": 0
+      },
+      "-22": {
+        "normal": 7,
+        "attack": 5
+      },
+      "-21": {
+        "normal": 66,
+        "attack": 29
+      },
+      "-20": {
+        "normal": 14,
+        "attack": 12
+      },
+      "-19": {
+        "normal": 3,
+        "attack": 2
+      },
+      "-18": {
+        "normal": 8,
+        "attack": 13
+      },
+      "-17": {
+        "normal": 5,
+        "attack": 2
+      },
+      "-16": {
+        "normal": 75,
+        "attack": 2
+      },
+      "-15": {
+        "normal": 89,
+        "attack": 67
+      },
+      "-14": {
+        "normal": 100,
+        "attack": 41
+      },
+      "-13": {
+        "normal": 41,
+        "attack": 22
+      },
+      "-12": {
+        "normal": 42,
+        "attack": 17
+      },
+      "-11": {
+        "normal": 33,
+        "attack": 31
+      },
+      "-10": {
+        "normal": 62,
+        "attack": 64
+      },
+      "-9": {
+        "normal": 3,
+        "attack": 28
+      },
+      "-8": {
+        "normal": 2,
+        "attack": 40
+      },
+      "-7": {
+        "normal": 206,
+        "attack": 2827
+      },
+      "-6": {
+        "normal": 4,
+        "attack": 58
+      },
+      "-5": {
+        "normal": 6,
+        "attack": 30
+      },
+      "-4": {
+        "normal": 17,
+        "attack": 5414
+      },
+      "-3": {
+        "normal": 41,
+        "attack": 201
+      },
+      "-2": {
+        "normal": 5,
+        "attack": 5581
+      },
+      "-1": {
+        "normal": 12,
+        "attack": 61
+      },
+      "0": {
+        "normal": 3,
+        "attack": 61
+      },
+      "1": {
+        "normal": 9,
+        "attack": 1645
+      },
+      "2": {
+        "normal": 17,
+        "attack": 125
+      },
+      "3": {
+        "normal": 3,
+        "attack": 3369
+      },
+      "4": {
+        "normal": 2,
+        "attack": 343
+      },
+      "5": {
+        "normal": 9,
+        "attack": 2579
+      },
+      "6": {
+        "normal": 6,
+        "attack": 2090
+      },
+      "7": {
+        "normal": 2,
+        "attack": 1801
+      },
+      "8": {
+        "normal": 6,
+        "attack": 391
+      },
+      "9": {
+        "normal": 4,
+        "attack": 796
+      },
+      "10": {
+        "normal": 3,
+        "attack": 1152
+      },
+      "11": {
+        "normal": 4,
+        "attack": 2750
+      },
+      "12": {
+        "normal": 2,
+        "attack": 324
+      },
+      "13": {
+        "normal": 2,
+        "attack": 31
+      },
+      "14": {
+        "normal": 7,
+        "attack": 959
+      },
+      "15": {
+        "normal": 8,
+        "attack": 24787
+      },
+      "16": {
+        "normal": 0,
+        "attack": 2623
+      },
+      "17": {
+        "normal": 1,
+        "attack": 2190
+      },
+      "18": {
+        "normal": 0,
+        "attack": 4329
+      },
+      "19": {
+        "normal": 0,
+        "attack": 7023
+      },
+      "20": {
+        "normal": 392,
+        "attack": 2466
+      },
+      "21": {
+        "normal": 0,
+        "attack": 1589
+      },
+      "22": {
+        "normal": 0,
+        "attack": 8
+      },
+      "23": {
+        "normal": 0,
+        "attack": 75
+      },
+      "24": {
+        "normal": 0,
+        "attack": 21413
+      },
+      "25": {
+        "normal": 0,
+        "attack": 108
+      },
+      "26": {
+        "normal": 0,
+        "attack": 9
+      },
+      "27": {
+        "normal": 0,
+        "attack": 201
+      },
+      "28": {
+        "normal": 0,
+        "attack": 7
+      },
+      "29": {
+        "normal": 0,
+        "attack": 19
+      },
+      "30": {
+        "normal": 0,
+        "attack": 7
+      },
+      "31": {
+        "normal": 0,
+        "attack": 14
+      },
+      "32": {
+        "normal": 0,
+        "attack": 2
+      },
+      "33": {
+        "normal": 0,
+        "attack": 20
+      },
+      "34": {
+        "normal": 0,
+        "attack": 46
+      },
+      "35": {
+        "normal": 0,
+        "attack": 16
+      },
+      "36": {
+        "normal": 0,
+        "attack": 5
+      },
+      "38": {
+        "normal": 0,
+        "attack": 1
+      },
+      "40": {
+        "normal": 0,
+        "attack": 2
+      },
+      "43": {
+        "normal": 0,
+        "attack": 2
+      },
+      "44": {
+        "normal": 0,
+        "attack": 12
+      },
+      "45": {
+        "normal": 0,
+        "attack": 5
+      },
+      "47": {
+        "normal": 0,
+        "attack": 1
+      },
+      "55": {
+        "normal": 0,
+        "attack": 1
+      },
+      "61": {
+        "normal": 0,
+        "attack": 1
+      }
+    },
+    "percentile999_transferred": {
+      "-127": {
+        "normal": 7,
+        "attack": 16
+      },
+      "-125": {
+        "normal": 53,
+        "attack": 4
+      },
+      "-124": {
+        "normal": 0,
+        "attack": 1
+      },
+      "-123": {
+        "normal": 0,
+        "attack": 9
+      },
+      "-122": {
+        "normal": 1,
+        "attack": 0
+      },
+      "-121": {
+        "normal": 0,
+        "attack": 5
+      },
+      "-120": {
+        "normal": 0,
+        "attack": 2
+      },
+      "-119": {
+        "normal": 0,
+        "attack": 27
+      },
+      "-118": {
+        "normal": 0,
+        "attack": 2
+      },
+      "-117": {
+        "normal": 0,
+        "attack": 4
+      },
+      "-116": {
+        "normal": 0,
+        "attack": 29
+      },
+      "-115": {
+        "normal": 33,
+        "attack": 0
+      },
+      "-114": {
+        "normal": 0,
+        "attack": 8
+      },
+      "-113": {
+        "normal": 0,
+        "attack": 2
+      },
+      "-112": {
+        "normal": 0,
+        "attack": 4
+      },
+      "-111": {
+        "normal": 24,
+        "attack": 4
+      },
+      "-110": {
+        "normal": 0,
+        "attack": 10
+      },
+      "-109": {
+        "normal": 9,
+        "attack": 1
+      },
+      "-108": {
+        "normal": 0,
+        "attack": 6
+      },
+      "-107": {
+        "normal": 9,
+        "attack": 3
+      },
+      "-106": {
+        "normal": 6,
+        "attack": 5
+      },
+      "-105": {
+        "normal": 11,
+        "attack": 4
+      },
+      "-104": {
+        "normal": 38,
+        "attack": 5
+      },
+      "-103": {
+        "normal": 6,
+        "attack": 2
+      },
+      "-102": {
+        "normal": 19,
+        "attack": 3
+      },
+      "-101": {
+        "normal": 14,
+        "attack": 1
+      },
+      "-100": {
+        "normal": 6,
+        "attack": 7
+      },
+      "-99": {
+        "normal": 3,
+        "attack": 4
+      },
+      "-98": {
+        "normal": 26,
+        "attack": 0
+      },
+      "-97": {
+        "normal": 2,
+        "attack": 2
+      },
+      "-96": {
+        "normal": 56,
+        "attack": 6
+      },
+      "-95": {
+        "normal": 7,
+        "attack": 3
+      },
+      "-94": {
+        "normal": 2,
+        "attack": 2
+      },
+      "-93": {
+        "normal": 10,
+        "attack": 2
+      },
+      "-92": {
+        "normal": 1,
+        "attack": 2
+      },
+      "-91": {
+        "normal": 5,
+        "attack": 2
+      },
+      "-90": {
+        "normal": 6,
+        "attack": 7
+      },
+      "-89": {
+        "normal": 28,
+        "attack": 1
+      },
+      "-88": {
+        "normal": 17,
+        "attack": 3
+      },
+      "-87": {
+        "normal": 17,
+        "attack": 5
+      },
+      "-86": {
+        "normal": 3,
+        "attack": 1
+      },
+      "-85": {
+        "normal": 22,
+        "attack": 3
+      },
+      "-84": {
+        "normal": 40,
+        "attack": 4
+      },
+      "-83": {
+        "normal": 150,
+        "attack": 5
+      },
+      "-82": {
+        "normal": 0,
+        "attack": 9
+      },
+      "-81": {
+        "normal": 5,
+        "attack": 0
+      },
+      "-80": {
+        "normal": 10,
+        "attack": 85
+      },
+      "-79": {
+        "normal": 12,
+        "attack": 20
+      },
+      "-78": {
+        "normal": 6,
+        "attack": 4
+      },
+      "-77": {
+        "normal": 7,
+        "attack": 6
+      },
+      "-76": {
+        "normal": 4,
+        "attack": 0
+      },
+      "-75": {
+        "normal": 6,
+        "attack": 0
+      },
+      "-74": {
+        "normal": 9,
+        "attack": 0
+      },
+      "-73": {
+        "normal": 5,
+        "attack": 1
+      },
+      "-72": {
+        "normal": 2,
+        "attack": 0
+      },
+      "-71": {
+        "normal": 9,
+        "attack": 0
+      },
+      "-70": {
+        "normal": 13,
+        "attack": 2
+      },
+      "-69": {
+        "normal": 26,
+        "attack": 0
+      },
+      "-68": {
+        "normal": 3,
+        "attack": 0
+      },
+      "-67": {
+        "normal": 3,
+        "attack": 2
+      },
+      "-66": {
+        "normal": 6,
+        "attack": 0
+      },
+      "-65": {
+        "normal": 8,
+        "attack": 2
+      },
+      "-64": {
+        "normal": 9,
+        "attack": 0
+      },
+      "-63": {
+        "normal": 4,
+        "attack": 4
+      },
+      "-62": {
+        "normal": 17,
+        "attack": 1
+      },
+      "-61": {
+        "normal": 27,
+        "attack": 5
+      },
+      "-60": {
+        "normal": 6,
+        "attack": 4
+      },
+      "-59": {
+        "normal": 1,
+        "attack": 19
+      },
+      "-58": {
+        "normal": 20,
+        "attack": 2
+      },
+      "-57": {
+        "normal": 8,
+        "attack": 5
+      },
+      "-56": {
+        "normal": 37,
+        "attack": 5
+      },
+      "-55": {
+        "normal": 4,
+        "attack": 8
+      },
+      "-54": {
+        "normal": 2,
+        "attack": 2
+      },
+      "-53": {
+        "normal": 15,
+        "attack": 21
+      },
+      "-52": {
+        "normal": 17,
+        "attack": 23
+      },
+      "-51": {
+        "normal": 1,
+        "attack": 3
+      },
+      "-50": {
+        "normal": 19,
+        "attack": 15
+      },
+      "-49": {
+        "normal": 16,
+        "attack": 12
+      },
+      "-48": {
+        "normal": 12,
+        "attack": 30
+      },
+      "-47": {
+        "normal": 9,
+        "attack": 4
+      },
+      "-46": {
+        "normal": 12,
+        "attack": 7
+      },
+      "-45": {
+        "normal": 9,
+        "attack": 7
+      },
+      "-44": {
+        "normal": 4,
+        "attack": 9
+      },
+      "-43": {
+        "normal": 14,
+        "attack": 9
+      },
+      "-42": {
+        "normal": 396,
+        "attack": 473
+      },
+      "-41": {
+        "normal": 5,
+        "attack": 18
+      },
+      "-40": {
+        "normal": 7,
+        "attack": 14
+      },
+      "-39": {
+        "normal": 7,
+        "attack": 30
+      },
+      "-38": {
+        "normal": 8,
+        "attack": 24
+      },
+      "-37": {
+        "normal": 5,
+        "attack": 16
+      },
+      "-36": {
+        "normal": 58,
+        "attack": 15
+      },
+      "-35": {
+        "normal": 22,
+        "attack": 5
+      },
+      "-34": {
+        "normal": 6,
+        "attack": 3
+      },
+      "-33": {
+        "normal": 9,
+        "attack": 9
+      },
+      "-32": {
+        "normal": 23,
+        "attack": 9
+      },
+      "-31": {
+        "normal": 1,
+        "attack": 15
+      },
+      "-30": {
+        "normal": 7,
+        "attack": 1
+      },
+      "-29": {
+        "normal": 2,
+        "attack": 10
+      },
+      "-28": {
+        "normal": 8,
+        "attack": 23
+      },
+      "-27": {
+        "normal": 17,
+        "attack": 27
+      },
+      "-26": {
+        "normal": 5,
+        "attack": 27
+      },
+      "-25": {
+        "normal": 8,
+        "attack": 6
+      },
+      "-24": {
+        "normal": 10,
+        "attack": 2
+      },
+      "-23": {
+        "normal": 8,
+        "attack": 2
+      },
+      "-22": {
+        "normal": 13,
+        "attack": 146
+      },
+      "-21": {
+        "normal": 11,
+        "attack": 13
+      },
+      "-20": {
+        "normal": 14,
+        "attack": 38
+      },
+      "-19": {
+        "normal": 0,
+        "attack": 15
+      },
+      "-18": {
+        "normal": 14,
+        "attack": 16
+      },
+      "-17": {
+        "normal": 23,
+        "attack": 18
+      },
+      "-16": {
+        "normal": 10,
+        "attack": 15
+      },
+      "-15": {
+        "normal": 20,
+        "attack": 12
+      },
+      "-14": {
+        "normal": 20,
+        "attack": 6
+      },
+      "-13": {
+        "normal": 45,
+        "attack": 13
+      },
+      "-12": {
+        "normal": 3,
+        "attack": 8
+      },
+      "-11": {
+        "normal": 10,
+        "attack": 15
+      },
+      "-10": {
+        "normal": 10,
+        "attack": 20
+      },
+      "-9": {
+        "normal": 89,
+        "attack": 9
+      },
+      "-8": {
+        "normal": 4,
+        "attack": 33
+      },
+      "-7": {
+        "normal": 0,
+        "attack": 15
+      },
+      "-6": {
+        "normal": 0,
+        "attack": 23
+      },
+      "-5": {
+        "normal": 80,
+        "attack": 43
+      },
+      "-4": {
+        "normal": 7,
+        "attack": 53
+      },
+      "-3": {
+        "normal": 2,
+        "attack": 6810
+      },
+      "-2": {
+        "normal": 2,
+        "attack": 1330
+      },
+      "-1": {
+        "normal": 1,
+        "attack": 1930
+      },
+      "0": {
+        "normal": 0,
+        "attack": 7435
+      },
+      "1": {
+        "normal": 2,
+        "attack": 606
+      },
+      "2": {
+        "normal": 3,
+        "attack": 444
+      },
+      "3": {
+        "normal": 2,
+        "attack": 164
+      },
+      "4": {
+        "normal": 3,
+        "attack": 309
+      },
+      "5": {
+        "normal": 1,
+        "attack": 78
+      },
+      "6": {
+        "normal": 0,
+        "attack": 60
+      },
+      "7": {
+        "normal": 3,
+        "attack": 84
+      },
+      "8": {
+        "normal": 2,
+        "attack": 45
+      },
+      "9": {
+        "normal": 2,
+        "attack": 46
+      },
+      "10": {
+        "normal": 2,
+        "attack": 132
+      },
+      "11": {
+        "normal": 2,
+        "attack": 99
+      },
+      "12": {
+        "normal": 1,
+        "attack": 73
+      },
+      "13": {
+        "normal": 2,
+        "attack": 2034
+      },
+      "14": {
+        "normal": 0,
+        "attack": 986
+      },
+      "15": {
+        "normal": 3,
+        "attack": 114
+      },
+      "16": {
+        "normal": 1,
+        "attack": 55
+      },
+      "17": {
+        "normal": 2,
+        "attack": 84
+      },
+      "18": {
+        "normal": 3,
+        "attack": 41
+      },
+      "19": {
+        "normal": 0,
+        "attack": 174
+      },
+      "20": {
+        "normal": 1,
+        "attack": 47
+      },
+      "21": {
+        "normal": 2,
+        "attack": 43
+      },
+      "22": {
+        "normal": 6,
+        "attack": 638
+      },
+      "23": {
+        "normal": 0,
+        "attack": 1293
+      },
+      "24": {
+        "normal": 4,
+        "attack": 565
+      },
+      "25": {
+        "normal": 2,
+        "attack": 339
+      },
+      "26": {
+        "normal": 6,
+        "attack": 529
+      },
+      "27": {
+        "normal": 0,
+        "attack": 840
+      },
+      "28": {
+        "normal": 1,
+        "attack": 113
+      },
+      "29": {
+        "normal": 1,
+        "attack": 489
+      },
+      "30": {
+        "normal": 0,
+        "attack": 546
+      },
+      "31": {
+        "normal": 0,
+        "attack": 160
+      },
+      "32": {
+        "normal": 0,
+        "attack": 117
+      },
+      "33": {
+        "normal": 0,
+        "attack": 102
+      },
+      "34": {
+        "normal": 6,
+        "attack": 88
+      },
+      "35": {
+        "normal": 0,
+        "attack": 81
+      },
+      "36": {
+        "normal": 1,
+        "attack": 5642
+      },
+      "37": {
+        "normal": 0,
+        "attack": 2475
+      },
+      "38": {
+        "normal": 0,
+        "attack": 1644
+      },
+      "39": {
+        "normal": 0,
+        "attack": 11
+      },
+      "40": {
+        "normal": 2,
+        "attack": 131
+      },
+      "41": {
+        "normal": 0,
+        "attack": 807
+      },
+      "42": {
+        "normal": 0,
+        "attack": 512
+      },
+      "43": {
+        "normal": 0,
+        "attack": 70
+      },
+      "44": {
+        "normal": 0,
+        "attack": 695
+      },
+      "45": {
+        "normal": 0,
+        "attack": 1163
+      },
+      "46": {
+        "normal": 1,
+        "attack": 220
+      },
+      "47": {
+        "normal": 1,
+        "attack": 204
+      },
+      "48": {
+        "normal": 0,
+        "attack": 158
+      },
+      "49": {
+        "normal": 0,
+        "attack": 116
+      },
+      "50": {
+        "normal": 0,
+        "attack": 51
+      },
+      "51": {
+        "normal": 0,
+        "attack": 7
+      },
+      "52": {
+        "normal": 0,
+        "attack": 645
+      },
+      "53": {
+        "normal": 0,
+        "attack": 140
+      },
+      "54": {
+        "normal": 0,
+        "attack": 64
+      },
+      "55": {
+        "normal": 0,
+        "attack": 33
+      },
+      "56": {
+        "normal": 0,
+        "attack": 84
+      },
+      "57": {
+        "normal": 2,
+        "attack": 106
+      },
+      "58": {
+        "normal": 0,
+        "attack": 23826
+      },
+      "59": {
+        "normal": 0,
+        "attack": 3312
+      },
+      "60": {
+        "normal": 0,
+        "attack": 22978
+      },
+      "61": {
+        "normal": 0,
+        "attack": 1547
+      },
+      "62": {
+        "normal": 0,
+        "attack": 58
+      },
+      "63": {
+        "normal": 0,
+        "attack": 19
+      },
+      "64": {
+        "normal": 0,
+        "attack": 611
+      },
+      "65": {
+        "normal": 0,
+        "attack": 32
+      },
+      "66": {
+        "normal": 0,
+        "attack": 2
+      },
+      "67": {
+        "normal": 0,
+        "attack": 4
+      },
+      "68": {
+        "normal": 0,
+        "attack": 16
+      },
+      "69": {
+        "normal": 0,
+        "attack": 12
+      },
+      "70": {
+        "normal": 0,
+        "attack": 2
+      },
+      "71": {
+        "normal": 0,
+        "attack": 2
+      },
+      "72": {
+        "normal": 0,
+        "attack": 920
+      },
+      "73": {
+        "normal": 0,
+        "attack": 26
+      },
+      "74": {
+        "normal": 0,
+        "attack": 128
+      },
+      "75": {
+        "normal": 0,
+        "attack": 5
+      },
+      "76": {
+        "normal": 0,
+        "attack": 124
+      },
+      "77": {
+        "normal": 0,
+        "attack": 293
+      },
+      "78": {
+        "normal": 0,
+        "attack": 46
+      },
+      "79": {
+        "normal": 0,
+        "attack": 50
+      },
+      "81": {
+        "normal": 0,
+        "attack": 7
+      },
+      "82": {
+        "normal": 0,
+        "attack": 1
+      },
+      "83": {
+        "normal": 0,
+        "attack": 3
+      },
+      "84": {
+        "normal": 0,
+        "attack": 2
+      },
+      "85": {
+        "normal": 0,
+        "attack": 9
+      },
+      "86": {
+        "normal": 0,
+        "attack": 60
+      },
+      "90": {
+        "normal": 0,
+        "attack": 3
+      },
+      "99": {
+        "normal": 0,
+        "attack": 2
+      },
+      "105": {
+        "normal": 0,
+        "attack": 1
+      },
+      "117": {
+        "normal": 0,
+        "attack": 16
+      }
+    },
+    "percentile999_recalibrated": {
+      "-127": {
+        "normal": 7,
+        "attack": 16
+      },
+      "-125": {
+        "normal": 53,
+        "attack": 4
+      },
+      "-124": {
+        "normal": 0,
+        "attack": 1
+      },
+      "-123": {
+        "normal": 0,
+        "attack": 9
+      },
+      "-122": {
+        "normal": 1,
+        "attack": 0
+      },
+      "-121": {
+        "normal": 0,
+        "attack": 5
+      },
+      "-120": {
+        "normal": 0,
+        "attack": 2
+      },
+      "-119": {
+        "normal": 0,
+        "attack": 27
+      },
+      "-118": {
+        "normal": 0,
+        "attack": 2
+      },
+      "-117": {
+        "normal": 0,
+        "attack": 4
+      },
+      "-116": {
+        "normal": 0,
+        "attack": 29
+      },
+      "-115": {
+        "normal": 33,
+        "attack": 0
+      },
+      "-114": {
+        "normal": 0,
+        "attack": 8
+      },
+      "-113": {
+        "normal": 0,
+        "attack": 2
+      },
+      "-112": {
+        "normal": 0,
+        "attack": 4
+      },
+      "-111": {
+        "normal": 24,
+        "attack": 4
+      },
+      "-110": {
+        "normal": 0,
+        "attack": 10
+      },
+      "-109": {
+        "normal": 9,
+        "attack": 1
+      },
+      "-108": {
+        "normal": 0,
+        "attack": 6
+      },
+      "-107": {
+        "normal": 9,
+        "attack": 3
+      },
+      "-106": {
+        "normal": 6,
+        "attack": 5
+      },
+      "-105": {
+        "normal": 11,
+        "attack": 4
+      },
+      "-104": {
+        "normal": 38,
+        "attack": 5
+      },
+      "-103": {
+        "normal": 6,
+        "attack": 2
+      },
+      "-102": {
+        "normal": 19,
+        "attack": 3
+      },
+      "-101": {
+        "normal": 14,
+        "attack": 1
+      },
+      "-100": {
+        "normal": 6,
+        "attack": 7
+      },
+      "-99": {
+        "normal": 3,
+        "attack": 4
+      },
+      "-98": {
+        "normal": 26,
+        "attack": 0
+      },
+      "-97": {
+        "normal": 2,
+        "attack": 2
+      },
+      "-96": {
+        "normal": 56,
+        "attack": 6
+      },
+      "-95": {
+        "normal": 7,
+        "attack": 3
+      },
+      "-94": {
+        "normal": 2,
+        "attack": 2
+      },
+      "-93": {
+        "normal": 10,
+        "attack": 2
+      },
+      "-92": {
+        "normal": 1,
+        "attack": 2
+      },
+      "-91": {
+        "normal": 5,
+        "attack": 2
+      },
+      "-90": {
+        "normal": 6,
+        "attack": 7
+      },
+      "-89": {
+        "normal": 28,
+        "attack": 1
+      },
+      "-88": {
+        "normal": 17,
+        "attack": 3
+      },
+      "-87": {
+        "normal": 17,
+        "attack": 5
+      },
+      "-86": {
+        "normal": 3,
+        "attack": 1
+      },
+      "-85": {
+        "normal": 22,
+        "attack": 3
+      },
+      "-84": {
+        "normal": 40,
+        "attack": 4
+      },
+      "-83": {
+        "normal": 150,
+        "attack": 5
+      },
+      "-82": {
+        "normal": 0,
+        "attack": 9
+      },
+      "-81": {
+        "normal": 5,
+        "attack": 0
+      },
+      "-80": {
+        "normal": 10,
+        "attack": 85
+      },
+      "-79": {
+        "normal": 12,
+        "attack": 20
+      },
+      "-78": {
+        "normal": 6,
+        "attack": 4
+      },
+      "-77": {
+        "normal": 7,
+        "attack": 6
+      },
+      "-76": {
+        "normal": 4,
+        "attack": 0
+      },
+      "-75": {
+        "normal": 6,
+        "attack": 0
+      },
+      "-74": {
+        "normal": 9,
+        "attack": 0
+      },
+      "-73": {
+        "normal": 5,
+        "attack": 1
+      },
+      "-72": {
+        "normal": 2,
+        "attack": 0
+      },
+      "-71": {
+        "normal": 9,
+        "attack": 0
+      },
+      "-70": {
+        "normal": 13,
+        "attack": 2
+      },
+      "-69": {
+        "normal": 26,
+        "attack": 0
+      },
+      "-68": {
+        "normal": 3,
+        "attack": 0
+      },
+      "-67": {
+        "normal": 3,
+        "attack": 2
+      },
+      "-66": {
+        "normal": 6,
+        "attack": 0
+      },
+      "-65": {
+        "normal": 8,
+        "attack": 2
+      },
+      "-64": {
+        "normal": 9,
+        "attack": 0
+      },
+      "-63": {
+        "normal": 4,
+        "attack": 4
+      },
+      "-62": {
+        "normal": 17,
+        "attack": 1
+      },
+      "-61": {
+        "normal": 27,
+        "attack": 5
+      },
+      "-60": {
+        "normal": 6,
+        "attack": 4
+      },
+      "-59": {
+        "normal": 1,
+        "attack": 19
+      },
+      "-58": {
+        "normal": 20,
+        "attack": 2
+      },
+      "-57": {
+        "normal": 8,
+        "attack": 5
+      },
+      "-56": {
+        "normal": 37,
+        "attack": 5
+      },
+      "-55": {
+        "normal": 4,
+        "attack": 8
+      },
+      "-54": {
+        "normal": 2,
+        "attack": 2
+      },
+      "-53": {
+        "normal": 15,
+        "attack": 21
+      },
+      "-52": {
+        "normal": 17,
+        "attack": 23
+      },
+      "-51": {
+        "normal": 1,
+        "attack": 3
+      },
+      "-50": {
+        "normal": 19,
+        "attack": 15
+      },
+      "-49": {
+        "normal": 16,
+        "attack": 12
+      },
+      "-48": {
+        "normal": 12,
+        "attack": 30
+      },
+      "-47": {
+        "normal": 9,
+        "attack": 4
+      },
+      "-46": {
+        "normal": 12,
+        "attack": 7
+      },
+      "-45": {
+        "normal": 9,
+        "attack": 7
+      },
+      "-44": {
+        "normal": 4,
+        "attack": 9
+      },
+      "-43": {
+        "normal": 14,
+        "attack": 9
+      },
+      "-42": {
+        "normal": 396,
+        "attack": 473
+      },
+      "-41": {
+        "normal": 5,
+        "attack": 18
+      },
+      "-40": {
+        "normal": 7,
+        "attack": 14
+      },
+      "-39": {
+        "normal": 7,
+        "attack": 30
+      },
+      "-38": {
+        "normal": 8,
+        "attack": 24
+      },
+      "-37": {
+        "normal": 5,
+        "attack": 16
+      },
+      "-36": {
+        "normal": 58,
+        "attack": 15
+      },
+      "-35": {
+        "normal": 22,
+        "attack": 5
+      },
+      "-34": {
+        "normal": 6,
+        "attack": 3
+      },
+      "-33": {
+        "normal": 9,
+        "attack": 9
+      },
+      "-32": {
+        "normal": 23,
+        "attack": 9
+      },
+      "-31": {
+        "normal": 1,
+        "attack": 15
+      },
+      "-30": {
+        "normal": 7,
+        "attack": 1
+      },
+      "-29": {
+        "normal": 2,
+        "attack": 10
+      },
+      "-28": {
+        "normal": 8,
+        "attack": 23
+      },
+      "-27": {
+        "normal": 17,
+        "attack": 27
+      },
+      "-26": {
+        "normal": 5,
+        "attack": 27
+      },
+      "-25": {
+        "normal": 8,
+        "attack": 6
+      },
+      "-24": {
+        "normal": 10,
+        "attack": 2
+      },
+      "-23": {
+        "normal": 8,
+        "attack": 2
+      },
+      "-22": {
+        "normal": 13,
+        "attack": 146
+      },
+      "-21": {
+        "normal": 11,
+        "attack": 13
+      },
+      "-20": {
+        "normal": 14,
+        "attack": 38
+      },
+      "-19": {
+        "normal": 0,
+        "attack": 15
+      },
+      "-18": {
+        "normal": 14,
+        "attack": 16
+      },
+      "-17": {
+        "normal": 23,
+        "attack": 18
+      },
+      "-16": {
+        "normal": 10,
+        "attack": 15
+      },
+      "-15": {
+        "normal": 20,
+        "attack": 12
+      },
+      "-14": {
+        "normal": 20,
+        "attack": 6
+      },
+      "-13": {
+        "normal": 45,
+        "attack": 13
+      },
+      "-12": {
+        "normal": 3,
+        "attack": 8
+      },
+      "-11": {
+        "normal": 10,
+        "attack": 15
+      },
+      "-10": {
+        "normal": 10,
+        "attack": 20
+      },
+      "-9": {
+        "normal": 89,
+        "attack": 9
+      },
+      "-8": {
+        "normal": 4,
+        "attack": 33
+      },
+      "-7": {
+        "normal": 0,
+        "attack": 15
+      },
+      "-6": {
+        "normal": 0,
+        "attack": 23
+      },
+      "-5": {
+        "normal": 80,
+        "attack": 43
+      },
+      "-4": {
+        "normal": 7,
+        "attack": 53
+      },
+      "-3": {
+        "normal": 2,
+        "attack": 6810
+      },
+      "-2": {
+        "normal": 2,
+        "attack": 1330
+      },
+      "-1": {
+        "normal": 1,
+        "attack": 1930
+      },
+      "0": {
+        "normal": 0,
+        "attack": 7435
+      },
+      "1": {
+        "normal": 2,
+        "attack": 606
+      },
+      "2": {
+        "normal": 3,
+        "attack": 444
+      },
+      "3": {
+        "normal": 2,
+        "attack": 164
+      },
+      "4": {
+        "normal": 3,
+        "attack": 309
+      },
+      "5": {
+        "normal": 1,
+        "attack": 78
+      },
+      "6": {
+        "normal": 0,
+        "attack": 60
+      },
+      "7": {
+        "normal": 3,
+        "attack": 84
+      },
+      "8": {
+        "normal": 2,
+        "attack": 45
+      },
+      "9": {
+        "normal": 2,
+        "attack": 46
+      },
+      "10": {
+        "normal": 2,
+        "attack": 132
+      },
+      "11": {
+        "normal": 2,
+        "attack": 99
+      },
+      "12": {
+        "normal": 1,
+        "attack": 73
+      },
+      "13": {
+        "normal": 2,
+        "attack": 2034
+      },
+      "14": {
+        "normal": 0,
+        "attack": 986
+      },
+      "15": {
+        "normal": 3,
+        "attack": 114
+      },
+      "16": {
+        "normal": 1,
+        "attack": 55
+      },
+      "17": {
+        "normal": 2,
+        "attack": 84
+      },
+      "18": {
+        "normal": 3,
+        "attack": 41
+      },
+      "19": {
+        "normal": 0,
+        "attack": 174
+      },
+      "20": {
+        "normal": 1,
+        "attack": 47
+      },
+      "21": {
+        "normal": 2,
+        "attack": 43
+      },
+      "22": {
+        "normal": 6,
+        "attack": 638
+      },
+      "23": {
+        "normal": 0,
+        "attack": 1293
+      },
+      "24": {
+        "normal": 4,
+        "attack": 565
+      },
+      "25": {
+        "normal": 2,
+        "attack": 339
+      },
+      "26": {
+        "normal": 6,
+        "attack": 529
+      },
+      "27": {
+        "normal": 0,
+        "attack": 840
+      },
+      "28": {
+        "normal": 1,
+        "attack": 113
+      },
+      "29": {
+        "normal": 1,
+        "attack": 489
+      },
+      "30": {
+        "normal": 0,
+        "attack": 546
+      },
+      "31": {
+        "normal": 0,
+        "attack": 160
+      },
+      "32": {
+        "normal": 0,
+        "attack": 117
+      },
+      "33": {
+        "normal": 0,
+        "attack": 102
+      },
+      "34": {
+        "normal": 6,
+        "attack": 88
+      },
+      "35": {
+        "normal": 0,
+        "attack": 81
+      },
+      "36": {
+        "normal": 1,
+        "attack": 5642
+      },
+      "37": {
+        "normal": 0,
+        "attack": 2475
+      },
+      "38": {
+        "normal": 0,
+        "attack": 1644
+      },
+      "39": {
+        "normal": 0,
+        "attack": 11
+      },
+      "40": {
+        "normal": 2,
+        "attack": 131
+      },
+      "41": {
+        "normal": 0,
+        "attack": 807
+      },
+      "42": {
+        "normal": 0,
+        "attack": 512
+      },
+      "43": {
+        "normal": 0,
+        "attack": 70
+      },
+      "44": {
+        "normal": 0,
+        "attack": 695
+      },
+      "45": {
+        "normal": 0,
+        "attack": 1163
+      },
+      "46": {
+        "normal": 1,
+        "attack": 220
+      },
+      "47": {
+        "normal": 1,
+        "attack": 204
+      },
+      "48": {
+        "normal": 0,
+        "attack": 158
+      },
+      "49": {
+        "normal": 0,
+        "attack": 116
+      },
+      "50": {
+        "normal": 0,
+        "attack": 51
+      },
+      "51": {
+        "normal": 0,
+        "attack": 7
+      },
+      "52": {
+        "normal": 0,
+        "attack": 645
+      },
+      "53": {
+        "normal": 0,
+        "attack": 140
+      },
+      "54": {
+        "normal": 0,
+        "attack": 64
+      },
+      "55": {
+        "normal": 0,
+        "attack": 33
+      },
+      "56": {
+        "normal": 0,
+        "attack": 84
+      },
+      "57": {
+        "normal": 2,
+        "attack": 106
+      },
+      "58": {
+        "normal": 0,
+        "attack": 23826
+      },
+      "59": {
+        "normal": 0,
+        "attack": 3312
+      },
+      "60": {
+        "normal": 0,
+        "attack": 22978
+      },
+      "61": {
+        "normal": 0,
+        "attack": 1547
+      },
+      "62": {
+        "normal": 0,
+        "attack": 58
+      },
+      "63": {
+        "normal": 0,
+        "attack": 19
+      },
+      "64": {
+        "normal": 0,
+        "attack": 611
+      },
+      "65": {
+        "normal": 0,
+        "attack": 32
+      },
+      "66": {
+        "normal": 0,
+        "attack": 2
+      },
+      "67": {
+        "normal": 0,
+        "attack": 4
+      },
+      "68": {
+        "normal": 0,
+        "attack": 16
+      },
+      "69": {
+        "normal": 0,
+        "attack": 12
+      },
+      "70": {
+        "normal": 0,
+        "attack": 2
+      },
+      "71": {
+        "normal": 0,
+        "attack": 2
+      },
+      "72": {
+        "normal": 0,
+        "attack": 920
+      },
+      "73": {
+        "normal": 0,
+        "attack": 26
+      },
+      "74": {
+        "normal": 0,
+        "attack": 128
+      },
+      "75": {
+        "normal": 0,
+        "attack": 5
+      },
+      "76": {
+        "normal": 0,
+        "attack": 124
+      },
+      "77": {
+        "normal": 0,
+        "attack": 293
+      },
+      "78": {
+        "normal": 0,
+        "attack": 46
+      },
+      "79": {
+        "normal": 0,
+        "attack": 50
+      },
+      "81": {
+        "normal": 0,
+        "attack": 7
+      },
+      "82": {
+        "normal": 0,
+        "attack": 1
+      },
+      "83": {
+        "normal": 0,
+        "attack": 3
+      },
+      "84": {
+        "normal": 0,
+        "attack": 2
+      },
+      "85": {
+        "normal": 0,
+        "attack": 9
+      },
+      "86": {
+        "normal": 0,
+        "attack": 60
+      },
+      "90": {
+        "normal": 0,
+        "attack": 3
+      },
+      "99": {
+        "normal": 0,
+        "attack": 2
+      },
+      "105": {
+        "normal": 0,
+        "attack": 1
+      },
+      "117": {
+        "normal": 0,
+        "attack": 16
+      }
+    }
+  },
+  "source_sha256": {
+    "samples/B_fit.npz": "3b40bbad7bf0d38938ecbd450c8d6a81e5f0a1d47211ba17bc5e5017270663c6",
+    "samples/B_cal.npz": "4f6d162704d163c2bc77f3cba86b235edff0d3f50a6aed40237ce2af8e9ab8d0",
+    "models/B_mlp_int8.json": "60ca214737c50afdff2c68486882e79abdc454da5e0cc7ddadcba3e26cd9879d",
+    "models/mlp_float_compatible_first_layer.json": "428495a5daebb66a86c2a8cfd406b5b47475d759ce401cd0705cb01f58b3c3f6",
+    "models/mlp_int8_compatible_requantized.json": "ac891bb661970549f11b227ae2547f0790ba2565e63210d5c944e5f34eee0a8a",
+    "hardware_vectors/B_mlp_int8.json": "4dc31606dd474d2e1b45ab350799cb3bf35b90c46589c0129f7d45186d202582"
+  },
+  "previous_analysis_sha256": {
+    "export_per_channel_transferred.json": "da06ccd8e320c18046ba6d73170a3331d446517836e99330e72d60ddbe65f755",
+    "export_per_channel_recalibrated.json": "19e17a89a3abbaaf29443c101a5affedbc4f8106929fda5011d489216dcef35d"
+  },
+  "implementation_sha256": {
+    "analyze_percentile035.py": "ebf7e95af0bf7f6a73e7c03bd4848f6bf981fde237ba93e18f06671b33b36492",
+    "vendor/model030.py": "31be2167aea816114c3d8d8a27b2fda364374f4716739f7c16472cf624b0e0c8",
+    "POSTHOC_PLAN035.md": "574d0cf2606efe1f57c99775df6a3de068bebe39fcaca68e98c842f7d8a33cc9"
+  },
+  "numpy_version": "2.3.5",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+}

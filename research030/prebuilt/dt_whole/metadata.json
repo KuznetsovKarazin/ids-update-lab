@@ -1,0 +1,20 @@
+{
+  "elf_identity_scope": "compiled_template_before_model_patch",
+  "elf_sha256": "d9d5d47842eed8924a213cbb2d6951be1c88de226557c8f28de8747be0495812",
+  "erase_policy": "necessary_sectors",
+  "expected_build": "esp-idf-v5.3.2;app=1;elf=d9d5d4784",
+  "expected_feature_count": 8,
+  "factory_length": 368,
+  "family": "dt",
+  "hardware_accessed": false,
+  "idf_version": "v5.3.2",
+  "image_sha256": "f2e222155a75074a4981527d23c181e1ad6d01314fb0776c783f14dc6dd0bd3f",
+  "image_size": 339504,
+  "patch_checksum_sha_verified": true,
+  "policy": "whole_firmware",
+  "runtime_abi": 3,
+  "schema": "8f3aba7e6bce09ffd8fc1fad9c054081629076299f24a209e25a443c2d5b7225",
+  "template_region_offset": 48000,
+  "version": 1,
+  "whole_chunk_max_bytes": 1024
+}

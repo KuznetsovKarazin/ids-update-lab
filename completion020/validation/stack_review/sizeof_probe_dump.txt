@@ -1,0 +1,6 @@
+
+/workspace/scratch/43cab15299bb/completion020/validation/stack_review/sizeof_probe.o:     file format elf32-xtensa-le
+
+Contents of section .rodata.ids_size_probe:
+ 0000 fc080000 58120000 74200000 20200000  ....X...t ..  ..
+ 0010 00100000 f4070000                    ........        

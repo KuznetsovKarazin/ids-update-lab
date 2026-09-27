@@ -1,0 +1,16 @@
+test_daily_metadata_empty_groups_and_no_selection (test_coverage028.CoverageTests.test_daily_metadata_empty_groups_and_no_selection) ... ok
+test_half_open_boundaries (test_coverage028.CoverageTests.test_half_open_boundaries) ... ok
+test_known_groups_use_fit_not_calibration (test_coverage028.CoverageTests.test_known_groups_use_fit_not_calibration) ... ok
+test_rejects_naive_hour_and_negative_counts (test_coverage028.CoverageTests.test_rejects_naive_hour_and_negative_counts) ... ok
+test_six_hour_grid_and_calibration_exposure_are_explicit (test_coverage028.CoverageTests.test_six_hour_grid_and_calibration_exposure_are_explicit) ... ok
+test_conflicting_labels_are_preserved (test_diagnose028.DiagnosticTests.test_conflicting_labels_are_preserved) ... ok
+test_frequency_cap_is_per_vector (test_diagnose028.DiagnosticTests.test_frequency_cap_is_per_vector) ... ok
+test_signed_zero_merged_invalid_excluded (test_diagnose028.DiagnosticTests.test_signed_zero_merged_invalid_excluded) ... ok
+test_top_metadata_keeps_joint_class_type_and_absent_history (test_diagnose028.DiagnosticTests.test_top_metadata_keeps_joint_class_type_and_absent_history) ... ok
+test_transaction_rollback_and_file_resume (test_diagnose028.DiagnosticTests.test_transaction_rollback_and_file_resume) ... ok
+test_weighted_confusions_match_expanded_rows (test_diagnose028.DiagnosticTests.test_weighted_confusions_match_expanded_rows) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.029s
+
+OK

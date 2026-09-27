@@ -1,0 +1,182 @@
+{
+  "tested": "prediction and serialization stage only, on preserved original 258 inputs; CLI help also passed",
+  "all_23_source_CSV_reconstruction_run": false,
+  "reason": "Full raw corpus is not available in this review workspace",
+  "models": [
+    {
+      "file": "A_dt.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "file": "A_lr.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "file": "A_mlp_float.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 2.384185791015625e-07
+    },
+    {
+      "file": "A_mlp_int8.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "file": "B_dt.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "file": "B_lr.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 5.960464477539063e-08
+    },
+    {
+      "file": "B_mlp_float.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 1.043081283569336e-07
+    },
+    {
+      "file": "B_mlp_int8.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "file": "dt_stale_threshold.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "file": "lr_compatible_decision.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 1.1920928955078125e-07
+    },
+    {
+      "file": "lr_compatible_probability.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 5.960464477539063e-08
+    },
+    {
+      "file": "lr_stale_scaler.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 5.960464477539063e-08
+    },
+    {
+      "file": "lr_stale_scaler_threshold.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 5.960464477539063e-08
+    },
+    {
+      "file": "lr_stale_threshold.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 5.960464477539063e-08
+    },
+    {
+      "file": "mlp_float_compatible_first_layer.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 4.6193599700927734e-07
+    },
+    {
+      "file": "mlp_float_stale_scaler.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 2.682209014892578e-07
+    },
+    {
+      "file": "mlp_float_stale_scaler_threshold.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 2.682209014892578e-07
+    },
+    {
+      "file": "mlp_float_stale_threshold.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 1.043081283569336e-07
+    },
+    {
+      "file": "mlp_int8_compatible_requantized.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "file": "mlp_int8_stale_input_quantization.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "file": "mlp_int8_stale_integer_threshold_code.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "file": "mlp_int8_stale_scaler.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "file": "mlp_int8_stale_scaler_threshold.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "file": "mlp_int8_stale_threshold.json",
+      "sha256_matches_original": false,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    }
+  ],
+  "exact_original_golden_restoration_from_fingerprints_and_hash_matched_raw_inputs": {
+    "passed": true,
+    "files": [
+      "A_dt.json",
+      "A_lr.json",
+      "A_mlp_float.json",
+      "A_mlp_int8.json",
+      "B_dt.json",
+      "B_lr.json",
+      "B_mlp_float.json",
+      "B_mlp_int8.json",
+      "dt_stale_threshold.json",
+      "lr_compatible_decision.json",
+      "lr_compatible_probability.json",
+      "lr_stale_scaler.json",
+      "lr_stale_scaler_threshold.json",
+      "lr_stale_threshold.json",
+      "mlp_float_compatible_first_layer.json",
+      "mlp_float_stale_scaler.json",
+      "mlp_float_stale_scaler_threshold.json",
+      "mlp_float_stale_threshold.json",
+      "mlp_int8_compatible_requantized.json",
+      "mlp_int8_stale_input_quantization.json",
+      "mlp_int8_stale_integer_threshold_code.json",
+      "mlp_int8_stale_scaler.json",
+      "mlp_int8_stale_scaler_threshold.json",
+      "mlp_int8_stale_threshold.json"
+    ]
+  },
+  "raw_source_sampler_reexecution": "not_run",
+  "container_note": "NPZ zip bytes may differ cross-platform; reconstructed arrays checked by dtype, shape, C-order content hashes. Original Windows CRLF JSON output reconstructed exactly."
+}

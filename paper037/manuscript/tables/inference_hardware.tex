@@ -1,0 +1,10 @@
+\begin{table}[!htbp]
+\caption{Inference in the final package runtime using model B. Each row contains 262 diagnostic calls on 258 distinct input vectors. No label mismatches occurred. Response-point free heap is not peak working memory.}\label{tab:inference-hardware}
+\centering\small
+\begin{tabular}{lrrr}
+\toprule Model & Median ($\mu$s) & 95th percentile ($\mu$s) & Maximum probability error\\\midrule
+LR & 82 & 83.95 & $1.19\times 10^{-7}$\\
+DT & 13 & 14.00 & $4.02\times 10^{-10}$\\
+MLP-F32 & 163 & 164.00 & $8.92\times 10^{-8}$\\
+MLP-I8 & 210 & 213.00 & $4.73\times 10^{-10}$\\
+\bottomrule\end{tabular}\end{table}

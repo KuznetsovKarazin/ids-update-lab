@@ -1,0 +1,275 @@
+{
+  "status": "pass",
+  "scope": "Independent skeptical alignment review only; no energy integrals or method comparisons inspected",
+  "cfn_sha256": "96bb1ab6586e8fbe3260a5dc4cf72e301da3acdc6b1f2777225fdb2836e216c9",
+  "clock": {
+    "method": "affine_two_calibration_patterns_two_independent_validation_patterns",
+    "cfn_seconds_per_host_second": 1.0000271245641454,
+    "cfn_offset_s": 2.5632537567391394,
+    "host_boundary_uncertainty_s": 0.0979956227847334,
+    "max_calibration_residual_host_s": 0.01053125984617509,
+    "max_validation_residual_host_s": 0.024875244022950938,
+    "allowed_host_interval_s": [
+      2.0137801499999997,
+      7299.27322895
+    ],
+    "pattern_quality": {
+      "calibration_before": {
+        "score": 0.9409374511524645,
+        "scale": 1.0,
+        "first_edge_cfn_s": 4.5600000000000005,
+        "runner_up_score": null,
+        "contrast_W": 0.08138499359999998,
+        "baseline_noise_MAD_W": 0.0015267198038400368,
+        "median_filter_samples": 7
+      },
+      "calibration_after": {
+        "score": 0.9433217124150143,
+        "scale": 1.0,
+        "first_edge_cfn_s": 7278.96,
+        "runner_up_score": null,
+        "contrast_W": 0.08050531319999998,
+        "baseline_noise_MAD_W": 0.0013892418640799825,
+        "median_filter_samples": 7
+      },
+      "validation_before": {
+        "contrast_W": 0.08141218649999998,
+        "baseline_noise_MAD_W": 0.0006244926176999835,
+        "median_filter_samples": 7,
+        "max_host_residual_s": 0.006937430490111751,
+        "used_to_fit_alignment": false
+      },
+      "validation_after": {
+        "contrast_W": 0.08074352469999999,
+        "baseline_noise_MAD_W": 0.0008546613751199838,
+        "median_filter_samples": 7,
+        "max_host_residual_s": 0.024875244022950938,
+        "used_to_fit_alignment": false
+      }
+    },
+    "uncertainty_kind": "empirical envelope of marker residuals, transport brackets and one sample; not metrological bound",
+    "clock_mapping_verified_by_holdout_markers": true
+  },
+  "pattern_duration_checks": [
+    {
+      "id": "calibration_before",
+      "contrast_W": 0.08138499359999998,
+      "observed_edge_cfn_s": [
+        4.584278549349369,
+        6.585160419430635,
+        8.604211118269216,
+        13.59543990127115,
+        15.634028040812986,
+        18.625186620103577,
+        20.664112850130994,
+        27.65509286489507
+      ],
+      "host_edge_s": [
+        2.0137801499999997,
+        4.01401615,
+        6.0410793,
+        11.0411923,
+        13.06902925,
+        16.06912725,
+        18.095238950000002,
+        25.09544295
+      ],
+      "pulse_duration_error_s": [
+        0.0005915985047266759,
+        -0.009019598231197357,
+        -0.009020552381501012,
+        -0.00941360737835506
+      ],
+      "max_absolute_pulse_duration_error_s": 0.00941360737835506,
+      "max_edge_outside_host_transport_bracket_s": 0.0
+    },
+    {
+      "id": "validation_before",
+      "contrast_W": 0.08141218649999998,
+      "observed_edge_cfn_s": [
+        31.69424153114345,
+        34.68509628456845,
+        36.71426784166422,
+        43.71536585389827,
+        45.744070730426245,
+        47.735213244433,
+        49.76401476062747,
+        54.755188364112485
+      ],
+      "host_edge_s": [
+        29.1232602,
+        32.1235532,
+        34.14991215,
+        41.15010815,
+        43.173054,
+        45.173161,
+        47.195973050000006,
+        52.19601605
+      ],
+      "pulse_duration_error_s": [
+        -0.009519370006170202,
+        0.000712115652793166,
+        -0.009018493401162786,
+        -0.009004776251435587
+      ],
+      "max_absolute_pulse_duration_error_s": 0.009519370006170202,
+      "max_edge_outside_host_transport_bracket_s": 0.0
+    },
+    {
+      "id": "validation_after",
+      "contrast_W": 0.08074352469999999,
+      "observed_edge_cfn_s": [
+        7251.864195432775,
+        7256.875234012998,
+        7258.894053271716,
+        7260.875930242894,
+        7262.924188977484,
+        7269.925058956795,
+        7271.954141223434,
+        7274.9279833858745
+      ],
+      "host_edge_s": [
+        7249.11054485,
+        7254.11058685,
+        7256.1377541,
+        7258.1380291000005,
+        7260.1648645000005,
+        7267.1650115,
+        7269.192230500001,
+        7272.1923504999995
+      ],
+      "pulse_duration_error_s": [
+        0.010860661672030147,
+        -0.018451784912641767,
+        0.0005330889145307438,
+        -0.02635849954393965
+      ],
+      "max_absolute_pulse_duration_error_s": 0.02635849954393965,
+      "max_edge_outside_host_transport_bracket_s": 0.011893644023075467
+    },
+    {
+      "id": "calibration_after",
+      "contrast_W": 0.08055912619999997,
+      "observed_edge_cfn_s": [
+        7278.974160116346,
+        7285.985043415744,
+        7288.004117695222,
+        7290.995195337865,
+        7293.014145915525,
+        7298.005229000796,
+        7300.044742816084,
+        7302.03534735444
+      ],
+      "host_edge_s": [
+        7276.22026535,
+        7283.22036835,
+        7285.23705055,
+        7288.23709855,
+        7290.25445875,
+        7295.25462275,
+        7297.27307295,
+        7299.27322895
+      ],
+      "pulse_duration_error_s": [
+        0.01059013740259207,
+        -0.009051486833603573,
+        -0.009216292009867288,
+        -0.009605454460047014
+      ],
+      "max_absolute_pulse_duration_error_s": 0.01059013740259207,
+      "max_edge_outside_host_transport_bracket_s": 0.005735623512919119
+    }
+  ],
+  "candidate_grid_phase_sensitivity": [
+    {
+      "raw_samples_omitted": 1,
+      "offset_delta_s": 0.0,
+      "scale_delta_ppm": 0.0,
+      "max_holdout_error_s": 0.024875244022950938
+    },
+    {
+      "raw_samples_omitted": 2,
+      "offset_delta_s": -1.4007661697235108e-09,
+      "scale_delta_ppm": 4.354117066895924e-05,
+      "max_holdout_error_s": 0.024875559251995583
+    },
+    {
+      "raw_samples_omitted": 3,
+      "offset_delta_s": -1.4007661697235108e-09,
+      "scale_delta_ppm": 4.354117066895924e-05,
+      "max_holdout_error_s": 0.024875559251995583
+    }
+  ],
+  "duplicate_UI_fraction": 0.7555998176318773,
+  "repeated_value_run_length_samples_quantiles": [
+    1.0,
+    2.0,
+    10.0,
+    10.0,
+    40.0
+  ],
+  "guard_tests": [
+    {
+      "test": "actual_isolated_marker",
+      "expected_accept": true,
+      "accepted": true,
+      "pass_": true,
+      "detail": {
+        "score": 0.9409374511524645,
+        "scale": 1.0,
+        "first_edge_cfn_s": 4.5600000000000005,
+        "runner_up_score": null
+      }
+    },
+    {
+      "test": "flat_trace",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true,
+      "detail": "No sufficiently clear synchronization pattern: calibration_before"
+    },
+    {
+      "test": "duplicate_equal_markers",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true,
+      "detail": "Ambiguous synchronization pattern: calibration_before"
+    },
+    {
+      "test": "missing_pulse_0",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true,
+      "detail": "Missing marker edge; no clock alignment accepted"
+    },
+    {
+      "test": "missing_pulse_1",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true,
+      "detail": "No sufficiently clear synchronization pattern: calibration_before"
+    },
+    {
+      "test": "missing_pulse_2",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true,
+      "detail": "Marker waveform too noisy: calibration_before"
+    },
+    {
+      "test": "missing_pulse_3",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true,
+      "detail": "No sufficiently clear synchronization pattern: calibration_before"
+    }
+  ],
+  "limitations": [
+    "Post hoc candidate-search bug fix; original prespecified energy gate failed.",
+    "All four marker patterns are near run endpoints; interior clock linearity is an assumption, not directly checked.",
+    "Finite empirical timing envelope is not a calibrated metrological uncertainty bound.",
+    "Repeated numeric readings prevent treating nominal 100 samples/s as independent readings.",
+    "Guard tests cover specific missing and duplicate patterns, not all possible false positives."
+  ],
+  "first_busy_plateau_22_to_27s_dominant_frequency_Hz": 20.040080160224953
+}

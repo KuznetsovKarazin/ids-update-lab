@@ -1,0 +1,25 @@
+00000000 <_ZN13ids_generated15factory_versionEv>:
+   0:	004136        	entry	a1, 32
+   3:	0000a1        	l32r	a10, fffc0004 <_ZN13ids_generated15factory_versionEv+0xfffc0004>
+   6:	0020c0        	memw
+   9:	340a82        	l8ui	a8, a10, 52
+   c:	748080        	extui	a8, a8, 0, 8
+   f:	0020c0        	memw
+  12:	350a92        	l8ui	a9, a10, 53
+  15:	749090        	extui	a9, a9, 0, 8
+  18:	119980        	slli	a9, a9, 8
+  1b:	208890        	or	a8, a8, a9
+  1e:	0020c0        	memw
+  21:	360a92        	l8ui	a9, a10, 54
+  24:	749090        	extui	a9, a9, 0, 8
+  27:	119900        	slli	a9, a9, 16
+  2a:	208890        	or	a8, a8, a9
+  2d:	0020c0        	memw
+  30:	370a22        	l8ui	a2, a10, 55
+  33:	012280        	slli	a2, a2, 24
+  36:	202820        	or	a2, a8, a2
+  39:	f01d      	retw.n
+
+Disassembly of section .text._ZN9EspCryptoC2Ev:
+
+00000000 <_ZN9EspCryptoC1Ev>:

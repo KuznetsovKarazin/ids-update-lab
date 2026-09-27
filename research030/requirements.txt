@@ -1,0 +1,7 @@
+# Versions used in software validation; install in .venv030 to preserve old runs.
+numpy==2.3.5
+scipy==1.17.0
+scikit-learn==1.8.0
+cryptography==46.0.0
+pyserial==3.5
+esptool==4.12.0

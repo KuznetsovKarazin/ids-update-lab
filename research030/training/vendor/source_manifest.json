@@ -1,0 +1,469 @@
+{
+  "command": "download",
+  "status": "complete",
+  "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+  "recorded_utc": "2026-09-25T09:00:32.614334+00:00",
+  "files": [
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_1.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 146725605,
+      "started_utc": "2026-09-25T08:46:27.648730+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"88933b2b15412f9e78776cc69edf8917\""
+      },
+      "requests": 18,
+      "last_response_utc": "2026-09-25T08:46:58.910505+00:00",
+      "file": "Network_dataset_1.csv",
+      "bytes": 146725605,
+      "local_sha256": "37ea5238fcd2a7a18574b8e37e0427086c6c34d03a22f690256fc925946c0448",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:46:59.994035+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_2.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 145496506,
+      "started_utc": "2026-09-25T08:46:59.997075+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"c78d827918c339520c4cda5cb637dc3c\""
+      },
+      "requests": 18,
+      "last_response_utc": "2026-09-25T08:47:31.576469+00:00",
+      "file": "Network_dataset_2.csv",
+      "bytes": 145496506,
+      "local_sha256": "63b70bb96a95499b477b890674b74cc207ccb638b68ea4cc3a3dea9a448772c1",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:47:32.557920+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_3.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 145618265,
+      "started_utc": "2026-09-25T08:47:32.560678+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"894edeec530158a8d92f90baf667c331\""
+      },
+      "requests": 18,
+      "last_response_utc": "2026-09-25T08:48:03.831447+00:00",
+      "file": "Network_dataset_3.csv",
+      "bytes": 145618265,
+      "local_sha256": "7c8710722f26679c5d795b60019975945a81730934c768083261e66e3b1ee366",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:48:04.832950+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_4.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 145220077,
+      "started_utc": "2026-09-25T08:48:04.835989+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"feacf40f32d6decc7a07e0bf26623d75\""
+      },
+      "requests": 18,
+      "last_response_utc": "2026-09-25T08:48:40.722386+00:00",
+      "file": "Network_dataset_4.csv",
+      "bytes": 145220077,
+      "local_sha256": "a20b2aed18fa474681f3614d35d4a23554272d6424cf6148596015440fb84a91",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:48:41.845646+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_5.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 145230697,
+      "started_utc": "2026-09-25T08:48:41.848555+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"2a74cfa084c79a51bcc83b6364c87abc\""
+      },
+      "requests": 18,
+      "last_response_utc": "2026-09-25T08:49:16.946095+00:00",
+      "file": "Network_dataset_5.csv",
+      "bytes": 145230697,
+      "local_sha256": "2cfccfbc2816418b49ab8bf26bcd45f0a4796f634512f7e5dff9def7b601778e",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:49:17.954911+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_6.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 165814042,
+      "started_utc": "2026-09-25T08:49:17.958088+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"50c78f6174f13382eb2fb02bbfc5a72f\""
+      },
+      "requests": 20,
+      "last_response_utc": "2026-09-25T08:50:02.189576+00:00",
+      "file": "Network_dataset_6.csv",
+      "bytes": 165814042,
+      "local_sha256": "e8aa726d8551ffe59ea816bb1199455c0ebd53f44993a8bbec67ef0843bab229",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:50:03.547715+00:00",
+      "column_count": 47,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_7.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 147175352,
+      "started_utc": "2026-09-25T08:50:03.552299+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"3d59ffa6a3fef301e6c262596d24e912\""
+      },
+      "requests": 18,
+      "last_response_utc": "2026-09-25T08:50:44.094962+00:00",
+      "file": "Network_dataset_7.csv",
+      "bytes": 147175352,
+      "local_sha256": "e5d3303520909b2e90e57199aa2159f8b2bef287b56502f453df2a6407ca39ab",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:50:45.264847+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_8.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 146639523,
+      "started_utc": "2026-09-25T08:50:45.268129+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"107a73d193183d028624a53bdc4d8c87\""
+      },
+      "requests": 18,
+      "last_response_utc": "2026-09-25T08:51:23.355855+00:00",
+      "file": "Network_dataset_8.csv",
+      "bytes": 146639523,
+      "local_sha256": "485c53e676016c730018ec51ef885efa584546f6930035c75876b5ba520814be",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:51:24.500360+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_9.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 146509873,
+      "started_utc": "2026-09-25T08:51:24.503822+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"5bd8c1d3f59832a1a958caefc8b81088\""
+      },
+      "requests": 18,
+      "last_response_utc": "2026-09-25T08:52:03.170349+00:00",
+      "file": "Network_dataset_9.csv",
+      "bytes": 146509873,
+      "local_sha256": "ed86e18cd03c6b9e1963964e400a04c4b7684356f2ca7d3acca172c942c4dfba",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:52:04.286021+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_10.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 146536008,
+      "started_utc": "2026-09-25T08:52:04.289169+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"b5d9bf159be3379f9192e4a776ba832c\""
+      },
+      "requests": 18,
+      "last_response_utc": "2026-09-25T08:52:40.712056+00:00",
+      "file": "Network_dataset_10.csv",
+      "bytes": 146536008,
+      "local_sha256": "c33290654db525d0f926d4bc010d27f82c615e1ba87cff0c9e87b1cff673d2ad",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:52:41.953680+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_11.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 148428210,
+      "started_utc": "2026-09-25T08:52:41.956943+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"9797c79d8797edb7201c9d155c93b32b\""
+      },
+      "requests": 18,
+      "last_response_utc": "2026-09-25T08:53:18.957544+00:00",
+      "file": "Network_dataset_11.csv",
+      "bytes": 148428210,
+      "local_sha256": "ffd77ddb051852facd348ec189cf1204a01c0cc840da312c1a440fd0d8c287cf",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:53:20.319901+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_12.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 153629818,
+      "started_utc": "2026-09-25T08:53:20.325151+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"a527e4beb1e464e948ffff3228e546a6\""
+      },
+      "requests": 19,
+      "last_response_utc": "2026-09-25T08:53:56.922155+00:00",
+      "file": "Network_dataset_12.csv",
+      "bytes": 153629818,
+      "local_sha256": "80fd7d6782d4acdd9c528085d38823e1036b530c551d3b646bc7d0eeb5298512",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:53:57.934125+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_13.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 151016885,
+      "started_utc": "2026-09-25T08:53:57.937776+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"14432fa2bcb53437662078303a6f61c8\""
+      },
+      "requests": 19,
+      "last_response_utc": "2026-09-25T08:54:34.535343+00:00",
+      "file": "Network_dataset_13.csv",
+      "bytes": 151016885,
+      "local_sha256": "fc295ee26ebee93e3ab0b0e61ae7ab567fb86c1b67cbcd1d8025944c9e5ad24c",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:54:34.766402+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_14.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 153329384,
+      "started_utc": "2026-09-25T08:54:34.770615+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"cc63b5c494d21f19c9c8c001fe8ade28\""
+      },
+      "requests": 19,
+      "last_response_utc": "2026-09-25T08:55:10.290957+00:00",
+      "file": "Network_dataset_14.csv",
+      "bytes": 153329384,
+      "local_sha256": "8eb759212e6b36c29478b5e45102814438b48e7929477a5bb8e734390cdc3ab0",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:55:11.311228+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_15.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 153194923,
+      "started_utc": "2026-09-25T08:55:11.314973+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"6684870f6e6a6ba50c803371b65f3e21\""
+      },
+      "requests": 19,
+      "last_response_utc": "2026-09-25T08:55:45.768138+00:00",
+      "file": "Network_dataset_15.csv",
+      "bytes": 153194923,
+      "local_sha256": "f7dded78b7670900cfa9c56e4b3df1c6c6f8ec3d82262c1b184af7f9d87e9f43",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:55:46.770826+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_16.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 153017885,
+      "started_utc": "2026-09-25T08:55:46.775540+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"117673e9a27fba1208d4ae858eeb0ca3\""
+      },
+      "requests": 19,
+      "last_response_utc": "2026-09-25T08:56:21.570003+00:00",
+      "file": "Network_dataset_16.csv",
+      "bytes": 153017885,
+      "local_sha256": "415376cfbd6a4592b717b5e756ca5c1548d4491121e01fb0bab79555d8665cae",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:56:22.530834+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_17.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 149859400,
+      "started_utc": "2026-09-25T08:56:22.534962+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"8d2d047ed7c68068067c83a5612b248a\""
+      },
+      "requests": 18,
+      "last_response_utc": "2026-09-25T08:56:55.651836+00:00",
+      "file": "Network_dataset_17.csv",
+      "bytes": 149859400,
+      "local_sha256": "d933a39088804258386441d83e4dec29ad14b97378b2a216f9919b0f5180143a",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:56:57.061769+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_18.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 150807171,
+      "started_utc": "2026-09-25T08:56:57.065365+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"f2c58e0b3419b5b5b04f979030d9c359\""
+      },
+      "requests": 18,
+      "last_response_utc": "2026-09-25T08:57:31.573869+00:00",
+      "file": "Network_dataset_18.csv",
+      "bytes": 150807171,
+      "local_sha256": "32d04d9cfefee40774e979c600ec322e2da6518bb6d8974999075007794c3934",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:57:33.071670+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_19.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 156962122,
+      "started_utc": "2026-09-25T08:57:33.075017+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"a72a8768f13e3301d9a0333bd354a203\""
+      },
+      "requests": 19,
+      "last_response_utc": "2026-09-25T08:58:09.360770+00:00",
+      "file": "Network_dataset_19.csv",
+      "bytes": 156962122,
+      "local_sha256": "162203394dc41b3020bdc70b99e213f620fd66bacd333dbdf1cd5279adbd5f5d",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:58:10.673946+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_20.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 157610648,
+      "started_utc": "2026-09-25T08:58:10.677274+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"302a907075a8e4979c6f0ee7413a311a\""
+      },
+      "requests": 19,
+      "last_response_utc": "2026-09-25T08:58:52.239573+00:00",
+      "file": "Network_dataset_20.csv",
+      "bytes": 157610648,
+      "local_sha256": "ca793a8ff6860c2a8b8e8b4bc72271bbbfc011b0b6c523765658949e1513fd0f",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:58:53.735366+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_21.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 158679239,
+      "started_utc": "2026-09-25T08:58:53.738658+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"817c687ddc70d1928d3f2af52e0a776b\""
+      },
+      "requests": 19,
+      "last_response_utc": "2026-09-25T08:59:35.820686+00:00",
+      "file": "Network_dataset_21.csv",
+      "bytes": 158679239,
+      "local_sha256": "63fe9f2c91c48c0f30721eda03864675e1d87103a36cd61c19a3ac68d8ac077b",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T08:59:37.437347+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_22.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 153268181,
+      "started_utc": "2026-09-25T08:59:37.441803+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"263ab88038f6459a243d6d6c2d69a133\""
+      },
+      "requests": 19,
+      "last_response_utc": "2026-09-25T09:00:17.174366+00:00",
+      "file": "Network_dataset_22.csv",
+      "bytes": 153268181,
+      "local_sha256": "a1f6009f2be53bc1fba90f044d07ff5a9c5cfe4912b56690d8f02fb75aa335c0",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T09:00:18.281995+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    },
+    {
+      "source_url": "https://www.kaggle.com/api/v1/datasets/download/mohammedaddoun/ton-iot/Network_dataset_23.csv?datasetVersionNumber=1",
+      "manifest_sha256": "6e54fed0d6cf0d3b935eddcdb93e532cce9b47eb4f50fd2746deadb4e03a0db5",
+      "expected_bytes": 51705634,
+      "started_utc": "2026-09-25T09:00:18.285415+00:00",
+      "validator": {
+        "header": "ETag",
+        "value": "\"ec7105fa40d8745c7387fecda0c363e1\""
+      },
+      "requests": 7,
+      "last_response_utc": "2026-09-25T09:00:31.704324+00:00",
+      "file": "Network_dataset_23.csv",
+      "bytes": 51705634,
+      "local_sha256": "e89c54673961c2b260265cdd3f6c50355369f8a80e63c31999df04b0a757f213",
+      "hash_authority": "locally_computed_not_publisher_verified",
+      "completed_utc": "2026-09-25T09:00:32.611213+00:00",
+      "column_count": 46,
+      "dataset_version": 1,
+      "independent_test_established": false
+    }
+  ],
+  "independent_test_established": false
+}

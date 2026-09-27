@@ -1,0 +1,59 @@
+{
+  "retrieved_utc_date": "2026-09-26",
+  "upstream_sdk": "ESP-IDF v5.3.2",
+  "license_choice_mbedtls": "Apache-2.0 (one of upstream alternatives)",
+  "not_a_complete_linker_sbom": true,
+  "sources": [
+    {
+      "file": "esp-idf-v5.3.2-APACHE-2.0.txt",
+      "url": "https://github.com/espressif/esp-idf/blob/v5.3.2/LICENSE",
+      "sha256": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac"
+    },
+    {
+      "file": "newlib-COPYING.NEWLIB",
+      "url": "https://github.com/espressif/esp-idf/blob/v5.3.2/components/newlib/COPYING.NEWLIB",
+      "sha256": "0dbddb0e21fc8a1db9de59be21abcc40f76688053f9ab875c2539b9c39ce223d"
+    },
+    {
+      "file": "FreeRTOS-LICENSE.md",
+      "url": "https://github.com/espressif/esp-idf/blob/v5.3.2/components/freertos/FreeRTOS-Kernel/LICENSE.md",
+      "sha256": "92798b9082a3ffab53ad3495460f53abcf0ac30e1408f2edd88d5119726ff6c4"
+    },
+    {
+      "file": "FreeRTOS-COPYRIGHT.txt",
+      "url": "https://github.com/espressif/esp-idf/blob/v5.3.2/components/freertos/FreeRTOS-Kernel/tasks.c",
+      "sha256": "e58376c0c133ff7134b82f43584550b74dae18c7d00b5459829c31e2df714e49"
+    },
+    {
+      "file": "MbedTLS-LICENSE.txt",
+      "url": "https://github.com/espressif/mbedtls/blob/98fcfd6d2cea90d306e8fde8e5bffd6087c9cda8/LICENSE",
+      "sha256": "babb82364dd251d31fc0a1ed46356c5247aa5871b1cc372232853aa372fae89a"
+    },
+    {
+      "file": "MbedTLS-COPYRIGHT.txt",
+      "url": "https://github.com/espressif/mbedtls/blob/98fcfd6d2cea90d306e8fde8e5bffd6087c9cda8/library/rsa.c",
+      "sha256": "104d525f688a4f47a1eabae6608a180f260efc35176b233cdbf7d8751650025c"
+    },
+    {
+      "file": "XTENSA-Tensilica-NOTICE.txt",
+      "url": "https://github.com/espressif/esp-idf/blob/v5.3.2/components/xtensa/include/xtensa/coreasm.h",
+      "sha256": "7787b2335924bca5b9558ecf55053d9082b636ea1640328e8351fed8513acd26"
+    },
+    {
+      "file": "XTENSA-Cadence-NOTICE.txt",
+      "url": "https://github.com/espressif/esp-idf/blob/v5.3.2/components/xtensa/xtensa_intr_asm.S",
+      "sha256": "f7e0d7332c67b1cbd7eaf8b95b0d98a3acf4b0fae5542f75b4d20028bd411d7a"
+    },
+    {
+      "file": "TLSF-BSD-3-Clause-NOTICE.txt",
+      "url": "https://github.com/mattconte/tlsf/blob/master/tlsf.h",
+      "sha256": "1b1c2502cdd0b824a7a6c44543e028a861c9f734cb72e2ff9b4f012925a3555f"
+    }
+  ],
+  "notes": [
+    "Top-level ESP-IDF NOTICE path returned not found; not silently replaced with a fabricated NOTICE.",
+    "TLSF exact IDF submodule 8fc595fe223cd0b3b5d7b29eb86825e4bd38e6e8 has BSD-3-Clause SPDX and Matthew Conte 2006-2016 attribution in tlsf.h/tlsf.c. Full matching notice recovered from original project tlsf.h.",
+    "Newlib full component copying notices included.",
+    "Compiler-runtime exact link contents still depend on actual ELF/map; this collection does not assert every SDK component or compiler runtime was linked or fully enumerated."
+  ]
+}

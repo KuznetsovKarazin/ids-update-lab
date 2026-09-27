@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "energy_blocks": 80,
+  "all_block_values_equal_to_original": true,
+  "hardware_access_attempted": false,
+  "source": "public release code and evidence only",
+  "measurement_origin": "reanalysis_of_preserved_actual_mcu_trace"
+}

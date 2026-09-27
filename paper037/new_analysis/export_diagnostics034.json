@@ -1,0 +1,107 @@
+{
+  "analysis": "posthoc_host_only_fixed_protocol",
+  "source_root": "/workspace/scratch/43cab15299bb/paper034/evidence_inputs/training",
+  "full_test_evaluated": false,
+  "range_reproduction": {
+    "input_scale_recomputed": 0.39812690019607544,
+    "input_scale_frozen": 0.39812684059143066,
+    "weights_biases_match": true
+  },
+  "per_channel_activation_grid": "frozen 030 input and output grids retained; only weight scales per output channel change",
+  "calibration_estimand": "resubstitution diagnostics on threshold-selection data; no independent generalization estimate",
+  "check_vector_selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+  "rows": [
+    {
+      "variant": "B_original",
+      "q_threshold": 10,
+      "normal_n": 2088,
+      "attack_n": 100000,
+      "false_positives": 19,
+      "true_positives": 73531,
+      "calibration_FPR": 0.009099616858237548,
+      "calibration_recall": 0.73531,
+      "calibration_changed_vs_B": 0,
+      "check_vector_n": 258,
+      "check_changed_vs_B": 0,
+      "check_q_min": -31,
+      "check_q_max": 14
+    },
+    {
+      "variant": "export_per_tensor_transferred",
+      "q_threshold": 10,
+      "normal_n": 2088,
+      "attack_n": 100000,
+      "false_positives": 421,
+      "true_positives": 71623,
+      "calibration_FPR": 0.20162835249042146,
+      "calibration_recall": 0.71623,
+      "calibration_changed_vs_B": 6692,
+      "check_vector_n": 258,
+      "check_changed_vs_B": 0,
+      "check_q_min": -34,
+      "check_q_max": 15
+    },
+    {
+      "variant": "export_per_tensor_recalibrated",
+      "q_threshold": 22,
+      "normal_n": 2088,
+      "attack_n": 100000,
+      "false_positives": 1,
+      "true_positives": 23933,
+      "calibration_FPR": 0.0004789272030651341,
+      "calibration_recall": 0.23933,
+      "calibration_changed_vs_B": 49702,
+      "check_vector_n": 258,
+      "check_changed_vs_B": 3,
+      "check_q_min": -34,
+      "check_q_max": 15
+    },
+    {
+      "variant": "export_per_channel_transferred",
+      "q_threshold": 10,
+      "normal_n": 2088,
+      "attack_n": 100000,
+      "false_positives": 419,
+      "true_positives": 72198,
+      "calibration_FPR": 0.2006704980842912,
+      "calibration_recall": 0.72198,
+      "calibration_changed_vs_B": 6637,
+      "check_vector_n": 258,
+      "check_changed_vs_B": 0,
+      "check_q_min": -34,
+      "check_q_max": 15
+    },
+    {
+      "variant": "export_per_channel_recalibrated",
+      "q_threshold": 21,
+      "normal_n": 2088,
+      "attack_n": 100000,
+      "false_positives": 0,
+      "true_positives": 23564,
+      "calibration_FPR": 0.0,
+      "calibration_recall": 0.23564,
+      "calibration_changed_vs_B": 50070,
+      "check_vector_n": 258,
+      "check_changed_vs_B": 3,
+      "check_q_min": -34,
+      "check_q_max": 15
+    }
+  ],
+  "certificate": {
+    "scope": "exact rational error bound around real-arithmetic converted network; host-frozen float32 preprocessing and integer reference graph; 258 check inputs only",
+    "certified": 0,
+    "inputs": 258,
+    "all_bounds_validated": true,
+    "method": "layerwise weight/bias/input/Q31/rounding/clipping error propagation",
+    "floating_vs_hardware_scope": "This does not certify MCU libm preprocessing or unspecified input neighborhoods"
+  },
+  "hashes": {
+    "samples/B_fit.npz": "3b40bbad7bf0d38938ecbd450c8d6a81e5f0a1d47211ba17bc5e5017270663c6",
+    "samples/B_cal.npz": "4f6d162704d163c2bc77f3cba86b235edff0d3f50a6aed40237ce2af8e9ab8d0",
+    "hardware_vectors/B_mlp_int8.json": "4dc31606dd474d2e1b45ab350799cb3bf35b90c46589c0129f7d45186d202582",
+    "models/B_mlp_int8.json": "60ca214737c50afdff2c68486882e79abdc454da5e0cc7ddadcba3e26cd9879d",
+    "models/B_mlp_float.json": "6a04ba945af9b0132c913025bcfcd2273c62fcc6f48d64d2fc846ad094dfb62f",
+    "models/mlp_float_compatible_first_layer.json": "428495a5daebb66a86c2a8cfd406b5b47475d759ce401cd0705cb01f58b3c3f6",
+    "models/mlp_int8_compatible_requantized.json": "ac891bb661970549f11b227ae2547f0790ba2565e63210d5c944e5f34eee0a8a"
+  }
+}

@@ -1,0 +1,33 @@
+\begin{tabular}{lrrrr}
+\toprule
+Pipeline & Recall (\%) & FPR (\%) & BA (\%) & Disagreement (\%) \\
+\midrule
+A LR & 10.627 & 8.779 & 50.924 & 3.201 \\
+A DT & 8.529 & 4.308 & 52.111 & 6.768 \\
+A MLP-F32 & 26.158 & 5.348 & 60.405 & 35.331 \\
+A MLP-I8 & 6.368 & 3.869 & 51.249 & 28.599 \\
+\midrule
+B LR & 11.395 & 9.858 & 50.769 & 0.000 \\
+B DT & 1.756 & 0.336 & 50.710 & 0.000 \\
+B MLP-F32 & 35.610 & 3.761 & 65.924 & 0.000 \\
+B MLP-I8 & 35.578 & 3.533 & 66.022 & 0.000 \\
+\midrule
+LR: stale threshold & 3.590 & 6.417 & 48.586 & 7.662 \\
+LR: stale scaler & 9.725 & 9.712 & 50.007 & 3.816 \\
+LR: stale scaler + threshold & 3.679 & 6.526 & 48.577 & 7.573 \\
+MLP-F32: stale threshold & 51.974 & 5.286 & 73.344 & 15.879 \\
+MLP-F32: stale scaler & 35.000 & 3.685 & 65.657 & 0.812 \\
+MLP-F32: stale scaler + threshold & 48.193 & 5.248 & 71.472 & 12.375 \\
+MLP-I8: stale logit threshold & 34.485 & 3.364 & 65.561 & 1.063 \\
+MLP-I8: stale scaler & 33.139 & 3.404 & 64.868 & 4.524 \\
+MLP-I8: stale scaler + threshold & 15.004 & 3.252 & 55.876 & 20.209 \\
+MLP-I8: stale input scale & 35.586 & 3.537 & 66.024 & 3.521 \\
+MLP-I8: stale threshold code & 46.054 & 3.650 & 71.202 & 10.137 \\
+DT: stale threshold & 33.861 & 4.478 & 64.691 & 31.191 \\
+\midrule
+LR: probability-preserving export & 11.395 & 9.858 & 50.769 & 0.000 \\
+LR: decision-preserving export & 11.395 & 9.858 & 50.769 & 0.000 \\
+MLP-F32: first-layer conversion & 35.610 & 3.761 & 65.924 & 0.000 \\
+MLP-I8: conversion + requantization & 36.635 & 5.356 & 65.640 & 3.520 \\
+\bottomrule
+\end{tabular}

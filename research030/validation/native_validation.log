@@ -1,0 +1,13 @@
+test_float_threshold_endpoints_and_exact_tie (__main__.NativeParity.test_float_threshold_endpoints_and_exact_tie) ... ok
+test_four_families_random_and_extreme_inputs (__main__.NativeParity.test_four_families_random_and_extreme_inputs) ... ok
+test_integer_rounding_half_ties_and_bounds (__main__.NativeParity.test_integer_rounding_half_ties_and_bounds) ... ok
+test_integer_threshold_endpoints (__main__.NativeParity.test_integer_threshold_endpoints) ... ok
+test_invalid_inputs_rejected (__main__.NativeParity.test_invalid_inputs_rejected) ... ok
+test_short_decoder_under_sanitizers (__main__.NativeParity.test_short_decoder_under_sanitizers) ... ok
+test_signed_malformed_mlp_rejected (__main__.NativeParity.test_signed_malformed_mlp_rejected) ... ok
+test_tree_boundary (__main__.NativeParity.test_tree_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 4.600s
+
+OK

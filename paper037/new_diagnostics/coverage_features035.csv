@@ -1,0 +1,9 @@
+feature,min,max,median,nonzero_min,zero_count,zero_fraction,distinct_values
+duration,0.0,0.0,0.0,,258,1.0,1
+src_bytes,0.0,0.0,0.0,,258,1.0,1
+dst_bytes,0.0,0.0,0.0,,258,1.0,1
+missed_bytes,0.0,0.0,0.0,,258,1.0,1
+src_pkts,0.0,0.0,0.0,,258,1.0,1
+src_ip_bytes,0.0,0.0,0.0,,258,1.0,1
+dst_pkts,0.0,1.0,1.0,1.0,1,0.003875968992248062,2
+dst_ip_bytes,0.0,3008.0,239.5,40.0,1,0.003875968992248062,258

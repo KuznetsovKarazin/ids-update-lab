@@ -1,0 +1,3445 @@
+{
+  "comparisons": {
+    "dt": {
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 30092026,
+      "bundle_median_us": 31736.0,
+      "median_paired_bundle_minus_whole_us": -1177779.0,
+      "n_paired_blocks": 10,
+      "paired_percentile_bootstrap_95CI_us": [
+        -1190928.5,
+        -1172471.0
+      ],
+      "whole_median_us": 1210145.5
+    },
+    "lr": {
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 30092026,
+      "bundle_median_us": 28718.0,
+      "median_paired_bundle_minus_whole_us": -1177619.5,
+      "n_paired_blocks": 10,
+      "paired_percentile_bootstrap_95CI_us": [
+        -1187565.0,
+        -1174152.5
+      ],
+      "whole_median_us": 1209134.5
+    },
+    "mlp_float": {
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 30092026,
+      "bundle_median_us": 29310.0,
+      "median_paired_bundle_minus_whole_us": -1178147.0,
+      "n_paired_blocks": 10,
+      "paired_percentile_bootstrap_95CI_us": [
+        -1189248.5,
+        -1167887.0
+      ],
+      "whole_median_us": 1206139.5
+    },
+    "mlp_int8": {
+      "bootstrap_draws": 10000,
+      "bootstrap_seed": 30092026,
+      "bundle_median_us": 31490.0,
+      "median_paired_bundle_minus_whole_us": -1177466.5,
+      "n_paired_blocks": 10,
+      "paired_percentile_bootstrap_95CI_us": [
+        -1182360.9125,
+        -1170041.5
+      ],
+      "whole_median_us": 1207110.5
+    }
+  },
+  "host_metric_scope": "end-to-end serial protocol, not intrinsic update algorithm time",
+  "metric_scope": "bundle active total vs OTA active summed stages; OTA reboot excluded from device_active and included in host_elapsed",
+  "primary_rows": [
+    {
+      "block": 1,
+      "device_active_us": 33081,
+      "family": "lr",
+      "host_elapsed_ns": 87444400,
+      "id": "b01-lr-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 448,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 456
+      },
+      "timing_us": {
+        "body_write": 892,
+        "candidate_verify": 2031,
+        "commit": 305,
+        "erase": 17125,
+        "journal_body": 10376,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 136,
+        "readback_verify": 1650,
+        "total": 33081
+      },
+      "tx_wire_bytes": 904,
+      "updates": 128
+    },
+    {
+      "block": 1,
+      "device_active_us": 1223797,
+      "family": "lr",
+      "host_elapsed_ns": 10688976100,
+      "id": "b01-lr-whole",
+      "ota_begin": {
+        "begin_us": 511657,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 509468,
+        "signature_verify_us": 1794,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 511657,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 579981,
+        "device_active_us": 1223797,
+        "event": "fw_ready",
+        "finalize_us": 132159,
+        "hash_sum_us": 21771,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557049
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 1,
+      "device_active_us": 1196236,
+      "family": "dt",
+      "host_elapsed_ns": 10706766200,
+      "id": "b01-dt-whole",
+      "ota_begin": {
+        "begin_us": 501601,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 499409,
+        "signature_verify_us": 1803,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 501601,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580201,
+        "device_active_us": 1196236,
+        "event": "fw_ready",
+        "finalize_us": 114434,
+        "hash_sum_us": 21759,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557287
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 1,
+      "device_active_us": 27403,
+      "family": "dt",
+      "host_elapsed_ns": 84154100,
+      "id": "b01-dt-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1104,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1112
+      },
+      "timing_us": {
+        "body_write": 1858,
+        "candidate_verify": 2200,
+        "commit": 3367,
+        "erase": 17045,
+        "journal_body": 402,
+        "journal_commit": 273,
+        "journal_prepare": 90,
+        "readback": 227,
+        "readback_verify": 1741,
+        "total": 27403
+      },
+      "tx_wire_bytes": 2216,
+      "updates": 128
+    },
+    {
+      "block": 1,
+      "device_active_us": 33914,
+      "family": "mlp_float",
+      "host_elapsed_ns": 92332500,
+      "id": "b01-mlp_float-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1588,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1596
+      },
+      "timing_us": {
+        "body_write": 2567,
+        "candidate_verify": 2314,
+        "commit": 7948,
+        "erase": 17877,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 301,
+        "readback_verify": 1931,
+        "total": 33914
+      },
+      "tx_wire_bytes": 3184,
+      "updates": 128
+    },
+    {
+      "block": 1,
+      "device_active_us": 1204175,
+      "family": "mlp_float",
+      "host_elapsed_ns": 10726572300,
+      "id": "b01-mlp_float-whole",
+      "ota_begin": {
+        "begin_us": 499876,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 497685,
+        "signature_verify_us": 1799,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 499876,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580257,
+        "device_active_us": 1204175,
+        "event": "fw_ready",
+        "finalize_us": 124042,
+        "hash_sum_us": 21764,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557336
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 1,
+      "device_active_us": 1205267,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 10735686400,
+      "id": "b01-mlp_int8-whole",
+      "ota_begin": {
+        "begin_us": 510305,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 508116,
+        "signature_verify_us": 1795,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 510305,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580277,
+        "device_active_us": 1205267,
+        "event": "fw_ready",
+        "finalize_us": 114685,
+        "hash_sum_us": 21770,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557349
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 1,
+      "device_active_us": 30790,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 86151600,
+      "id": "b01-mlp_int8-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 840,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 848
+      },
+      "timing_us": {
+        "body_write": 1472,
+        "candidate_verify": 2262,
+        "commit": 6113,
+        "erase": 17875,
+        "journal_body": 401,
+        "journal_commit": 273,
+        "journal_prepare": 92,
+        "readback": 190,
+        "readback_verify": 1904,
+        "total": 30790
+      },
+      "tx_wire_bytes": 1688,
+      "updates": 128
+    },
+    {
+      "block": 2,
+      "device_active_us": 32500,
+      "family": "dt",
+      "host_elapsed_ns": 89004600,
+      "id": "b02-dt-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1104,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1112
+      },
+      "timing_us": {
+        "body_write": 1871,
+        "candidate_verify": 2198,
+        "commit": 7704,
+        "erase": 17782,
+        "journal_body": 402,
+        "journal_commit": 273,
+        "journal_prepare": 90,
+        "readback": 227,
+        "readback_verify": 1748,
+        "total": 32500
+      },
+      "tx_wire_bytes": 2216,
+      "updates": 128
+    },
+    {
+      "block": 2,
+      "device_active_us": 1204971,
+      "family": "dt",
+      "host_elapsed_ns": 10687516600,
+      "id": "b02-dt-whole",
+      "ota_begin": {
+        "begin_us": 498900,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 496709,
+        "signature_verify_us": 1803,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 498900,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580235,
+        "device_active_us": 1204971,
+        "event": "fw_ready",
+        "finalize_us": 125836,
+        "hash_sum_us": 21787,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557280
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 2,
+      "device_active_us": 1204526,
+      "family": "mlp_float",
+      "host_elapsed_ns": 10708400900,
+      "id": "b02-mlp_float-whole",
+      "ota_begin": {
+        "begin_us": 510226,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 508036,
+        "signature_verify_us": 1799,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 510226,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580207,
+        "device_active_us": 1204526,
+        "event": "fw_ready",
+        "finalize_us": 114093,
+        "hash_sum_us": 21766,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557290
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 2,
+      "device_active_us": 27758,
+      "family": "mlp_float",
+      "host_elapsed_ns": 86144700,
+      "id": "b02-mlp_float-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1588,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1596
+      },
+      "timing_us": {
+        "body_write": 2566,
+        "candidate_verify": 2320,
+        "commit": 1029,
+        "erase": 18643,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 293,
+        "readback_verify": 1931,
+        "total": 27758
+      },
+      "tx_wire_bytes": 3184,
+      "updates": 128
+    },
+    {
+      "block": 2,
+      "device_active_us": 26043,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 81364200,
+      "id": "b02-mlp_int8-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 840,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 848
+      },
+      "timing_us": {
+        "body_write": 1472,
+        "candidate_verify": 2253,
+        "commit": 646,
+        "erase": 18599,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 191,
+        "readback_verify": 1908,
+        "total": 26043
+      },
+      "tx_wire_bytes": 1688,
+      "updates": 128
+    },
+    {
+      "block": 2,
+      "device_active_us": 1205055,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 10700002700,
+      "id": "b02-mlp_int8-whole",
+      "ota_begin": {
+        "begin_us": 501403,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 499215,
+        "signature_verify_us": 1794,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 501403,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580046,
+        "device_active_us": 1205055,
+        "event": "fw_ready",
+        "finalize_us": 123606,
+        "hash_sum_us": 21766,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557119
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 2,
+      "device_active_us": 1200099,
+      "family": "lr",
+      "host_elapsed_ns": 10768189500,
+      "id": "b02-lr-whole",
+      "ota_begin": {
+        "begin_us": 502944,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 500755,
+        "signature_verify_us": 1795,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 502944,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580171,
+        "device_active_us": 1200099,
+        "event": "fw_ready",
+        "finalize_us": 116984,
+        "hash_sum_us": 21775,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557242
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 2,
+      "device_active_us": 24288,
+      "family": "lr",
+      "host_elapsed_ns": 79258500,
+      "id": "b02-lr-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 448,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 456
+      },
+      "timing_us": {
+        "body_write": 892,
+        "candidate_verify": 2031,
+        "commit": 850,
+        "erase": 17763,
+        "journal_body": 401,
+        "journal_commit": 273,
+        "journal_prepare": 92,
+        "readback": 137,
+        "readback_verify": 1650,
+        "total": 24288
+      },
+      "tx_wire_bytes": 904,
+      "updates": 128
+    },
+    {
+      "block": 3,
+      "device_active_us": 33301,
+      "family": "mlp_float",
+      "host_elapsed_ns": 93110300,
+      "id": "b03-mlp_float-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1588,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1596
+      },
+      "timing_us": {
+        "body_write": 2578,
+        "candidate_verify": 2323,
+        "commit": 6689,
+        "erase": 18510,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 294,
+        "readback_verify": 1931,
+        "total": 33301
+      },
+      "tx_wire_bytes": 3184,
+      "updates": 128
+    },
+    {
+      "block": 3,
+      "device_active_us": 1201188,
+      "family": "mlp_float",
+      "host_elapsed_ns": 10687763900,
+      "id": "b03-mlp_float-whole",
+      "ota_begin": {
+        "begin_us": 501660,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 499468,
+        "signature_verify_us": 1798,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 501660,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580226,
+        "device_active_us": 1201188,
+        "event": "fw_ready",
+        "finalize_us": 119302,
+        "hash_sum_us": 21753,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557298
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 3,
+      "device_active_us": 1208754,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 10685818400,
+      "id": "b03-mlp_int8-whole",
+      "ota_begin": {
+        "begin_us": 510413,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 508225,
+        "signature_verify_us": 1794,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 510413,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580094,
+        "device_active_us": 1208754,
+        "event": "fw_ready",
+        "finalize_us": 118247,
+        "hash_sum_us": 21798,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557139
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 3,
+      "device_active_us": 28392,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 84414600,
+      "id": "b03-mlp_int8-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 840,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 848
+      },
+      "timing_us": {
+        "body_write": 1471,
+        "candidate_verify": 2253,
+        "commit": 3859,
+        "erase": 17742,
+        "journal_body": 401,
+        "journal_commit": 273,
+        "journal_prepare": 92,
+        "readback": 191,
+        "readback_verify": 1909,
+        "total": 28392
+      },
+      "tx_wire_bytes": 1688,
+      "updates": 128
+    },
+    {
+      "block": 3,
+      "device_active_us": 27243,
+      "family": "lr",
+      "host_elapsed_ns": 81096800,
+      "id": "b03-lr-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 448,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 456
+      },
+      "timing_us": {
+        "body_write": 893,
+        "candidate_verify": 2028,
+        "commit": 3118,
+        "erase": 18462,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 138,
+        "readback_verify": 1644,
+        "total": 27243
+      },
+      "tx_wire_bytes": 904,
+      "updates": 128
+    },
+    {
+      "block": 3,
+      "device_active_us": 1204005,
+      "family": "lr",
+      "host_elapsed_ns": 10677950300,
+      "id": "b03-lr-whole",
+      "ota_begin": {
+        "begin_us": 501560,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 499372,
+        "signature_verify_us": 1794,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 501560,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580248,
+        "device_active_us": 1204005,
+        "event": "fw_ready",
+        "finalize_us": 122197,
+        "hash_sum_us": 21760,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557324
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 3,
+      "device_active_us": 1217026,
+      "family": "dt",
+      "host_elapsed_ns": 10657116400,
+      "id": "b03-dt-whole",
+      "ota_begin": {
+        "begin_us": 512798,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 510606,
+        "signature_verify_us": 1803,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 512798,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 583943,
+        "device_active_us": 1217026,
+        "event": "fw_ready",
+        "finalize_us": 120285,
+        "hash_sum_us": 21792,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 560975
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 3,
+      "device_active_us": 34404,
+      "family": "dt",
+      "host_elapsed_ns": 91608700,
+      "id": "b03-dt-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1104,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1112
+      },
+      "timing_us": {
+        "body_write": 1858,
+        "candidate_verify": 2198,
+        "commit": 8995,
+        "erase": 18408,
+        "journal_body": 402,
+        "journal_commit": 273,
+        "journal_prepare": 90,
+        "readback": 227,
+        "readback_verify": 1748,
+        "total": 34404
+      },
+      "tx_wire_bytes": 2216,
+      "updates": 128
+    },
+    {
+      "block": 4,
+      "device_active_us": 31989,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 87633100,
+      "id": "b04-mlp_int8-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 840,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 848
+      },
+      "timing_us": {
+        "body_write": 1479,
+        "candidate_verify": 2255,
+        "commit": 7520,
+        "erase": 17661,
+        "journal_body": 401,
+        "journal_commit": 273,
+        "journal_prepare": 92,
+        "readback": 191,
+        "readback_verify": 1908,
+        "total": 31989
+      },
+      "tx_wire_bytes": 1688,
+      "updates": 128
+    },
+    {
+      "block": 4,
+      "device_active_us": 1197125,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 10666621000,
+      "id": "b04-mlp_int8-whole",
+      "ota_begin": {
+        "begin_us": 500940,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 498750,
+        "signature_verify_us": 1795,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 500940,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580270,
+        "device_active_us": 1197125,
+        "event": "fw_ready",
+        "finalize_us": 115915,
+        "hash_sum_us": 21776,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557326
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 4,
+      "device_active_us": 1205514,
+      "family": "lr",
+      "host_elapsed_ns": 10635228100,
+      "id": "b04-lr-whole",
+      "ota_begin": {
+        "begin_us": 510838,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 508649,
+        "signature_verify_us": 1794,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 510838,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 584127,
+        "device_active_us": 1205514,
+        "event": "fw_ready",
+        "finalize_us": 110549,
+        "hash_sum_us": 21793,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 561173
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 4,
+      "device_active_us": 29154,
+      "family": "lr",
+      "host_elapsed_ns": 83374100,
+      "id": "b04-lr-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 448,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 456
+      },
+      "timing_us": {
+        "body_write": 892,
+        "candidate_verify": 2031,
+        "commit": 4163,
+        "erase": 19312,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 136,
+        "readback_verify": 1650,
+        "total": 29154
+      },
+      "tx_wire_bytes": 904,
+      "updates": 128
+    },
+    {
+      "block": 4,
+      "device_active_us": 31908,
+      "family": "dt",
+      "host_elapsed_ns": 88406800,
+      "id": "b04-dt-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1104,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1112
+      },
+      "timing_us": {
+        "body_write": 1871,
+        "candidate_verify": 2199,
+        "commit": 6497,
+        "erase": 18397,
+        "journal_body": 402,
+        "journal_commit": 273,
+        "journal_prepare": 90,
+        "readback": 227,
+        "readback_verify": 1748,
+        "total": 31908
+      },
+      "tx_wire_bytes": 2216,
+      "updates": 128
+    },
+    {
+      "block": 4,
+      "device_active_us": 1209275,
+      "family": "dt",
+      "host_elapsed_ns": 10677316000,
+      "id": "b04-dt-whole",
+      "ota_begin": {
+        "begin_us": 511449,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 509256,
+        "signature_verify_us": 1804,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 511449,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580180,
+        "device_active_us": 1209275,
+        "event": "fw_ready",
+        "finalize_us": 117646,
+        "hash_sum_us": 21790,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557241
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 4,
+      "device_active_us": 1207753,
+      "family": "mlp_float",
+      "host_elapsed_ns": 10686410000,
+      "id": "b04-mlp_float-whole",
+      "ota_begin": {
+        "begin_us": 511075,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 508884,
+        "signature_verify_us": 1799,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 511075,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580492,
+        "device_active_us": 1207753,
+        "event": "fw_ready",
+        "finalize_us": 116186,
+        "hash_sum_us": 21763,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557558
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 4,
+      "device_active_us": 28227,
+      "family": "mlp_float",
+      "host_elapsed_ns": 87263900,
+      "id": "b04-mlp_float-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1588,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1596
+      },
+      "timing_us": {
+        "body_write": 2566,
+        "candidate_verify": 2333,
+        "commit": 1732,
+        "erase": 18402,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 293,
+        "readback_verify": 1926,
+        "total": 28227
+      },
+      "tx_wire_bytes": 3184,
+      "updates": 128
+    },
+    {
+      "block": 5,
+      "device_active_us": 34340,
+      "family": "lr",
+      "host_elapsed_ns": 88706100,
+      "id": "b05-lr-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 448,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 456
+      },
+      "timing_us": {
+        "body_write": 892,
+        "candidate_verify": 2028,
+        "commit": 10259,
+        "erase": 18407,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 137,
+        "readback_verify": 1651,
+        "total": 34340
+      },
+      "tx_wire_bytes": 904,
+      "updates": 128
+    },
+    {
+      "block": 5,
+      "device_active_us": 1216680,
+      "family": "lr",
+      "host_elapsed_ns": 10696936100,
+      "id": "b05-lr-whole",
+      "ota_begin": {
+        "begin_us": 509452,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 507263,
+        "signature_verify_us": 1795,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 509452,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580312,
+        "device_active_us": 1216680,
+        "event": "fw_ready",
+        "finalize_us": 126916,
+        "hash_sum_us": 21781,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557380
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 5,
+      "device_active_us": 1211016,
+      "family": "dt",
+      "host_elapsed_ns": 10698970800,
+      "id": "b05-dt-whole",
+      "ota_begin": {
+        "begin_us": 513100,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 510908,
+        "signature_verify_us": 1803,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 513100,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580354,
+        "device_active_us": 1211016,
+        "event": "fw_ready",
+        "finalize_us": 117562,
+        "hash_sum_us": 21779,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557439
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 5,
+      "device_active_us": 32825,
+      "family": "dt",
+      "host_elapsed_ns": 89334100,
+      "id": "b05-dt-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1104,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1112
+      },
+      "timing_us": {
+        "body_write": 1858,
+        "candidate_verify": 2207,
+        "commit": 8264,
+        "erase": 17541,
+        "journal_body": 402,
+        "journal_commit": 274,
+        "journal_prepare": 90,
+        "readback": 237,
+        "readback_verify": 1748,
+        "total": 32825
+      },
+      "tx_wire_bytes": 2216,
+      "updates": 128
+    },
+    {
+      "block": 5,
+      "device_active_us": 29936,
+      "family": "mlp_float",
+      "host_elapsed_ns": 89552300,
+      "id": "b05-mlp_float-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1588,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1596
+      },
+      "timing_us": {
+        "body_write": 2567,
+        "candidate_verify": 2317,
+        "commit": 3489,
+        "erase": 18359,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 293,
+        "readback_verify": 1935,
+        "total": 29936
+      },
+      "tx_wire_bytes": 3184,
+      "updates": 128
+    },
+    {
+      "block": 5,
+      "device_active_us": 1213914,
+      "family": "mlp_float",
+      "host_elapsed_ns": 10696192200,
+      "id": "b05-mlp_float-whole",
+      "ota_begin": {
+        "begin_us": 519264,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 517073,
+        "signature_verify_us": 1799,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 519264,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580247,
+        "device_active_us": 1213914,
+        "event": "fw_ready",
+        "finalize_us": 114403,
+        "hash_sum_us": 21766,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557313
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 5,
+      "device_active_us": 1196725,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 10678287100,
+      "id": "b05-mlp_int8-whole",
+      "ota_begin": {
+        "begin_us": 502287,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 500097,
+        "signature_verify_us": 1795,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 502287,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580459,
+        "device_active_us": 1196725,
+        "event": "fw_ready",
+        "finalize_us": 113979,
+        "hash_sum_us": 21779,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557518
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 5,
+      "device_active_us": 31119,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 86872100,
+      "id": "b05-mlp_int8-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 840,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 848
+      },
+      "timing_us": {
+        "body_write": 1471,
+        "candidate_verify": 2263,
+        "commit": 5091,
+        "erase": 19215,
+        "journal_body": 401,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 191,
+        "readback_verify": 1915,
+        "total": 31119
+      },
+      "tx_wire_bytes": 1688,
+      "updates": 128
+    },
+    {
+      "block": 6,
+      "device_active_us": 28509,
+      "family": "dt",
+      "host_elapsed_ns": 85778200,
+      "id": "b06-dt-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1104,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1112
+      },
+      "timing_us": {
+        "body_write": 1858,
+        "candidate_verify": 2198,
+        "commit": 2376,
+        "erase": 19132,
+        "journal_body": 402,
+        "journal_commit": 274,
+        "journal_prepare": 90,
+        "readback": 227,
+        "readback_verify": 1748,
+        "total": 28509
+      },
+      "tx_wire_bytes": 2216,
+      "updates": 128
+    },
+    {
+      "block": 6,
+      "device_active_us": 1213131,
+      "family": "dt",
+      "host_elapsed_ns": 10759381700,
+      "id": "b06-dt-whole",
+      "ota_begin": {
+        "begin_us": 500988,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 498793,
+        "signature_verify_us": 1805,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 500988,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 586287,
+        "device_active_us": 1213131,
+        "event": "fw_ready",
+        "finalize_us": 125856,
+        "hash_sum_us": 21761,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 563379
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 6,
+      "device_active_us": 1200243,
+      "family": "mlp_float",
+      "host_elapsed_ns": 10688407600,
+      "id": "b06-mlp_float-whole",
+      "ota_begin": {
+        "begin_us": 500672,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 498482,
+        "signature_verify_us": 1799,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 500672,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580446,
+        "device_active_us": 1200243,
+        "event": "fw_ready",
+        "finalize_us": 119125,
+        "hash_sum_us": 21749,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557534
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 6,
+      "device_active_us": 35862,
+      "family": "mlp_float",
+      "host_elapsed_ns": 94400800,
+      "id": "b06-mlp_float-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1588,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1596
+      },
+      "timing_us": {
+        "body_write": 2568,
+        "candidate_verify": 2308,
+        "commit": 8563,
+        "erase": 19214,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 293,
+        "readback_verify": 1938,
+        "total": 35862
+      },
+      "tx_wire_bytes": 3184,
+      "updates": 128
+    },
+    {
+      "block": 6,
+      "device_active_us": 28553,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 84453900,
+      "id": "b06-mlp_int8-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 840,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 848
+      },
+      "timing_us": {
+        "body_write": 2872,
+        "candidate_verify": 2253,
+        "commit": 314,
+        "erase": 20041,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 191,
+        "readback_verify": 1908,
+        "total": 28553
+      },
+      "tx_wire_bytes": 1688,
+      "updates": 128
+    },
+    {
+      "block": 6,
+      "device_active_us": 1205467,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 10687463800,
+      "id": "b06-mlp_int8-whole",
+      "ota_begin": {
+        "begin_us": 500311,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 498123,
+        "signature_verify_us": 1794,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 500311,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580516,
+        "device_active_us": 1205467,
+        "event": "fw_ready",
+        "finalize_us": 124640,
+        "hash_sum_us": 21789,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557546
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 6,
+      "device_active_us": 1198609,
+      "family": "lr",
+      "host_elapsed_ns": 10698344300,
+      "id": "b06-lr-whole",
+      "ota_begin": {
+        "begin_us": 502240,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 500052,
+        "signature_verify_us": 1795,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 502240,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580516,
+        "device_active_us": 1198609,
+        "event": "fw_ready",
+        "finalize_us": 115853,
+        "hash_sum_us": 21767,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557578
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 6,
+      "device_active_us": 27066,
+      "family": "lr",
+      "host_elapsed_ns": 80889800,
+      "id": "b06-lr-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 448,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 456
+      },
+      "timing_us": {
+        "body_write": 892,
+        "candidate_verify": 2028,
+        "commit": 2275,
+        "erase": 19129,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 137,
+        "readback_verify": 1644,
+        "total": 27066
+      },
+      "tx_wire_bytes": 904,
+      "updates": 128
+    },
+    {
+      "block": 7,
+      "device_active_us": 28684,
+      "family": "mlp_float",
+      "host_elapsed_ns": 86638100,
+      "id": "b07-mlp_float-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1588,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1596
+      },
+      "timing_us": {
+        "body_write": 2567,
+        "candidate_verify": 2317,
+        "commit": 636,
+        "erase": 19964,
+        "journal_body": 401,
+        "journal_commit": 273,
+        "journal_prepare": 92,
+        "readback": 292,
+        "readback_verify": 1931,
+        "total": 28684
+      },
+      "tx_wire_bytes": 3184,
+      "updates": 128
+    },
+    {
+      "block": 7,
+      "device_active_us": 1193190,
+      "family": "mlp_float",
+      "host_elapsed_ns": 10647543000,
+      "id": "b07-mlp_float-whole",
+      "ota_begin": {
+        "begin_us": 500856,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 498666,
+        "signature_verify_us": 1799,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 500856,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580225,
+        "device_active_us": 1193190,
+        "event": "fw_ready",
+        "finalize_us": 112109,
+        "hash_sum_us": 21781,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557279
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 7,
+      "device_active_us": 1210118,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 10687486900,
+      "id": "b07-mlp_int8-whole",
+      "ota_begin": {
+        "begin_us": 518028,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 515839,
+        "signature_verify_us": 1794,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 518028,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580292,
+        "device_active_us": 1210118,
+        "event": "fw_ready",
+        "finalize_us": 111798,
+        "hash_sum_us": 21777,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557346
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 7,
+      "device_active_us": 35963,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 92098000,
+      "id": "b07-mlp_int8-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 840,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 848
+      },
+      "timing_us": {
+        "body_write": 1472,
+        "candidate_verify": 2253,
+        "commit": 9255,
+        "erase": 19911,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 191,
+        "readback_verify": 1908,
+        "total": 35963
+      },
+      "tx_wire_bytes": 1688,
+      "updates": 128
+    },
+    {
+      "block": 7,
+      "device_active_us": 26632,
+      "family": "lr",
+      "host_elapsed_ns": 80408000,
+      "id": "b07-lr-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 448,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 456
+      },
+      "timing_us": {
+        "body_write": 892,
+        "candidate_verify": 2031,
+        "commit": 1023,
+        "erase": 19934,
+        "journal_body": 401,
+        "journal_commit": 273,
+        "journal_prepare": 92,
+        "readback": 137,
+        "readback_verify": 1650,
+        "total": 26632
+      },
+      "tx_wire_bytes": 904,
+      "updates": 128
+    },
+    {
+      "block": 7,
+      "device_active_us": 1197812,
+      "family": "lr",
+      "host_elapsed_ns": 10676747800,
+      "id": "b07-lr-whole",
+      "ota_begin": {
+        "begin_us": 503100,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 500911,
+        "signature_verify_us": 1795,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 503100,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580387,
+        "device_active_us": 1197812,
+        "event": "fw_ready",
+        "finalize_us": 114325,
+        "hash_sum_us": 21744,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557499
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 7,
+      "device_active_us": 1204878,
+      "family": "dt",
+      "host_elapsed_ns": 10682574300,
+      "id": "b07-dt-whole",
+      "ota_begin": {
+        "begin_us": 510958,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 508765,
+        "signature_verify_us": 1803,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 510958,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580332,
+        "device_active_us": 1204878,
+        "event": "fw_ready",
+        "finalize_us": 113588,
+        "hash_sum_us": 21777,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557399
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 7,
+      "device_active_us": 28808,
+      "family": "dt",
+      "host_elapsed_ns": 85297300,
+      "id": "b07-dt-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1104,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1112
+      },
+      "timing_us": {
+        "body_write": 1858,
+        "candidate_verify": 2199,
+        "commit": 1935,
+        "erase": 19872,
+        "journal_body": 401,
+        "journal_commit": 274,
+        "journal_prepare": 89,
+        "readback": 227,
+        "readback_verify": 1747,
+        "total": 28808
+      },
+      "tx_wire_bytes": 2216,
+      "updates": 128
+    },
+    {
+      "block": 8,
+      "device_active_us": 35000,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 90906600,
+      "id": "b08-mlp_int8-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 840,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 848
+      },
+      "timing_us": {
+        "body_write": 1472,
+        "candidate_verify": 2253,
+        "commit": 8309,
+        "erase": 19884,
+        "journal_body": 401,
+        "journal_commit": 273,
+        "journal_prepare": 92,
+        "readback": 191,
+        "readback_verify": 1916,
+        "total": 35000
+      },
+      "tx_wire_bytes": 1688,
+      "updates": 128
+    },
+    {
+      "block": 8,
+      "device_active_us": 1221678,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 10700348100,
+      "id": "b08-mlp_int8-whole",
+      "ota_begin": {
+        "begin_us": 512725,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 510537,
+        "signature_verify_us": 1794,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 512725,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580215,
+        "device_active_us": 1221678,
+        "event": "fw_ready",
+        "finalize_us": 128738,
+        "hash_sum_us": 21773,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557283
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 8,
+      "device_active_us": 1212755,
+      "family": "lr",
+      "host_elapsed_ns": 10692598400,
+      "id": "b08-lr-whole",
+      "ota_begin": {
+        "begin_us": 511448,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 509259,
+        "signature_verify_us": 1794,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 511448,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580280,
+        "device_active_us": 1212755,
+        "event": "fw_ready",
+        "finalize_us": 121027,
+        "hash_sum_us": 21802,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557325
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 8,
+      "device_active_us": 34278,
+      "family": "lr",
+      "host_elapsed_ns": 88060700,
+      "id": "b08-lr-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 448,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 456
+      },
+      "timing_us": {
+        "body_write": 891,
+        "candidate_verify": 2029,
+        "commit": 8697,
+        "erase": 19898,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 137,
+        "readback_verify": 1659,
+        "total": 34278
+      },
+      "tx_wire_bytes": 904,
+      "updates": 128
+    },
+    {
+      "block": 8,
+      "device_active_us": 31849,
+      "family": "dt",
+      "host_elapsed_ns": 88314900,
+      "id": "b08-dt-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1104,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1112
+      },
+      "timing_us": {
+        "body_write": 5727,
+        "candidate_verify": 2203,
+        "commit": 299,
+        "erase": 20683,
+        "journal_body": 402,
+        "journal_commit": 273,
+        "journal_prepare": 90,
+        "readback": 227,
+        "readback_verify": 1744,
+        "total": 31849
+      },
+      "tx_wire_bytes": 2216,
+      "updates": 128
+    },
+    {
+      "block": 8,
+      "device_active_us": 1231084,
+      "family": "dt",
+      "host_elapsed_ns": 10710096600,
+      "id": "b08-dt-whole",
+      "ota_begin": {
+        "begin_us": 522150,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 519958,
+        "signature_verify_us": 1803,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 522150,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580564,
+        "device_active_us": 1231084,
+        "event": "fw_ready",
+        "finalize_us": 128370,
+        "hash_sum_us": 21786,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557623
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 8,
+      "device_active_us": 1231280,
+      "family": "mlp_float",
+      "host_elapsed_ns": 10712407300,
+      "id": "b08-mlp_float-whole",
+      "ota_begin": {
+        "begin_us": 520442,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 518251,
+        "signature_verify_us": 1799,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 520442,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580461,
+        "device_active_us": 1231280,
+        "event": "fw_ready",
+        "finalize_us": 130377,
+        "hash_sum_us": 21767,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557547
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 8,
+      "device_active_us": 28471,
+      "family": "mlp_float",
+      "host_elapsed_ns": 87017200,
+      "id": "b08-mlp_float-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1588,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1596
+      },
+      "timing_us": {
+        "body_write": 2566,
+        "candidate_verify": 2317,
+        "commit": 528,
+        "erase": 19864,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 293,
+        "readback_verify": 1931,
+        "total": 28471
+      },
+      "tx_wire_bytes": 3184,
+      "updates": 128
+    },
+    {
+      "block": 9,
+      "device_active_us": 28282,
+      "family": "lr",
+      "host_elapsed_ns": 81722500,
+      "id": "b09-lr-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 448,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 456
+      },
+      "timing_us": {
+        "body_write": 893,
+        "candidate_verify": 2029,
+        "commit": 2757,
+        "erase": 19858,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 138,
+        "readback_verify": 1650,
+        "total": 28282
+      },
+      "tx_wire_bytes": 904,
+      "updates": 128
+    },
+    {
+      "block": 9,
+      "device_active_us": 1228518,
+      "family": "lr",
+      "host_elapsed_ns": 10710480200,
+      "id": "b09-lr-whole",
+      "ota_begin": {
+        "begin_us": 521534,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 519346,
+        "signature_verify_us": 1795,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 521534,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580515,
+        "device_active_us": 1228518,
+        "event": "fw_ready",
+        "finalize_us": 126469,
+        "hash_sum_us": 21822,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557543
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 9,
+      "device_active_us": 1203522,
+      "family": "dt",
+      "host_elapsed_ns": 10692056400,
+      "id": "b09-dt-whole",
+      "ota_begin": {
+        "begin_us": 510579,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 508388,
+        "signature_verify_us": 1803,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 510579,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580455,
+        "device_active_us": 1203522,
+        "event": "fw_ready",
+        "finalize_us": 112488,
+        "hash_sum_us": 21803,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557501
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 9,
+      "device_active_us": 31623,
+      "family": "dt",
+      "host_elapsed_ns": 88881000,
+      "id": "b09-dt-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1104,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1112
+      },
+      "timing_us": {
+        "body_write": 1858,
+        "candidate_verify": 2206,
+        "commit": 5600,
+        "erase": 19015,
+        "journal_body": 402,
+        "journal_commit": 274,
+        "journal_prepare": 90,
+        "readback": 227,
+        "readback_verify": 1748,
+        "total": 31623
+      },
+      "tx_wire_bytes": 2216,
+      "updates": 128
+    },
+    {
+      "block": 9,
+      "device_active_us": 28500,
+      "family": "mlp_float",
+      "host_elapsed_ns": 87810900,
+      "id": "b09-mlp_float-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1588,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1596
+      },
+      "timing_us": {
+        "body_write": 2566,
+        "candidate_verify": 2319,
+        "commit": 537,
+        "erase": 19883,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 292,
+        "readback_verify": 1927,
+        "total": 28500
+      },
+      "tx_wire_bytes": 3184,
+      "updates": 128
+    },
+    {
+      "block": 9,
+      "device_active_us": 1223019,
+      "family": "mlp_float",
+      "host_elapsed_ns": 10680946700,
+      "id": "b09-mlp_float-whole",
+      "ota_begin": {
+        "begin_us": 512483,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 510292,
+        "signature_verify_us": 1799,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 512483,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 583077,
+        "device_active_us": 1223019,
+        "event": "fw_ready",
+        "finalize_us": 127459,
+        "hash_sum_us": 21798,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 560127
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 9,
+      "device_active_us": 1210145,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 10693940700,
+      "id": "b09-mlp_int8-whole",
+      "ota_begin": {
+        "begin_us": 511377,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 509188,
+        "signature_verify_us": 1795,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 511377,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580645,
+        "device_active_us": 1210145,
+        "event": "fw_ready",
+        "finalize_us": 118123,
+        "hash_sum_us": 21799,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557680
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 9,
+      "device_active_us": 32126,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 87256300,
+      "id": "b09-mlp_int8-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 840,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 848
+      },
+      "timing_us": {
+        "body_write": 1471,
+        "candidate_verify": 2255,
+        "commit": 5471,
+        "erase": 19857,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 191,
+        "readback_verify": 1909,
+        "total": 32126
+      },
+      "tx_wire_bytes": 1688,
+      "updates": 128
+    },
+    {
+      "block": 10,
+      "device_active_us": 29110,
+      "family": "dt",
+      "host_elapsed_ns": 86486600,
+      "id": "b10-dt-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1104,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1112
+      },
+      "timing_us": {
+        "body_write": 1858,
+        "candidate_verify": 2199,
+        "commit": 2338,
+        "erase": 19770,
+        "journal_body": 401,
+        "journal_commit": 274,
+        "journal_prepare": 89,
+        "readback": 227,
+        "readback_verify": 1748,
+        "total": 29110
+      },
+      "tx_wire_bytes": 2216,
+      "updates": 128
+    },
+    {
+      "block": 10,
+      "device_active_us": 1232451,
+      "family": "dt",
+      "host_elapsed_ns": 10716482200,
+      "id": "b10-dt-whole",
+      "ota_begin": {
+        "begin_us": 518792,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 516601,
+        "signature_verify_us": 1803,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 518792,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580294,
+        "device_active_us": 1232451,
+        "event": "fw_ready",
+        "finalize_us": 133365,
+        "hash_sum_us": 21781,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557346
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 10,
+      "device_active_us": 1218693,
+      "family": "mlp_float",
+      "host_elapsed_ns": 10700897700,
+      "id": "b10-mlp_float-whole",
+      "ota_begin": {
+        "begin_us": 510108,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 507917,
+        "signature_verify_us": 1799,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 510108,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580511,
+        "device_active_us": 1218693,
+        "event": "fw_ready",
+        "finalize_us": 128074,
+        "hash_sum_us": 21771,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557598
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 10,
+      "device_active_us": 33181,
+      "family": "mlp_float",
+      "host_elapsed_ns": 91034900,
+      "id": "b10-mlp_float-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 1588,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 1596
+      },
+      "timing_us": {
+        "body_write": 6695,
+        "candidate_verify": 2317,
+        "commit": 313,
+        "erase": 20658,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 292,
+        "readback_verify": 1931,
+        "total": 33181
+      },
+      "tx_wire_bytes": 3184,
+      "updates": 128
+    },
+    {
+      "block": 10,
+      "device_active_us": 31861,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 88567400,
+      "id": "b10-mlp_int8-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 840,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 848
+      },
+      "timing_us": {
+        "body_write": 1472,
+        "candidate_verify": 2255,
+        "commit": 5231,
+        "erase": 19830,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 191,
+        "readback_verify": 1908,
+        "total": 31861
+      },
+      "tx_wire_bytes": 1688,
+      "updates": 128
+    },
+    {
+      "block": 10,
+      "device_active_us": 1223419,
+      "family": "mlp_int8",
+      "host_elapsed_ns": 10690134800,
+      "id": "b10-mlp_int8-whole",
+      "ota_begin": {
+        "begin_us": 509989,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 507801,
+        "signature_verify_us": 1795,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 509989,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580371,
+        "device_active_us": 1223419,
+        "event": "fw_ready",
+        "finalize_us": 133059,
+        "hash_sum_us": 21735,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557458
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 10,
+      "device_active_us": 1218333,
+      "family": "lr",
+      "host_elapsed_ns": 10704111100,
+      "id": "b10-lr-whole",
+      "ota_begin": {
+        "begin_us": 511065,
+        "crypto_context": "shared_warm",
+        "event": "fw_begin",
+        "ok": true,
+        "partition_prepare_us": 508876,
+        "signature_verify_us": 1794,
+        "size": 339504,
+        "timing_schema": 2,
+        "version": 3
+      },
+      "ota_ready": {
+        "begin_us": 511065,
+        "bytes": 339504,
+        "chunk_count": 332,
+        "chunk_sum_us": 580491,
+        "device_active_us": 1218333,
+        "event": "fw_ready",
+        "finalize_us": 126777,
+        "hash_sum_us": 21802,
+        "ok": true,
+        "reboot_required": true,
+        "timing_schema": 2,
+        "version": 3,
+        "write_sum_us": 557547
+      },
+      "payload_or_image_bytes": 339504,
+      "policy": "whole",
+      "successful_flash_request_bytes": {
+        "image_partition_erase_bytes": 339968,
+        "image_partition_write_bytes": 339504,
+        "otadata_accounted": false
+      },
+      "timing_us": null,
+      "tx_wire_bytes": 685239,
+      "updates": 4
+    },
+    {
+      "block": 10,
+      "device_active_us": 30768,
+      "family": "lr",
+      "host_elapsed_ns": 84505100,
+      "id": "b10-lr-bundle",
+      "ota_begin": null,
+      "ota_ready": null,
+      "payload_or_image_bytes": 448,
+      "policy": "bundle",
+      "successful_flash_request_bytes": {
+        "journal_erase_bytes": 0,
+        "journal_write_bytes": 128,
+        "model_erase_bytes": 4096,
+        "model_write_bytes": 456
+      },
+      "timing_us": {
+        "body_write": 892,
+        "candidate_verify": 2031,
+        "commit": 5291,
+        "erase": 19802,
+        "journal_body": 400,
+        "journal_commit": 274,
+        "journal_prepare": 92,
+        "readback": 137,
+        "readback_verify": 1650,
+        "total": 30768
+      },
+      "tx_wire_bytes": 904,
+      "updates": 128
+    }
+  ],
+  "resource_limitations": "Free heap is sampled at protocol response points, not peak RAM; sizeof values are static structures, not total working memory; repeated inputs do not constitute independent detection examples; provision and non-image otadata work are excluded from flash request metrics.",
+  "resources_and_inference": {
+    "dt/bundle": {
+      "by_model_version": {
+        "1": {
+          "device_inference_median_us": 12.0,
+          "device_inference_p95_us": 14.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.037781220489478e-10,
+          "minimum_observed_free_heap_bytes": 309912,
+          "model_reference": "A",
+          "unique_input_vectors": 258
+        },
+        "2": {
+          "device_inference_median_us": 13.0,
+          "device_inference_p95_us": 14.0,
+          "inference_calls": 262,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.02252231523903e-10,
+          "minimum_observed_free_heap_bytes": 309912,
+          "model_reference": "B",
+          "unique_input_vectors": 258
+        },
+        "201": {
+          "device_inference_median_us": 13.0,
+          "device_inference_p95_us": 14.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.02252231523903e-10,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "dt_stale_threshold",
+          "unique_input_vectors": 258
+        },
+        "300": {
+          "device_inference_median_us": 46.0,
+          "device_inference_p95_us": 47.8,
+          "inference_calls": 2,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 0.0,
+          "minimum_observed_free_heap_bytes": 310152,
+          "model_reference": "B",
+          "unique_input_vectors": 1
+        }
+      },
+      "factory_image_bytes": 334992,
+      "sizeof_engine_bytes": 7832,
+      "sizeof_model_bytes": 3864,
+      "trained_B_envelope_bytes": 1104
+    },
+    "dt/whole": {
+      "by_model_version": {
+        "1": {
+          "device_inference_median_us": 20.0,
+          "device_inference_p95_us": 27.75,
+          "inference_calls": 16,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.8208663703510606e-13,
+          "minimum_observed_free_heap_bytes": 309660,
+          "model_reference": "A",
+          "unique_input_vectors": 16
+        },
+        "2": {
+          "device_inference_median_us": 20.0,
+          "device_inference_p95_us": 23.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.02252231523903e-10,
+          "minimum_observed_free_heap_bytes": 309660,
+          "model_reference": "B",
+          "unique_input_vectors": 258
+        }
+      },
+      "factory_image_bytes": 339504,
+      "sizeof_engine_bytes": 7832,
+      "sizeof_model_bytes": 3864,
+      "trained_B_envelope_bytes": 1104
+    },
+    "lr/bundle": {
+      "by_model_version": {
+        "1": {
+          "device_inference_median_us": 72.0,
+          "device_inference_p95_us": 75.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.1942504885009697e-07,
+          "minimum_observed_free_heap_bytes": 309912,
+          "model_reference": "A",
+          "unique_input_vectors": 258
+        },
+        "2": {
+          "device_inference_median_us": 82.0,
+          "device_inference_p95_us": 83.94999999999999,
+          "inference_calls": 262,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.1911718744705979e-07,
+          "minimum_observed_free_heap_bytes": 309912,
+          "model_reference": "B",
+          "unique_input_vectors": 258
+        },
+        "201": {
+          "device_inference_median_us": 82.0,
+          "device_inference_p95_us": 83.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.1970330815458397e-07,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "lr_compatible_decision",
+          "unique_input_vectors": 258
+        },
+        "202": {
+          "device_inference_median_us": 82.0,
+          "device_inference_p95_us": 83.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.1914767461540521e-07,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "lr_compatible_probability",
+          "unique_input_vectors": 258
+        },
+        "203": {
+          "device_inference_median_us": 81.0,
+          "device_inference_p95_us": 83.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.1965173341010882e-07,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "lr_stale_scaler",
+          "unique_input_vectors": 258
+        },
+        "204": {
+          "device_inference_median_us": 80.0,
+          "device_inference_p95_us": 81.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.1965173341010882e-07,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "lr_stale_scaler_threshold",
+          "unique_input_vectors": 258
+        },
+        "205": {
+          "device_inference_median_us": 80.0,
+          "device_inference_p95_us": 81.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.1911718744705979e-07,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "lr_stale_threshold",
+          "unique_input_vectors": 258
+        },
+        "300": {
+          "device_inference_median_us": 128.5,
+          "device_inference_p95_us": 133.45,
+          "inference_calls": 2,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.334262115879284e-12,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "B",
+          "unique_input_vectors": 1
+        }
+      },
+      "factory_image_bytes": 334992,
+      "sizeof_engine_bytes": 7832,
+      "sizeof_model_bytes": 3864,
+      "trained_B_envelope_bytes": 448
+    },
+    "lr/whole": {
+      "by_model_version": {
+        "1": {
+          "device_inference_median_us": 76.0,
+          "device_inference_p95_us": 100.75,
+          "inference_calls": 16,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 7.49042586983828e-09,
+          "minimum_observed_free_heap_bytes": 309660,
+          "model_reference": "A",
+          "unique_input_vectors": 16
+        },
+        "2": {
+          "device_inference_median_us": 71.0,
+          "device_inference_p95_us": 78.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.1911718744705979e-07,
+          "minimum_observed_free_heap_bytes": 309660,
+          "model_reference": "B",
+          "unique_input_vectors": 258
+        }
+      },
+      "factory_image_bytes": 339504,
+      "sizeof_engine_bytes": 7832,
+      "sizeof_model_bytes": 3864,
+      "trained_B_envelope_bytes": 448
+    },
+    "mlp_float/bundle": {
+      "by_model_version": {
+        "1": {
+          "device_inference_median_us": 154.5,
+          "device_inference_p95_us": 163.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.7905918886507166e-07,
+          "minimum_observed_free_heap_bytes": 309912,
+          "model_reference": "A",
+          "unique_input_vectors": 258
+        },
+        "2": {
+          "device_inference_median_us": 163.0,
+          "device_inference_p95_us": 164.0,
+          "inference_calls": 262,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 8.924938965648721e-08,
+          "minimum_observed_free_heap_bytes": 309912,
+          "model_reference": "B",
+          "unique_input_vectors": 258
+        },
+        "201": {
+          "device_inference_median_us": 161.0,
+          "device_inference_p95_us": 164.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 6.001118468823563e-08,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "mlp_float_compatible_first_layer",
+          "unique_input_vectors": 258
+        },
+        "202": {
+          "device_inference_median_us": 164.0,
+          "device_inference_p95_us": 165.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.2798345944717866e-07,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "mlp_float_stale_scaler",
+          "unique_input_vectors": 258
+        },
+        "203": {
+          "device_inference_median_us": 164.0,
+          "device_inference_p95_us": 165.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.2798345944717866e-07,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "mlp_float_stale_scaler_threshold",
+          "unique_input_vectors": 258
+        },
+        "204": {
+          "device_inference_median_us": 162.0,
+          "device_inference_p95_us": 168.14999999999998,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 8.924938965648721e-08,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "mlp_float_stale_threshold",
+          "unique_input_vectors": 258
+        },
+        "300": {
+          "device_inference_median_us": 213.0,
+          "device_inference_p95_us": 217.5,
+          "inference_calls": 2,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 8.808505682668388e-14,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "B",
+          "unique_input_vectors": 1
+        }
+      },
+      "factory_image_bytes": 334992,
+      "sizeof_engine_bytes": 7832,
+      "sizeof_model_bytes": 3864,
+      "trained_B_envelope_bytes": 1588
+    },
+    "mlp_float/whole": {
+      "by_model_version": {
+        "1": {
+          "device_inference_median_us": 163.0,
+          "device_inference_p95_us": 180.25,
+          "inference_calls": 16,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0136733997210285e-08,
+          "minimum_observed_free_heap_bytes": 309660,
+          "model_reference": "A",
+          "unique_input_vectors": 16
+        },
+        "2": {
+          "device_inference_median_us": 160.0,
+          "device_inference_p95_us": 171.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 8.924938965648721e-08,
+          "minimum_observed_free_heap_bytes": 309660,
+          "model_reference": "B",
+          "unique_input_vectors": 258
+        }
+      },
+      "factory_image_bytes": 339504,
+      "sizeof_engine_bytes": 7832,
+      "sizeof_model_bytes": 3864,
+      "trained_B_envelope_bytes": 1588
+    },
+    "mlp_int8/bundle": {
+      "by_model_version": {
+        "1": {
+          "device_inference_median_us": 198.0,
+          "device_inference_p95_us": 208.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.910522461403332e-10,
+          "minimum_observed_free_heap_bytes": 309912,
+          "model_reference": "A",
+          "unique_input_vectors": 258
+        },
+        "2": {
+          "device_inference_median_us": 210.0,
+          "device_inference_p95_us": 213.0,
+          "inference_calls": 262,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.72854616573315e-10,
+          "minimum_observed_free_heap_bytes": 309912,
+          "model_reference": "B",
+          "unique_input_vectors": 258
+        },
+        "201": {
+          "device_inference_median_us": 212.0,
+          "device_inference_p95_us": 215.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.72854616573315e-10,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "mlp_int8_compatible_requantized",
+          "unique_input_vectors": 258
+        },
+        "202": {
+          "device_inference_median_us": 208.0,
+          "device_inference_p95_us": 215.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.990196229513131e-08,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "mlp_int8_stale_input_quantization",
+          "unique_input_vectors": 258
+        },
+        "203": {
+          "device_inference_median_us": 211.0,
+          "device_inference_p95_us": 215.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.72854616573315e-10,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "mlp_int8_stale_integer_threshold_code",
+          "unique_input_vectors": 258
+        },
+        "204": {
+          "device_inference_median_us": 214.0,
+          "device_inference_p95_us": 215.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.72854616573315e-10,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "mlp_int8_stale_scaler",
+          "unique_input_vectors": 258
+        },
+        "205": {
+          "device_inference_median_us": 210.0,
+          "device_inference_p95_us": 215.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.72854616573315e-10,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "mlp_int8_stale_scaler_threshold",
+          "unique_input_vectors": 258
+        },
+        "206": {
+          "device_inference_median_us": 207.5,
+          "device_inference_p95_us": 215.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.72854616573315e-10,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "mlp_int8_stale_threshold",
+          "unique_input_vectors": 258
+        },
+        "300": {
+          "device_inference_median_us": 267.5,
+          "device_inference_p95_us": 271.55,
+          "inference_calls": 2,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 7.31373203102445e-12,
+          "minimum_observed_free_heap_bytes": 309880,
+          "model_reference": "B",
+          "unique_input_vectors": 1
+        }
+      },
+      "factory_image_bytes": 334992,
+      "sizeof_engine_bytes": 7832,
+      "sizeof_model_bytes": 3864,
+      "trained_B_envelope_bytes": 840
+    },
+    "mlp_int8/whole": {
+      "by_model_version": {
+        "1": {
+          "device_inference_median_us": 199.5,
+          "device_inference_p95_us": 225.0,
+          "inference_calls": 16,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.910522461403332e-10,
+          "minimum_observed_free_heap_bytes": 309660,
+          "model_reference": "A",
+          "unique_input_vectors": 16
+        },
+        "2": {
+          "device_inference_median_us": 194.0,
+          "device_inference_p95_us": 206.0,
+          "inference_calls": 258,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.72854616573315e-10,
+          "minimum_observed_free_heap_bytes": 309660,
+          "model_reference": "B",
+          "unique_input_vectors": 258
+        }
+      },
+      "factory_image_bytes": 339504,
+      "sizeof_engine_bytes": 7832,
+      "sizeof_model_bytes": 3864,
+      "trained_B_envelope_bytes": 840
+    }
+  },
+  "stage": "030",
+  "status": "complete"
+}

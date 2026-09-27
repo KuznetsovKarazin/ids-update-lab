@@ -1,0 +1,17 @@
+\begin{table}[t]
+\caption{Post-hoc host analysis on the B calibration sample (2,088 normal records and 100,000 sampled attacks). Thresholds follow the original empirical 1\% FPR rule. These are calibration diagnostics; the per-channel representation was not deployed on the MCU.}
+\label{tab:posthoc-export}
+\centering
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Representation and cutoff & Integer cut & FP & FPR (\%) & Recall (\%)\\
+\midrule
+Original B int8 & 10 & 19 & 0.910 & 73.531\\
+Per-tensor export, transferred & 10 & 421 & 20.163 & 71.623\\
+Per-tensor export, recalibrated & 22 & 1 & 0.048 & 23.933\\
+Per-channel export, transferred & 10 & 419 & 20.067 & 72.198\\
+Per-channel export, recalibrated & 21 & 0 & 0.000 & 23.564\\
+\bottomrule
+\end{tabular}
+\end{table}

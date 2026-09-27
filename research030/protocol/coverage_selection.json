@@ -1,0 +1,598 @@
+{
+  "stage": "030",
+  "schema_version": 1,
+  "selection_frozen_utc": "2026-09-25T15:24:11.000038+00:00",
+  "study_status": "prespecified_after_exploratory_analysis_not_untouched_test",
+  "selection_inputs": {
+    "coverage/coverage_candidates.csv": "dbd45bf66ae4e7f9b1c40bf4fdda3c47e813d751115affc92bfb20826085dd3c",
+    "coverage/candidate_intervals.json": "7d342c423cd3d219276dfda31181413c73fa86ae98b815bd86d5508d2faea861",
+    "coverage/coverage_roles.csv": "9a58b4f75487c3be3be4f89f6fe049d3c0f60315dd03ad21836c6f853198497d",
+    "coverage/coverage_test_groups.csv": "c30608c332827238b3a2b54a42b127dd24764de4f1c40c7b08d698b031dc3b62",
+    "coverage/coverage_unseen_exposure.csv": "6d2b9290ba9be40a7326216e7da78f71b18aede5e1a7434e63789ee18d5304c8",
+    "hourly_counts.csv": "b5b322ac938c6ac1118fba4bee68d8d196f72bdbb864f46bd93d90142bf8caf3"
+  },
+  "quality_metrics_used_for_selection": false,
+  "models_trained_before_selection": false,
+  "candidate_count": 129,
+  "all_four_test_group_candidates": 0,
+  "minimum_support_before_purge": 1000,
+  "required_support_fields": [
+    "A_fit_normal",
+    "A_fit_attack",
+    "A_cal_normal",
+    "A_cal_attack",
+    "B_fit_added_normal",
+    "B_fit_added_attack",
+    "B_cal_normal",
+    "B_cal_attack",
+    "common_test_normal",
+    "common_test_attack",
+    "test_attack_added_B_rows",
+    "test_attack_unseen_in_all_fit_and_calibration_rows"
+  ],
+  "selection_rule": "Keep candidates with >=1000 rows in every required_support_field; sort ascending by common-test start (B_cal_end_utc), calibration_hours, B_added_fit_hours, candidate_id; select first. This rule is fixed after metadata exploration and before any new training/predictions.",
+  "eligible_candidates_ranked": [
+    "C0014",
+    "C0040",
+    "C0015",
+    "C0041",
+    "C0018",
+    "C0044",
+    "C0068",
+    "C0020",
+    "C0046",
+    "C0070",
+    "C0075",
+    "C0025",
+    "C0076",
+    "C0090",
+    "C0103",
+    "C0114",
+    "C0052"
+  ],
+  "selected_candidate_id": "C0014",
+  "interval_semantics": "left_inclusive_right_exclusive_UTC",
+  "intervals": {
+    "A_fit": [
+      [
+        "2019-04-02T09:00:00+00:00",
+        "2019-04-25T06:00:00+00:00"
+      ]
+    ],
+    "A_cal": [
+      [
+        "2019-04-25T06:00:00+00:00",
+        "2019-04-25T12:00:00+00:00"
+      ]
+    ],
+    "B_fit_added": [
+      [
+        "2019-04-25T12:00:00+00:00",
+        "2019-04-25T18:00:00+00:00"
+      ]
+    ],
+    "B_fit": [
+      [
+        "2019-04-02T09:00:00+00:00",
+        "2019-04-25T06:00:00+00:00"
+      ],
+      [
+        "2019-04-25T12:00:00+00:00",
+        "2019-04-25T18:00:00+00:00"
+      ]
+    ],
+    "B_cal": [
+      [
+        "2019-04-25T18:00:00+00:00",
+        "2019-04-26T00:00:00+00:00"
+      ]
+    ],
+    "common_test": [
+      [
+        "2019-04-26T00:00:00+00:00",
+        "2019-04-29T15:00:00+00:00"
+      ]
+    ]
+  },
+  "known_A_types": [
+    "dos",
+    "injection",
+    "scanning"
+  ],
+  "added_B_types": [
+    "ddos"
+  ],
+  "fully_unexposed_test_types": [
+    "backdoor",
+    "mitm",
+    "password",
+    "ransomware",
+    "xss"
+  ],
+  "calibration_exposed_but_fit_unseen_test_types": [],
+  "accepted_empty_test_groups": [
+    "attack_known_A"
+  ],
+  "candidate_counts_before_purge": {
+    "candidate_id": "C0014",
+    "calibration_hours": "6",
+    "B_added_fit_hours": "6",
+    "A_fit_start_utc": "2019-04-02T09:00:00+00:00",
+    "A_fit_end_utc": "2019-04-25T06:00:00+00:00",
+    "A_cal_end_utc": "2019-04-25T12:00:00+00:00",
+    "B_added_fit_end_utc": "2019-04-25T18:00:00+00:00",
+    "B_cal_end_utc": "2019-04-26T00:00:00+00:00",
+    "test_end_utc": "2019-04-29T15:00:00+00:00",
+    "known_A_attack_types": "dos;injection;scanning",
+    "added_B_attack_types": "ddos",
+    "A_fit_normal": "352626",
+    "A_fit_attack": "10516864",
+    "A_cal_normal": "22892",
+    "A_cal_attack": "451284",
+    "B_fit_added_normal": "16645",
+    "B_fit_added_attack": "917021",
+    "B_fit_normal": "369271",
+    "B_fit_attack": "11433885",
+    "B_cal_normal": "2102",
+    "B_cal_attack": "2587472",
+    "common_test_normal": "401246",
+    "common_test_attack": "7070000",
+    "test_normal_rows": "401246",
+    "test_attack_known_A_rows": "0",
+    "test_attack_added_B_rows": "2660515",
+    "test_attack_unseen_B_rows": "4409485",
+    "test_attack_unseen_in_fit_but_seen_in_calibration_rows": "0",
+    "test_attack_unseen_in_all_fit_and_calibration_rows": "4409485",
+    "empty_roles": "",
+    "single_or_no_class_roles": "",
+    "empty_test_groups": "attack_known_A",
+    "all_four_test_groups_present": "False",
+    "all_fit_and_cal_roles_have_two_classes": "True",
+    "selected": "False"
+  },
+  "role_type_counts_before_purge": [
+    {
+      "candidate_id": "C0014",
+      "role": "A_fit",
+      "label": 0,
+      "type": "normal",
+      "rows": 352626
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_fit",
+      "label": 1,
+      "type": "backdoor",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_fit",
+      "label": 1,
+      "type": "ddos",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_fit",
+      "label": 1,
+      "type": "dos",
+      "rows": 3375328
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_fit",
+      "label": 1,
+      "type": "injection",
+      "rows": 1375
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_fit",
+      "label": 1,
+      "type": "mitm",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_fit",
+      "label": 1,
+      "type": "password",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_fit",
+      "label": 1,
+      "type": "ransomware",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_fit",
+      "label": 1,
+      "type": "scanning",
+      "rows": 7140161
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_fit",
+      "label": 1,
+      "type": "xss",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_cal",
+      "label": 0,
+      "type": "normal",
+      "rows": 22892
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_cal",
+      "label": 1,
+      "type": "backdoor",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_cal",
+      "label": 1,
+      "type": "ddos",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_cal",
+      "label": 1,
+      "type": "dos",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_cal",
+      "label": 1,
+      "type": "injection",
+      "rows": 451284
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_cal",
+      "label": 1,
+      "type": "mitm",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_cal",
+      "label": 1,
+      "type": "password",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_cal",
+      "label": 1,
+      "type": "ransomware",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_cal",
+      "label": 1,
+      "type": "scanning",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "A_cal",
+      "label": 1,
+      "type": "xss",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit_added",
+      "label": 0,
+      "type": "normal",
+      "rows": 16645
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit_added",
+      "label": 1,
+      "type": "backdoor",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit_added",
+      "label": 1,
+      "type": "ddos",
+      "rows": 917021
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit_added",
+      "label": 1,
+      "type": "dos",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit_added",
+      "label": 1,
+      "type": "injection",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit_added",
+      "label": 1,
+      "type": "mitm",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit_added",
+      "label": 1,
+      "type": "password",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit_added",
+      "label": 1,
+      "type": "ransomware",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit_added",
+      "label": 1,
+      "type": "scanning",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit_added",
+      "label": 1,
+      "type": "xss",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit",
+      "label": 0,
+      "type": "normal",
+      "rows": 369271
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit",
+      "label": 1,
+      "type": "backdoor",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit",
+      "label": 1,
+      "type": "ddos",
+      "rows": 917021
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit",
+      "label": 1,
+      "type": "dos",
+      "rows": 3375328
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit",
+      "label": 1,
+      "type": "injection",
+      "rows": 1375
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit",
+      "label": 1,
+      "type": "mitm",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit",
+      "label": 1,
+      "type": "password",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit",
+      "label": 1,
+      "type": "ransomware",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit",
+      "label": 1,
+      "type": "scanning",
+      "rows": 7140161
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_fit",
+      "label": 1,
+      "type": "xss",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_cal",
+      "label": 0,
+      "type": "normal",
+      "rows": 2102
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_cal",
+      "label": 1,
+      "type": "backdoor",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_cal",
+      "label": 1,
+      "type": "ddos",
+      "rows": 2587472
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_cal",
+      "label": 1,
+      "type": "dos",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_cal",
+      "label": 1,
+      "type": "injection",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_cal",
+      "label": 1,
+      "type": "mitm",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_cal",
+      "label": 1,
+      "type": "password",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_cal",
+      "label": 1,
+      "type": "ransomware",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_cal",
+      "label": 1,
+      "type": "scanning",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "B_cal",
+      "label": 1,
+      "type": "xss",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "common_test",
+      "label": 0,
+      "type": "normal",
+      "rows": 401246
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "common_test",
+      "label": 1,
+      "type": "backdoor",
+      "rows": 508116
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "common_test",
+      "label": 1,
+      "type": "ddos",
+      "rows": 2660515
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "common_test",
+      "label": 1,
+      "type": "dos",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "common_test",
+      "label": 1,
+      "type": "injection",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "common_test",
+      "label": 1,
+      "type": "mitm",
+      "rows": 1052
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "common_test",
+      "label": 1,
+      "type": "password",
+      "rows": 1718568
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "common_test",
+      "label": 1,
+      "type": "ransomware",
+      "rows": 72805
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "common_test",
+      "label": 1,
+      "type": "scanning",
+      "rows": 0
+    },
+    {
+      "candidate_id": "C0014",
+      "role": "common_test",
+      "label": 1,
+      "type": "xss",
+      "rows": 2108944
+    }
+  ],
+  "flow_boundary_enforcement": {
+    "timestamp_unit": "seconds_since_Unix_epoch_UTC",
+    "duration_unit": "seconds",
+    "gap_seconds": 60,
+    "lower_boundary_rule": "ts >= interval_start + 60, except collection_start with no added gap",
+    "upper_boundary_rule": "ts < interval_end - 60 and ts + raw_duration < interval_end - 60, except collection_end_exclusive with no subtracted gap; even at collection end flow must end strictly before endpoint",
+    "invalid_timestamp_or_duration": "exclude and count; raw feature contract remains mandatory",
+    "crossing_flow_policy": "exclude entire row, do not truncate duration or move to another role",
+    "class_support_gate_after_purge": 1000,
+    "failure_action": "stop before training if any atomic role A_fit/A_cal/B_fit_added/B_cal/common_test has fewer than1000 rows of either class; do not silently relax or change split",
+    "claim": "observed flow interval containment and 60-second margins; session/host/campaign independence is not established"
+  },
+  "B_fit_rule": "union of A_fit and B_fit_added; all A_cal and B_cal rows remain excluded from both fitting versions",
+  "duplicate_policy": "retain recurrent feature vectors in primary temporal population; compute counts and tagged known/new-to-fitting subsets; do not delete future records merely because same 8D vector occurs in fit; conflicting labels retained",
+  "interpretation_limits": [
+    "No candidate contains all four common-test groups. Selected C0014 has no attack known to A in common test, so its subgroup estimate is undefined, never zero recall. C0026 has known-A test attacks but no added-B test attacks.",
+    "Attack type is considered known for fitting only if retained fitting rows of that type remain after all gates/subsampling; audit changes from pre-purge coverage.",
+    "Training should retain the complete source-type coverage; if resource sampling drops a rare type, report and gate or preserve that type via a frozen stratified sampler.",
+    "A/B calibration periods have different attack mixtures (injection vs DDoS), so effects include calibration distribution change.",
+    "Fixed60-second gaps do not prove independent sessions; flow start/end metadata alone cannot establish host/campaign independence.",
+    "Small B-calibration normal support(2102 prepurge) limits FPR precision; do not promise a target FPR on future data.",
+    "Previously reported full-collection exploratory model scores must not be called an untouched test."
+  ]
+}

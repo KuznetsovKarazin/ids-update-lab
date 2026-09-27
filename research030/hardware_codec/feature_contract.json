@@ -1,0 +1,27 @@
+{
+  "contract_version": 3,
+  "feature_names": [
+    "duration",
+    "src_bytes",
+    "dst_bytes",
+    "missed_bytes",
+    "src_pkts",
+    "src_ip_bytes",
+    "dst_pkts",
+    "dst_ip_bytes"
+  ],
+  "input_domain": "nonnegative_finite_float32",
+  "input_units": [
+    "seconds",
+    "bytes",
+    "bytes",
+    "bytes",
+    "count",
+    "bytes",
+    "count",
+    "bytes"
+  ],
+  "missing_policy": "reject_nonfinite",
+  "runtime_binding": "signed_runtime_abi_separately_binds_transform_and_model_arithmetic",
+  "target": "attack_vs_normal"
+}

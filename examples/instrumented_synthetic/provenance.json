@@ -1,0 +1,36 @@
+{
+  "data_origin": "synthetic_plumbing",
+  "fixture_restoration": {
+    "signed_packages": "Original signed bytes extracted from preserved firmware; signatures and generated payloads verified.",
+    "sources": {
+      "release-A.sids": {
+        "bytes": 376,
+        "evidence_archive_path": "prebuilt/instrumented_v2/bundle/ids_update_lab.bin",
+        "offset": 45936,
+        "source_sha256": "2368caee9d44879877e9e1fe1b89006c5579232c9e68f9ea96c235d60f2a595d"
+      },
+      "release-B.sids": {
+        "bytes": 376,
+        "evidence_archive_path": "prebuilt/instrumented_v2/whole_firmware_B/ids_update_lab.bin",
+        "offset": 47360,
+        "source_sha256": "73797743cf99084e600f523a995538ee35c987884ba35d6a81f3f94478717a53"
+      },
+      "release-C.sids": {
+        "bytes": 376,
+        "evidence_archive_path": "prebuilt/instrumented_v2/whole_firmware_C/ids_update_lab.bin",
+        "offset": 47360,
+        "source_sha256": "a2a9ce752f94b81660ef73b8ccae3cf15ec0ca44e7bdc92702ccb9a9d428b314"
+      }
+    },
+    "supporting_files": "Contract and synthetic golden records regenerated with host/ids_update_lab/artifacts.py; not new hardware evidence."
+  },
+  "hardware_measured": false,
+  "model_only_policy": "authenticated candidate weights/bias with immutable factory means/scales/threshold",
+  "package_sha256": {
+    "release-A.sids": "60e6defdc1901e8c020cfb41daae9174b5a484442a075bbf492f6fe2c33feb88",
+    "release-B.sids": "8b3724239070b4553321b3cd4d74a97a9cca85c54d27e211a9d37770983fdc7f",
+    "release-C.sids": "49001c941aca7af018620ec0bf27aafc1e898bd397376e12f6c84e19390d09cd"
+  },
+  "release_B_purpose": "controlled equivalent classifier under changed normalization; not retraining or drift adaptation",
+  "schema_sha256": "80c95ab0dc774205f35ed1a970f8f30002be1ad8478d023352452e692eccc40a"
+}

@@ -1,0 +1,189 @@
+{
+  "measurement_origin": "host_native_validation",
+  "hardware_access_attempted": false,
+  "sanitizers": [
+    "address",
+    "undefined"
+  ],
+  "leak_sanitizer": "not run: ptrace environment",
+  "seed": 30025,
+  "comparisons": [
+    {
+      "kind": "lr",
+      "rows": 3,
+      "threshold": 0.0,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "kind": "lr",
+      "rows": 3,
+      "threshold": 0.5,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "kind": "lr",
+      "rows": 3,
+      "threshold": 1.0,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "kind": "dt",
+      "rows": 3,
+      "threshold": 0.0,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "kind": "dt",
+      "rows": 3,
+      "threshold": 0.5,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "kind": "dt",
+      "rows": 3,
+      "threshold": 1.0,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "kind": "mlp_float",
+      "rows": 3,
+      "threshold": 0.0,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "kind": "mlp_float",
+      "rows": 3,
+      "threshold": 0.5,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "kind": "mlp_float",
+      "rows": 3,
+      "threshold": 1.0,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "kind": "lr",
+      "rows": 3,
+      "threshold": 0.0,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "kind": "lr",
+      "rows": 3,
+      "threshold": 0.0,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 0.0
+    },
+    {
+      "kind": "lr",
+      "rows": 1026,
+      "threshold": 0.5,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 1.1949774170183503e-07
+    },
+    {
+      "kind": "dt",
+      "rows": 1026,
+      "threshold": 0.5,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 7.907108301452581e-11
+    },
+    {
+      "kind": "mlp_float",
+      "rows": 1026,
+      "threshold": 0.5,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 8.969027709415656e-08
+    },
+    {
+      "kind": "mlp_int8",
+      "rows": 1026,
+      "threshold": 0.5,
+      "q_threshold": 0,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 5.995510865552944e-08
+    },
+    {
+      "kind": "mlp_int8",
+      "rows": 1026,
+      "threshold": 0.5,
+      "q_threshold": -127,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 5.995510865552944e-08
+    },
+    {
+      "kind": "mlp_int8",
+      "rows": 1026,
+      "threshold": 0.5,
+      "q_threshold": 0,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 5.995510865552944e-08
+    },
+    {
+      "kind": "mlp_int8",
+      "rows": 1026,
+      "threshold": 0.5,
+      "q_threshold": 1,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 5.995510865552944e-08
+    },
+    {
+      "kind": "mlp_int8",
+      "rows": 1026,
+      "threshold": 0.5,
+      "q_threshold": 127,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 5.995510865552944e-08
+    },
+    {
+      "kind": "mlp_int8",
+      "rows": 1026,
+      "threshold": 0.5,
+      "q_threshold": 128,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 5.995510865552944e-08
+    },
+    {
+      "kind": "dt",
+      "rows": 3,
+      "threshold": 0.5,
+      "q_threshold": null,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 7.907108301452581e-11
+    }
+  ],
+  "source_sha256": {
+    "validation/native030.cpp": "0135e7be6ef72f1f3dc42bd114f3f8b1e9b6a816b1c135308d78b951ece106ff",
+    "training/model030.py": "31be2167aea816114c3d8d8a27b2fda364374f4716739f7c16472cf624b0e0c8",
+    "hardware_codec/codec030.py": "5090a304a0494fc15831299ddc5a65e37a57b8f751c6c489227b6ad27365b6eb",
+    "firmware/components/ids_core/ids_core.cpp": "5531c52bce9ba44717c2bd00d29a214fe4099bbaadba0635e5cb3b9b9f7dcce9",
+    "firmware/components/ids_core/ids_mlp.cpp": "0f128c261190c3b1697b86c1610a007f82a135b42aca7fcd4fc8df2a67ae0e34",
+    "firmware/components/ids_core/ids_protocol.cpp": "a10943ad05e3a1ad93d2b23c061d67cbf8c11ebafdb182590460fda3f941fd8e",
+    "firmware/components/ids_core/ids_tree.cpp": "1c535a9cdc7e006ca7c5d793f19f5019304a10d3fc2e41910617d1835cb05ab3"
+  }
+}

@@ -1,0 +1,20 @@
+test_accepted_reply_alone_not_counted_without_status (__main__.RunnerAudit.test_accepted_reply_alone_not_counted_without_status) ... ok
+test_complete_mock_queue_has_distinct_warmed_versions_and_exact_counts (__main__.RunnerAudit.test_complete_mock_queue_has_distinct_warmed_versions_and_exact_counts) ... ok
+test_cost_analyzer_rejects_mock_origin (__main__.RunnerAudit.test_cost_analyzer_rejects_mock_origin) ... ok
+test_each_family_has_five_policy_orders (__main__.RunnerAudit.test_each_family_has_five_policy_orders) ... ok
+test_inconsistent_timing_rejected_before_state_advance (__main__.RunnerAudit.test_inconsistent_timing_rejected_before_state_advance) ... ok
+test_inference_mismatch_is_recorded_and_stops (__main__.RunnerAudit.test_inference_mismatch_is_recorded_and_stops) ... ok
+test_manifest_path_escape_rejected (__main__.RunnerAudit.test_manifest_path_escape_rejected) ... ok
+test_negative_needs_explicit_right_reason (__main__.RunnerAudit.test_negative_needs_explicit_right_reason) ... ok
+test_prepared_evidence_modification_rejected (__main__.RunnerAudit.test_prepared_evidence_modification_rejected) ... ok
+test_provision_failure_stops_and_preserves_failed_summary (__main__.RunnerAudit.test_provision_failure_stops_and_preserves_failed_summary) ... MCU verification: lr
+ok
+test_selected_wrong_image_not_counted (__main__.RunnerAudit.test_selected_wrong_image_not_counted) ... ok
+test_status_rejects_other_policy_and_payload (__main__.RunnerAudit.test_status_rejects_other_policy_and_payload) ... ok
+test_typed_does_not_accept_bool_as_integer (__main__.RunnerAudit.test_typed_does_not_accept_bool_as_integer) ... ok
+test_whole_counts_only_after_matching_boot (__main__.RunnerAudit.test_whole_counts_only_after_matching_boot) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.138s
+
+OK

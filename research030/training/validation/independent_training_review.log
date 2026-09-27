@@ -1,0 +1,26 @@
+test_bottom_k_does_not_depend_on_chunk_order (test_independent_review030.IndependentReview.test_bottom_k_does_not_depend_on_chunk_order) ... ok
+test_csv_preparation_keeps_calibration_and_test_out_of_fit (test_independent_review030.IndependentReview.test_csv_preparation_keeps_calibration_and_test_out_of_fit) ... {"utc": "2026-09-25T15:38:12.140884+00:00", "phase": "scan_source", "file": "synthetic_fixture.csv"}
+{"utc": "2026-09-25T15:38:12.142264+00:00", "phase": "scan_complete", "file": "synthetic_fixture.csv", "invalid_raw_contract": 0, "invalid_flow_metadata_with_valid_raw": 2, "source": 24, "invalid": 2, "outside_original_role_intervals": 0, "boundary_time_margin_excluded": 1, "flow_crossing_effective_end_excluded": 1, "outside_roles_or_boundary_purged": 2}
+ok
+test_float_calibration_ties_and_saturation (test_independent_review030.IndependentReview.test_float_calibration_ties_and_saturation) ... ok
+test_grouped_metrics_equal_explicit_weighted_rows (test_independent_review030.IndependentReview.test_grouped_metrics_equal_explicit_weighted_rows) ... ok
+test_integer_threshold_transfer_preserves_units_and_endpoints (test_independent_review030.IndependentReview.test_integer_threshold_transfer_preserves_units_and_endpoints) ... ok
+test_merging_local_bottom_k_preserves_global_bottom_k (test_independent_review030.IndependentReview.test_merging_local_bottom_k_preserves_global_bottom_k) ... ok
+test_temporal_margin_and_flow_containment (test_independent_review030.IndependentReview.test_temporal_margin_and_flow_containment) ... ok
+test_bottomk_chunk_invariance (test_training030.Tests.test_bottomk_chunk_invariance) ... ok
+test_bottomk_merge_consistent (test_training030.Tests.test_bottomk_merge_consistent) ... ok
+test_calibration_ties_and_saturation (test_training030.Tests.test_calibration_ties_and_saturation) ... ok
+test_compatible_lr (test_training030.Tests.test_compatible_lr) ... ok
+test_compatible_mlp_float (test_training030.Tests.test_compatible_mlp_float) ... ok
+test_flow_effective_boundaries (test_training030.Tests.test_flow_effective_boundaries) ... ok
+test_flow_spill_gap (test_training030.Tests.test_flow_spill_gap) ... ok
+test_frequency_conflicting_labels (test_training030.Tests.test_frequency_conflicting_labels) ... ok
+test_int8_reference_independent_scalar (test_training030.Tests.test_int8_reference_independent_scalar) ... ok
+test_overlap_rejected (test_training030.Tests.test_overlap_rejected) ... ok
+test_rounding (test_training030.Tests.test_rounding) ... ok
+test_strict_float_boundary (test_training030.Tests.test_strict_float_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.133s
+
+OK

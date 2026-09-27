@@ -1,0 +1,15 @@
+{
+  "format": "ids-update-lab-whole-firmware-v1",
+  "created_utc": "2026-09-24T06:57:38.622468+00:00",
+  "version": 2,
+  "runtime_abi": 1,
+  "image_size": 324064,
+  "image_sha256": "73797743cf99084e600f523a995538ee35c987884ba35d6a81f3f94478717a53",
+  "metadata_sha256": "39387de866f0820a34b3053854e740be4c3444adc061f679a85d248cf9040d14",
+  "signature_sha256": "cdc49468ca2bf33ac974caf91d9216dce594aaad7d980ab77b6890ffb9e6f558",
+  "feature_contract_sha256": "80c95ab0dc774205f35ed1a970f8f30002be1ad8478d023352452e692eccc40a",
+  "factory_envelope_sha256": "8b3724239070b4553321b3cd4d74a97a9cca85c54d27e211a9d37770983fdc7f",
+  "authentication": "RSA-2048-PKCS1-v1_5-SHA256 over exact 84-byte metadata",
+  "trust_boundary": "trusted running firmware; no ROM-rooted secure boot claim",
+  "hardware_measurement": false
+}

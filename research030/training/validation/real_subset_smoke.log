@@ -1,0 +1,4 @@
+{"utc": "2026-09-25T15:38:39.045849+00:00", "phase": "hash_source", "file": "Network_dataset_1.csv"}
+{"utc": "2026-09-25T15:38:39.167885+00:00", "phase": "scan_source", "file": "Network_dataset_1.csv"}
+{"utc": "2026-09-25T15:38:45.768957+00:00", "phase": "scan_complete", "file": "Network_dataset_1.csv", "invalid_raw_contract": 175, "invalid_flow_metadata_with_valid_raw": 0, "source": 1000000, "invalid": 175, "outside_original_role_intervals": 0, "boundary_time_margin_excluded": 0, "flow_crossing_effective_end_excluded": 0, "outside_roles_or_boundary_purged": 0}
+{"status": "complete_subset_data_smoke", "hardware_access_attempted": false, "source_files": 1, "scientific_full_result": false, "models_trained": false, "finished_utc": "2026-09-25T15:38:46.139456+00:00"}

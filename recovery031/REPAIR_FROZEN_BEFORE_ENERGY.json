@@ -1,0 +1,10 @@
+{
+  "frozen_at_utc": "2026-09-25T18:42:09.562124+00:00",
+  "original_analyzer_sha256": "575a19d2fd5c9caadde42d81b1b7f2748d0768797888c8705892124ce057f546",
+  "change": "Candidate search only: centered uniform mean width is smallest odd integer >= coarse dt / median raw dt. Coarse dt remains max(0.08s, span/2000000). For actual recording dt=0.01 and coarse dt=0.08 produces9samples=90ms. All edge/refinement, thresholds, uncertainty and raw integration unchanged. No selection based on energy results.",
+  "actual_nine_sample_scores": {
+    "calibration_before": 0.9409374511524645,
+    "calibration_after": 0.9433217124150143
+  },
+  "energy_evaluated_before_freeze": false
+}

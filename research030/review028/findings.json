@@ -1,0 +1,297 @@
+{
+  "status": "pass",
+  "checks_passed": 1116,
+  "source_zip_sha256": "ae05de794660ca88a30d9a8e43866718d2f652005fe6bcee2447d89654d7d75d",
+  "cohort_counts": {
+    "all_valid": {
+      "vectors": 6232460,
+      "conflicting_vectors": 1344,
+      "empirical_minimum_errors_on_observed_vectors": 114877,
+      "rows": 22338152,
+      "normal_rows": 795511,
+      "attack_rows": 21542641,
+      "changed_DT_A_B_rows": 5420599,
+      "changed_DT_A_B_vectors": 22525
+    },
+    "known_vectors": {
+      "vectors": 92330,
+      "conflicting_vectors": 671,
+      "empirical_minimum_errors_on_observed_vectors": 113446,
+      "rows": 12156362,
+      "normal_rows": 414160,
+      "attack_rows": 11742202,
+      "changed_DT_A_B_rows": 5355900,
+      "changed_DT_A_B_vectors": 370
+    },
+    "retained_vectors": {
+      "vectors": 6140130,
+      "conflicting_vectors": 673,
+      "empirical_minimum_errors_on_observed_vectors": 1431,
+      "rows": 10181790,
+      "normal_rows": 381351,
+      "attack_rows": 9800439,
+      "changed_DT_A_B_rows": 64699,
+      "changed_DT_A_B_vectors": 22155
+    },
+    "top20_frequency": {
+      "vectors": 20,
+      "conflicting_vectors": 10,
+      "empirical_minimum_errors_on_observed_vectors": 86366,
+      "rows": 7417813,
+      "normal_rows": 201637,
+      "attack_rows": 7216176,
+      "changed_DT_A_B_rows": 5353667,
+      "changed_DT_A_B_vectors": 5
+    },
+    "remainder": {
+      "vectors": 6232440,
+      "conflicting_vectors": 1334,
+      "empirical_minimum_errors_on_observed_vectors": 28511,
+      "rows": 14920339,
+      "normal_rows": 593874,
+      "attack_rows": 14326465,
+      "changed_DT_A_B_rows": 66932,
+      "changed_DT_A_B_vectors": 22520
+    }
+  },
+  "top3_rows": 5114822,
+  "top3_share_DT_changed_rows": 0.9435898135980912,
+  "unique_top_metadata_vectors_rescored": 35,
+  "limitations": [
+    "No full 23-source raw re-execution: full files remain on user PC.",
+    "Raw SQLite aggregation cache intentionally absent from uploaded archive; its digest recorded only.",
+    "Checks establish aggregate consistency, exact repeated retained-cohort results and frozen top-vector predictions; they do not independently establish every raw-row prediction."
+  ],
+  "all_valid_metrics": {
+    "rows": {
+      "A": {
+        "recall": 70.2665100346796,
+        "FPR": 26.79497832210994,
+        "balanced_accuracy": 71.73576585628483
+      },
+      "B": {
+        "recall": 67.13480487373855,
+        "FPR": 26.78479618760771,
+        "balanced_accuracy": 70.17500434306541
+      },
+      "stale_scale": {
+        "recall": 67.03468715836651,
+        "FPR": 24.685768015778535,
+        "balanced_accuracy": 71.174459571294
+      },
+      "stale_threshold": {
+        "recall": 71.74009444802985,
+        "FPR": 38.33561069551521,
+        "balanced_accuracy": 66.70224187625732
+      },
+      "stale_both": {
+        "recall": 70.13833169294331,
+        "FPR": 26.27455811421841,
+        "balanced_accuracy": 71.93188678936245
+      },
+      "compatible_probability": {
+        "recall": 67.13480487373855,
+        "FPR": 26.78479618760771,
+        "balanced_accuracy": 70.17500434306541
+      },
+      "compatible_decision": {
+        "recall": 67.13480487373855,
+        "FPR": 26.78479618760771,
+        "balanced_accuracy": 70.17500434306541
+      },
+      "restored_B": {
+        "recall": 67.13480487373855,
+        "FPR": 26.78479618760771,
+        "balanced_accuracy": 70.17500434306541
+      },
+      "DT_A": {
+        "recall": 75.55998821128756,
+        "FPR": 28.864842849438915,
+        "balanced_accuracy": 73.34757268092432
+      },
+      "DT_B": {
+        "recall": 98.92805622114763,
+        "FPR": 33.44906607199649,
+        "balanced_accuracy": 82.73949507457557
+      }
+    },
+    "vector_balanced": {
+      "A": {
+        "recall": 94.95678674828424,
+        "FPR": 30.868998251284864,
+        "balanced_accuracy": 82.0438942484997
+      },
+      "B": {
+        "recall": 92.53804255613271,
+        "FPR": 29.257526974000204,
+        "balanced_accuracy": 81.64025779106625
+      },
+      "stale_scale": {
+        "recall": 92.58887842489884,
+        "FPR": 28.59441273884104,
+        "balanced_accuracy": 81.9972328430289
+      },
+      "stale_threshold": {
+        "recall": 94.91096559386989,
+        "FPR": 30.524272202251524,
+        "balanced_accuracy": 82.19334669580918
+      },
+      "stale_both": {
+        "recall": 94.54986516502703,
+        "FPR": 30.066954273459384,
+        "balanced_accuracy": 82.24145544578383
+      },
+      "compatible_probability": {
+        "recall": 92.53804255613271,
+        "FPR": 29.257526974000204,
+        "balanced_accuracy": 81.64025779106625
+      },
+      "compatible_decision": {
+        "recall": 92.53804255613271,
+        "FPR": 29.257526974000204,
+        "balanced_accuracy": 81.64025779106625
+      },
+      "restored_B": {
+        "recall": 92.53804255613271,
+        "FPR": 29.257526974000204,
+        "balanced_accuracy": 81.64025779106625
+      },
+      "DT_A": {
+        "recall": 98.39779991119345,
+        "FPR": 35.26098149575446,
+        "balanced_accuracy": 81.5684092077195
+      },
+      "DT_B": {
+        "recall": 98.64422479961543,
+        "FPR": 33.97518929651097,
+        "balanced_accuracy": 82.33451775155223
+      }
+    },
+    "frequency_cap100": {
+      "A": {
+        "recall": 91.51574063304824,
+        "FPR": 31.331090940402877,
+        "balanced_accuracy": 80.09232484632268
+      },
+      "B": {
+        "recall": 84.81358500243815,
+        "FPR": 30.724116160474424,
+        "balanced_accuracy": 77.04473442098185
+      },
+      "stale_scale": {
+        "recall": 84.75826182260678,
+        "FPR": 28.078169640921207,
+        "balanced_accuracy": 78.34004609084279
+      },
+      "stale_threshold": {
+        "recall": 91.52119325188825,
+        "FPR": 32.429033124560966,
+        "balanced_accuracy": 79.54608006366364
+      },
+      "stale_both": {
+        "recall": 91.2384572732738,
+        "FPR": 30.3747546372219,
+        "balanced_accuracy": 80.43185131802595
+      },
+      "compatible_probability": {
+        "recall": 84.81358500243815,
+        "FPR": 30.724116160474424,
+        "balanced_accuracy": 77.04473442098185
+      },
+      "compatible_decision": {
+        "recall": 84.81358500243815,
+        "FPR": 30.724116160474424,
+        "balanced_accuracy": 77.04473442098185
+      },
+      "restored_B": {
+        "recall": 84.81358500243815,
+        "FPR": 30.724116160474424,
+        "balanced_accuracy": 77.04473442098185
+      },
+      "DT_A": {
+        "recall": 98.89175349014319,
+        "FPR": 34.82398778382574,
+        "balanced_accuracy": 82.03388285315873
+      },
+      "DT_B": {
+        "recall": 99.05474597488411,
+        "FPR": 32.687221484803516,
+        "balanced_accuracy": 83.1837622450403
+      }
+    }
+  },
+  "zero_vector": {
+    "normal_rows": 115271,
+    "attack_rows": 0
+  },
+  "coverage": {
+    "candidate_count": 129,
+    "candidates_with_all_four_test_groups": 0,
+    "candidates_with_two_class_fit_and_cal_roles": 66,
+    "candidates_with_both_properties": 0,
+    "split_selected": false,
+    "output_dir": "E:\\ids-update-lab\\runs\\ton-diagnostics-028\\coverage"
+  },
+  "without_three_row_weighted": {
+    "A": {
+      "confusion": [
+        [
+          533079.0,
+          213157.0
+        ],
+        [
+          1339832.0,
+          15137262.0
+        ]
+      ],
+      "recall_percent": 91.86851759175495,
+      "FPR_percent": 28.564287973241708,
+      "BA_percent": 81.65211480925663
+    },
+    "B": {
+      "confusion": [
+        [
+          533160.0,
+          213076.0
+        ],
+        [
+          2014484.0,
+          14462610.0
+        ]
+      ],
+      "recall_percent": 87.77403345517116,
+      "FPR_percent": 28.553433498249884,
+      "BA_percent": 79.61029997846065
+    },
+    "DT_A": {
+      "confusion": [
+        [
+          516613.0,
+          229623.0
+        ],
+        [
+          199477.0,
+          16277617.0
+        ]
+      ],
+      "recall_percent": 98.78936783391538,
+      "FPR_percent": 30.770828531456537,
+      "BA_percent": 84.00926965122942
+    },
+    "DT_B": {
+      "confusion": [
+        [
+          529420.0,
+          216816.0
+        ],
+        [
+          230925.0,
+          16246169.0
+        ]
+      ],
+      "recall_percent": 98.59850893610245,
+      "FPR_percent": 29.054615429971214,
+      "BA_percent": 84.7719467530656
+    }
+  }
+}

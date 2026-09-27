@@ -1,0 +1,86 @@
+{
+  "roles": {
+    "A_fit": {
+      "class_counts": [
+        208504,
+        791321
+      ],
+      "types": {
+        "normal": 208504,
+        "scanning": 791321
+      }
+    },
+    "A_cal": {
+      "class_counts": [
+        0,
+        0
+      ],
+      "types": {}
+    },
+    "B_fit_added": {
+      "class_counts": [
+        0,
+        0
+      ],
+      "types": {}
+    },
+    "B_cal": {
+      "class_counts": [
+        0,
+        0
+      ],
+      "types": {}
+    },
+    "common_test": {
+      "class_counts": [
+        0,
+        0
+      ],
+      "types": {}
+    }
+  },
+  "source_totals": {
+    "invalid_raw_contract": 175,
+    "invalid_flow_metadata_with_valid_raw": 0,
+    "source": 1000000,
+    "invalid": 175,
+    "outside_original_role_intervals": 0,
+    "boundary_time_margin_excluded": 0,
+    "flow_crossing_effective_end_excluded": 0,
+    "outside_roles_or_boundary_purged": 0
+  },
+  "effective_intervals_epoch": {
+    "A_fit": [
+      [
+        1554195600.0,
+        1556171940.0
+      ]
+    ],
+    "A_cal": [
+      [
+        1556172060.0,
+        1556193540.0
+      ]
+    ],
+    "B_fit_added": [
+      [
+        1556193660.0,
+        1556215140.0
+      ]
+    ],
+    "B_cal": [
+      [
+        1556215260.0,
+        1556236740.0
+      ]
+    ],
+    "common_test": [
+      [
+        1556236860.0,
+        1556550000.0
+      ]
+    ]
+  },
+  "flow_containment_only": true,
+  "session_independence_established": false
+}

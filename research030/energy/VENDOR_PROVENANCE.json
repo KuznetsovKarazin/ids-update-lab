@@ -1,0 +1,17 @@
+{
+  "cfn_parser.py": {
+    "sha256": "dd706afbddc92d58f41fc51a3dcc81e1ba685aed801e9a304604f81dc2260123",
+    "source": "completion020/tools/cfn_parser.py",
+    "modified": false
+  },
+  "energy_analysis.py": {
+    "sha256": "8f31e9de2622e37bdbf8d54df8e9a87723d150eb1bd4053d6d116bf13f6659af",
+    "source": "completion020/tools/energy_analysis.py",
+    "modified": false
+  },
+  "generate_energy_windows.py": {
+    "sha256": "4cc5bf8dcfde5f42fb49cba98962ba0219e08a586bd0912224d3067bc69b34f7",
+    "source": "completion020/tools/generate_energy_windows.py",
+    "modified": false
+  }
+}

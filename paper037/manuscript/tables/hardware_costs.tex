@@ -1,0 +1,16 @@
+\begin{table}[!htbp]
+\caption{Update cost in the final four-model runtime. Values are medians of ten paired blocks on one ESP32-S3; primary timing uses the reused-slot B-to-C transition. MCU intervals exclude host gaps and full-image reboot.}\label{tab:hardware-cost}
+\centering\small
+\begin{tabular}{lrrrrr}
+\toprule
+ & Signed package & \multicolumn{2}{c}{MCU interval (ms)} & \multicolumn{2}{c}{USB end-to-end (s)}\\
+Model & (bytes) & Package & Full image & Package & Full image\\
+\midrule
+LR & 448 & 28.718 & 1209.134 & 0.0825 & 10.6948\\
+DT & 1104 & 31.736 & 1210.146 & 0.0884 & 10.6955\\
+MLP-F32 & 1588 & 29.310 & 1206.139 & 0.0887 & 10.6923\\
+MLP-I8 & 840 & 31.490 & 1207.111 & 0.0871 & 10.6888\\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize Full image: 339,504 bytes; complete signed artifact: 339,844 bytes (84-byte metadata and 256-byte signature included). Application-protocol TX: 685,239 bytes for full image; 904, 2216, 3184, and 1688 bytes for the four packages, respectively.
+\end{table}

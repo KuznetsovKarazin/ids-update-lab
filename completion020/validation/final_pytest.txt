@@ -1,0 +1,3 @@
+python3 -m pytest -q completion020/tests completion020/tools/test_collect_results.py
+74 passed, 34 subtests passed in 12.74s
+No physical MCU accessed.

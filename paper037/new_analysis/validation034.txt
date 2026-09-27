@@ -1,0 +1,1 @@
+PASS: channel-to-scalar reduction (4096 inputs), rational enclosure (64 broad-range inputs), calibration tie and immutability checks

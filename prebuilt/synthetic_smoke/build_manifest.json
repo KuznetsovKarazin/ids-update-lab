@@ -1,0 +1,123 @@
+{
+  "target": "esp32s3",
+  "flash_bytes": 4194304,
+  "sdk": "ESP-IDF v5.3.2",
+  "sdk_commit": "9d7f2d69f50d1288526d4f1027108e314e8c879f",
+  "measurement_origin": "cross_compilation_only",
+  "data_origin": "synthetic_plumbing",
+  "hardware_measured": false,
+  "files": {
+    "bundle/ids_update_lab.bin": {
+      "bytes": 305744,
+      "sha256": "a8a463e03b687a55ac2df6c29844bb265a3277ad825eee0c601e577cd2a0f0ab"
+    },
+    "bundle/bootloader/bootloader.bin": {
+      "bytes": 21568,
+      "sha256": "e60cb63a79ac2c2aad952bc8be6a5e3144bd53fb0c007a6a65f74ea718226acb"
+    },
+    "bundle/partition_table/partition-table.bin": {
+      "bytes": 3072,
+      "sha256": "9e0c5e17c268f5c2336a1bc41791d78efc193d24f7be3c718d94a7a5018c7ac2"
+    },
+    "bundle/ota_data_initial.bin": {
+      "bytes": 8192,
+      "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f"
+    },
+    "bundle/flasher_args.json": {
+      "bytes": 1059,
+      "sha256": "2517076ebd854b0147186167636783125b8498dd444f95b0ad82c86c540cb52d"
+    },
+    "bundle/flash_args": {
+      "bytes": 179,
+      "sha256": "16341a41fdeb477c0377695821aa38e43f12e3853a2381c7cc2b4389ac7490de"
+    },
+    "bundle/sdkconfig": {
+      "bytes": 66460,
+      "sha256": "5b8d66e07f67ceca0d200a31734ca139ac50dac49427eefdf77be5742fce66e4"
+    },
+    "model_only/ids_update_lab.bin": {
+      "bytes": 305744,
+      "sha256": "0be4d47ac1a1c751fb71bdf20bbac32bc03c480254e1c5713acae679838147c3"
+    },
+    "model_only/bootloader/bootloader.bin": {
+      "bytes": 21568,
+      "sha256": "38ec8beaa2bd092717cff540451f52e828748825a357eb93df49637096ba915d"
+    },
+    "model_only/partition_table/partition-table.bin": {
+      "bytes": 3072,
+      "sha256": "9e0c5e17c268f5c2336a1bc41791d78efc193d24f7be3c718d94a7a5018c7ac2"
+    },
+    "model_only/ota_data_initial.bin": {
+      "bytes": 8192,
+      "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f"
+    },
+    "model_only/flasher_args.json": {
+      "bytes": 1059,
+      "sha256": "2517076ebd854b0147186167636783125b8498dd444f95b0ad82c86c540cb52d"
+    },
+    "model_only/flash_args": {
+      "bytes": 179,
+      "sha256": "16341a41fdeb477c0377695821aa38e43f12e3853a2381c7cc2b4389ac7490de"
+    },
+    "model_only/sdkconfig": {
+      "bytes": 66460,
+      "sha256": "4e3d938c54604170cb6d151c6500e982c81b25c19c3e7b4d69acd8487c5c7c06"
+    },
+    "whole_firmware/ids_update_lab.bin": {
+      "bytes": 309440,
+      "sha256": "64ddbbe4f176f15af540e0c201e1cfad96f1bf677164b9a37336dbac2fa7c559"
+    },
+    "whole_firmware/bootloader/bootloader.bin": {
+      "bytes": 21568,
+      "sha256": "76b4a13fb378cd473fbd5712fedf71fe1593566bbe88807392333cafe48b0066"
+    },
+    "whole_firmware/partition_table/partition-table.bin": {
+      "bytes": 3072,
+      "sha256": "9e0c5e17c268f5c2336a1bc41791d78efc193d24f7be3c718d94a7a5018c7ac2"
+    },
+    "whole_firmware/ota_data_initial.bin": {
+      "bytes": 8192,
+      "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f"
+    },
+    "whole_firmware/flasher_args.json": {
+      "bytes": 1059,
+      "sha256": "2517076ebd854b0147186167636783125b8498dd444f95b0ad82c86c540cb52d"
+    },
+    "whole_firmware/flash_args": {
+      "bytes": 179,
+      "sha256": "16341a41fdeb477c0377695821aa38e43f12e3853a2381c7cc2b4389ac7490de"
+    },
+    "whole_firmware/sdkconfig": {
+      "bytes": 66460,
+      "sha256": "6347c08da8f017a076f72cd61aecd773e8a94d24e10683e7907e102ebe27e1b6"
+    },
+    "whole_firmware_B/ids_update_lab.bin": {
+      "bytes": 309440,
+      "sha256": "0f1f2413a5c29b27656e0f70c7b6d8df80f69487a47f44d31ae8f1857675d29b"
+    },
+    "whole_firmware_B/bootloader/bootloader.bin": {
+      "bytes": 21568,
+      "sha256": "f610598110460080e7dfde1da2ce9fddddd78a7f2fb50f6bf050453ae645935a"
+    },
+    "whole_firmware_B/partition_table/partition-table.bin": {
+      "bytes": 3072,
+      "sha256": "9e0c5e17c268f5c2336a1bc41791d78efc193d24f7be3c718d94a7a5018c7ac2"
+    },
+    "whole_firmware_B/ota_data_initial.bin": {
+      "bytes": 8192,
+      "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f"
+    },
+    "whole_firmware_B/flasher_args.json": {
+      "bytes": 1059,
+      "sha256": "2517076ebd854b0147186167636783125b8498dd444f95b0ad82c86c540cb52d"
+    },
+    "whole_firmware_B/flash_args": {
+      "bytes": 179,
+      "sha256": "16341a41fdeb477c0377695821aa38e43f12e3853a2381c7cc2b4389ac7490de"
+    },
+    "whole_firmware_B/sdkconfig": {
+      "bytes": 66460,
+      "sha256": "6347c08da8f017a076f72cd61aecd773e8a94d24e10683e7907e102ebe27e1b6"
+    }
+  }
+}

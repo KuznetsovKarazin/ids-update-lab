@@ -1,0 +1,15 @@
+\begin{table}[H]
+\caption{Calibration recurrence diagnostics. Row FPR reflects observed calibration frequencies; vector FPR gives each raw vector total weight one and preserves proportional label shares. These are calibration diagnostics, not independent test estimates.}\label{tab:calibration-recurrence}
+\small
+\begin{tabularx}{\textwidth}{Xrrrrr}
+\toprule
+Variant & Cutoff & Template code & FP & Row FPR (\%) & Vector FPR (\%) \\
+\midrule
+B MLP-I8 & 10 & 5 & 19 & 0.91 & 1.19 \\
+Per-tensor, transferred & 10 & 21 & 421 & 20.16 & 2.14 \\
+Per-tensor, recalibrated & 22 & 21 & 1 & 0.05 & 0.06 \\
+Per-channel, transferred & 10 & 20 & 419 & 20.07 & 2.01 \\
+Per-channel, recalibrated & 21 & 20 & 0 & 0.00 & 0.00 \\
+\bottomrule
+\end{tabularx}
+\end{table}

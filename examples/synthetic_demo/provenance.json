@@ -1,0 +1,29 @@
+{
+  "data_origin": "synthetic_plumbing",
+  "fixture_restoration": {
+    "signed_packages": "Original signed bytes extracted from preserved firmware; signatures and generated payloads verified.",
+    "sources": {
+      "release-A.sids": {
+        "bytes": 376,
+        "evidence_archive_path": "prebuilt/usb_buffered/bundle/ids_update_lab.bin",
+        "offset": 45596,
+        "source_sha256": "8edbcb393ef54befd1ea87491c9a9cf569f48eea132d54468b920078eda2cf53"
+      },
+      "release-B.sids": {
+        "bytes": 376,
+        "evidence_archive_path": "prebuilt/usb_buffered/whole_firmware_B/ids_update_lab.bin",
+        "offset": 46520,
+        "source_sha256": "b26dbbbc72dfcb3177c24bb8baab83766c5eee8a4d3d75d71be0b821c78b6a96"
+      }
+    },
+    "supporting_files": "Contract and synthetic golden records regenerated with host/ids_update_lab/artifacts.py; not new hardware evidence."
+  },
+  "hardware_measured": false,
+  "model_only_policy": "authenticated candidate weights/bias with immutable factory means/scales/threshold",
+  "package_sha256": {
+    "release-A.sids": "86f293e19f937ff3051bc04e1a6366b49a408e87bbe9820fa271d27fdba7dd9b",
+    "release-B.sids": "78a2c9b90f1f282d2b822d7b2b8926a95b3138dde5f47ff4ccbfbc8a26f1fb6e"
+  },
+  "release_B_purpose": "controlled equivalent classifier under changed normalization; not retraining or drift adaptation",
+  "schema_sha256": "80c95ab0dc774205f35ed1a970f8f30002be1ad8478d023352452e692eccc40a"
+}

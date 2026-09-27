@@ -1,0 +1,6 @@
+variant,q_threshold,normal_n,attack_n,false_positives,true_positives,calibration_FPR,calibration_recall,calibration_changed_vs_B,check_vector_n,check_changed_vs_B,check_q_min,check_q_max
+B_original,10,2088,100000,19,73531,0.009099616858237548,0.73531,0,258,0,-31,14
+export_per_tensor_transferred,10,2088,100000,421,71623,0.20162835249042146,0.71623,6692,258,0,-34,15
+export_per_tensor_recalibrated,22,2088,100000,1,23933,0.0004789272030651341,0.23933,49702,258,3,-34,15
+export_per_channel_transferred,10,2088,100000,419,72198,0.2006704980842912,0.72198,6637,258,0,-34,15
+export_per_channel_recalibrated,21,2088,100000,0,23564,0.0,0.23564,50070,258,3,-34,15

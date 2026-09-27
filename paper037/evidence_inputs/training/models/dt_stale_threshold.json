@@ -1,0 +1,350 @@
+{
+  "schema": "030_model_v1",
+  "kind": "dt",
+  "feature_count": 8,
+  "feature_names": [
+    "duration",
+    "src_bytes",
+    "dst_bytes",
+    "missed_bytes",
+    "src_pkts",
+    "src_ip_bytes",
+    "dst_pkts",
+    "dst_ip_bytes"
+  ],
+  "transform": "raw",
+  "threshold": 0.8377211689949036,
+  "nodes": [
+    {
+      "feature": 4,
+      "threshold": 0.5,
+      "left": 1,
+      "right": 16,
+      "probability": 0.5
+    },
+    {
+      "feature": 6,
+      "threshold": 0.5,
+      "left": 2,
+      "right": 3,
+      "probability": 0.017497822642326355
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.0
+    },
+    {
+      "feature": 7,
+      "threshold": 72.5,
+      "left": 4,
+      "right": 9,
+      "probability": 0.06812305748462677
+    },
+    {
+      "feature": 7,
+      "threshold": 46.0,
+      "left": 5,
+      "right": 6,
+      "probability": 0.8955660462379456
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.7357050180435181
+    },
+    {
+      "feature": 7,
+      "threshold": 54.0,
+      "left": 7,
+      "right": 8,
+      "probability": 0.9438076615333557
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.9703335165977478
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.6525900363922119
+    },
+    {
+      "feature": 2,
+      "threshold": 45.0,
+      "left": 10,
+      "right": 13,
+      "probability": 0.009117521345615387
+    },
+    {
+      "feature": 7,
+      "threshold": 105.0,
+      "left": 11,
+      "right": 12,
+      "probability": 0.13313698768615723
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.41157037019729614
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.06629057973623276
+    },
+    {
+      "feature": 6,
+      "threshold": 2.5,
+      "left": 14,
+      "right": 15,
+      "probability": 0.0017904171254485846
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.00043619738426059484
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.10109277069568634
+    },
+    {
+      "feature": 5,
+      "threshold": 52.5,
+      "left": 17,
+      "right": 32,
+      "probability": 0.628275454044342
+    },
+    {
+      "feature": 7,
+      "threshold": 82.0,
+      "left": 18,
+      "right": 25,
+      "probability": 0.9648042321205139
+    },
+    {
+      "feature": 5,
+      "threshold": 43.5,
+      "left": 19,
+      "right": 22,
+      "probability": 0.9736455678939819
+    },
+    {
+      "feature": 7,
+      "threshold": 20.0,
+      "left": 20,
+      "right": 21,
+      "probability": 0.9376905560493469
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.7223625183105469
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.9974777698516846
+    },
+    {
+      "feature": 5,
+      "threshold": 49.0,
+      "left": 23,
+      "right": 24,
+      "probability": 0.9966859817504883
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.9996903538703918
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.8618134260177612
+    },
+    {
+      "feature": 5,
+      "threshold": 50.0,
+      "left": 26,
+      "right": 29,
+      "probability": 0.03426917642354965
+    },
+    {
+      "feature": 7,
+      "threshold": 110.0,
+      "left": 27,
+      "right": 28,
+      "probability": 0.005965649615973234
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.03957182541489601
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.001681537483818829
+    },
+    {
+      "feature": 7,
+      "threshold": 114.0,
+      "left": 30,
+      "right": 31,
+      "probability": 0.6755512356758118
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 1.0
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.5600841641426086
+    },
+    {
+      "feature": 7,
+      "threshold": 20.0,
+      "left": 33,
+      "right": 40,
+      "probability": 0.14718252420425415
+    },
+    {
+      "feature": 4,
+      "threshold": 199.5,
+      "left": 34,
+      "right": 37,
+      "probability": 0.019656985998153687
+    },
+    {
+      "feature": 5,
+      "threshold": 60.5,
+      "left": 35,
+      "right": 36,
+      "probability": 0.015477567911148071
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.18204225599765778
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.013689754530787468
+    },
+    {
+      "feature": 5,
+      "threshold": 8188.0,
+      "left": 38,
+      "right": 39,
+      "probability": 0.6480011343955994
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.9871755242347717
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.23521022498607635
+    },
+    {
+      "feature": 2,
+      "threshold": 68.5,
+      "left": 41,
+      "right": 44,
+      "probability": 0.396011084318161
+    },
+    {
+      "feature": 2,
+      "threshold": 13.5,
+      "left": 42,
+      "right": 43,
+      "probability": 0.8442673087120056
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.9825749397277832
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.5429236888885498
+    },
+    {
+      "feature": 4,
+      "threshold": 1.5,
+      "left": 45,
+      "right": 46,
+      "probability": 0.11233121901750565
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.0036735578905791044
+    },
+    {
+      "feature": -1,
+      "threshold": 0.0,
+      "left": -1,
+      "right": -1,
+      "probability": 0.26760345697402954
+    }
+  ],
+  "model_id": "dt_stale_threshold",
+  "training_version": "B"
+}

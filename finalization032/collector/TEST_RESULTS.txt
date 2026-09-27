@@ -1,0 +1,17 @@
+test_archive_exception_is_explicit (test_collect_local_all032.CollectorTests.test_archive_exception_is_explicit) ... ok
+test_changed_source_retains_partial_no_final_output (test_collect_local_all032.CollectorTests.test_changed_source_retains_partial_no_final_output) ... Incomplete archive retained for inspection if present: /tmp/tmpw34spdd2/all032.zip.partial
+ok
+test_competing_output_not_overwritten (test_collect_local_all032.CollectorTests.test_competing_output_not_overwritten) ... Incomplete archive retained for inspection if present: /tmp/tmpn8lq4ts4/all032.zip.partial
+ok
+test_dependencies_credentials_and_existing_archives_excluded (test_collect_local_all032.CollectorTests.test_dependencies_credentials_and_existing_archives_excluded) ... ok
+test_existing_output_and_partial_never_overwritten (test_collect_local_all032.CollectorTests.test_existing_output_and_partial_never_overwritten) ... ok
+test_explicit_full_dataset_mode_and_data_directory (test_collect_local_all032.CollectorTests.test_explicit_full_dataset_mode_and_data_directory) ... ok
+test_large_dataset_outside_runs_hash_only_but_runs_kept (test_collect_local_all032.CollectorTests.test_large_dataset_outside_runs_hash_only_but_runs_kept) ... ok
+test_no_runs_or_path_escape_refused (test_collect_local_all032.CollectorTests.test_no_runs_or_path_escape_refused) ... ok
+test_preserves_sqlite_npz_recovery_code_and_failed_status (test_collect_local_all032.CollectorTests.test_preserves_sqlite_npz_recovery_code_and_failed_status) ... ok
+test_public_development_key_exact_content_only (test_collect_local_all032.CollectorTests.test_public_development_key_exact_content_only) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.983s
+
+OK

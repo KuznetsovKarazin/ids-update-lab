@@ -1,0 +1,13 @@
+{
+  "contract_version": 1,
+  "feature_names": [
+    "fixture_x",
+    "fixture_y"
+  ],
+  "input_units": [
+    "synthetic_unit",
+    "synthetic_unit"
+  ],
+  "missing_policy": "reject_nonfinite",
+  "target": "attack_vs_normal"
+}

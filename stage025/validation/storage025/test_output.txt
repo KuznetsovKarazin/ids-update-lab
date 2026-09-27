@@ -1,0 +1,10 @@
+test_adversarial_nor_both_policies (__main__.Storage025Tests.test_adversarial_nor_both_policies) ... ok
+test_corrupt_selected_fails_closed_and_inactive_partial_erase_recovers (__main__.Storage025Tests.test_corrupt_selected_fails_closed_and_inactive_partial_erase_recovers) ... ok
+test_frozen_signed_abc_golden_and_rejections (__main__.Storage025Tests.test_frozen_signed_abc_golden_and_rejections) ... ok
+test_production_native_file_range_driver (__main__.Storage025Tests.test_production_native_file_range_driver) ... ok
+test_six_checkpoints_clean_and_reused_real_signatures (__main__.Storage025Tests.test_six_checkpoints_clean_and_reused_real_signatures) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 9.865s
+
+OK

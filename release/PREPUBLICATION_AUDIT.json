@@ -1,0 +1,33 @@
+{
+  "status": "no_blocker_found_within_review_scope",
+  "inspection_utc": "2026-09-26T13:40:44.480229+00:00",
+  "file_counts_at_inspection": {
+    "github": 738,
+    "evidence": 1769
+  },
+  "high_signal_credential_matches": 0,
+  "private_author_note_paths": 0,
+  "excluded_dataset_container_files_found": 0,
+  "jsonl_event_records_inspected": 89510,
+  "raw_input_or_transcript_fields_found": 0,
+  "key_policy": "Only actual private-key file is approved PUBLIC_DEVELOPMENT_ONLY fixture; scanner/test marker literals are not credentials.",
+  "software_author": "Oleksandr Kuznetsov",
+  "article_authors_preserved": 6,
+  "license_scope": "Original software MIT; original documents and measurement material CC-BY-4.0; existing upstream component licenses retained.",
+  "paper_changes_relative_to_received036": [
+    "README.md",
+    "manuscript/manuscript.pdf",
+    "manuscript/sections/appendix.tex",
+    "manuscript/sections/backmatter.tex"
+  ],
+  "input_mutations_performed": false,
+  "limits": [
+    "Focused secrets and authorship/licensing scope check, not exhaustive credentials proof or formal legal opinion.",
+    "Does not establish complete binary linker SBOM.",
+    "Final generated manifests and uploaded service state must be verified separately."
+  ],
+  "inspected_distributions": [
+    "software source distribution",
+    "software and experimental evidence distribution"
+  ]
+}

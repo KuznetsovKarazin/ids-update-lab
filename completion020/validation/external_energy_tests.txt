@@ -1,0 +1,23 @@
+test_cfn_units_are_unmodified (test_external_energy.Energy.test_cfn_units_are_unmodified) ... ok
+test_constant_power (test_external_energy.Energy.test_constant_power) ... ok
+test_interior_extremum (test_external_energy.Energy.test_interior_extremum) ... ok
+test_net_exact_baseline (test_external_energy.Energy.test_net_exact_baseline) ... ok
+test_out_of_range_fails (test_external_energy.Energy.test_out_of_range_fails) ... ok
+test_overlap_windows_rejected (test_external_energy.Energy.test_overlap_windows_rejected) ... ok
+test_generator_freezes_host_windows_and_excludes_restore (test_external_energy.EnergyWindows.test_generator_freezes_host_windows_and_excludes_restore) ... ok
+test_placeholder_rejected (test_external_energy.EnergyWindows.test_placeholder_rejected) ... ok
+test_bootstrap_pairing (test_external_energy.External.test_bootstrap_pairing) ... ok
+test_degenerate_draws_not_resampled (test_external_energy.External.test_degenerate_draws_not_resampled) ... ok
+test_full_frozen_evaluation_declared_groups_and_uppercase_hash (test_external_energy.External.test_full_frozen_evaluation_declared_groups_and_uppercase_hash) ... ok
+test_overlap_full_known_source (test_external_energy.External.test_overlap_full_known_source) ... ok
+test_reject_negative (test_external_energy.External.test_reject_negative) ... ok
+test_representable_float_difference (test_external_energy.External.test_representable_float_difference) ... ok
+test_signed_zero_same_fingerprint (test_external_energy.External.test_signed_zero_same_fingerprint) ... ok
+test_strict_labels (test_external_energy.External.test_strict_labels) ... ok
+test_complete_wiring_declaration (test_external_energy.PhysicalGate.test_complete_wiring_declaration) ... ok
+test_unconfirmed_wiring_rejected (test_external_energy.PhysicalGate.test_unconfirmed_wiring_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.199s
+
+OK

@@ -1,0 +1,8 @@
+{
+  "final_end_to_end_status": "complete",
+  "block_count": 80,
+  "exact_energy_equality_after_adding_integrity_guards": true,
+  "final_source_sha256": "12b5ceec0409b0085d0f3a6f9edb17e6c025859f107be9b54175507128393d0e",
+  "all_blocks_positive_net_sensitivity": true,
+  "hardware_accepted_update_receipts": 5280
+}

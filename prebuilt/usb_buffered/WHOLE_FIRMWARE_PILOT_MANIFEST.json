@@ -1,0 +1,174 @@
+{
+  "release": "usb-buffered-whole-firmware-pilot-2026-09-23",
+  "target": "ESP32-S3 4MiB",
+  "factory_A_sha256": "bf8219408ddb46b6f952194a44bd6980e9e50c61f787c72df27ff30c2993c195",
+  "candidate_B_sha256": "b26dbbbc72dfcb3177c24bb8baab83766c5eee8a4d3d75d71be0b821c78b6a96",
+  "whole_firmware_hardware_executed": false,
+  "offline_preflight": "PASS on real compiled images; no port opened",
+  "host_native_test_count": 50,
+  "host_native_tests": "PASS",
+  "new_host_mock_test_count": 10,
+  "recorded_previous_hardware_model_only_result": {
+    "run": "esp32-model-only-008",
+    "origin": "actual_mcu",
+    "data_origin": "synthetic_plumbing",
+    "after_records": 63,
+    "label_disagreements_vs_coherent_B": 7,
+    "label_disagreements_vs_mixed_reference": 0
+  },
+  "installation": "Extract into existing project root. Provision A using all four files in whole_firmware/flash_args, including initial OTA selection. Run tools/run_whole_firmware_pilot.py as documented.",
+  "files": {
+    "docs/BUNDLE_PILOT_RESULTS_RU.md": {
+      "bytes": 4733,
+      "sha256": "335d4c42741694b2eb876b9acc15558c75077d6e08a8a6e113b30790c978bffc"
+    },
+    "docs/MODEL_ONLY_PILOT_RESULTS_RU.md": {
+      "bytes": 4337,
+      "sha256": "127c046dfb4a53183f0229a391efef99d978a1e05d163d213351d0e2a6b34f8c"
+    },
+    "docs/RESULTS.md": {
+      "bytes": 7447,
+      "sha256": "2705119b8a218c50a1a3763b7e77394cb4c4f9f5613960df33fe20503d7af6a3"
+    },
+    "docs/WHOLE_FIRMWARE.md": {
+      "bytes": 8605,
+      "sha256": "a56e18aa70d7c481a4f364f40410a6d743b37956b1563055488f7ebbef6e1c88"
+    },
+    "docs/WHOLE_FIRMWARE_PILOT_RU.md": {
+      "bytes": 7596,
+      "sha256": "f98752301882f048f398dcf5e2f85ca831e0ab270d6fc982084f77b853db4605"
+    },
+    "host/ids_update_lab/serial_runner.py": {
+      "bytes": 21098,
+      "sha256": "b3a56e043d7c19215dc48a0c0c109f65c7dd1391facb4dda5d6eb8552dfa505b"
+    },
+    "prebuilt/usb_buffered/whole_B_ota/bootloader-compatibility.json": {
+      "bytes": 2645,
+      "sha256": "efa733a78c90574ce5f8537c2cb459b5d531f2b04222d43e655d825526d169fa"
+    },
+    "prebuilt/usb_buffered/whole_B_ota/factory-verification.json": {
+      "bytes": 667,
+      "sha256": "a89215ff15866c457146c8cbf831773bbbde629584aeab3f70579c687c357528"
+    },
+    "prebuilt/usb_buffered/whole_B_ota/factory.sids": {
+      "bytes": 376,
+      "sha256": "78a2c9b90f1f282d2b822d7b2b8926a95b3138dde5f47ff4ccbfbc8a26f1fb6e"
+    },
+    "prebuilt/usb_buffered/whole_B_ota/image.bin": {
+      "bytes": 320080,
+      "sha256": "b26dbbbc72dfcb3177c24bb8baab83766c5eee8a4d3d75d71be0b821c78b6a96"
+    },
+    "prebuilt/usb_buffered/whole_B_ota/manifest.json": {
+      "bytes": 815,
+      "sha256": "51444d604ef701d74abc3b1c14d4208cbfecc60eeb4817d032aa4d4e469fa84e"
+    },
+    "prebuilt/usb_buffered/whole_B_ota/metadata.bin": {
+      "bytes": 84,
+      "sha256": "31b8659b30718dd44e8cf7b89c35e82118b7d3ae9de46ce5de217af9ae1bcafd"
+    },
+    "prebuilt/usb_buffered/whole_B_ota/ota-inspect.log": {
+      "bytes": 226,
+      "sha256": "659022dcb17c7712147feacc4e4ec2bd1bd24c85bd4605bbfaa31d0133cc615a"
+    },
+    "prebuilt/usb_buffered/whole_B_ota/ota-prepare.log": {
+      "bytes": 866,
+      "sha256": "fa28ae6835b2efc5e94d4219fb3dcc3f9dadce24ea41d3cf37df2e497e5d6a9a"
+    },
+    "prebuilt/usb_buffered/whole_B_ota/public.pem": {
+      "bytes": 451,
+      "sha256": "6deaddb6e4a8f0fefebe2b9a26fa3902bed0aaadf0b08267a5acec22c6529eba"
+    },
+    "prebuilt/usb_buffered/whole_B_ota/signature.bin": {
+      "bytes": 256,
+      "sha256": "ae4fe6546c0b3cac59ceb4a0db4e8da6b8c80f933ac5f6567621f7065152bc89"
+    },
+    "prebuilt/usb_buffered/whole_firmware/TARGET_BUILD_METADATA.json": {
+      "bytes": 5672,
+      "sha256": "d9a7700dc1e354fbfe7f7bc0897fe5600abf290eb3bf3d3a2a184ffefa7bc6ca"
+    },
+    "prebuilt/usb_buffered/whole_firmware/bootloader/bootloader.bin": {
+      "bytes": 21568,
+      "sha256": "76b4a13fb378cd473fbd5712fedf71fe1593566bbe88807392333cafe48b0066"
+    },
+    "prebuilt/usb_buffered/whole_firmware/build-whole_firmware.log": {
+      "bytes": 2518,
+      "sha256": "eb218f8f56f73bb2b655b1d1cd9f06dec4791942287b4049545b4bf86c3fab0d"
+    },
+    "prebuilt/usb_buffered/whole_firmware/flash_args": {
+      "bytes": 179,
+      "sha256": "16341a41fdeb477c0377695821aa38e43f12e3853a2381c7cc2b4389ac7490de"
+    },
+    "prebuilt/usb_buffered/whole_firmware/flasher_args.json": {
+      "bytes": 1059,
+      "sha256": "2517076ebd854b0147186167636783125b8498dd444f95b0ad82c86c540cb52d"
+    },
+    "prebuilt/usb_buffered/whole_firmware/ids_update_lab.bin": {
+      "bytes": 320080,
+      "sha256": "bf8219408ddb46b6f952194a44bd6980e9e50c61f787c72df27ff30c2993c195"
+    },
+    "prebuilt/usb_buffered/whole_firmware/image-whole_firmware.log": {
+      "bytes": 1412,
+      "sha256": "d14e231df7b8398146fd9d342aae1af7e04a156a2a4ee93cedf9146610ce4885"
+    },
+    "prebuilt/usb_buffered/whole_firmware/ota_data_initial.bin": {
+      "bytes": 8192,
+      "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f"
+    },
+    "prebuilt/usb_buffered/whole_firmware/partition_table/partition-table.bin": {
+      "bytes": 3072,
+      "sha256": "9e0c5e17c268f5c2336a1bc41791d78efc193d24f7be3c718d94a7a5018c7ac2"
+    },
+    "prebuilt/usb_buffered/whole_firmware/sdkconfig": {
+      "bytes": 66460,
+      "sha256": "6347c08da8f017a076f72cd61aecd773e8a94d24e10683e7907e102ebe27e1b6"
+    },
+    "prebuilt/usb_buffered/whole_firmware/size-whole_firmware.log": {
+      "bytes": 4696,
+      "sha256": "e8da91ee22aad44ef0d8defd3bcd35933761e178253fe7506f1a25602c9ce0bc"
+    },
+    "prebuilt/usb_buffered/whole_firmware_B/TARGET_BUILD_METADATA.json": {
+      "bytes": 4962,
+      "sha256": "95a71485c18a6d49625bf96060b48acb85307812b1150f5f5c3b69924aec25ad"
+    },
+    "prebuilt/usb_buffered/whole_firmware_B/build-whole_firmware_B.log": {
+      "bytes": 2542,
+      "sha256": "d514bb12dda9712b78e99060281996de5bbb9c8efec3f70ea0e8ec682bc75063"
+    },
+    "prebuilt/usb_buffered/whole_firmware_B/ids_update_lab.bin": {
+      "bytes": 320080,
+      "sha256": "b26dbbbc72dfcb3177c24bb8baab83766c5eee8a4d3d75d71be0b821c78b6a96"
+    },
+    "prebuilt/usb_buffered/whole_firmware_B/image-whole_firmware_B.log": {
+      "bytes": 1412,
+      "sha256": "383e5fa5e5c2c0f1413899b512970b7e3da4049f50a5233f8a8986b85d2dc5d8"
+    },
+    "prebuilt/usb_buffered/whole_firmware_B/sdkconfig": {
+      "bytes": 66460,
+      "sha256": "6347c08da8f017a076f72cd61aecd773e8a94d24e10683e7907e102ebe27e1b6"
+    },
+    "prebuilt/usb_buffered/whole_firmware_B/size-whole_firmware_B.log": {
+      "bytes": 4714,
+      "sha256": "c66b2dc7f0ec2614cb097651e4c16f240d308cce33c8ff88700b9a820275a65f"
+    },
+    "results/validation/whole_firmware_pilot_tests.log": {
+      "bytes": 7417,
+      "sha256": "0ffb32f253e0230cd74b7a7331740e153cfc6c89f10c4289a0057e04275a5108"
+    },
+    "tests/test_whole_firmware_pilot.py": {
+      "bytes": 12844,
+      "sha256": "526010a6685567abe47f697fc7cef309d0d68d6c2912904a937fddd224478837"
+    },
+    "tools/firmware_ota.py": {
+      "bytes": 12959,
+      "sha256": "d906ba7ced0965534f34fc1fd7a6632b82379adbc39f1ba90f184c1f2f5f744b"
+    },
+    "tools/run_whole_firmware_pilot.py": {
+      "bytes": 21272,
+      "sha256": "27d0b3e8b7e0d7b218b72a317d49bd196eb0295c86bdff04e070c4394d08b0de"
+    },
+    "tools/summarize_runs.py": {
+      "bytes": 20795,
+      "sha256": "df37169e9943f82934f63042e4c48bb543f5ae8910f5bae291c0569d7201fee4"
+    }
+  }
+}

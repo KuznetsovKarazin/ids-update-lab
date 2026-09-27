@@ -1,0 +1,1 @@
+PASS: percentile interpolation, ties-away rounding, maxabs algorithm reduction, 1024 broad-range independent scalar integer scores, calibration minimal cutoff, and inherited per-channel controls.

@@ -1,0 +1,48 @@
+{
+  "method": "affine_two_calibration_patterns_two_independent_validation_patterns",
+  "cfn_seconds_per_host_second": 1.0000271245641454,
+  "cfn_offset_s": 2.5632537567391394,
+  "host_boundary_uncertainty_s": 0.0979956227847334,
+  "max_calibration_residual_host_s": 0.01053125984617509,
+  "max_validation_residual_host_s": 0.024875244022950938,
+  "allowed_host_interval_s": [
+    2.0137801499999997,
+    7299.27322895
+  ],
+  "pattern_quality": {
+    "calibration_before": {
+      "score": 0.9409374511524645,
+      "scale": 1.0,
+      "first_edge_cfn_s": 4.5600000000000005,
+      "runner_up_score": null,
+      "contrast_W": 0.08138499359999998,
+      "baseline_noise_MAD_W": 0.0015267198038400368,
+      "median_filter_samples": 7
+    },
+    "calibration_after": {
+      "score": 0.9433217124150143,
+      "scale": 1.0,
+      "first_edge_cfn_s": 7278.96,
+      "runner_up_score": null,
+      "contrast_W": 0.08050531319999998,
+      "baseline_noise_MAD_W": 0.0013892418640799825,
+      "median_filter_samples": 7
+    },
+    "validation_before": {
+      "contrast_W": 0.08141218649999998,
+      "baseline_noise_MAD_W": 0.0006244926176999835,
+      "median_filter_samples": 7,
+      "max_host_residual_s": 0.006937430490111751,
+      "used_to_fit_alignment": false
+    },
+    "validation_after": {
+      "contrast_W": 0.08074352469999999,
+      "baseline_noise_MAD_W": 0.0008546613751199838,
+      "median_filter_samples": 7,
+      "max_host_residual_s": 0.024875244022950938,
+      "used_to_fit_alignment": false
+    }
+  },
+  "uncertainty_kind": "empirical envelope of marker residuals, transport brackets and one sample; not metrological bound",
+  "clock_mapping_verified_by_holdout_markers": true
+}

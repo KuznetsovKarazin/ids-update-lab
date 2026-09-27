@@ -1,0 +1,18 @@
+\begin{table}[!htbp]
+\caption{Link-time allocation in bytes for the frozen ESP32-S3 runtimes. All four model families have the same totals within a policy. DIRAM includes code and data; its total is not additive with the static-data row. These values exclude dynamic heap and stack demand.}
+\label{tab:static-memory}
+\centering
+\begin{tabular}{lrr}
+\toprule
+Allocation & Pipeline package & Full image \\
+\midrule
+Static data ($\texttt{.data}+\texttt{.bss}$) & 13\,420 & 13\,644 \\
+DIRAM, including resident code & 61\,287 & 61\,511 \\
+IRAM & 16\,383 & 16\,383 \\
+RTC FAST reserved & 24 & 24 \\
+Flash code & 195\,226 & 198\,234 \\
+Flash data & 64\,500 & 65\,980 \\
+Application binary & 334\,992 & 339\,504 \\
+\bottomrule
+\end{tabular}
+\end{table}

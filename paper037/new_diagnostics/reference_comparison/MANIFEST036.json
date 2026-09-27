@@ -1,0 +1,18 @@
+{
+  "analysis": "frozen_reference_comparison_on_B_cal",
+  "new_hardware": false,
+  "new_full_test": false,
+  "sha256": {
+    "RESULTS_FOR_MANUSCRIPT036.md": "3266fe0582e59d0ea27ff6375b28fdd5d622b10f0a5c465657839b1d65a79b66",
+    "compare_references036.py": "c2a66227b34de0d18e75fbac386c8fb7c30eff289dab77da6a11bcacacf5f335",
+    "frozen_predictions036.npz": "bd847d11a3e7a4158e1ffb9e2fa3a69a2a570546f47da2dedbf548198e48dd8c",
+    "reference_comparison036.csv": "bf42c0de2ee52bde8e9bf0df9f1cac1d481b76c99ff6881facbbd6334eee57c8",
+    "reference_comparison036.json": "f3af38f101645a76a15f6ac3e5b77b1f4ca582d02b641fca91c64f024552ca00",
+    "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+    "run036.log": "0afeb7c642a66edff6887ca2b62ab3ec730e81209c3e7a00c384bd4877007f49",
+    "table5_reference_columns036.csv": "fd11a310c1db296b4aaa2056e83a4144c5bdcb03c62a1401c84ecf20563ca446",
+    "test_reference_comparison036.py": "f8add71d489387af030bc38bdfe6595decdb03eb7dba36a146677ca0b94b1162",
+    "validation036.txt": "8b3d07dde712c2ec3ed8f3e5a15e9cfff93e9d1e7ed88df6600d4352cb9725ce",
+    "vendor/model030.py": "31be2167aea816114c3d8d8a27b2fda364374f4716739f7c16472cf624b0e0c8"
+  }
+}

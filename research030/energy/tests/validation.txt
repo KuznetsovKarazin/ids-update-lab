@@ -1,0 +1,19 @@
+test_capture_four_markers_and_verified_block (test_energy030.CaptureContract.test_capture_four_markers_and_verified_block) ... ok
+test_marker_duration_unverified_rejected (test_energy030.CaptureContract.test_marker_duration_unverified_rejected) ... ok
+test_wrong_accepted_count_marks_failure_not_complete (test_energy030.CaptureContract.test_wrong_accepted_count_marks_failure_not_complete) ... ok
+test_affine_clock_recovered_and_holdout_used_only_for_check (test_energy030.ClockAndEnergy.test_affine_clock_recovered_and_holdout_used_only_for_check) ... ok
+test_baselines_must_surround_not_overlap_event (test_energy030.ClockAndEnergy.test_baselines_must_surround_not_overlap_event) ... ok
+test_duplicate_calibration_pattern_ambiguous (test_energy030.ClockAndEnergy.test_duplicate_calibration_pattern_ambiguous) ... ok
+test_end_to_end_affine_integral_in_host_seconds (test_energy030.ClockAndEnergy.test_end_to_end_affine_integral_in_host_seconds) ... ok
+test_interior_extremum_of_timing_uncertainty (test_energy030.ClockAndEnergy.test_interior_extremum_of_timing_uncertainty) ... ok
+test_manual_placeholder_refused (test_energy030.ClockAndEnergy.test_manual_placeholder_refused) ... ok
+test_missing_current_marker_refuses_alignment (test_energy030.ClockAndEnergy.test_missing_current_marker_refuses_alignment) ... ok
+test_original_timeline_binding_rejects_edited_windows (test_energy030.ClockAndEnergy.test_original_timeline_binding_rejects_edited_windows) ... ok
+test_replay_zero_count_not_energy_update (test_energy030.ClockAndEnergy.test_replay_zero_count_not_energy_update) ... ok
+test_shifted_holdout_refuses_even_good_calibration (test_energy030.ClockAndEnergy.test_shifted_holdout_refuses_even_good_calibration) ... ok
+test_short_single_update_is_not_a_long_block (test_energy030.ClockAndEnergy.test_short_single_update_is_not_a_long_block) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.703s
+
+OK

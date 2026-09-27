@@ -1,0 +1,25 @@
+{
+  "status": "passed_with_reported_skips",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "pytest",
+    "tests",
+    "-q"
+  ],
+  "returncode": 0,
+  "log_sha256": "97e2035bd5c1e61a391e9f6722ef4fb91cbe36407555e1aaef0708a8051c817f",
+  "source_modified": false,
+  "hardware_access_attempted": false,
+  "result": "76 passed, 12 skipped, 5 subtests passed in 7.49s",
+  "helper": "publication_tools/generate_host_fixtures.py",
+  "helper_sha256": "0083b19c5b3298d4f6b02f3c3dff073da6fe8ee0f559bf5d76adc3140910be56",
+  "publication_examples_unchanged": true,
+  "fixture_key_lifetime": "process memory only; private key never written",
+  "generated_fixture_not_compatible_with_published_prebuilt": true,
+  "previous_direct_fixture_attempt": "Superseded; do not distribute output/examples as original examples",
+  "skips": {
+    "native_simulator": 11,
+    "historical_instrumented_fixture": 1
+  }
+}

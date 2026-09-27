@@ -1,0 +1,85 @@
+{
+  "release": "usb-buffered-model-only-pilot-2026-09-23",
+  "base": "Existing ids-update-lab with applied buffered USB firmware fix",
+  "purpose": "Controlled model/preprocessing coherence comparison on frozen synthetic fixtures",
+  "model_only_hardware_executed": false,
+  "bundle_hardware_pilot": {
+    "trials": 5,
+    "outcomes_as_expected": 5,
+    "inferences": 630,
+    "mismatches_vs_state_reference": 0,
+    "independent_boards": 1,
+    "trials_per_scenario": 1,
+    "data_origin": "synthetic_plumbing",
+    "physical_power_loss_tested": false
+  },
+  "model_only_predicted_mismatches_vs_complete_B": {
+    "mismatches": 7,
+    "records": 63,
+    "phase": "after",
+    "evidence": "frozen reference calculation, not physical model_only measurement"
+  },
+  "firmware_application_sha256": "78a8c3a5eb261607c319c0e67feec6ae33d4dd45264c5cfde0aa582929a734f6",
+  "files": {
+    "docs/BUNDLE_PILOT_RESULTS_RU.md": {
+      "bytes": 4733,
+      "sha256": "335d4c42741694b2eb876b9acc15558c75077d6e08a8a6e113b30790c978bffc"
+    },
+    "docs/MODEL_ONLY_PILOT_RU.md": {
+      "bytes": 5752,
+      "sha256": "88f307767ae2fc90d27aa3ab18d361e08c273d72336894d793e8c8266f65dae2"
+    },
+    "firmware/sdkconfig.model_only": {
+      "bytes": 70,
+      "sha256": "94cbcfdcab4aa93bd8daf361bb6eb45f4928ead4e33dd12af45fcbe5c908c638"
+    },
+    "prebuilt/usb_buffered/model_only/TARGET_BUILD_METADATA.json": {
+      "bytes": 5087,
+      "sha256": "1db43764b996160c094c1d2979f427c620723a00974afba200eaece313a49bc7"
+    },
+    "prebuilt/usb_buffered/model_only/bootloader/bootloader.bin": {
+      "bytes": 21568,
+      "sha256": "38ec8beaa2bd092717cff540451f52e828748825a357eb93df49637096ba915d"
+    },
+    "prebuilt/usb_buffered/model_only/bootloader-equivalence.json": {
+      "bytes": 1209,
+      "sha256": "78e2970ae998070a95d1041b742dbea7fb62fe231a7b073fc1deec3732cc14db"
+    },
+    "prebuilt/usb_buffered/model_only/build-model_only.log": {
+      "bytes": 2470,
+      "sha256": "d534fa77112c812394f919a77e056f26f1f2f0689c175c355ba43503751e2668"
+    },
+    "prebuilt/usb_buffered/model_only/flash_args": {
+      "bytes": 179,
+      "sha256": "16341a41fdeb477c0377695821aa38e43f12e3853a2381c7cc2b4389ac7490de"
+    },
+    "prebuilt/usb_buffered/model_only/flasher_args.json": {
+      "bytes": 1059,
+      "sha256": "2517076ebd854b0147186167636783125b8498dd444f95b0ad82c86c540cb52d"
+    },
+    "prebuilt/usb_buffered/model_only/ids_update_lab.bin": {
+      "bytes": 316400,
+      "sha256": "78a8c3a5eb261607c319c0e67feec6ae33d4dd45264c5cfde0aa582929a734f6"
+    },
+    "prebuilt/usb_buffered/model_only/image-model_only.log": {
+      "bytes": 1412,
+      "sha256": "4536e479a53c9b4497fb9b8a4ddcb16309ba4a8abd83ead5755e4797a633fc81"
+    },
+    "prebuilt/usb_buffered/model_only/ota_data_initial.bin": {
+      "bytes": 8192,
+      "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f"
+    },
+    "prebuilt/usb_buffered/model_only/partition_table/partition-table.bin": {
+      "bytes": 3072,
+      "sha256": "9e0c5e17c268f5c2336a1bc41791d78efc193d24f7be3c718d94a7a5018c7ac2"
+    },
+    "prebuilt/usb_buffered/model_only/sdkconfig": {
+      "bytes": 66460,
+      "sha256": "4e3d938c54604170cb6d151c6500e982c81b25c19c3e7b4d69acd8487c5c7c06"
+    },
+    "prebuilt/usb_buffered/model_only/size-model_only.log": {
+      "bytes": 4660,
+      "sha256": "dc3c15ab32416edb10c8e2b47e02dcd5a71dd93cdf37d7173f65f9352c4e8e3a"
+    }
+  }
+}

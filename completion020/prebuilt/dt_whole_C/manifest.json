@@ -1,0 +1,13 @@
+{
+  "factory_envelope_sha256": "0d9458cc15ab1f0c828d3b17e3b6241553d8e7d5d41ec2d86e00115374abff72",
+  "feature_contract_sha256": "38a5a5b52b3525b1d93f861c383b4b696785b8cf8b8e60113ef7d8f68b1f627e",
+  "format": "ids-update-lab-whole-firmware-v1",
+  "hardware_measurement": false,
+  "image_sha256": "359c0faba7b4ff94d9966cd7d38e201b6061a9f5fa78b87f691f63be063c5600",
+  "image_size": 330224,
+  "metadata_sha256": "67034c719bb612d2379f2516c09e12192b82963c26646d2061e4bfaae7c3225c",
+  "runtime_abi": 3,
+  "signature_sha256": "65c8da670d8ea48c1590a7b696fb7e7dd546932339d4bcfdb858c60fbe3bc1bc",
+  "trust_boundary": "trusted running firmware; no secure-boot/eFuse claim",
+  "version": 3
+}

@@ -1,0 +1,23 @@
+\begin{table}[!htbp]
+\begin{adjustwidth}{-\extralength}{0cm}
+\caption{Post-hoc calibration diagnostics for the original int8 detector and compatible exports. The calibration sample contains 2088 normal and 100,000 attack rows. FPR, recall, and changed-decision rates are percentages; FP is a count. Equal-vector FPR assigns each distinct eight-feature vector total weight one, preserving within-vector class proportions. The last two columns report disagreement with B-I8 and B-F32 on these same calibration rows; each reference retains its own calibrated threshold. Transferred cuts retain the original real-logit decision cut on the new output grid; recalibration uses only normal calibration records. The additional controls are host diagnostics.}
+\label{tab:posthoc-export}
+\centering\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Variant & Cut & FP & Row FPR & Vector FPR & Recall & vs I8 (\%) & vs F32 (\%) \\
+\midrule
+Original B & 10 & 19 & 0.910 & 1.194 & 73.531 & 0.000 & 4.783 \\
+\midrule
+Max-abs grid, transferred cut & 10 & 421 & 20.163 & 2.139 & 71.623 & 6.555 & 10.129 \\
+Max-abs grid, recalibrated & 22 & 1 & 0.048 & 0.063 & 23.933 & 48.685 & 49.033 \\
+Per-channel, transferred cut & 10 & 419 & 20.067 & 2.014 & 72.198 & 6.501 & 10.056 \\
+Per-channel, recalibrated & 21 & 0 & 0.000 & 0.000 & 23.564 & 49.046 & 49.392 \\
+\midrule
+Percentile grid, transferred cut & 30 & 13 & 0.623 & 0.817 & 70.189 & 7.337 & 3.784 \\
+Percentile grid, recalibrated & 27 & 15 & 0.718 & 0.943 & 71.631 & 7.450 & 2.967 \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}
+\end{table}

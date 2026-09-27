@@ -1,0 +1,8 @@
+{
+  "A_B_label_disagreements": 0,
+  "data_origin": "synthetic_plumbing",
+  "max_probability_delta_A_B": 8.940696716308594e-08,
+  "records": 63,
+  "stale_preprocessing_label_disagreements": 7,
+  "warning": "plumbing checks only; not TON_IoT or actual MCU measurements"
+}

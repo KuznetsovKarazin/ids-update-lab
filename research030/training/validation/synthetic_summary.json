@@ -1,0 +1,10 @@
+{
+  "test_rows": 4465,
+  "test_unique_vectors": 500,
+  "test_days": 4,
+  "CI_suppressed": true,
+  "models_evaluated": 24,
+  "hardware_goldens_per_model": 258,
+  "validation_only_synthetic": true,
+  "scientific_full_result": false
+}

@@ -1,0 +1,17 @@
+\begin{table}[H]\begin{adjustwidth}{-\extralength}{0cm}
+\caption{Performance by traffic type for all complete pipelines. The normal row reports FPR; every attack row reports recall. All rates are row-weighted percentages. MITM denotes man-in-the-middle.}\label{tab:types-complete}
+\centering\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Type & Rows & LR A & LR B & DT A & DT B & MLP-F32 A & MLP-F32 B & MLP-I8 A & MLP-I8 B \\
+\midrule
+Normal & 401,231 & 9.859 & 12.053 & 12.577 & 0.426 & 21.310 & 2.151 & 22.221 & 2.190 \\
+DDoS & 2,652,155 & 27.197 & 31.542 & 25.391 & 4.636 & 35.560 & 83.721 & 21.541 & 82.879 \\
+Backdoor & 508,116 & 99.937 & 0.050 & 99.910 & 99.888 & 99.941 & 99.940 & 0.002 & 99.936 \\
+MITM & 1,052 & 0.665 & 0.475 & 1.806 & 0.760 & 17.300 & 7.510 & 8.175 & 6.559 \\
+Password & 1,718,568 & 18.247 & 18.127 & 12.429 & 0.164 & 20.862 & 18.425 & 15.830 & 18.351 \\
+Ransomware & 72,805 & 43.320 & 43.827 & 12.676 & 0.095 & 15.168 & 0.098 & 18.753 & 11.487 \\
+XSS & 2,108,944 & 1.012 & 0.761 & 1.203 & 0.032 & 37.127 & 2.278 & 1.802 & 5.104 \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}\end{table}

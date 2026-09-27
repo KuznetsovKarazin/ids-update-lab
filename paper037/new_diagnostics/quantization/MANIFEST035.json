@@ -1,0 +1,21 @@
+{
+  "analysis": "posthoc_percentile_grid_host_diagnostic",
+  "new_hardware": false,
+  "new_full_test": false,
+  "sha256": {
+    "POSTHOC_PLAN035.md": "574d0cf2606efe1f57c99775df6a3de068bebe39fcaca68e98c842f7d8a33cc9",
+    "RESULTS_FOR_MANUSCRIPT035.md": "7c11709c75204bc9ff44792c42573ad20bbfc015729ad49f0b62c403f71e2190",
+    "analyze_percentile035.py": "ebf7e95af0bf7f6a73e7c03bd4848f6bf981fde237ba93e18f06671b33b36492",
+    "percentile999_recalibrated.json": "7a4c79c5e30d4682867e51036d645486fbe8ffd52f017aecf4e889bb4c3d0f89",
+    "percentile999_transferred.json": "3547701e6a955005ef866eddf4fcca77f3287b6c883f05c872d581f83fe57394",
+    "percentile_diagnostics035.json": "7762802b203608bab9107da6322590ad098a0860bb8c302a31fd8d6124953a69",
+    "percentile_metrics035.csv": "efd9095f0e3d8566b64c4020c77aa62dc0e80af770a9c456625d4b551a6c3b13",
+    "posthoc_table035.tex": "07b64a18803ff5605254d27e81fd44d81eed4c2d64d6b02a8464ceaf963b9985",
+    "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+    "run035.log": "e2887a0d7954fcbde700cdc1771d397ad491540749c0cb14d8cd320fb8c43a1a",
+    "test_percentile035.py": "7c717568879c63c112604f65b31ae74f804f7a0fa47df5c6b75ff42c48193f3c",
+    "validation035.txt": "6efdaac29b95550a42ebed7a6c734c2df4ce9628142fd9e567fd61cd585b01d6",
+    "vendor/model030.py": "31be2167aea816114c3d8d8a27b2fda364374f4716739f7c16472cf624b0e0c8",
+    "write_report035.py": "c681f6b7aa102d2a70c252cfb46eb733ca71b5587fab2145070e0d0fcab51423"
+  }
+}

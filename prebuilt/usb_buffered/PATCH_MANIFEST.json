@@ -1,0 +1,73 @@
+{
+  "patch": "usb-buffered-firmware-2026-09-23",
+  "base": "ids-update-lab-2026-09-23.zip",
+  "includes_prior_host_usb_fix": true,
+  "installation": "Extract into existing project root. Flash only prebuilt/usb_buffered/bundle/ids_update_lab.bin at 0x10000, using the already installed original project bootloader and partition table.",
+  "hardware_tested": false,
+  "validation": {
+    "esp32s3_cross_compile": "PASS",
+    "host_native_tests": 40,
+    "host_native_tests_status": "PASS"
+  },
+  "application_sha256": "8edbcb393ef54befd1ea87491c9a9cf569f48eea132d54468b920078eda2cf53",
+  "factory_contract_source_sha256": "f4a9748e4e4339a4be82ad63b908cfacf04b05c69897da60106846d522f6af1a",
+  "retained_original_image_sha256": "a8a463e03b687a55ac2df6c29844bb265a3277ad825eee0c601e577cd2a0f0ab",
+  "files": {
+    "firmware/main/main.cpp": {
+      "bytes": 10032,
+      "sha256": "d3799e72ec44cef742c40ef9b283a353bae946953c5cc8032de4abda02108bc0"
+    },
+    "firmware/components/ids_core/include/ids_line_reader.h": {
+      "bytes": 1988,
+      "sha256": "ae6e49c5d47fd6dba5078d6a6a99c36841609be007bba15c269fc15fb2efdcef"
+    },
+    "host/ids_update_lab/serial_runner.py": {
+      "bytes": 21098,
+      "sha256": "b3a56e043d7c19215dc48a0c0c109f65c7dd1391facb4dda5d6eb8552dfa505b"
+    },
+    "tests/test_line_reader.cpp": {
+      "bytes": 2676,
+      "sha256": "44c26db24539b54731a673bfbb3891e6e91997a3a235c0332e701b1ae05f1911"
+    },
+    "tests/test_line_reader.py": {
+      "bytes": 894,
+      "sha256": "0253d4a5de96170542aa6c10e67bca994af281b192cbe4fb6474885c268a906b"
+    },
+    "tests/test_serial_transport.py": {
+      "bytes": 8555,
+      "sha256": "c34af96c7ad6643484db89d544b13b70ae15de70deb7f4a2b5dbf7d6b21b7e9e"
+    },
+    "docs/USB_BUFFERED_FIRMWARE.md": {
+      "bytes": 3896,
+      "sha256": "40d1f78cda290326de40e98dec40c2220fe67acc7be87ac6affd69bfd288f50a"
+    },
+    "docs/USB_CONNECTION_FIX.md": {
+      "bytes": 2736,
+      "sha256": "cd92bf1320ffc65f52653fcac96ba66acc59361878d8e04a952cc9cd4636b513"
+    },
+    "results/validation/usb_buffered_tests.log": {
+      "bytes": 5759,
+      "sha256": "9a1bdd6d96183832aa46c6d9618b1d7909f13bdf5a95282d18ac5ef6d8fdfa06"
+    },
+    "prebuilt/usb_buffered/bundle/TARGET_BUILD_METADATA.json": {
+      "bytes": 3349,
+      "sha256": "b5bfbcc20ceae86fe908509968240e79a09d5f34f6cdf8dbecd97e63112fef35"
+    },
+    "prebuilt/usb_buffered/bundle/build-bundle.log": {
+      "bytes": 2422,
+      "sha256": "170aec62da83fb00c7dae914fdbf069b9b432c4573dc8f67dd1af89361218deb"
+    },
+    "prebuilt/usb_buffered/bundle/ids_update_lab.bin": {
+      "bytes": 316400,
+      "sha256": "8edbcb393ef54befd1ea87491c9a9cf569f48eea132d54468b920078eda2cf53"
+    },
+    "prebuilt/usb_buffered/bundle/sdkconfig": {
+      "bytes": 66460,
+      "sha256": "5b8d66e07f67ceca0d200a31734ca139ac50dac49427eefdf77be5742fce66e4"
+    },
+    "prebuilt/usb_buffered/bundle/size-bundle.log": {
+      "bytes": 4624,
+      "sha256": "89880cf2c75383c5e6411e05849b63ba8dc8dfc6938a72fd1895c4d1b99727dc"
+    }
+  }
+}

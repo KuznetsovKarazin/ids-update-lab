@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "measurement_origin": "host_protocol_validation",
+  "protocol_sha256": "4f128069573f70ebc04af863a116c47f3b6d89c48f71a78b8de5b54214a52bb2",
+  "source_hashes_verified": 6,
+  "all_candidate_rules_recomputed": 129,
+  "selected_candidate": "C0014",
+  "eligible_candidates": 17,
+  "role_type_histogram_counts_independently_recomputed": 60,
+  "atomic_time_roles_disjoint": true,
+  "B_fit_excludes_calibrations": true,
+  "prediction_metrics_read": false,
+  "raw_flow_purge_tested": false,
+  "training_performed": false,
+  "mcu_access_attempted": false
+}

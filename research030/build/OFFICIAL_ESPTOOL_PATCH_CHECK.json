@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "hardware_accessed": false,
+  "measurement_origin": "host_validation",
+  "esptool_version": "4.12.0",
+  "images": [
+    {
+      "configuration": "dt_bundle",
+      "template_image_sha256": "0094212b3ec8760a4a515f16f76b39915be29c3cbdc77f862fdaa136751965d9",
+      "patched_image_sha256": "c915395123879adf51bb4b273d9b1e88fe5ec0744979535ddca0c1cdbd9d4a4d",
+      "patched_version": 300,
+      "elf_sha256": "ac2e29794722a91350037cbef03d032ccf7bcb2b1f9de20003fefdc756264795",
+      "esptool_checksum_verified": true,
+      "esptool_appended_SHA256_verified": true,
+      "segments": 5
+    },
+    {
+      "configuration": "dt_whole",
+      "template_image_sha256": "f2e222155a75074a4981527d23c181e1ad6d01314fb0776c783f14dc6dd0bd3f",
+      "patched_image_sha256": "5caa41521aebc87d0e60c0d3d883bf9c77d6a8da93580cc455c1c32888f82f6f",
+      "patched_version": 300,
+      "elf_sha256": "d9d5d47842eed8924a213cbb2d6951be1c88de226557c8f28de8747be0495812",
+      "esptool_checksum_verified": true,
+      "esptool_appended_SHA256_verified": true,
+      "segments": 5
+    },
+    {
+      "configuration": "lr_bundle",
+      "template_image_sha256": "9d120436820d545b904248b7fb6b9bf3cbb7e21c7182f6dcdb93bc89d4c90b6e",
+      "patched_image_sha256": "f1848e9bdafca85d24ca71cedeb0363ece2c09259ad56c32ae3fdcf88712203a",
+      "patched_version": 300,
+      "elf_sha256": "023737ebb3c1d6f3d8d3a78965bd1a8a2e49f67e4b589e56e59bb8bede6be4eb",
+      "esptool_checksum_verified": true,
+      "esptool_appended_SHA256_verified": true,
+      "segments": 5
+    },
+    {
+      "configuration": "lr_whole",
+      "template_image_sha256": "7d9d047d6599e5412cbda1c682b38a8edc9135797d85da53763b1429568cb271",
+      "patched_image_sha256": "a1b2a4ef378e0fea59b5fc92655c6174e71acfff90d3f8e7fc810e77fa762d20",
+      "patched_version": 300,
+      "elf_sha256": "bf80070f3ba01940fd251bf52123d92775cd8c5c6cd3a069973610d7feb10407",
+      "esptool_checksum_verified": true,
+      "esptool_appended_SHA256_verified": true,
+      "segments": 5
+    },
+    {
+      "configuration": "mlp_float_bundle",
+      "template_image_sha256": "9ba22183bcd93b59d535b7e523819c509288d22eabfe2f6192eba6b5a2c5af5d",
+      "patched_image_sha256": "a7a5af083579339d09e2dadd3ff4b8903452747abcbd7f91dd7fa89cd0d47a16",
+      "patched_version": 300,
+      "elf_sha256": "df496218e1ce60752c12153ca85f257b1c2ab31ff34b4d1038f3af3a34559dc9",
+      "esptool_checksum_verified": true,
+      "esptool_appended_SHA256_verified": true,
+      "segments": 5
+    },
+    {
+      "configuration": "mlp_float_whole",
+      "template_image_sha256": "adde73eda1579c0b13fa71a8f889170bacb7b1f6cbe6bb7ab095d24cd12d9a45",
+      "patched_image_sha256": "6d3a2840f5c57b46fe17a5d25947aefeeebbf2b2069c5ce0fec1730398eeddfd",
+      "patched_version": 300,
+      "elf_sha256": "019872f18e9acb1592b52a4adb8e95c77ae32dac96103cd35dbada47176e1d6a",
+      "esptool_checksum_verified": true,
+      "esptool_appended_SHA256_verified": true,
+      "segments": 5
+    },
+    {
+      "configuration": "mlp_int8_bundle",
+      "template_image_sha256": "ead592e14403a93104ac5fdaf0449d2fd81674ea95796c6d485346855c4cbb14",
+      "patched_image_sha256": "dd42551ab8f4b586f1a28d3587286b4d585d92f3e64885c129ee4f6691d53d59",
+      "patched_version": 300,
+      "elf_sha256": "57333b3821a6750c044c1c708bb4544bdc7aa2604d72bcbeaf5b8e39109d84b6",
+      "esptool_checksum_verified": true,
+      "esptool_appended_SHA256_verified": true,
+      "segments": 5
+    },
+    {
+      "configuration": "mlp_int8_whole",
+      "template_image_sha256": "6f79ce677ed6902c8160a9636f92f3cee86409032ceaa122279213088fecc5a3",
+      "patched_image_sha256": "2f0f7c9ed31e4d73f32846375ceee52a1f01f85f81668a93331844ea5a56d2f9",
+      "patched_version": 300,
+      "elf_sha256": "606c156967855bf76679ece65cd478cfb3a7747e9d028d91c6bd42148d853327",
+      "esptool_checksum_verified": true,
+      "esptool_appended_SHA256_verified": true,
+      "segments": 5
+    }
+  ]
+}

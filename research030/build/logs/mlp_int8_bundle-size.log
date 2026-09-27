@@ -1,0 +1,39 @@
+Executing action: size
+Running ninja in directory /tmp/ids030-build/build
+Executing "ninja all"...
+[1/4] cd /tmp/ids030-build/build/esp-idf/esptool_py && /tmp/ids025-idf-tools/python_env/idf5.3_py3.12_env/bin/python /tmp/ids025-esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /tmp/ids030-build/build/partition_table/partition-table.bin /tmp/ids030-build/build/ids_update_lab.bin
+ids_update_lab.bin binary size 0x51c90 bytes. Smallest app partition is 0x1d0000 bytes. 0x17e370 bytes (82%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /tmp/ids030-build/build/bootloader/esp-idf/esptool_py && /tmp/ids025-idf-tools/python_env/idf5.3_py3.12_env/bin/python /tmp/ids025-esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /tmp/ids030-build/build/bootloader/bootloader.bin
+Bootloader binary size 0x5440 bytes. 0x2bc0 bytes (34%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'
+Running ninja in directory /tmp/ids030-build/build
+Executing "ninja size"...
+[0/1] cd /tmp/ids030-build/build && /tmp/ids025-idf-tools/python_env/idf5.3_py3.12_env/lib/python3.12/site-packages/cmake/data/bin/cmake -D "IDF_SIZE_TOOL=/tmp/ids025-idf-tools/python_env/idf5.3_py3.12_env/bin/python;-m;esp_idf_size" -D MAP_FILE=/tmp/ids030-build/build/ids_update_lab.map -D OUTPUT_JSON= -P /tmp/ids025-esp-idf/tools/cmake/run_size_tool.cmake
+                           Memory Type Usage Summary                            
+┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Memory            ┃              ┃          ┃                ┃               ┃
+┃ Type/Section      ┃ Used [bytes] ┃ Used [%] ┃ Remain [bytes] ┃ Total [bytes] ┃
+┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ Flash Code        │       195226 │          │                │               │
+│    .text          │       195226 │          │                │               │
+│ Flash Data        │        64500 │          │                │               │
+│    .rodata        │        64244 │          │                │               │
+│    .appdesc       │          256 │          │                │               │
+│ DIRAM             │        61287 │    17.93 │         280473 │        341760 │
+│    .text          │        47867 │    14.01 │                │               │
+│    .data          │        10908 │     3.19 │                │               │
+│    .bss           │         2512 │     0.74 │                │               │
+│ IRAM              │        16383 │    99.99 │              1 │         16384 │
+│    .text          │        15356 │    93.73 │                │               │
+│    .vectors       │         1027 │     6.27 │                │               │
+│ RTC FAST          │           24 │     0.29 │           8168 │          8192 │
+│    .rtc_reserved  │           24 │     0.29 │                │               │
+└───────────────────┴──────────────┴──────────┴────────────────┴───────────────┘
+Total image size: 334884 bytes (.bin may be padded larger)
+Note: The reported total sizes may be smaller than those in the technical 
+reference manual due to reserved memory and application configuration. The total
+flash size available for the application is not included by default, as it 
+cannot be reliably determined due to the presence of other data like the 
+bootloader, partition table, and application partition size.

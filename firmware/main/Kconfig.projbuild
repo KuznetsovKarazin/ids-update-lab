@@ -1,0 +1,18 @@
+menu "IDS Update Lab"
+    choice IDS_UPDATE_POLICY
+        prompt "Experimental update policy"
+        default IDS_BUNDLE_POLICY
+    config IDS_BUNDLE_POLICY
+        bool "Atomic signed model and preprocessing bundle"
+    config IDS_MODEL_ONLY_BASELINE
+        bool "Incomplete baseline: candidate weights with immutable factory preprocessing"
+        help
+            Authenticates every candidate unchanged, but deliberately retains the factory
+            means/scales/threshold. Use only as an explicitly labelled experimental baseline.
+    config IDS_WHOLE_FIRMWARE_BASELINE
+        bool "Whole firmware signed-image baseline (factory model only)"
+        help
+            Model is immutable in the running application; new releases require FW_* commands
+            and complete signed application OTA. No eFuse or hardware Secure Boot changes.
+    endchoice
+endmenu

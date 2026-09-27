@@ -1,0 +1,34 @@
+menu "IDS Update Lab"
+    choice IDS_UPDATE_POLICY
+        prompt "Experimental update policy"
+        default IDS_BUNDLE_POLICY
+    config IDS_BUNDLE_POLICY
+        bool "Atomic signed model and preprocessing bundle"
+    config IDS_MODEL_ONLY_BASELINE
+        bool "Incomplete baseline: candidate weights with immutable factory preprocessing"
+        help
+            Authenticates every candidate unchanged, but deliberately retains the factory
+            means/scales/threshold. Use only as an explicitly labelled experimental baseline.
+    config IDS_WHOLE_FIRMWARE_BASELINE
+        bool "Whole firmware signed-image baseline (factory model only)"
+        help
+            Model is immutable in the running application; new releases require FW_* commands
+            and complete signed application OTA. No eFuse or hardware Secure Boot changes.
+    endchoice
+    choice IDS_MODEL_ERASE_POLICY
+        prompt "Model slot erase range"
+        default IDS_ERASE_FULL_SLOT
+        help
+            Both modes retain the same two 64 KiB physical model slots and the
+            authoritative selector journal. This choice changes only the model
+            slot range passed to the flash erase API for each installation.
+    config IDS_ERASE_FULL_SLOT
+        bool "Erase the entire 64 KiB model slot"
+    config IDS_ERASE_NECESSARY_SECTORS
+        bool "Erase only sectors containing the envelope and 8-byte slot header"
+        help
+            Rounds the envelope size plus the slot header up to a 4096-byte
+            sector boundary. The unused tail is retained and never decoded.
+            Journal erasure and append/commit operations are unchanged.
+    endchoice
+endmenu

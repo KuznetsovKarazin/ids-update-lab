@@ -1,0 +1,18 @@
+{
+  "B_original.json": "b2b5cd5914156835bbfa803078b18684336267ffe064e0efe0b6f85cae777513",
+  "POSTHOC_PLAN.md": "ac90d9d9f890fb2ded4ba39af3a4c6c73a319b4d1240f2ecdd3c156d662057a5",
+  "RESULTS_FOR_MANUSCRIPT.md": "94ed8c25d0249c879518f2ff65916768cbee90ee83fb12939d1652a1a5f9979f",
+  "analyze_export034.py": "397a591993ab8d0c74aa6b3eee1782646399eceb2c630d5585720ee8a82bf2ed",
+  "calibration_score_tail034.json": "bb972b19bd506c742985f18cd542ce72383510795705d082aed073f65a502e32",
+  "export_diagnostics034.csv": "81574295fae5341187d9f1cb26a841b7e2ca14e738580e56e49f030a8cbb7f14",
+  "export_diagnostics034.json": "e7a312a5c33df49747a6a7b9fdf23aceaa595cdc39d27985f1f3e08634f26ba3",
+  "export_per_channel_recalibrated.json": "19e17a89a3abbaaf29443c101a5affedbc4f8106929fda5011d489216dcef35d",
+  "export_per_channel_transferred.json": "da06ccd8e320c18046ba6d73170a3331d446517836e99330e72d60ddbe65f755",
+  "export_per_tensor_recalibrated.json": "c0f579f5ca2512b06af6647acb3ac3622a1848fbcb10b0e1b43a9a67039bacfc",
+  "export_per_tensor_transferred.json": "f9897500ee07e5fd0172c39132de1df4f0f2a71d55ce04278fb99df258a44cd2",
+  "pointwise_certificate034.csv": "6b92c2a2666e0c5e7860893fe159732f00aa4b325bc37626a48ee56569af607f",
+  "posthoc_table034.tex": "872e786ad72cb38c3518a112722cc988f6c51b4fc99e86e5e23e7e328e8ebc6a",
+  "test_export034.py": "93910f14b8f1a0d277f6efee215425c4ba6e6c5e2ec6e44f2a6dc0156ff1549f",
+  "validation034.txt": "6bdf72d97e1596e1c4308458c70dae5b2ab2b6bb803a0ea2a8bce37d983c7145",
+  "vendor/model030.py": "31be2167aea816114c3d8d8a27b2fda364374f4716739f7c16472cf624b0e0c8"
+}

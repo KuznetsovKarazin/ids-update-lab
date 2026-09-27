@@ -1,0 +1,14 @@
+{
+  "models/A_lr.json": "034f953d4ab0d1eda005cf75bfeba8ef458d6f2303c656185150d4471b09b9a4",
+  "samples/A_cal.npz": "f3d71276f2bf6769d7b20f638b4b78ef5aac0d2e69412129e902bc18530dcf81",
+  "models/A_dt.json": "233cbf768eb8113c0ee52278127ef5d65e54ef32a804a167bb73533e9d5c6302",
+  "models/A_mlp_float.json": "08453c5de77b1cece46b02a47dd5a5a2bc1318334202784d0415a0b0498f2fe6",
+  "models/A_mlp_int8.json": "071e566452d7cc60c3a8669e6d4236756ea95a39d221e4a8d31fc95a490a18b7",
+  "models/B_lr.json": "ce4b77c48433d77547e0fa9d2538d13ac1bd1321e45c53758f23f226cc3445ab",
+  "samples/B_cal.npz": "4f6d162704d163c2bc77f3cba86b235edff0d3f50a6aed40237ce2af8e9ab8d0",
+  "models/B_dt.json": "9685a8d0a5be7057e1705adcd258088821dc47f53c2c309f2fc874a57e852f3d",
+  "models/B_mlp_float.json": "6a04ba945af9b0132c913025bcfcd2273c62fcc6f48d64d2fc846ad094dfb62f",
+  "models/B_mlp_int8.json": "60ca214737c50afdff2c68486882e79abdc454da5e0cc7ddadcba3e26cd9879d",
+  "by_day.json": "9c770849053a0971aaae3f860c5bde80599b92e876e461a2d17f2cb6440c6032",
+  "by_attack_type.json": "554576e718018f7866240e63daf879e5a231038ecf759ccba63ad0ea1501b564"
+}

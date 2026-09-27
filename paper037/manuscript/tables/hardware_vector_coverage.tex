@@ -1,0 +1,19 @@
+\begin{table}[H]\begin{adjustwidth}{-\extralength}{0cm}
+\caption{Raw-input coverage of the frozen MCU implementation checks. All 24 saved model and ablation input files contain the same 258 distinct vectors. The feature order follows the signed input contract.}
+\label{tab:hardware-vector-coverage}
+\centering\small
+\begin{tabular}{lrrrr}
+\toprule
+Feature & Range & Zero inputs & Zero (\%) & Distinct values \\
+\midrule
+\texttt{duration} & 0 & 258/258 & 100.00 & 1 \\
+\texttt{src\_bytes} & 0 & 258/258 & 100.00 & 1 \\
+\texttt{dst\_bytes} & 0 & 258/258 & 100.00 & 1 \\
+\texttt{missed\_bytes} & 0 & 258/258 & 100.00 & 1 \\
+\texttt{src\_pkts} & 0 & 258/258 & 100.00 & 1 \\
+\texttt{src\_ip\_bytes} & 0 & 258/258 & 100.00 & 1 \\
+\texttt{dst\_pkts} & 0--1 & 1/258 & 0.39 & 2 \\
+\texttt{dst\_ip\_bytes} & 0--3008 & 1/258 & 0.39 & 258 \\
+\bottomrule
+\end{tabular}
+\end{adjustwidth}\end{table}

@@ -1,0 +1,28 @@
+{
+  "revision": "034",
+  "figures_rebuilt": 10,
+  "data_and_original_photo_unchanged": {
+    "analysis/science_evidence.json": true,
+    "analysis/hardware_evidence.json": true,
+    "manuscript/figures/experimental_setup.jpg": true
+  },
+  "print_width_in": 6.89,
+  "architecture_label_containment": "passed for every box at print size",
+  "erase_difference_labels": "inside axes at y=-25.5; limits -28 to 3; zero line clear",
+  "labels": "DT, MLP-F32, MLP-I8; Package, Full image; H1/H2/H3",
+  "footer_notes": "removed from graphics; retained in caption instructions to manuscript editor",
+  "visual_review": "all ten plots reviewed in contact sheet; erase and recovery reviewed at full resolution",
+  "figure_sha256": {
+    "energy_blocks.pdf": "bf004ae6f8b584d3ae4d7816d0502e6fb0d3a8496adad79b03accdfa7dd6e6b0",
+    "erase_ablation.pdf": "9dee8aae1feedeeeee58317b2521b18d631ee74c384227cccbaa091a09a554f9",
+    "hardware_costs.pdf": "b692232ab4d4ebe514f9cdba58f15417dfeaa3aa52ef33dcddd1d3a7a072cd41",
+    "pipeline_architecture.pdf": "72a39f63f3c36ec5da53601bbc86663ead6ef6f0d5bc463f5d7abd97f73af273",
+    "science_ablation.pdf": "3cc9647fe78072ed3401b970aae860312ed723ed71ff5896ffe3d15de6d42ac8",
+    "science_coverage.pdf": "3608dfcafa7ef2ce6fd87265d11d04806e632c781851cb632037eced865d45ca",
+    "science_frequency.pdf": "d9591494dae7c994474a4a9f6664e43e8b24165288129ee753bd82d5cf733419",
+    "science_models.pdf": "72cb3a8bd9001fd7af180e0df0c3b40f62546e1c641e682d32b3748ac1db05ed",
+    "science_temporal.pdf": "9c30c3b2d46f24b833e298c28f934e74563530d43f6a9f392d0e24839cc80b51",
+    "software_recovery.pdf": "a71ce0d78834c35184c55eb821692a5fd10bf0550e33b33ddf31f83574abe927"
+  },
+  "final_label_adjustment": "Close paired bar values staggered vertically to prevent text collisions; final manuscript checked."
+}

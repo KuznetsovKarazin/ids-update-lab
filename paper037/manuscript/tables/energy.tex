@@ -1,0 +1,13 @@
+\begin{table}[!htbp]
+\caption{Exploratory energy estimates for the paced USB scenario. Medians of ten block averages; 128 package updates or four full-image updates per block. Values include a 200 ms pause after each update, verification, and full-image reboot.}\label{tab:energy}
+\centering\small
+\begin{tabular}{lrrrr}
+\toprule & \multicolumn{2}{c}{Gross (mJ/update)} & \multicolumn{2}{c}{Above idle (mJ/update)}\\
+Model & Package & Full image & Package & Full image\\\midrule
+LR & 56.174 & 2249.210 & 7.970 & 401.216\\
+DT & 57.699 & 2253.398 & 8.624 & 402.531\\
+MLP-F32 & 58.207 & 2249.510 & 8.986 & 403.589\\
+MLP-I8 & 57.204 & 2247.909 & 8.206 & 401.278\\
+\bottomrule\end{tabular}
+\par\smallskip\footnotesize Integration uses raw voltage/current samples after host-clock alignment. Marker localization was repaired post hoc, with unchanged held-out checks and integration formulas. The meter was not independently calibrated; these are scenario-specific estimates, not isolated flash-operation energy.
+\end{table}

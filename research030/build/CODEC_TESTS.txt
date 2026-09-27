@@ -1,0 +1,11 @@
+test_all_envelopes (test_codec030.CodecTests.test_all_envelopes) ... ok
+test_authenticated_bad_contract (test_codec030.CodecTests.test_authenticated_bad_contract) ... ok
+test_contract_hash (test_codec030.CodecTests.test_contract_hash) ... ok
+test_float_threshold_endpoints (test_codec030.CodecTests.test_float_threshold_endpoints) ... ok
+test_integer_bounds (test_codec030.CodecTests.test_integer_bounds) ... ok
+test_real_template_patch_and_binding (test_codec030.CodecTests.test_real_template_patch_and_binding) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 7.718s
+
+OK

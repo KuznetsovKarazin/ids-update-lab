@@ -1,0 +1,728 @@
+{
+  "analysis": "posthoc audit of frozen input selection; no new MCU test",
+  "reference_file": "hardware_vectors/A_dt.json",
+  "files_checked": 24,
+  "all_files_have_identical_raw_inputs": true,
+  "n_inputs": 258,
+  "n_distinct_float32_vectors": 258,
+  "feature_names": [
+    "duration",
+    "src_bytes",
+    "dst_bytes",
+    "missed_bytes",
+    "src_pkts",
+    "src_ip_bytes",
+    "dst_pkts",
+    "dst_ip_bytes"
+  ],
+  "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+  "raw_byte_keys_are_sorted": true,
+  "all_zero_vectors": 1,
+  "nonzero_entries": 514,
+  "total_entries": 2064,
+  "contains_B_cal_dominant_normal_template": false,
+  "nonzero_features_per_vector": {
+    "0": 1,
+    "2": 257
+  },
+  "features": [
+    {
+      "feature": "duration",
+      "min": 0.0,
+      "max": 0.0,
+      "median": 0.0,
+      "nonzero_min": null,
+      "zero_count": 258,
+      "zero_fraction": 1.0,
+      "distinct_values": 1
+    },
+    {
+      "feature": "src_bytes",
+      "min": 0.0,
+      "max": 0.0,
+      "median": 0.0,
+      "nonzero_min": null,
+      "zero_count": 258,
+      "zero_fraction": 1.0,
+      "distinct_values": 1
+    },
+    {
+      "feature": "dst_bytes",
+      "min": 0.0,
+      "max": 0.0,
+      "median": 0.0,
+      "nonzero_min": null,
+      "zero_count": 258,
+      "zero_fraction": 1.0,
+      "distinct_values": 1
+    },
+    {
+      "feature": "missed_bytes",
+      "min": 0.0,
+      "max": 0.0,
+      "median": 0.0,
+      "nonzero_min": null,
+      "zero_count": 258,
+      "zero_fraction": 1.0,
+      "distinct_values": 1
+    },
+    {
+      "feature": "src_pkts",
+      "min": 0.0,
+      "max": 0.0,
+      "median": 0.0,
+      "nonzero_min": null,
+      "zero_count": 258,
+      "zero_fraction": 1.0,
+      "distinct_values": 1
+    },
+    {
+      "feature": "src_ip_bytes",
+      "min": 0.0,
+      "max": 0.0,
+      "median": 0.0,
+      "nonzero_min": null,
+      "zero_count": 258,
+      "zero_fraction": 1.0,
+      "distinct_values": 1
+    },
+    {
+      "feature": "dst_pkts",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0,
+      "nonzero_min": 1.0,
+      "zero_count": 1,
+      "zero_fraction": 0.003875968992248062,
+      "distinct_values": 2
+    },
+    {
+      "feature": "dst_ip_bytes",
+      "min": 0.0,
+      "max": 3008.0,
+      "median": 239.5,
+      "nonzero_min": 40.0,
+      "zero_count": 1,
+      "zero_fraction": 0.003875968992248062,
+      "distinct_values": 258
+    }
+  ],
+  "files": [
+    {
+      "path": "hardware_vectors/A_dt.json",
+      "sha256": "2fd32bfaa87d16041355edc052f06bd2ea5ffb58ae33ebba36443826f2f8d057",
+      "model_id": "A_dt",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 2,
+      "reference_probability_range": [
+        0.0,
+        0.9056776165962219
+      ]
+    },
+    {
+      "path": "hardware_vectors/A_lr.json",
+      "sha256": "f6074540a5d4b9fecdcb0dbcd5e4e3449380b2157ac7218f37ca3fd23f598f84",
+      "model_id": "A_lr",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 0,
+      "reference_probability_range": [
+        0.04276547580957413,
+        0.9510130882263184
+      ]
+    },
+    {
+      "path": "hardware_vectors/A_mlp_float.json",
+      "sha256": "4e6321688ca2b8867c7cea9b7cf666ae3ab9eb74aafe7036d0d75ac2d5f533ce",
+      "model_id": "A_mlp_float",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 0,
+      "reference_probability_range": [
+        0.0005327091785147786,
+        0.419584184885025
+      ]
+    },
+    {
+      "path": "hardware_vectors/A_mlp_int8.json",
+      "sha256": "43d3dfa3277db60b0bd1c280fc079e6adf34b30f8ee1adca2f805bf613091b67",
+      "model_id": "A_mlp_int8",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 0,
+      "reference_probability_range": [
+        0.0048563117161393166,
+        0.6009515523910522
+      ]
+    },
+    {
+      "path": "hardware_vectors/B_dt.json",
+      "sha256": "9f9aafee6c83d20644ee415497fe2468a1ed6ded1baf8f61de1f3963a0667b3f",
+      "model_id": "B_dt",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 0,
+      "reference_probability_range": [
+        0.0,
+        0.9703335165977478
+      ]
+    },
+    {
+      "path": "hardware_vectors/B_lr.json",
+      "sha256": "8cdf732a57249c653d5fde2fee46a38e9432385ebd35db2a8a516e478b6d162a",
+      "model_id": "B_lr",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 0,
+      "reference_probability_range": [
+        0.04186444729566574,
+        0.8846294283866882
+      ]
+    },
+    {
+      "path": "hardware_vectors/B_mlp_float.json",
+      "sha256": "437ad79d40d933b858f257e361653d49709d4f9fdc1d3524d38151bec4f6d8a7",
+      "model_id": "B_mlp_float",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 0,
+      "reference_probability_range": [
+        0.00023143229191191494,
+        0.8789762854576111
+      ]
+    },
+    {
+      "path": "hardware_vectors/B_mlp_int8.json",
+      "sha256": "4dc31606dd474d2e1b45ab350799cb3bf35b90c46589c0129f7d45186d202582",
+      "model_id": "B_mlp_int8",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 3,
+      "reference_probability_range": [
+        9.969161328626797e-05,
+        0.9846453070640564
+      ]
+    },
+    {
+      "path": "hardware_vectors/dt_stale_threshold.json",
+      "sha256": "2370758656f596b87d60b2db557545d17cf6364c0fff8647c6dadf330b360b55",
+      "model_id": "dt_stale_threshold",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 1,
+      "reference_probability_range": [
+        0.0,
+        0.9703335165977478
+      ]
+    },
+    {
+      "path": "hardware_vectors/lr_compatible_decision.json",
+      "sha256": "3d905e09e389cf190e56d8869e7c96fb9c81fc540a21a424a797dfb2085c3132",
+      "model_id": "lr_compatible_decision",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 0,
+      "reference_probability_range": [
+        0.07927863299846649,
+        0.9379282593727112
+      ]
+    },
+    {
+      "path": "hardware_vectors/lr_compatible_probability.json",
+      "sha256": "55a8ead2f86120a6a61ae0538d14080185d66093eb315dd817fb99189d91b312",
+      "model_id": "lr_compatible_probability",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 0,
+      "reference_probability_range": [
+        0.041864439845085144,
+        0.8846293091773987
+      ]
+    },
+    {
+      "path": "hardware_vectors/lr_stale_scaler.json",
+      "sha256": "43841cceb56ee6c5930b5fe33b28f45f5676c61b4933e9d911382ef0bd68e796",
+      "model_id": "lr_stale_scaler",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 0,
+      "reference_probability_range": [
+        0.04494289308786392,
+        0.9044230580329895
+      ]
+    },
+    {
+      "path": "hardware_vectors/lr_stale_scaler_threshold.json",
+      "sha256": "b5974089bd1a3d9b6c287687910e2dd085840a425fa68d5424eb7d804bfb0391",
+      "model_id": "lr_stale_scaler_threshold",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 0,
+      "reference_probability_range": [
+        0.04494289308786392,
+        0.9044230580329895
+      ]
+    },
+    {
+      "path": "hardware_vectors/lr_stale_threshold.json",
+      "sha256": "9bdf77d8456e1d336a8ec58005792aa8dd036ce40ae193f4cb95da187e02c94b",
+      "model_id": "lr_stale_threshold",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 0,
+      "reference_probability_range": [
+        0.04186444729566574,
+        0.8846294283866882
+      ]
+    },
+    {
+      "path": "hardware_vectors/mlp_float_compatible_first_layer.json",
+      "sha256": "4eb5eaade5e340513c131092a2dad878972521524fa307993a689abefd392f51",
+      "model_id": "mlp_float_compatible_first_layer",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 0,
+      "reference_probability_range": [
+        0.00023143208818510175,
+        0.8789762258529663
+      ]
+    },
+    {
+      "path": "hardware_vectors/mlp_float_stale_scaler.json",
+      "sha256": "8231736f1888e4ddc2d2784c9ac9c03f9e2a602b9d27c2a0b93d84ea4cca3c2d",
+      "model_id": "mlp_float_stale_scaler",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 0,
+      "reference_probability_range": [
+        0.0002932260395027697,
+        0.873268187046051
+      ]
+    },
+    {
+      "path": "hardware_vectors/mlp_float_stale_scaler_threshold.json",
+      "sha256": "d69d34ea190c249daf8337d7f5956c758227476c29b093f6d00a09653461dd4a",
+      "model_id": "mlp_float_stale_scaler_threshold",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 24,
+      "reference_probability_range": [
+        0.0002932260395027697,
+        0.873268187046051
+      ]
+    },
+    {
+      "path": "hardware_vectors/mlp_float_stale_threshold.json",
+      "sha256": "aa7b3ee1cb6fc0ed52756e8e613086002fac963c096a379aa9de8c8e9b74f211",
+      "model_id": "mlp_float_stale_threshold",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 20,
+      "reference_probability_range": [
+        0.00023143229191191494,
+        0.8789762854576111
+      ]
+    },
+    {
+      "path": "hardware_vectors/mlp_int8_compatible_requantized.json",
+      "sha256": "c908abe11fc74f7e4444bf6fab00efcd234634149a15217366045a9228c791cf",
+      "model_id": "mlp_int8_compatible_requantized",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 3,
+      "reference_probability_range": [
+        4.0875394915929064e-05,
+        0.9885479211807251
+      ]
+    },
+    {
+      "path": "hardware_vectors/mlp_int8_stale_input_quantization.json",
+      "sha256": "c7ba919c9f5b8204fbf9d538a3b3ce15cecf03224bad4e2b81b7d910a117e2f4",
+      "model_id": "mlp_int8_stale_input_quantization",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 0,
+      "reference_probability_range": [
+        1.2450237591110636e-05,
+        0.7092227935791016
+      ]
+    },
+    {
+      "path": "hardware_vectors/mlp_int8_stale_integer_threshold_code.json",
+      "sha256": "a94643f74a4eb3bf0880ac4e9ae0268927798d33b333fc9d3e3e5db20ff6f940",
+      "model_id": "mlp_int8_stale_integer_threshold_code",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 3,
+      "reference_probability_range": [
+        9.969161328626797e-05,
+        0.9846453070640564
+      ]
+    },
+    {
+      "path": "hardware_vectors/mlp_int8_stale_scaler.json",
+      "sha256": "f5b571d9ba760e1ca20493cd08fde7ad8d89d9368a4ecc6a5f09c0de568a41be",
+      "model_id": "mlp_int8_stale_scaler",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 2,
+      "reference_probability_range": [
+        9.969161328626797e-05,
+        0.9846453070640564
+      ]
+    },
+    {
+      "path": "hardware_vectors/mlp_int8_stale_scaler_threshold.json",
+      "sha256": "14503dfe9f14c3c13e17adbb3af3f3b02fc31021931fb54cae1362386495a35a",
+      "model_id": "mlp_int8_stale_scaler_threshold",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 2,
+      "reference_probability_range": [
+        9.969161328626797e-05,
+        0.9846453070640564
+      ]
+    },
+    {
+      "path": "hardware_vectors/mlp_int8_stale_threshold.json",
+      "sha256": "4a392b1f9f7d1036b143f1dde235d1ff5fadef13b409068981c0215d4c19dee5",
+      "model_id": "mlp_int8_stale_threshold",
+      "selection": "first258 unique raw float32 vectors by little-endian byte order, selected without predictions",
+      "data_origin": "TON_IoT_temporal_common_test",
+      "shape": [
+        258,
+        8
+      ],
+      "raw_sha256": "93b42112d9a0019f8e65d2b1af8356db43b74adac76fc7c7dd1ce8a6f2480c5e",
+      "raw_exactly_equal_to_reference": true,
+      "reference_positive_decisions": 3,
+      "reference_probability_range": [
+        9.969161328626797e-05,
+        0.9846453070640564
+      ]
+    }
+  ],
+  "model_feature_order_source": {
+    "path": "models/B_lr.json",
+    "sha256": "ce4b77c48433d77547e0fa9d2538d13ac1bd1321e45c53758f23f226cc3445ab"
+  },
+  "saved_sample_comparisons": {
+    "B_cal": {
+      "path": "samples/B_cal.npz",
+      "sha256": "4f6d162704d163c2bc77f3cba86b235edff0d3f50a6aed40237ce2af8e9ab8d0",
+      "n_rows": 102088,
+      "features": [
+        {
+          "feature": "duration",
+          "min": 0.0,
+          "max": 4768.14013671875,
+          "median": 0.039743997156620026,
+          "nonzero_min": 9.999999974752427e-07,
+          "zero_count": 3612,
+          "zero_fraction": 0.035381239714755895,
+          "distinct_values": 61151
+        },
+        {
+          "feature": "src_bytes",
+          "min": 0.0,
+          "max": 2143970304.0,
+          "median": 0.0,
+          "nonzero_min": 1.0,
+          "zero_count": 72412,
+          "zero_fraction": 0.7093096152339159,
+          "distinct_values": 684
+        },
+        {
+          "feature": "dst_bytes",
+          "min": 0.0,
+          "max": 2143346048.0,
+          "median": 0.0,
+          "nonzero_min": 1.0,
+          "zero_count": 71274,
+          "zero_fraction": 0.6981623697202414,
+          "distinct_values": 662
+        },
+        {
+          "feature": "missed_bytes",
+          "min": 0.0,
+          "max": 3742477312.0,
+          "median": 0.0,
+          "nonzero_min": 1.0,
+          "zero_count": 100370,
+          "zero_fraction": 0.9831713815531699,
+          "distinct_values": 92
+        },
+        {
+          "feature": "src_pkts",
+          "min": 0.0,
+          "max": 17103.0,
+          "median": 3.0,
+          "nonzero_min": 1.0,
+          "zero_count": 2564,
+          "zero_fraction": 0.025115586552777996,
+          "distinct_values": 122
+        },
+        {
+          "feature": "src_ip_bytes",
+          "min": 0.0,
+          "max": 11238689.0,
+          "median": 164.0,
+          "nonzero_min": 40.0,
+          "zero_count": 2564,
+          "zero_fraction": 0.025115586552777996,
+          "distinct_values": 600
+        },
+        {
+          "feature": "dst_pkts",
+          "min": 0.0,
+          "max": 17077.0,
+          "median": 2.0,
+          "nonzero_min": 1.0,
+          "zero_count": 1992,
+          "zero_fraction": 0.01951257738421754,
+          "distinct_values": 45
+        },
+        {
+          "feature": "dst_ip_bytes",
+          "min": 0.0,
+          "max": 11224265.0,
+          "median": 112.0,
+          "nonzero_min": 40.0,
+          "zero_count": 1992,
+          "zero_fraction": 0.01951257738421754,
+          "distinct_values": 752
+        }
+      ],
+      "all_zero_fraction": 0.0,
+      "scope": "Descriptive contrast with the saved sample; not the future-test population."
+    },
+    "B_fit": {
+      "path": "samples/B_fit.npz",
+      "sha256": "3b40bbad7bf0d38938ecbd450c8d6a81e5f0a1d47211ba17bc5e5017270663c6",
+      "n_rows": 251373,
+      "features": [
+        {
+          "feature": "duration",
+          "min": 0.0,
+          "max": 85274.3515625,
+          "median": 2.099999983329326e-05,
+          "nonzero_min": 9.999999974752427e-07,
+          "zero_count": 87017,
+          "zero_fraction": 0.3461668516507342,
+          "distinct_values": 72525
+        },
+        {
+          "feature": "src_bytes",
+          "min": 0.0,
+          "max": 2146050304.0,
+          "median": 0.0,
+          "nonzero_min": 1.0,
+          "zero_count": 216344,
+          "zero_fraction": 0.8606493139676894,
+          "distinct_values": 1521
+        },
+        {
+          "feature": "dst_bytes",
+          "min": 0.0,
+          "max": 1876129152.0,
+          "median": 0.0,
+          "nonzero_min": 1.0,
+          "zero_count": 213667,
+          "zero_fraction": 0.8499998010924006,
+          "distinct_values": 1595
+        },
+        {
+          "feature": "missed_bytes",
+          "min": 0.0,
+          "max": 1781400704.0,
+          "median": 0.0,
+          "nonzero_min": 1.0,
+          "zero_count": 246807,
+          "zero_fraction": 0.9818357580169708,
+          "distinct_values": 488
+        },
+        {
+          "feature": "src_pkts",
+          "min": 0.0,
+          "max": 58319.0,
+          "median": 1.0,
+          "nonzero_min": 1.0,
+          "zero_count": 45139,
+          "zero_fraction": 0.1795698026438798,
+          "distinct_values": 386
+        },
+        {
+          "feature": "src_ip_bytes",
+          "min": 0.0,
+          "max": 31897000.0,
+          "median": 44.0,
+          "nonzero_min": 28.0,
+          "zero_count": 45139,
+          "zero_fraction": 0.1795698026438798,
+          "distinct_values": 2074
+        },
+        {
+          "feature": "dst_pkts",
+          "min": 0.0,
+          "max": 313943.0,
+          "median": 1.0,
+          "nonzero_min": 1.0,
+          "zero_count": 115463,
+          "zero_fraction": 0.45932936313764805,
+          "distinct_values": 228
+        },
+        {
+          "feature": "dst_ip_bytes",
+          "min": 0.0,
+          "max": 175198688.0,
+          "median": 40.0,
+          "nonzero_min": 40.0,
+          "zero_count": 115463,
+          "zero_fraction": 0.45932936313764805,
+          "distinct_values": 2589
+        }
+      ],
+      "all_zero_fraction": 0.12417801434521607,
+      "scope": "Descriptive contrast with the saved sample; not the future-test population."
+    }
+  }
+}

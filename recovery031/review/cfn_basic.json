@@ -1,0 +1,71 @@
+{
+  "header": {
+    "nominal_rate_sps": 100.0,
+    "start_current_condition_mA": 0,
+    "stop_current_condition_mA": 0,
+    "stop_time_condition_s": 5,
+    "channels": [
+      {
+        "id": 0,
+        "name": "voltage_V",
+        "unit": "V",
+        "color_argb": "ffffff00",
+        "header_min": 4.98748,
+        "header_max": 5.03003
+      },
+      {
+        "id": 1,
+        "name": "current_A",
+        "unit": "A",
+        "color_argb": "ff00ff00",
+        "header_min": 0.0172,
+        "header_max": 0.07331
+      },
+      {
+        "id": 4,
+        "name": "power_W",
+        "unit": "W",
+        "color_argb": "ffff55ff",
+        "header_min": 0.086009288,
+        "header_max": 0.3671254835
+      },
+      {
+        "id": 5,
+        "name": "reported_capacity_Ah",
+        "unit": "Ah",
+        "color_argb": "ffff5500"
+      },
+      {
+        "id": 6,
+        "name": "reported_energy_Wh",
+        "unit": "Wh",
+        "color_argb": "ffffaa00"
+      }
+    ],
+    "data_offset": 109,
+    "row_bytes": 48,
+    "count": 743552
+  },
+  "sha256": "96bb1ab6586e8fbe3260a5dc4cf72e301da3acdc6b1f2777225fdb2836e216c9",
+  "channel_names": [
+    "relative_time_s",
+    "voltage_V",
+    "current_A",
+    "power_W",
+    "reported_capacity_Ah",
+    "reported_energy_Wh"
+  ],
+  "first": 0.0,
+  "last": 7435.51,
+  "duration": 7435.51,
+  "UI_quantiles": [
+    0.086009288,
+    0.14460259499999997,
+    0.1498074846,
+    0.17819046,
+    0.19122305850000001,
+    0.33826695939999996,
+    0.3671254835
+  ],
+  "adjacent_identical_UI_fraction": 0.7555998176318773
+}

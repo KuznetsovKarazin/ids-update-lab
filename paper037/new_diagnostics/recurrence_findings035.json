@@ -1,0 +1,608 @@
+{
+  "analysis": "posthoc calibration recurrence audit; no fitting or threshold changes",
+  "source_hashes": {
+    "evidence_inputs/training/samples/B_cal.npz": "4f6d162704d163c2bc77f3cba86b235edff0d3f50a6aed40237ce2af8e9ab8d0",
+    "analysis/science_evidence.json": "4f83f0671be0115efd189bc7c08e793c8b2d80423b2a19e4edf37f6ef8e97195",
+    "evidence_inputs/training/models/A_dt.json": "233cbf768eb8113c0ee52278127ef5d65e54ef32a804a167bb73533e9d5c6302",
+    "evidence_inputs/training/models/A_lr.json": "034f953d4ab0d1eda005cf75bfeba8ef458d6f2303c656185150d4471b09b9a4",
+    "evidence_inputs/training/models/A_mlp_float.json": "08453c5de77b1cece46b02a47dd5a5a2bc1318334202784d0415a0b0498f2fe6",
+    "evidence_inputs/training/models/A_mlp_int8.json": "071e566452d7cc60c3a8669e6d4236756ea95a39d221e4a8d31fc95a490a18b7",
+    "evidence_inputs/training/models/B_dt.json": "9685a8d0a5be7057e1705adcd258088821dc47f53c2c309f2fc874a57e852f3d",
+    "evidence_inputs/training/models/B_lr.json": "ce4b77c48433d77547e0fa9d2538d13ac1bd1321e45c53758f23f226cc3445ab",
+    "evidence_inputs/training/models/B_mlp_float.json": "6a04ba945af9b0132c913025bcfcd2273c62fcc6f48d64d2fc846ad094dfb62f",
+    "evidence_inputs/training/models/B_mlp_int8.json": "60ca214737c50afdff2c68486882e79abdc454da5e0cc7ddadcba3e26cd9879d",
+    "evidence_inputs/training/models/dt_stale_threshold.json": "eec44fcf17a75979f508d9c45dbf8e220fb684a421745c8c085cb3f97cd46dbd",
+    "evidence_inputs/training/models/lr_compatible_decision.json": "d66c3871143587c4d1c101eb64a269923d491eccdcd2f1de52a2206f12cdc9a3",
+    "evidence_inputs/training/models/lr_compatible_probability.json": "8990d3f8c452b18eb26b5529e3ec41dacbaf845a89dbcbd83226b94e267f31cf",
+    "evidence_inputs/training/models/lr_stale_scaler.json": "ed710fa52c4864605e58dca3eeda01bc2a7cc2f5f2a1a85721eb7bfa9a4a0ec7",
+    "evidence_inputs/training/models/lr_stale_scaler_threshold.json": "fce5e2e6c2fdf59ac36a9111942e5d37d70cb601515c945d50f743ebac55fbd8",
+    "evidence_inputs/training/models/lr_stale_threshold.json": "37d5134d0cc9de7630309f5a1d7dc9a1c9f998153c92b6b24cd30656691f259c",
+    "evidence_inputs/training/models/mlp_float_compatible_first_layer.json": "428495a5daebb66a86c2a8cfd406b5b47475d759ce401cd0705cb01f58b3c3f6",
+    "evidence_inputs/training/models/mlp_float_stale_scaler.json": "da78311cc51ae6f5396226880b519dcc3403a1b696dfd5da8d5bcbf368aeddc5",
+    "evidence_inputs/training/models/mlp_float_stale_scaler_threshold.json": "4761b0701a09837993033ef69525437efa0de2b1ddbb41f186ecf00b8e932dbe",
+    "evidence_inputs/training/models/mlp_float_stale_threshold.json": "2a419e32f063667026987925cc2ca0d02df6568d9b6bf674e8c1a75998a146ad",
+    "evidence_inputs/training/models/mlp_int8_compatible_requantized.json": "ac891bb661970549f11b227ae2547f0790ba2565e63210d5c944e5f34eee0a8a",
+    "evidence_inputs/training/models/mlp_int8_stale_input_quantization.json": "890449d01172d4e03648cd95bfbe5353a9912471b2a027fa12b73c409df9fd09",
+    "evidence_inputs/training/models/mlp_int8_stale_integer_threshold_code.json": "4a35e71fe166b14598929135d4775e6d831fc09f1c14468bb8af49561b53cadc",
+    "evidence_inputs/training/models/mlp_int8_stale_scaler.json": "1849c2d1753ba29379e5e3dd67ba9a20ad29c36ddf82dc3a386f4d07f073131a",
+    "evidence_inputs/training/models/mlp_int8_stale_scaler_threshold.json": "f0c48c900f885c09ff718f6c9fa07959bf3e0839b41e94b26882e85526313dbb",
+    "evidence_inputs/training/models/mlp_int8_stale_threshold.json": "c0fd7d594d7b8724b05c3e8ac02a1c91fcd9cf5bc2e272a4fbf48b95a3514b7b",
+    "new_analysis/B_original.json": "b2b5cd5914156835bbfa803078b18684336267ffe064e0efe0b6f85cae777513",
+    "new_analysis/export_per_tensor_transferred.json": "f9897500ee07e5fd0172c39132de1df4f0f2a71d55ce04278fb99df258a44cd2",
+    "new_analysis/export_per_tensor_recalibrated.json": "c0f579f5ca2512b06af6647acb3ac3622a1848fbcb10b0e1b43a9a67039bacfc",
+    "new_analysis/export_per_channel_transferred.json": "da06ccd8e320c18046ba6d73170a3331d446517836e99330e72d60ddbe65f755",
+    "new_analysis/export_per_channel_recalibrated.json": "19e17a89a3abbaaf29443c101a5affedbc4f8106929fda5011d489216dcef35d"
+  },
+  "sample": {
+    "rows": 102088,
+    "unique_vectors": 68515,
+    "normal_rows": 2088,
+    "attack_rows": 100000,
+    "distinct_normal_vectors": 1593,
+    "conflicting_vectors": 2,
+    "normal_vector_weight": 1591.0396590588898
+  },
+  "target": {
+    "raw": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      63.0,
+      0.0,
+      0.0
+    ],
+    "normal_rows": 380,
+    "attack_rows": 0,
+    "normal_row_fraction": 0.18199233716475097,
+    "FP_budget_at_1pct": 20,
+    "target_FP_budget_multiple": 19.0,
+    "share_of_transferred_export_FP": 0.9026128266033254
+  },
+  "variants034": {
+    "B_original": {
+      "model": "B_original",
+      "q_threshold": 10,
+      "normal_rows": 2088,
+      "attack_rows": 100000,
+      "false_positives": 19,
+      "true_positives": 73531,
+      "row_FPR": 0.009099616858237548,
+      "row_recall": 0.73531,
+      "all_vector_weight_FPR": 0.011941877056187664,
+      "all_vector_weight_recall": 0.7253605398230286,
+      "distinct_normal_vectors": 1593,
+      "distinct_normal_FP_vectors": 19,
+      "normal_only_vector_FPR": 0.011927181418706842,
+      "target_score": 5,
+      "target_probability": 0.8154802322387695,
+      "target_prediction": 0,
+      "target_false_positives": 0,
+      "target_score_normal_rows": 391,
+      "target_score_attack_rows": 1258
+    },
+    "export_per_tensor_transferred": {
+      "model": "export_per_tensor_transferred",
+      "q_threshold": 10,
+      "normal_rows": 2088,
+      "attack_rows": 100000,
+      "false_positives": 421,
+      "true_positives": 71623,
+      "row_FPR": 0.20162835249042146,
+      "row_recall": 0.71623,
+      "all_vector_weight_FPR": 0.021394601237674053,
+      "all_vector_weight_recall": 0.6832823417499811,
+      "distinct_normal_vectors": 1593,
+      "distinct_normal_FP_vectors": 36,
+      "normal_only_vector_FPR": 0.022598870056497175,
+      "target_score": 21,
+      "target_probability": 0.9980564117431641,
+      "target_prediction": 1,
+      "target_false_positives": 380,
+      "target_score_normal_rows": 391,
+      "target_score_attack_rows": 993
+    },
+    "export_per_tensor_recalibrated": {
+      "model": "export_per_tensor_recalibrated",
+      "q_threshold": 22,
+      "normal_rows": 2088,
+      "attack_rows": 100000,
+      "false_positives": 1,
+      "true_positives": 23933,
+      "row_FPR": 0.0004789272030651341,
+      "row_recall": 0.23933,
+      "all_vector_weight_FPR": 0.0006285198450625086,
+      "all_vector_weight_recall": 0.06674739476329658,
+      "distinct_normal_vectors": 1593,
+      "distinct_normal_FP_vectors": 1,
+      "normal_only_vector_FPR": 0.0006277463904582549,
+      "target_score": 21,
+      "target_probability": 0.9980564117431641,
+      "target_prediction": 0,
+      "target_false_positives": 0,
+      "target_score_normal_rows": 391,
+      "target_score_attack_rows": 993
+    },
+    "export_per_channel_transferred": {
+      "model": "export_per_channel_transferred",
+      "q_threshold": 10,
+      "normal_rows": 2088,
+      "attack_rows": 100000,
+      "false_positives": 419,
+      "true_positives": 72198,
+      "row_FPR": 0.2006704980842912,
+      "row_recall": 0.72198,
+      "all_vector_weight_FPR": 0.020137561547549036,
+      "all_vector_weight_recall": 0.6918592400249156,
+      "distinct_normal_vectors": 1593,
+      "distinct_normal_FP_vectors": 34,
+      "normal_only_vector_FPR": 0.021343377275580666,
+      "target_score": 20,
+      "target_probability": 0.997385561466217,
+      "target_prediction": 1,
+      "target_false_positives": 380,
+      "target_score_normal_rows": 392,
+      "target_score_attack_rows": 2466
+    },
+    "export_per_channel_recalibrated": {
+      "model": "export_per_channel_recalibrated",
+      "q_threshold": 21,
+      "normal_rows": 2088,
+      "attack_rows": 100000,
+      "false_positives": 0,
+      "true_positives": 23564,
+      "row_FPR": 0.0,
+      "row_recall": 0.23564,
+      "all_vector_weight_FPR": 0.0,
+      "all_vector_weight_recall": 0.06097965480837549,
+      "distinct_normal_vectors": 1593,
+      "distinct_normal_FP_vectors": 0,
+      "normal_only_vector_FPR": 0.0,
+      "target_score": 20,
+      "target_probability": 0.997385561466217,
+      "target_prediction": 0,
+      "target_false_positives": 0,
+      "target_score_normal_rows": 392,
+      "target_score_attack_rows": 2466
+    }
+  },
+  "weight_definitions": {
+    "all_vector_weight_FPR": "All calibration rows with vector v receive weight 1/n_v; mixed-label vectors retain proportional normal and attack masses. This is the estimand used in the paper.",
+    "normal_only_vector_FPR": "Each distinct vector occurring in normal calibration rows has normal-class weight one, irrespective of attacks with the same vector. This reproduces the reviewer 2.26% number."
+  },
+  "conflicting_vectors": [
+    {
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        52.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 2,
+      "attack_rows": 505,
+      "normal_weight": 0.0039447731755424065
+    },
+    {
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        67.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 2,
+      "attack_rows": 54,
+      "normal_weight": 0.03571428571428571
+    }
+  ],
+  "top20_calibration_normal_vectors": [
+    {
+      "rank_by_normal_frequency": 1,
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        63.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 380,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 2,
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        362.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 47,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 3,
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        236.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 29,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 4,
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        73.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 8,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 5,
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        400.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 6,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 6,
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        40.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 4,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 7,
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        245.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 3,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 8,
+      "raw": [
+        4.8000001697801054e-05,
+        918.0,
+        0.0,
+        0.0,
+        4.0,
+        1030.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 3,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 9,
+      "raw": [
+        4.8999998398358e-05,
+        402.0,
+        0.0,
+        0.0,
+        2.0,
+        458.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 3,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 10,
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1125.0
+      ],
+      "normal_rows": 2,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 11,
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        52.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 2,
+      "attack_rows": 505
+    },
+    {
+      "rank_by_normal_frequency": 12,
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        56.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 2,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 13,
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        67.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 2,
+      "attack_rows": 54
+    },
+    {
+      "rank_by_normal_frequency": 14,
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        69.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 2,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 15,
+      "raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        76.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 2,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 16,
+      "raw": [
+        6.000000212225132e-06,
+        47.0,
+        248.0,
+        0.0,
+        1.0,
+        75.0,
+        1.0,
+        276.0
+      ],
+      "normal_rows": 2,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 17,
+      "raw": [
+        2.499999936844688e-05,
+        402.0,
+        0.0,
+        0.0,
+        2.0,
+        458.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 2,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 18,
+      "raw": [
+        2.9999999242136255e-05,
+        90.0,
+        0.0,
+        0.0,
+        2.0,
+        146.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 2,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 19,
+      "raw": [
+        3.099999958067201e-05,
+        90.0,
+        0.0,
+        0.0,
+        2.0,
+        146.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 2,
+      "attack_rows": 0
+    },
+    {
+      "rank_by_normal_frequency": 20,
+      "raw": [
+        3.300000025774352e-05,
+        402.0,
+        0.0,
+        0.0,
+        2.0,
+        458.0,
+        0.0,
+        0.0
+      ],
+      "normal_rows": 2,
+      "attack_rows": 0
+    }
+  ],
+  "future_top20_aggregate": {
+    "B_mlp_int8": {
+      "confusion_mass": [
+        [
+          145428.0,
+          1034.0
+        ],
+        [
+          162502.0,
+          219998.0
+        ]
+      ],
+      "recall": 0.5751581699346405,
+      "FPR": 0.0070598517021479975,
+      "balanced_accuracy": 0.7840491591162463,
+      "decision_disagreement": 0.0,
+      "mass": 528962.0,
+      "paired_delta_vs_family_B": {
+        "recall": 0.0,
+        "FPR": 0.0,
+        "balanced_accuracy": 0.0,
+        "decision_disagreement": 0.0
+      }
+    },
+    "mlp_int8_compatible_requantized": {
+      "confusion_mass": [
+        [
+          49694.0,
+          96768.0
+        ],
+        [
+          27555.0,
+          354945.0
+        ]
+      ],
+      "recall": 0.9279607843137255,
+      "FPR": 0.6607038003031503,
+      "balanced_accuracy": 0.6336284920052877,
+      "decision_disagreement": 0.4361012700345204,
+      "mass": 528962.0,
+      "paired_delta_vs_family_B": {
+        "recall": 0.352802614379085,
+        "FPR": 0.6536439486010024,
+        "balanced_accuracy": -0.15042066711095858,
+        "decision_disagreement": 0.4361012700345204
+      }
+    }
+  },
+  "future_target_top20_membership": "unknown: retained 030 outputs contain cohort aggregates, not the twenty raw keys; training/test_vectors.sqlite was excluded from original results archive",
+  "backdoor_inference_scope": "Class recalls are observed; class-specific unique-vector counts and concentration are not present in retained summaries. Near-binary recall across models does not prove that one/few vectors dominate this class.",
+  "backdoor": [
+    {
+      "model": "A_lr",
+      "attack_rows": 508116,
+      "detected": 507798,
+      "recall": 0.9993741586566847
+    },
+    {
+      "model": "A_dt",
+      "attack_rows": 508116,
+      "detected": 507660,
+      "recall": 0.9991025671303403
+    },
+    {
+      "model": "A_mlp_float",
+      "attack_rows": 508116,
+      "detected": 507816,
+      "recall": 0.9994095836383818
+    },
+    {
+      "model": "A_mlp_int8",
+      "attack_rows": 508116,
+      "detected": 9,
+      "recall": 1.7712490848546395e-05
+    },
+    {
+      "model": "B_lr",
+      "attack_rows": 508116,
+      "detected": 256,
+      "recall": 0.0005038219619142086
+    },
+    {
+      "model": "B_dt",
+      "attack_rows": 508116,
+      "detected": 507546,
+      "recall": 0.9988782089129254
+    },
+    {
+      "model": "B_mlp_float",
+      "attack_rows": 508116,
+      "detected": 507809,
+      "recall": 0.9993958072566107
+    },
+    {
+      "model": "B_mlp_int8",
+      "attack_rows": 508116,
+      "detected": 507790,
+      "recall": 0.9993584142203749
+    }
+  ]
+}

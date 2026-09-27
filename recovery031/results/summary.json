@@ -1,0 +1,4076 @@
+{
+  "status": "complete",
+  "energy_measured": true,
+  "measurement_origin": "actual_FNB58_UI_recording",
+  "cfn_sha256": "96bb1ab6586e8fbe3260a5dc4cf72e301da3acdc6b1f2777225fdb2836e216c9",
+  "windows_sha256": "bff434ae9ce14e513c333bd2ce67e67d18f27104869744285574ee606772e48a",
+  "alignment": {
+    "method": "affine_two_calibration_patterns_two_independent_validation_patterns",
+    "cfn_seconds_per_host_second": 1.0000271245641454,
+    "cfn_offset_s": 2.5632537567391394,
+    "host_boundary_uncertainty_s": 0.0979956227847334,
+    "max_calibration_residual_host_s": 0.01053125984617509,
+    "max_validation_residual_host_s": 0.024875244022950938,
+    "allowed_host_interval_s": [
+      2.0137801499999997,
+      7299.27322895
+    ],
+    "pattern_quality": {
+      "calibration_before": {
+        "score": 0.9409374511524645,
+        "scale": 1.0,
+        "first_edge_cfn_s": 4.5600000000000005,
+        "runner_up_score": null,
+        "coarse_antialias_filter": {
+          "kind": "centered_uniform_mean",
+          "samples": 9,
+          "nominal_width_s": 0.09000000000042974,
+          "coarse_grid_dt_s": 0.08,
+          "purpose": "candidate_localization_only; original trace used for edges and integration"
+        },
+        "contrast_W": 0.08138499359999998,
+        "baseline_noise_MAD_W": 0.0015267198038400368,
+        "median_filter_samples": 7
+      },
+      "calibration_after": {
+        "score": 0.9433217124150143,
+        "scale": 1.0,
+        "first_edge_cfn_s": 7278.96,
+        "runner_up_score": null,
+        "coarse_antialias_filter": {
+          "kind": "centered_uniform_mean",
+          "samples": 9,
+          "nominal_width_s": 0.09000000000042974,
+          "coarse_grid_dt_s": 0.08,
+          "purpose": "candidate_localization_only; original trace used for edges and integration"
+        },
+        "contrast_W": 0.08050531319999998,
+        "baseline_noise_MAD_W": 0.0013892418640799825,
+        "median_filter_samples": 7
+      },
+      "validation_before": {
+        "contrast_W": 0.08141218649999998,
+        "baseline_noise_MAD_W": 0.0006244926176999835,
+        "median_filter_samples": 7,
+        "max_host_residual_s": 0.006937430490111751,
+        "used_to_fit_alignment": false
+      },
+      "validation_after": {
+        "contrast_W": 0.08074352469999999,
+        "baseline_noise_MAD_W": 0.0008546613751199838,
+        "median_filter_samples": 7,
+        "max_host_residual_s": 0.024875244022950938,
+        "used_to_fit_alignment": false
+      }
+    },
+    "uncertainty_kind": "empirical envelope of marker residuals, transport brackets and one sample; not metrological bound",
+    "clock_mapping_verified_by_holdout_markers": true
+  },
+  "decoder_diagnostics": {
+    "format_check": "PASS",
+    "nominal_time_integral_only": true,
+    "header": {
+      "nominal_rate_sps": 100.0,
+      "start_current_condition_mA": 0,
+      "stop_current_condition_mA": 0,
+      "stop_time_condition_s": 5,
+      "channels": [
+        {
+          "id": 0,
+          "name": "voltage_V",
+          "unit": "V",
+          "color_argb": "ffffff00",
+          "header_min": 4.98748,
+          "header_max": 5.03003
+        },
+        {
+          "id": 1,
+          "name": "current_A",
+          "unit": "A",
+          "color_argb": "ff00ff00",
+          "header_min": 0.0172,
+          "header_max": 0.07331
+        },
+        {
+          "id": 4,
+          "name": "power_W",
+          "unit": "W",
+          "color_argb": "ffff55ff",
+          "header_min": 0.086009288,
+          "header_max": 0.3671254835
+        },
+        {
+          "id": 5,
+          "name": "reported_capacity_Ah",
+          "unit": "Ah",
+          "color_argb": "ffff5500"
+        },
+        {
+          "id": 6,
+          "name": "reported_energy_Wh",
+          "unit": "Wh",
+          "color_argb": "ffffaa00"
+        }
+      ],
+      "data_offset": 109,
+      "row_bytes": 48,
+      "count": 743552
+    },
+    "recorded_span_s": 7435.51,
+    "dt_s": {
+      "min": 0.009999999999308784,
+      "median": 0.010000000000047748,
+      "max": 0.010000000000218279
+    },
+    "grid_rate_sps": 100.0,
+    "max_grid_deviation_s": 9.094947017729282e-13,
+    "integrated_UI_J": 1355.2006279361578,
+    "integrated_UI_Wh": 0.37644461887115493,
+    "integrated_I_C": 270.6745045000008,
+    "time_weighted_current_A": 0.03640295077271106,
+    "time_weighted_power_W": 0.18226061533588925,
+    "channel_statistics": {
+      "relative_time_s": {
+        "min": 0.0,
+        "max": 7435.51,
+        "mean": 3717.755
+      },
+      "voltage_V": {
+        "min": 4.98748,
+        "max": 5.03003,
+        "mean": 5.006885996554377
+      },
+      "current_A": {
+        "min": 0.0172,
+        "max": 0.07331,
+        "mean": 0.03640294606160699
+      },
+      "power_W": {
+        "min": 0.086009288,
+        "max": 0.3671254835,
+        "mean": 0.1822605916368769
+      },
+      "reported_capacity_Ah": {
+        "min": 4.6625e-08,
+        "max": 0.07518740898611334,
+        "mean": 0.03769476865493367
+      },
+      "reported_energy_Wh": {
+        "min": 1.16651786875e-07,
+        "max": 0.09411129784414973,
+        "mean": 0.04717630309738273
+      }
+    },
+    "meter_clock_aligned_to_host": false,
+    "independent_sampling_rate_verified": false,
+    "measurement_accuracy_calibrated": false,
+    "energy_update_measured": false,
+    "max_power_minus_UI_W": 0.0,
+    "capacity_increment_max_error_C": 7.378906513588745e-14,
+    "reported_capacity_delta_C": 270.674504500008,
+    "reported_energy_delta_J": 338.8002522925063,
+    "UI_to_reported_energy_ratio": 3.9999988747532957,
+    "energy_counter_consistent_with_UI": false,
+    "limitations": [
+      "Channel units follow a community format description, not a manufacturer calibration certificate.",
+      "Perfect nominal time spacing does not establish physical sampling rate or absence of dropped/filtered samples.",
+      "No absolute timestamp in CFN; no exact alignment of any host interval is asserted.",
+      "Reported energy is preserved unchanged; no ad hoc factor-four correction is applied.",
+      "USB connection state and wiring affect the baseline; a whole-file integral alone is not a single-update energy measurement."
+    ]
+  },
+  "physical_time_scale_from_markers": true,
+  "interpretation_gate": "posthoc_marker_localization_repair_with_unchanged_holdout_gates",
+  "host_mapped_sample_dt_s": {
+    "min": 0.009999728760703874,
+    "median": 0.009999728761613369,
+    "max": 0.009999728762522864
+  },
+  "adjacent_identical_UI_fraction": 0.7555998176318773,
+  "blocks": [
+    {
+      "event": "update_block",
+      "host_s": 121.5419373,
+      "id": "b01-lr-bundle",
+      "start_host_s": 85.9684931,
+      "end_host_s": 121.5419276,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b01-lr-bundle-before",
+        "b01-lr-bundle-after"
+      ],
+      "family": "lr",
+      "block": 1,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 35.57343449999999,
+      "gross_UI_energy_J": {
+        "min_J": 7.04011882365209,
+        "max_J": 7.043790881621316,
+        "at_offset_min_s": 0.06420923117540055,
+        "at_offset_max_s": 0.016789809508371504,
+        "mid_offset_J": 7.043529744571895
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.011538922261821,
+        "max_J": 1.0216016708874274,
+        "at_offset_min_s": 0.06463121192338103,
+        "at_offset_max_s": 0.01737488246059807,
+        "mid_offset_J": 1.0208068373343266
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        0.9928908636527778,
+        1.0420455058405897
+      ],
+      "gross_J_per_accepted_update": [
+        0.055000928309781955,
+        0.05502961626266653
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.0077569598722873265,
+        0.008140980514379607
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 222.6398882,
+      "id": "b01-lr-whole",
+      "start_host_s": 179.1219747,
+      "end_host_s": 222.6398813,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b01-lr-whole-before",
+        "b01-lr-whole-after"
+      ],
+      "family": "lr",
+      "block": 1,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.5179066,
+      "gross_UI_energy_J": {
+        "min_J": 9.02444689334618,
+        "max_J": 9.035252049477762,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01495170707925702,
+        "mid_offset_J": 9.034881145303352
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5759865635121764,
+        "max_J": 1.6050205179784216,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01850141405505638,
+        "mid_offset_J": 1.602796892137424
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.537216697245145,
+        1.6162298671823185
+      ],
+      "gross_J_per_accepted_update": [
+        2.256111723336545,
+        2.2588130123694405
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3843041743112863,
+        0.40405746679557963
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 323.7898558,
+      "id": "b01-dt-whole",
+      "start_host_s": 280.1318577,
+      "end_host_s": 323.7898488,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b01-dt-whole-before",
+        "b01-dt-whole-after"
+      ],
+      "family": "dt",
+      "block": 1,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.657991100000004,
+      "gross_UI_energy_J": {
+        "min_J": 9.036284769398684,
+        "max_J": 9.047379241721721,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01898367290961514,
+        "mid_offset_J": 9.046863005440407
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.566251559756875,
+        "max_J": 1.5962466506525033,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.020403033216506165,
+        "mid_offset_J": 1.59341415072039
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5199870818275825,
+        1.614321276182273
+      ],
+      "gross_J_per_accepted_update": [
+        2.259071192349671,
+        2.2618448104304303
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3799967704568956,
+        0.40358031904556824
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 402.6566029,
+      "id": "b01-dt-bundle",
+      "start_host_s": 365.4471861,
+      "end_host_s": 402.656593,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b01-dt-bundle-before",
+        "b01-dt-bundle-after"
+      ],
+      "family": "dt",
+      "block": 1,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.209406899999976,
+      "gross_UI_energy_J": {
+        "min_J": 7.357340432104479,
+        "max_J": 7.360827773889568,
+        "at_offset_min_s": 0.0876081963698595,
+        "at_offset_max_s": 0.012645743780352374,
+        "mid_offset_J": 7.360632860606174
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0335277811725412,
+        "max_J": 1.0454856662139211,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.01334226209344952,
+        "mid_offset_J": 1.0448730193199247
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.023384597202563,
+        1.0587470270959516
+      ],
+      "gross_J_per_accepted_update": [
+        0.05747922212581624,
+        0.05750646698351225
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.007995192165645024,
+        0.008271461149187122
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 481.6904303,
+      "id": "b01-mlp_float-bundle",
+      "start_host_s": 444.4548413,
+      "end_host_s": 481.6904242,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b01-mlp_float-bundle-before",
+        "b01-mlp_float-bundle-after"
+      ],
+      "family": "mlp_float",
+      "block": 1,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.2355829,
+      "gross_UI_energy_J": {
+        "min_J": 7.451088322808175,
+        "max_J": 7.455619683612014,
+        "at_offset_min_s": 0.06793717463679787,
+        "at_offset_max_s": 0.013059056291939078,
+        "mid_offset_J": 7.455372095549691
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.1352258097886598,
+        "max_J": 1.1497769216142522,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.013752320007099016,
+        "mid_offset_J": 1.1489836787794068
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.1196609677279392,
+        1.1666736844589307
+      ],
+      "gross_J_per_accepted_update": [
+        0.05821162752193887,
+        0.05824702877821886
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008747351310374525,
+        0.009114638159835396
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 583.3684991,
+      "id": "b01-mlp_float-whole",
+      "start_host_s": 539.8043532,
+      "end_host_s": 583.3684896,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b01-mlp_float-whole-before",
+        "b01-mlp_float-whole-after"
+      ],
+      "family": "mlp_float",
+      "block": 1,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.56413639999994,
+      "gross_UI_energy_J": {
+        "min_J": 9.03355601869093,
+        "max_J": 9.044412635147381,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.019345250984124804,
+        "mid_offset_J": 9.043892739349744
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5924439967624848,
+        "max_J": 1.6224356069546002,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.020847976138123586,
+        "mid_offset_J": 1.6195151589653691
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.554886631439281,
+        1.63304234797846
+      ],
+      "gross_J_per_accepted_update": [
+        2.2583890046727326,
+        2.2611031587868453
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.38872165785982027,
+        0.408260586994615
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 684.5007464,
+      "id": "b01-mlp_int8-whole",
+      "start_host_s": 640.8942365,
+      "end_host_s": 684.5007363,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b01-mlp_int8-whole-before",
+        "b01-mlp_int8-whole-after"
+      ],
+      "family": "mlp_int8",
+      "block": 1,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.60649979999994,
+      "gross_UI_energy_J": {
+        "min_J": 9.046014239316875,
+        "max_J": 9.05734875494855,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01678001888114459,
+        "mid_offset_J": 9.056897376641459
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5885369812843324,
+        "max_J": 1.6191615875477416,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.018450938593333445,
+        "mid_offset_J": 1.6165294381970559
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.543393316866668,
+        1.6357194887611177
+      ],
+      "gross_J_per_accepted_update": [
+        2.261503559829219,
+        2.2643371887371373
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.385848329216667,
+        0.40892987219027943
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 763.4603811,
+      "id": "b01-mlp_int8-bundle",
+      "start_host_s": 726.2190282,
+      "end_host_s": 763.460368,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b01-mlp_int8-bundle-before",
+        "b01-mlp_int8-bundle-after"
+      ],
+      "family": "mlp_int8",
+      "block": 1,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.24133979999999,
+      "gross_UI_energy_J": {
+        "min_J": 7.388970050743012,
+        "max_J": 7.392727654479245,
+        "at_offset_min_s": 0.08650154954819886,
+        "at_offset_max_s": 0.010696349347142805,
+        "mid_offset_J": 7.392568748016487
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0652760095099016,
+        "max_J": 1.075798321724132,
+        "at_offset_min_s": 0.08669507383602353,
+        "at_offset_max_s": 0.011039405467911604,
+        "mid_offset_J": 1.0753278193841802
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.0592396041047891,
+        1.0812967573774115
+      ],
+      "gross_J_per_accepted_update": [
+        0.05772632852142978,
+        0.0577556848006191
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008275309407068665,
+        0.008447630917011027
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 842.6488624,
+      "id": "b02-dt-bundle",
+      "start_host_s": 805.3763546,
+      "end_host_s": 842.6488557,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b02-dt-bundle-before",
+        "b02-dt-bundle-after"
+      ],
+      "family": "dt",
+      "block": 2,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.2725011,
+      "gross_UI_energy_J": {
+        "min_J": 7.308965672519037,
+        "max_J": 7.3121396055448145,
+        "at_offset_min_s": 0.04745205133872878,
+        "at_offset_max_s": 0.011804878743753112,
+        "mid_offset_J": 7.311954975372402
+      },
+      "net_UI_energy_J": {
+        "min_J": 0.977245073317424,
+        "max_J": 0.9871534263404449,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.012226106797013326,
+        "mid_offset_J": 0.9865884456854759
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        0.9643446582174899,
+        1.0008422493909075
+      ],
+      "gross_J_per_accepted_update": [
+        0.057101294316554974,
+        0.05712609066831886
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.00753394264232414,
+        0.007819080073366465
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 943.8380532,
+      "id": "b02-dt-whole",
+      "start_host_s": 900.2690663,
+      "end_host_s": 943.8380434,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b02-dt-whole-before",
+        "b02-dt-whole-after"
+      ],
+      "family": "dt",
+      "block": 2,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.568977099999984,
+      "gross_UI_energy_J": {
+        "min_J": 9.027079439026494,
+        "max_J": 9.038835219237427,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.014816037351510726,
+        "mid_offset_J": 9.038456486679564
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5602235276610568,
+        "max_J": 1.5918702107473561,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.016559731924588553,
+        "mid_offset_J": 1.589536502122955
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5003963475171158,
+        1.621991171261759
+      ],
+      "gross_J_per_accepted_update": [
+        2.2567698597566235,
+        2.2597088048093568
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.37509908687927895,
+        0.40549779281543974
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 1045.1411903,
+      "id": "b02-mlp_float-whole",
+      "start_host_s": 1001.4726214,
+      "end_host_s": 1045.141175,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b02-mlp_float-whole-before",
+        "b02-mlp_float-whole-after"
+      ],
+      "family": "mlp_float",
+      "block": 2,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.668553599999996,
+      "gross_UI_energy_J": {
+        "min_J": 9.016450677691182,
+        "max_J": 9.027747788741806,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01174709199108114,
+        "mid_offset_J": 9.027491953439863
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5632872657756853,
+        "max_J": 1.5936045357564828,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.015821991539720137,
+        "mid_offset_J": 1.5918224722272534
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5218646706650958,
+        1.6066625626726694
+      ],
+      "gross_J_per_accepted_update": [
+        2.2541126694227955,
+        2.2569369471854515
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.38046616766627395,
+        0.40166564066816735
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 1124.1786103,
+      "id": "b02-mlp_float-bundle",
+      "start_host_s": 1086.9077662,
+      "end_host_s": 1124.1786032,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b02-mlp_float-bundle-before",
+        "b02-mlp_float-bundle-after"
+      ],
+      "family": "mlp_float",
+      "block": 2,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.27083700000003,
+      "gross_UI_energy_J": {
+        "min_J": 7.477879679850872,
+        "max_J": 7.4813570261812,
+        "at_offset_min_s": 0.08773190886931809,
+        "at_offset_max_s": 0.012419139283062156,
+        "mid_offset_J": 7.481158131195599
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.146696627195528,
+        "max_J": 1.158390402241893,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.01290142783171325,
+        "mid_offset_J": 1.1577926735235056
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.1308047259087521,
+        1.1765631843650812
+      ],
+      "gross_J_per_accepted_update": [
+        0.05842093499883494,
+        0.05844810176704063
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008834411921162126,
+        0.009191899877852197
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 1203.0735699,
+      "id": "b02-mlp_int8-bundle",
+      "start_host_s": 1165.8786133,
+      "end_host_s": 1203.0735589,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b02-mlp_int8-bundle-before",
+        "b02-mlp_int8-bundle-after"
+      ],
+      "family": "mlp_int8",
+      "block": 2,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.19494559999998,
+      "gross_UI_energy_J": {
+        "min_J": 7.430899432597158,
+        "max_J": 7.4348893607090645,
+        "at_offset_min_s": 0.05515968564906022,
+        "at_offset_max_s": 0.00948229939891606,
+        "mid_offset_J": 7.434755296909088
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.1180941249359568,
+        "max_J": 1.1307465618873813,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.009878591342896741,
+        "mid_offset_J": 1.1303424829631745
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.1046541770799836,
+        1.1444509734586248
+      ],
+      "gross_J_per_accepted_update": [
+        0.0580539018171653,
+        0.058085073130539566
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008630110758437372,
+        0.008941023230145506
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 1304.2465761,
+      "id": "b02-mlp_int8-whole",
+      "start_host_s": 1260.7071194,
+      "end_host_s": 1304.2465658,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b02-mlp_int8-whole-before",
+        "b02-mlp_int8-whole-after"
+      ],
+      "family": "mlp_int8",
+      "block": 2,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.53944640000009,
+      "gross_UI_energy_J": {
+        "min_J": 9.021059162023477,
+        "max_J": 9.032224590803935,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.017090692981547393,
+        "mid_offset_J": 9.031754332671397
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.567138291985826,
+        "max_J": 1.5975756043365203,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.018738076445327153,
+        "mid_offset_J": 1.594993221032817
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.535073063119774,
+        1.6016010986918925
+      ],
+      "gross_J_per_accepted_update": [
+        2.255264790505869,
+        2.2580561477009837
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3837682657799435,
+        0.4004002746729731
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 1405.5464319,
+      "id": "b02-lr-whole",
+      "start_host_s": 1361.8900172,
+      "end_host_s": 1405.5464245,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b02-lr-whole-before",
+        "b02-lr-whole-after"
+      ],
+      "family": "lr",
+      "block": 2,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.656407299999955,
+      "gross_UI_energy_J": {
+        "min_J": 9.040046705468114,
+        "max_J": 9.051526313859483,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.012358855150946228,
+        "mid_offset_J": 9.051222200549148
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5649607384189,
+        "max_J": 1.5960246804892035,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.014433106962631606,
+        "mid_offset_J": 1.594222340166275
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5251939938860843,
+        1.6070058476667075
+      ],
+      "gross_J_per_accepted_update": [
+        2.2600116763670286,
+        2.262881578464871
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3812984984715211,
+        0.4017514619166769
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 1483.9752615,
+      "id": "b02-lr-bundle",
+      "start_host_s": 1447.3088893,
+      "end_host_s": 1483.9752537,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b02-lr-bundle-before",
+        "b02-lr-bundle-after"
+      ],
+      "family": "lr",
+      "block": 2,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 36.66636440000002,
+      "gross_UI_energy_J": {
+        "min_J": 7.1777909032858815,
+        "max_J": 7.1810832423634,
+        "at_offset_min_s": 0.047628042635303236,
+        "at_offset_max_s": 0.011006555967121195,
+        "mid_offset_J": 7.18092045767321
+      },
+      "net_UI_energy_J": {
+        "min_J": 0.9528319537119834,
+        "max_J": 0.9635643798063747,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.011695163918394263,
+        "mid_offset_J": 0.9630767658498063
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        0.9389635288054814,
+        0.9774327800058469
+      ],
+      "gross_J_per_accepted_update": [
+        0.05607649143192095,
+        0.05610221283096406
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.007335652568792823,
+        0.007636193593795679
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 1563.0113547,
+      "id": "b03-mlp_float-bundle",
+      "start_host_s": 1525.7440145,
+      "end_host_s": 1563.0113373,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b03-mlp_float-bundle-before",
+        "b03-mlp_float-bundle-after"
+      ],
+      "family": "mlp_float",
+      "block": 3,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.267322799999874,
+      "gross_UI_energy_J": {
+        "min_J": 7.369773021422816,
+        "max_J": 7.373096927293545,
+        "at_offset_min_s": 0.05022889691845939,
+        "at_offset_max_s": 0.01379084152163025,
+        "mid_offset_J": 7.372868163080739
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.04026144205573,
+        "max_J": 1.052438621274904,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.014633071996270485,
+        "mid_offset_J": 1.051701878775655
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.014538469119211,
+        1.0780670413598363
+      ],
+      "gross_J_per_accepted_update": [
+        0.05757635172986575,
+        0.05760231974448082
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.007926081789993836,
+        0.008422398760623721
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 1663.9858433,
+      "id": "b03-mlp_float-whole",
+      "start_host_s": 1620.4500929,
+      "end_host_s": 1663.9858366,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b03-mlp_float-whole-before",
+        "b03-mlp_float-whole-after"
+      ],
+      "family": "mlp_float",
+      "block": 3,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.53574370000001,
+      "gross_UI_energy_J": {
+        "min_J": 9.001810574407898,
+        "max_J": 9.013675929906412,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.014431842614062782,
+        "mid_offset_J": 9.01328649733756
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5632887560487778,
+        "max_J": 1.5953666004574147,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.016058082867634705,
+        "mid_offset_J": 1.5930690896575497
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5110668145079469,
+        1.6178557074300493
+      ],
+      "gross_J_per_accepted_update": [
+        2.2504526436019745,
+        2.253418982476603
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3777667036269867,
+        0.4044639268575123
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 1764.8378626,
+      "id": "b03-mlp_int8-whole",
+      "start_host_s": 1721.3513267,
+      "end_host_s": 1764.837855,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b03-mlp_int8-whole-before",
+        "b03-mlp_int8-whole-after"
+      ],
+      "family": "mlp_int8",
+      "block": 3,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.48652829999992,
+      "gross_UI_energy_J": {
+        "min_J": 9.00301061186633,
+        "max_J": 9.014209377568136,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.012477330490401273,
+        "mid_offset_J": 9.01390885790994
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5792890352622582,
+        "max_J": 1.6089675142916424,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01583826949032266,
+        "mid_offset_J": 1.606992836321563
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5288960121882864,
+        1.6314468395321953
+      ],
+      "gross_J_per_accepted_update": [
+        2.2507526529665824,
+        2.253552344392034
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3822240030470716,
+        0.4078617098830488
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 1843.6915689,
+      "id": "b03-mlp_int8-bundle",
+      "start_host_s": 1806.5034784,
+      "end_host_s": 1843.691559,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b03-mlp_int8-bundle-before",
+        "b03-mlp_int8-bundle-after"
+      ],
+      "family": "mlp_int8",
+      "block": 3,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.18808060000015,
+      "gross_UI_energy_J": {
+        "min_J": 7.344316684939031,
+        "max_J": 7.347372263596753,
+        "at_offset_min_s": 0.043205131172937346,
+        "at_offset_max_s": 0.015120200485356063,
+        "mid_offset_J": 7.347131014574927
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0312490426704124,
+        "max_J": 1.0399304919221244,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.015563135259034052,
+        "mid_offset_J": 1.0392120529560191
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.0148554965766525,
+        1.0560603978534049
+      ],
+      "gross_J_per_accepted_update": [
+        0.05737747410108618,
+        0.057401345809349635
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.007928558567005098,
+        0.008250471858229726
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 1921.640177,
+      "id": "b03-lr-bundle",
+      "start_host_s": 1885.4058446,
+      "end_host_s": 1921.6401702,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b03-lr-bundle-before",
+        "b03-lr-bundle-after"
+      ],
+      "family": "lr",
+      "block": 3,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 36.23432560000015,
+      "gross_UI_energy_J": {
+        "min_J": 7.102834515130041,
+        "max_J": 7.105812331589448,
+        "at_offset_min_s": 0.038747769989797516,
+        "at_offset_max_s": 0.010650743335500616,
+        "mid_offset_J": 7.105645221726036
+      },
+      "net_UI_energy_J": {
+        "min_J": 0.9648033576899055,
+        "max_J": 0.9738478975599785,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.011342043883177498,
+        "mid_offset_J": 0.9733507517052176
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        0.9466735486931679,
+        0.9928736241094329
+      ],
+      "gross_J_per_accepted_update": [
+        0.05549089464945345,
+        0.05551415884054256
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.007395887099165374,
+        0.007756825188354945
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 2022.5882185,
+      "id": "b03-lr-whole",
+      "start_host_s": 1979.1218915,
+      "end_host_s": 2022.588212,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b03-lr-whole-before",
+        "b03-lr-whole-after"
+      ],
+      "family": "lr",
+      "block": 3,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.466320500000165,
+      "gross_UI_energy_J": {
+        "min_J": 8.98731213784788,
+        "max_J": 8.999252026929355,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.012923431157427522,
+        "mid_offset_J": 8.998892432122034
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5665157435755384,
+        "max_J": 1.5987066045564027,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.014521436592318703,
+        "mid_offset_J": 1.5966034492585526
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5322698791271012,
+        1.6031883835498961
+      ],
+      "gross_J_per_accepted_update": [
+        2.24682803446197,
+        2.2498130067323387
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3830674697817753,
+        0.40079709588747403
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 2123.3995917,
+      "id": "b03-dt-whole",
+      "start_host_s": 2079.9550672,
+      "end_host_s": 2123.3995825,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b03-dt-whole-before",
+        "b03-dt-whole-after"
+      ],
+      "family": "dt",
+      "block": 3,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.44451530000015,
+      "gross_UI_energy_J": {
+        "min_J": 8.988415252319612,
+        "max_J": 8.999690701046006,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.016840641831522965,
+        "mid_offset_J": 8.999246988372477
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5691889426412726,
+        "max_J": 1.6012256175589585,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.018542325630711717,
+        "mid_offset_J": 1.5985893349553435
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5255374008449838,
+        1.6184342504313491
+      ],
+      "gross_J_per_accepted_update": [
+        2.247103813079903,
+        2.2499226752615016
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.38138435021124595,
+        0.4046085626078373
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 2202.2481039,
+      "id": "b03-dt-bundle",
+      "start_host_s": 2165.0306933,
+      "end_host_s": 2202.2480932,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b03-dt-bundle-before",
+        "b03-dt-bundle-after"
+      ],
+      "family": "dt",
+      "block": 3,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.21739989999969,
+      "gross_UI_energy_J": {
+        "min_J": 7.380247014131442,
+        "max_J": 7.383357812360373,
+        "at_offset_min_s": 0.04638303736909072,
+        "at_offset_max_s": 0.010293237773480091,
+        "mid_offset_J": 7.383223579568153
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0730711775236386,
+        "max_J": 1.0840772451244378,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.010881630038642034,
+        "mid_offset_J": 1.0836408605917085
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.0684528097376456,
+        1.0915453628175502
+      ],
+      "gross_J_per_accepted_update": [
+        0.05765817979790189,
+        0.05768248290906541
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008347287576075356,
+        0.008527698147012111
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 2281.091782,
+      "id": "b04-mlp_int8-bundle",
+      "start_host_s": 2243.9598106,
+      "end_host_s": 2281.0917719,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b04-mlp_int8-bundle-before",
+        "b04-mlp_int8-bundle-after"
+      ],
+      "family": "mlp_int8",
+      "block": 4,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.13196130000006,
+      "gross_UI_energy_J": {
+        "min_J": 7.269981561019506,
+        "max_J": 7.272914906747587,
+        "at_offset_min_s": 0.04528724593703459,
+        "at_offset_max_s": 0.01710325445245402,
+        "mid_offset_J": 7.272637611842754
+      },
+      "net_UI_energy_J": {
+        "min_J": 0.9828843206042666,
+        "max_J": 0.9933267302840751,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.017476562473920754,
+        "mid_offset_J": 0.9925201555900913
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        0.9692204175107362,
+        1.0049224323686836
+      ],
+      "gross_J_per_accepted_update": [
+        0.05679673094546489,
+        0.056819647708965526
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.007572034511802626,
+        0.00785095650288034
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 2382.0537943,
+      "id": "b04-mlp_int8-whole",
+      "start_host_s": 2338.5692374,
+      "end_host_s": 2382.0537855,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b04-mlp_int8-whole-before",
+        "b04-mlp_int8-whole-after"
+      ],
+      "family": "mlp_int8",
+      "block": 4,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.484548099999756,
+      "gross_UI_energy_J": {
+        "min_J": 8.988195483024526,
+        "max_J": 8.999672317217119,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.015704731499973066,
+        "mid_offset_J": 8.999247885710531
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5728002944883817,
+        "max_J": 1.6056713152781974,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.017468314930584032,
+        "mid_offset_J": 1.6032332753894059
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.523020206112533,
+        1.6287318191430202
+      ],
+      "gross_J_per_accepted_update": [
+        2.2470488707561316,
+        2.2499180793042797
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.38075505152813327,
+        0.40718295478575506
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 2482.9097634,
+      "id": "b04-lr-whole",
+      "start_host_s": 2439.4535425,
+      "end_host_s": 2482.9097538,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b04-lr-whole-before",
+        "b04-lr-whole-after"
+      ],
+      "family": "lr",
+      "block": 4,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.45621130000018,
+      "gross_UI_energy_J": {
+        "min_J": 8.983469625763519,
+        "max_J": 8.995035597898607,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.011070313509815022,
+        "mid_offset_J": 8.994787794196668
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5727874182571928,
+        "max_J": 1.603902100958687,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.014449813784333212,
+        "mid_offset_J": 1.6022722230888928
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.536185501435643,
+        1.611723188761113
+      ],
+      "gross_J_per_accepted_update": [
+        2.2458674064408797,
+        2.2487588994746517
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.38404637535891073,
+        0.40293079719027824
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 2560.8357826,
+      "id": "b04-lr-bundle",
+      "start_host_s": 2524.5560502,
+      "end_host_s": 2560.8357712,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b04-lr-bundle-before",
+        "b04-lr-bundle-after"
+      ],
+      "family": "lr",
+      "block": 4,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 36.279721000000336,
+      "gross_UI_energy_J": {
+        "min_J": 7.093197986667747,
+        "max_J": 7.09633646515482,
+        "at_offset_min_s": 0.041465812411318595,
+        "at_offset_max_s": 0.0130178621253286,
+        "mid_offset_J": 7.096139600292986
+      },
+      "net_UI_energy_J": {
+        "min_J": 0.9562692860656083,
+        "max_J": 0.9661271359632595,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.013688855677321697,
+        "mid_offset_J": 0.9655580365096625
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        0.9396943890458305,
+        0.9814403933985707
+      ],
+      "gross_J_per_accepted_update": [
+        0.05541560927084177,
+        0.055440128634022035
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.0073413624144205505,
+        0.007667503073426334
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 2640.0212116,
+      "id": "b04-dt-bundle",
+      "start_host_s": 2602.78855,
+      "end_host_s": 2640.0212011,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b04-dt-bundle-before",
+        "b04-dt-bundle-after"
+      ],
+      "family": "dt",
+      "block": 4,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.23265109999966,
+      "gross_UI_energy_J": {
+        "min_J": 7.324203845365162,
+        "max_J": 7.327710958724197,
+        "at_offset_min_s": 0.04661856598684926,
+        "at_offset_max_s": 0.009672254022214189,
+        "mid_offset_J": 7.327565573430661
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0287355190013887,
+        "max_J": 1.0386123341140392,
+        "at_offset_min_s": 0.047042633946146724,
+        "at_offset_max_s": 0.01035428598393658,
+        "mid_offset_J": 1.0381526863954331
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.0159562931384238,
+        1.0526591299401309
+      ],
+      "gross_J_per_accepted_update": [
+        0.057220342541915326,
+        0.057247741865032786
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.007937158540143936,
+        0.008223899452657273
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 2741.0392579,
+      "id": "b04-dt-whole",
+      "start_host_s": 2697.4984131,
+      "end_host_s": 2741.039249,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b04-dt-whole-before",
+        "b04-dt-whole-after"
+      ],
+      "family": "dt",
+      "block": 4,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.54083589999982,
+      "gross_UI_energy_J": {
+        "min_J": 9.024133074711699,
+        "max_J": 9.035797523443478,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.00927341923517919,
+        "mid_offset_J": 9.035590297631188
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5946479097862558,
+        "max_J": 1.6255678483724347,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.012927379000253505,
+        "mid_offset_J": 1.624086056509256
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5424310259518492,
+        1.6484760415755462
+      ],
+      "gross_J_per_accepted_update": [
+        2.2560332686779248,
+        2.2589493808608694
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3856077564879623,
+        0.41211901039388654
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 2841.974051,
+      "id": "b04-mlp_float-whole",
+      "start_host_s": 2798.4463058,
+      "end_host_s": 2841.9740444,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b04-mlp_float-whole-before",
+        "b04-mlp_float-whole-after"
+      ],
+      "family": "mlp_float",
+      "block": 4,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.52773859999979,
+      "gross_UI_energy_J": {
+        "min_J": 9.009028329984517,
+        "max_J": 9.020671120433576,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.016061794512070987,
+        "mid_offset_J": 9.020248039493026
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5949985643840554,
+        "max_J": 1.6264611763298062,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.017617748269063323,
+        "mid_offset_J": 1.624011745305462
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5519859236374005,
+        1.6405617402926218
+      ],
+      "gross_J_per_accepted_update": [
+        2.252257082496129,
+        2.255167780108394
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3879964809093501,
+        0.41014043507315545
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 2920.9029142,
+      "id": "b04-mlp_float-bundle",
+      "start_host_s": 2883.6320821,
+      "end_host_s": 2920.9029053,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b04-mlp_float-bundle-before",
+        "b04-mlp_float-bundle-after"
+      ],
+      "family": "mlp_float",
+      "block": 4,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.270823199999995,
+      "gross_UI_energy_J": {
+        "min_J": 7.378253206174236,
+        "max_J": 7.381569097641432,
+        "at_offset_min_s": 0.04528827803690816,
+        "at_offset_max_s": 0.009911022814681592,
+        "mid_offset_J": 7.381419921703582
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0642043061304696,
+        "max_J": 1.0757307925786321,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.010266817160106094,
+        "mid_offset_J": 1.0752872796266657
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.0416070939425524,
+        1.1008674912416136
+      ],
+      "gross_J_per_accepted_update": [
+        0.05764260317323622,
+        0.057668508575323685
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.00813755542142619,
+        0.008600527275325107
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 2999.1524948,
+      "id": "b05-lr-bundle",
+      "start_host_s": 2962.6100194,
+      "end_host_s": 2999.1524884,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b05-lr-bundle-before",
+        "b05-lr-bundle-after"
+      ],
+      "family": "lr",
+      "block": 5,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 36.54246899999998,
+      "gross_UI_energy_J": {
+        "min_J": 7.164070481292242,
+        "max_J": 7.167562982359414,
+        "at_offset_min_s": 0.04548516027157953,
+        "at_offset_max_s": 0.00911695546761266,
+        "mid_offset_J": 7.16743686133168
+      },
+      "net_UI_energy_J": {
+        "min_J": 0.9783715172005261,
+        "max_J": 0.9911540832014785,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.00974393786590185,
+        "mid_offset_J": 0.9907612053834094
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        0.9585248518223999,
+        1.0117441024783336
+      ],
+      "gross_J_per_accepted_update": [
+        0.05596930063509564,
+        0.05599658579968292
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.007488475404862499,
+        0.007904250800611981
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 3100.180481,
+      "id": "b05-lr-whole",
+      "start_host_s": 3056.6732882,
+      "end_host_s": 3100.1804741,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b05-lr-whole-before",
+        "b05-lr-whole-after"
+      ],
+      "family": "lr",
+      "block": 5,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.50718589999997,
+      "gross_UI_energy_J": {
+        "min_J": 8.998862096558696,
+        "max_J": 9.010841921780298,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01224882805436158,
+        "mid_offset_J": 9.010508948354868
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5869488976471784,
+        "max_J": 1.6189523212538601,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.014230721175305768,
+        "mid_offset_J": 1.616991856740245
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5523032747673735,
+        1.6231768183735031
+      ],
+      "gross_J_per_accepted_update": [
+        2.249715524139674,
+        2.2527104804450744
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3880758186918434,
+        0.4057942045933758
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 3201.0677024,
+      "id": "b05-dt-whole",
+      "start_host_s": 3157.5695483,
+      "end_host_s": 3201.0676934,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b05-dt-whole-before",
+        "b05-dt-whole-after"
+      ],
+      "family": "dt",
+      "block": 5,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.498145099999874,
+      "gross_UI_energy_J": {
+        "min_J": 9.019888291909865,
+        "max_J": 9.032015443407545,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.013115429290332018,
+        "mid_offset_J": 9.031677581239705
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5983058310184193,
+        "max_J": 1.630990204222813,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.014942889115741842,
+        "mid_offset_J": 1.6290103368134101
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5500137529313367,
+        1.6492020221004884
+      ],
+      "gross_J_per_accepted_update": [
+        2.2549720729774663,
+        2.258003860851886
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3875034382328342,
+        0.4123005055251221
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 3279.9813651,
+      "id": "b05-dt-bundle",
+      "start_host_s": 3242.7578528,
+      "end_host_s": 3279.9813536,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b05-dt-bundle-before",
+        "b05-dt-bundle-after"
+      ],
+      "family": "dt",
+      "block": 5,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.22350080000024,
+      "gross_UI_energy_J": {
+        "min_J": 7.4188345906958375,
+        "max_J": 7.421762691922368,
+        "at_offset_min_s": 0.08906234552019489,
+        "at_offset_max_s": 0.014275771257538138,
+        "mid_offset_J": 7.421536155964873
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.1158561117607366,
+        "max_J": 1.1247292756614717,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.01493594159764675,
+        "mid_offset_J": 1.124052239104334
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.1063071214388396,
+        1.1337858301811412
+      ],
+      "gross_J_per_accepted_update": [
+        0.05795964523981123,
+        0.0579825210306435
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008643024386240934,
+        0.008857701798290166
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 3358.9549051,
+      "id": "b05-mlp_float-bundle",
+      "start_host_s": 3321.6932001,
+      "end_host_s": 3358.9548981,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b05-mlp_float-bundle-before",
+        "b05-mlp_float-bundle-after"
+      ],
+      "family": "mlp_float",
+      "block": 5,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.2616979999998,
+      "gross_UI_energy_J": {
+        "min_J": 7.482180137592991,
+        "max_J": 7.48640309075904,
+        "at_offset_min_s": 0.052232984057976994,
+        "at_offset_max_s": 0.0145292170496455,
+        "mid_offset_J": 7.486139202287745
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.1837011034677722,
+        "max_J": 1.1964079529804486,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.014973688478681357,
+        "mid_offset_J": 1.195584689379538
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.1624936759704694,
+        1.220591159886876
+      ],
+      "gross_J_per_accepted_update": [
+        0.05845453232494524,
+        0.058487524146555
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.009081981843519292,
+        0.009535868436616218
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 3459.8829899,
+      "id": "b05-mlp_float-whole",
+      "start_host_s": 3416.4067063,
+      "end_host_s": 3459.8829825,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b05-mlp_float-whole-before",
+        "b05-mlp_float-whole-after"
+      ],
+      "family": "mlp_float",
+      "block": 5,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.476276199999575,
+      "gross_UI_energy_J": {
+        "min_J": 8.987430163588897,
+        "max_J": 8.998670410541763,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.011628402610089628,
+        "mid_offset_J": 8.998395366864088
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5851202237155078,
+        "max_J": 1.6167919615969573,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.015310596598562286,
+        "mid_offset_J": 1.6149435496990847
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5538508733255396,
+        1.621513308391128
+      ],
+      "gross_J_per_accepted_update": [
+        2.2468575408972242,
+        2.2496676026354407
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3884627183313849,
+        0.405378327097782
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 3560.7299938,
+      "id": "b05-mlp_int8-whole",
+      "start_host_s": 3517.2508267,
+      "end_host_s": 3560.7299868,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b05-mlp_int8-whole-before",
+        "b05-mlp_int8-whole-after"
+      ],
+      "family": "mlp_int8",
+      "block": 5,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.47916010000017,
+      "gross_UI_energy_J": {
+        "min_J": 8.993193130956229,
+        "max_J": 9.005306329645123,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.012250008342979925,
+        "mid_offset_J": 9.004974502398795
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5828924900271715,
+        "max_J": 1.6156953294466683,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.013818990253387002,
+        "mid_offset_J": 1.6138441021949976
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.540471467103492,
+        1.6275172501853925
+      ],
+      "gross_J_per_accepted_update": [
+        2.248298282739057,
+        2.2513265824112807
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.385117866775873,
+        0.4068793125463481
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 3639.5879905,
+      "id": "b05-mlp_int8-bundle",
+      "start_host_s": 3602.396558,
+      "end_host_s": 3639.5879826,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b05-mlp_int8-bundle-before",
+        "b05-mlp_int8-bundle-after"
+      ],
+      "family": "mlp_int8",
+      "block": 5,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.19142460000012,
+      "gross_UI_energy_J": {
+        "min_J": 7.32107582601509,
+        "max_J": 7.324424233672175,
+        "at_offset_min_s": 0.049497675240077026,
+        "at_offset_max_s": 0.013333560670109924,
+        "mid_offset_J": 7.324219769357342
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0298226042020961,
+        "max_J": 1.0424410578127508,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.013999452954997152,
+        "mid_offset_J": 1.0417923363246393
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.0202233647186016,
+        1.0523209526630737
+      ],
+      "gross_J_per_accepted_update": [
+        0.05719590489074289,
+        0.05722206432556387
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.007970495036864075,
+        0.008221257442680263
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 3718.554593,
+      "id": "b06-dt-bundle",
+      "start_host_s": 3681.3467053,
+      "end_host_s": 3718.554584,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b06-dt-bundle-before",
+        "b06-dt-bundle-after"
+      ],
+      "family": "dt",
+      "block": 6,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.20787870000004,
+      "gross_UI_energy_J": {
+        "min_J": 7.349731452868468,
+        "max_J": 7.353340892975098,
+        "at_offset_min_s": 0.04908175426458754,
+        "at_offset_max_s": 0.011754824290903111,
+        "mid_offset_J": 7.353149149500155
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0707978246685017,
+        "max_J": 1.0815339926756944,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.013852206922222821,
+        "mid_offset_J": 1.0809288535812596
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.0573419875949712,
+        1.0965607820609762
+      ],
+      "gross_J_per_accepted_update": [
+        0.05741977697553491,
+        0.05744797572636795
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008260484278085713,
+        0.008566881109851376
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 3819.7805092,
+      "id": "b06-dt-whole",
+      "start_host_s": 3776.1110768,
+      "end_host_s": 3819.7805002,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b06-dt-whole-before",
+        "b06-dt-whole-after"
+      ],
+      "family": "dt",
+      "block": 6,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.66942340000014,
+      "gross_UI_energy_J": {
+        "min_J": 9.016961617726224,
+        "max_J": 9.02832268538259,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01489248458319804,
+        "mid_offset_J": 9.027934672953847
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5803869274415212,
+        "max_J": 1.611002084492787,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.016530562175002338,
+        "mid_offset_J": 1.6086826149410682
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5333506167201394,
+        1.6292311746511388
+      ],
+      "gross_J_per_accepted_update": [
+        2.254240404431556,
+        2.2570806713456477
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.38333765418003485,
+        0.4073077936627847
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 3920.8634668,
+      "id": "b06-mlp_float-whole",
+      "start_host_s": 3877.3956218,
+      "end_host_s": 3920.8634602,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b06-mlp_float-whole-before",
+        "b06-mlp_float-whole-after"
+      ],
+      "family": "mlp_float",
+      "block": 6,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.467838400000346,
+      "gross_UI_energy_J": {
+        "min_J": 8.986373800002184,
+        "max_J": 8.997905378260725,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.010172083499244188,
+        "mid_offset_J": 8.997680923335338
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5670127049629303,
+        "max_J": 1.5979108352893574,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.013834158231554376,
+        "mid_offset_J": 1.5963500769330796
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5275071791389463,
+        1.6083736242541935
+      ],
+      "gross_J_per_accepted_update": [
+        2.246593450000546,
+        2.2494763445651813
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3818767947847366,
+        0.4020934060635484
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 3999.9371322,
+      "id": "b06-mlp_float-bundle",
+      "start_host_s": 3962.5074244,
+      "end_host_s": 3999.9371259,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b06-mlp_float-bundle-before",
+        "b06-mlp_float-bundle-after"
+      ],
+      "family": "mlp_float",
+      "block": 6,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.42970149999974,
+      "gross_UI_energy_J": {
+        "min_J": 7.442052295613053,
+        "max_J": 7.4457979441866655,
+        "at_offset_min_s": 0.050958889004078835,
+        "at_offset_max_s": 0.013279900602611505,
+        "mid_offset_J": 7.445576810402372
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.11880658480514,
+        "max_J": 1.1295305314062154,
+        "at_offset_min_s": 0.05123330605897793,
+        "at_offset_max_s": 0.013651632406671542,
+        "mid_offset_J": 1.1288721607928203
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.1047168227994106,
+        1.1414388069167467
+      ],
+      "gross_J_per_accepted_update": [
+        0.05814103355947697,
+        0.058170296438958324
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008630600178120396,
+        0.008917490679037084
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 4078.8251142,
+      "id": "b06-mlp_int8-bundle",
+      "start_host_s": 4041.6501855,
+      "end_host_s": 4078.8251042,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b06-mlp_int8-bundle-before",
+        "b06-mlp_int8-bundle-after"
+      ],
+      "family": "mlp_int8",
+      "block": 6,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.174918700000035,
+      "gross_UI_energy_J": {
+        "min_J": 7.3089219624399675,
+        "max_J": 7.3128987540181924,
+        "at_offset_min_s": 0.054994308023639776,
+        "at_offset_max_s": 0.010092346755399793,
+        "mid_offset_J": 7.312760446023617
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0384637327843538,
+        "max_J": 1.049615389366891,
+        "at_offset_min_s": 0.055170862320328924,
+        "at_offset_max_s": 0.010777630180455557,
+        "mid_offset_J": 1.049167209175387
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.0339096670743686,
+        1.0551604719229521
+      ],
+      "gross_J_per_accepted_update": [
+        0.057100952831562246,
+        0.05713202151576713
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008077419274018505,
+        0.008243441186898064
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 4179.7489799,
+      "id": "b06-mlp_int8-whole",
+      "start_host_s": 4136.2717384,
+      "end_host_s": 4179.748973,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b06-mlp_int8-whole-before",
+        "b06-mlp_int8-whole-after"
+      ],
+      "family": "mlp_int8",
+      "block": 6,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.477234599999974,
+      "gross_UI_energy_J": {
+        "min_J": 8.955031617232976,
+        "max_J": 8.966643409175504,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.014419669079529563,
+        "mid_offset_J": 8.96626947295647
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5675624480929984,
+        "max_J": 1.5988021943781998,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01620980141299185,
+        "mid_offset_J": 1.5965436087100389
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5239794001123776,
+        1.6131501422743746
+      ],
+      "gross_J_per_accepted_update": [
+        2.238757904308244,
+        2.241660852293876
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3809948500280944,
+        0.40328753556859365
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 4280.6869341,
+      "id": "b06-lr-whole",
+      "start_host_s": 4237.1388682,
+      "end_host_s": 4280.6869259,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b06-lr-whole-before",
+        "b06-lr-whole-after"
+      ],
+      "family": "lr",
+      "block": 6,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.548057699999845,
+      "gross_UI_energy_J": {
+        "min_J": 8.991143149592972,
+        "max_J": 9.002658427335518,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.014559205623322255,
+        "mid_offset_J": 9.00226897216271
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5905366236138851,
+        "max_J": 1.621445249163386,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.0161959313397673,
+        "mid_offset_J": 1.6192308447074355
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5540764481195142,
+        1.6288199551321165
+      ],
+      "gross_J_per_accepted_update": [
+        2.247785787398243,
+        2.2506646068338796
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.38851911202987854,
+        0.40720498878302913
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 4359.115592,
+      "id": "b06-lr-bundle",
+      "start_host_s": 4322.3080948,
+      "end_host_s": 4359.1155849,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b06-lr-bundle-before",
+        "b06-lr-bundle-after"
+      ],
+      "family": "lr",
+      "block": 6,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 36.807490099999995,
+      "gross_UI_energy_J": {
+        "min_J": 7.269761529010452,
+        "max_J": 7.273256104226448,
+        "at_offset_min_s": 0.08004484632016985,
+        "at_offset_max_s": 0.012237501509392608,
+        "mid_offset_J": 7.2730696668780865
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0727377069641406,
+        "max_J": 1.0825313033693669,
+        "at_offset_min_s": 0.08042006527902346,
+        "at_offset_max_s": 0.012720757248886019,
+        "mid_offset_J": 1.0819882688242224
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.0629267123692179,
+        1.0936307814927186
+      ],
+      "gross_J_per_accepted_update": [
+        0.05679501194539416,
+        0.056822313314269124
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008304114940384515,
+        0.008543990480411864
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 4438.2943424,
+      "id": "b07-mlp_float-bundle",
+      "start_host_s": 4400.8218145,
+      "end_host_s": 4438.2943343,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b07-mlp_float-bundle-before",
+        "b07-mlp_float-bundle-after"
+      ],
+      "family": "mlp_float",
+      "block": 7,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.472519799999645,
+      "gross_UI_energy_J": {
+        "min_J": 7.419524592712946,
+        "max_J": 7.424193765286532,
+        "at_offset_min_s": 0.08366879727590003,
+        "at_offset_max_s": 0.009067392445156069,
+        "mid_offset_J": 7.4240567530216595
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.1138798396633476,
+        "max_J": 1.1269911594630049,
+        "at_offset_min_s": 0.08382219178971566,
+        "at_offset_max_s": 0.009411238674149544,
+        "mid_offset_J": 1.1265790789428793
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.0994243263968881,
+        1.142143157865851
+      ],
+      "gross_J_per_accepted_update": [
+        0.05796503588056989,
+        0.05800151379130103
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008589252549975689,
+        0.00892299342082696
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 4539.2713038,
+      "id": "b07-mlp_float-whole",
+      "start_host_s": 4495.8001376,
+      "end_host_s": 4539.2712973,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b07-mlp_float-whole-before",
+        "b07-mlp_float-whole-after"
+      ],
+      "family": "mlp_float",
+      "block": 7,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.47115969999959,
+      "gross_UI_energy_J": {
+        "min_J": 8.963776815365122,
+        "max_J": 8.975059093441132,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01635752217352092,
+        "mid_offset_J": 8.974612471940873
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.6008687033380076,
+        "max_J": 1.6311018599431422,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.0180760691189117,
+        "mid_offset_J": 1.6285323780210343
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5527548030330403,
+        1.6507514210715737
+      ],
+      "gross_J_per_accepted_update": [
+        2.2409442038412806,
+        2.243764773360283
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.38818870075826006,
+        0.4126878552678934
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 4640.1293163,
+      "id": "b07-mlp_int8-whole",
+      "start_host_s": 4596.6401607,
+      "end_host_s": 4640.1293106,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b07-mlp_int8-whole-before",
+        "b07-mlp_int8-whole-after"
+      ],
+      "family": "mlp_int8",
+      "block": 7,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.489149900000484,
+      "gross_UI_energy_J": {
+        "min_J": 8.972554385687658,
+        "max_J": 8.984386483932667,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.013512828626769743,
+        "mid_offset_J": 8.984027606592122
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5894930084309604,
+        "max_J": 1.6211435711059945,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01565447607572763,
+        "mid_offset_J": 1.6189474682205556
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5490866879840492,
+        1.6319242926219326
+      ],
+      "gross_J_per_accepted_update": [
+        2.2431385964219146,
+        2.2460966209831668
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3872716719960123,
+        0.40798107315548315
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 4718.9680778,
+      "id": "b07-mlp_int8-bundle",
+      "start_host_s": 4681.7703992,
+      "end_host_s": 4718.9680707,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b07-mlp_int8-bundle-before",
+        "b07-mlp_int8-bundle-after"
+      ],
+      "family": "mlp_int8",
+      "block": 7,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.19767150000007,
+      "gross_UI_energy_J": {
+        "min_J": 7.280948521716823,
+        "max_J": 7.284136512616783,
+        "at_offset_min_s": 0.04833054023184388,
+        "at_offset_max_s": 0.012190676821762858,
+        "mid_offset_J": 7.283955266887347
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0136738141043544,
+        "max_J": 1.0240079729219076,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.012901700721513774,
+        "mid_offset_J": 1.0234280137516656
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.0016821634144968,
+        1.0344162505804393
+      ],
+      "gross_J_per_accepted_update": [
+        0.05688241032591268,
+        0.05690731650481862
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.007825641901675756,
+        0.008081376957659682
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 4797.5298213,
+      "id": "b07-lr-bundle",
+      "start_host_s": 4760.6948249,
+      "end_host_s": 4797.5298137,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b07-lr-bundle-before",
+        "b07-lr-bundle-after"
+      ],
+      "family": "lr",
+      "block": 7,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 36.83498880000025,
+      "gross_UI_energy_J": {
+        "min_J": 7.323970141244445,
+        "max_J": 7.327467563796745,
+        "at_offset_min_s": 0.051293341764963606,
+        "at_offset_max_s": 0.013805534936385812,
+        "mid_offset_J": 7.327247748877085
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.130511260594392,
+        "max_J": 1.1404098322331442,
+        "at_offset_min_s": 0.05150652894575816,
+        "at_offset_max_s": 0.014144130038904846,
+        "mid_offset_J": 1.1397718565070245
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.1116470945619907,
+        1.158194936182034
+      ],
+      "gross_J_per_accepted_update": [
+        0.057218516728472224,
+        0.05724584034216207
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008684742926265553,
+        0.009048397938922141
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 4898.502796,
+      "id": "b07-lr-whole",
+      "start_host_s": 4854.9860461,
+      "end_host_s": 4898.5027881,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b07-lr-whole-before",
+        "b07-lr-whole-after"
+      ],
+      "family": "lr",
+      "block": 7,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.516741999999795,
+      "gross_UI_energy_J": {
+        "min_J": 8.958314329776954,
+        "max_J": 8.970683978770012,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01070828294030942,
+        "mid_offset_J": 8.970401534460166
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.575261343220249,
+        "max_J": 1.6086323736686605,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.012398265068485195,
+        "mid_offset_J": 1.6069339264234772
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5391348249346342,
+        1.6137884467511698
+      ],
+      "gross_J_per_accepted_update": [
+        2.2395785824442385,
+        2.242670994692503
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.38478370623365854,
+        0.40344711168779246
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 4999.4117467,
+      "id": "b07-dt-whole",
+      "start_host_s": 4955.8796379,
+      "end_host_s": 4999.4117412,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b07-dt-whole-before",
+        "b07-dt-whole-after"
+      ],
+      "family": "dt",
+      "block": 7,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.53210330000002,
+      "gross_UI_energy_J": {
+        "min_J": 8.969863964672982,
+        "max_J": 8.981630935887097,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01436668298385847,
+        "mid_offset_J": 8.98123399994381
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5821640701401711,
+        "max_J": 1.6138922942345673,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.016088383061497,
+        "mid_offset_J": 1.6115689033392377
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5337586703973871,
+        1.6326309387453284
+      ],
+      "gross_J_per_accepted_update": [
+        2.2424659911682454,
+        2.245407733971774
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3834396675993468,
+        0.4081577346863321
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 5078.2906671,
+      "id": "b07-dt-bundle",
+      "start_host_s": 5041.0517239,
+      "end_host_s": 5078.2906569,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b07-dt-bundle-before",
+        "b07-dt-bundle-after"
+      ],
+      "family": "dt",
+      "block": 7,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.23893299999963,
+      "gross_UI_energy_J": {
+        "min_J": 7.516854551667734,
+        "max_J": 7.520855372777987,
+        "at_offset_min_s": 0.05636758410029584,
+        "at_offset_max_s": 0.0112649181519996,
+        "mid_offset_J": 7.520681513205545
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.2461956768838935,
+        "max_J": 1.2574961909153997,
+        "at_offset_min_s": 0.056733614216946095,
+        "at_offset_max_s": 0.01193279995931775,
+        "mid_offset_J": 1.256938528135907
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.232104939199636,
+        1.2699803644366519
+      ],
+      "gross_J_per_accepted_update": [
+        0.05872542618490417,
+        0.058756682599828025
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.009625819837497156,
+        0.009921721597161343
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 5157.2152666,
+      "id": "b08-mlp_int8-bundle",
+      "start_host_s": 5120.0096445,
+      "end_host_s": 5157.215259,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b08-mlp_int8-bundle-before",
+        "b08-mlp_int8-bundle-after"
+      ],
+      "family": "mlp_int8",
+      "block": 8,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.20561449999968,
+      "gross_UI_energy_J": {
+        "min_J": 7.316791863748904,
+        "max_J": 7.32024267155532,
+        "at_offset_min_s": 0.04730999386331868,
+        "at_offset_max_s": 0.011200180178383028,
+        "mid_offset_J": 7.320072430084906
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.057180588633166,
+        "max_J": 1.067702007572216,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.01181003059584531,
+        "mid_offset_J": 1.0671893143724143
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.0430183498936039,
+        1.0800866445560438
+      ],
+      "gross_J_per_accepted_update": [
+        0.05716243643553831,
+        0.05718939587152594
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.00814858085854378,
+        0.008438176910594092
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 5258.2242631,
+      "id": "b08-mlp_int8-whole",
+      "start_host_s": 5214.6809582,
+      "end_host_s": 5258.224256,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b08-mlp_int8-whole-before",
+        "b08-mlp_int8-whole-after"
+      ],
+      "family": "mlp_int8",
+      "block": 8,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.5432978000008,
+      "gross_UI_energy_J": {
+        "min_J": 8.971738520344616,
+        "max_J": 8.983651992296473,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.007962602381378641,
+        "mid_offset_J": 8.98348576322121
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5912183249549376,
+        "max_J": 1.6231750697745224,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.011130519167232804,
+        "mid_offset_J": 1.6219727195554108
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5429289939538275,
+        1.6415968183836647
+      ],
+      "gross_J_per_accepted_update": [
+        2.242934630086154,
+        2.245912998074118
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3857322484884569,
+        0.41039920459591617
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 5359.1642514,
+      "id": "b08-lr-whole",
+      "start_host_s": 5315.6337163,
+      "end_host_s": 5359.1642447,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b08-lr-whole-before",
+        "b08-lr-whole-after"
+      ],
+      "family": "lr",
+      "block": 8,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.53052840000055,
+      "gross_UI_energy_J": {
+        "min_J": 8.946569926048369,
+        "max_J": 8.958779164460566,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.010789775682676847,
+        "mid_offset_J": 8.958490018243538
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5663851411610143,
+        "max_J": 1.599235000122881,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01258221244248963,
+        "mid_offset_J": 1.597483996921512
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5307695461393385,
+        1.604197650807989
+      ],
+      "gross_J_per_accepted_update": [
+        2.236642481512092,
+        2.2396947911151415
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3826923865348346,
+        0.40104941270199723
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 5437.6859452,
+      "id": "b08-lr-bundle",
+      "start_host_s": 5400.8734935,
+      "end_host_s": 5437.6859381,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b08-lr-bundle-before",
+        "b08-lr-bundle-after"
+      ],
+      "family": "lr",
+      "block": 8,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 36.81244460000016,
+      "gross_UI_energy_J": {
+        "min_J": 7.26150609756553,
+        "max_J": 7.265026926032192,
+        "at_offset_min_s": 0.08527606552965351,
+        "at_offset_max_s": 0.009686575783808896,
+        "mid_offset_J": 7.264888196266725
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0698198734691458,
+        "max_J": 1.0810595855744478,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.010163313430929735,
+        "mid_offset_J": 1.0806441075337423
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.0523393887649863,
+        1.101107983439265
+      ],
+      "gross_J_per_accepted_update": [
+        0.0567305163872307,
+        0.0567580228596265
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008221401474726456,
+        0.008602406120619258
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 5516.6356714,
+      "id": "b08-dt-bundle",
+      "start_host_s": 5479.383214,
+      "end_host_s": 5516.635664,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b08-dt-bundle-before",
+        "b08-dt-bundle-after"
+      ],
+      "family": "dt",
+      "block": 8,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.25244999999995,
+      "gross_UI_energy_J": {
+        "min_J": 7.42903331125035,
+        "max_J": 7.4335440944146285,
+        "at_offset_min_s": 0.053886975655906166,
+        "at_offset_max_s": 0.007852715526912678,
+        "mid_offset_J": 7.433426704929502
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.1595666382297005,
+        "max_J": 1.1742648674286476,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.008366704252646111,
+        "mid_offset_J": 1.1739084475894583
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.1457639353247542,
+        1.1904462900769666
+      ],
+      "gross_J_per_accepted_update": [
+        0.05803932274414336,
+        0.058074563237614285
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008951280744724642,
+        0.009300361641226301
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 5617.8378948,
+      "id": "b08-dt-whole",
+      "start_host_s": 5574.2926234,
+      "end_host_s": 5617.8378846,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b08-dt-whole-before",
+        "b08-dt-whole-after"
+      ],
+      "family": "dt",
+      "block": 8,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.54526119999991,
+      "gross_UI_energy_J": {
+        "min_J": 8.98611802123537,
+        "max_J": 8.997538519816771,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.014603347743629227,
+        "mid_offset_J": 8.99714214422579
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.6032670057977976,
+        "max_J": 1.6345156987033342,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.01614394474568251,
+        "mid_offset_J": 1.6322587129564576
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5575897284907416,
+        1.6519302164598058
+      ],
+      "gross_J_per_accepted_update": [
+        2.2465295053088425,
+        2.249384629954193
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3893974321226854,
+        0.41298255411495144
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 5718.7688358,
+      "id": "b08-mlp_float-whole",
+      "start_host_s": 5675.2342547,
+      "end_host_s": 5718.7688265,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b08-mlp_float-whole-before",
+        "b08-mlp_float-whole-after"
+      ],
+      "family": "mlp_float",
+      "block": 8,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.53457179999987,
+      "gross_UI_energy_J": {
+        "min_J": 8.968339410091858,
+        "max_J": 8.98066710008743,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.010284124565498091,
+        "mid_offset_J": 8.98039379557531
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5920734063167465,
+        "max_J": 1.6253064735349705,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01198995310695614,
+        "mid_offset_J": 1.6236373511704985
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5528621447131048,
+        1.6334141193165248
+      ],
+      "gross_J_per_accepted_update": [
+        2.2420848525229644,
+        2.2451667750218576
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3882155361782762,
+        0.4083535298291312
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 5798.2386208,
+      "id": "b08-mlp_float-bundle",
+      "start_host_s": 5760.4025248,
+      "end_host_s": 5798.238613,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b08-mlp_float-bundle-before",
+        "b08-mlp_float-bundle-after"
+      ],
+      "family": "mlp_float",
+      "block": 8,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.83608820000063,
+      "gross_UI_energy_J": {
+        "min_J": 7.598170038208536,
+        "max_J": 7.602051571328047,
+        "at_offset_min_s": 0.0560027294106122,
+        "at_offset_max_s": 0.01131125589859906,
+        "mid_offset_J": 7.601866495221657
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.232024872004987,
+        "max_J": 1.2441775448637364,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.011950028307505472,
+        "mid_offset_J": 1.2435910285841016
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.2128159162772478,
+        1.2620926954169303
+      ],
+      "gross_J_per_accepted_update": [
+        0.05936070342350419,
+        0.05939102790100037
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.009475124345915999,
+        0.009860099182944768
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 5876.8062125,
+      "id": "b09-lr-bundle",
+      "start_host_s": 5839.9902993,
+      "end_host_s": 5876.8062033,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b09-lr-bundle-before",
+        "b09-lr-bundle-after"
+      ],
+      "family": "lr",
+      "block": 9,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 36.815904000000046,
+      "gross_UI_energy_J": {
+        "min_J": 7.1958822663953015,
+        "max_J": 7.199846177007203,
+        "at_offset_min_s": 0.04657596482649662,
+        "at_offset_max_s": 0.008951299913660987,
+        "mid_offset_J": 7.199701871395746
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0088666307890746,
+        "max_J": 1.0200133230922486,
+        "at_offset_min_s": 0.046808659594711546,
+        "at_offset_max_s": 0.009272412325615069,
+        "mid_offset_J": 1.0195925240977335
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        0.9938213604990214,
+        1.034814079168319
+      ],
+      "gross_J_per_accepted_update": [
+        0.05621783020621329,
+        0.05624879825786877
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.007764229378898604,
+        0.008084484993502492
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 5977.8382608,
+      "id": "b09-lr-whole",
+      "start_host_s": 5934.2912835,
+      "end_host_s": 5977.8382525,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b09-lr-whole-before",
+        "b09-lr-whole-after"
+      ],
+      "family": "lr",
+      "block": 9,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.54696899999999,
+      "gross_UI_energy_J": {
+        "min_J": 8.9726306588434,
+        "max_J": 8.983851657906598,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.016147968453375763,
+        "mid_offset_J": 8.983411174424418
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5980348163871834,
+        "max_J": 1.629010267569957,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.01798448009532178,
+        "mid_offset_J": 1.626528521573173
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5709003697545842,
+        1.6297380633888956
+      ],
+      "gross_J_per_accepted_update": [
+        2.24315766471085,
+        2.2459629144766495
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.39272509243864606,
+        0.4074345158472239
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 6078.74,
+      "id": "b09-dt-whole",
+      "start_host_s": 6035.2351768,
+      "end_host_s": 6078.7399897,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b09-dt-whole-before",
+        "b09-dt-whole-after"
+      ],
+      "family": "dt",
+      "block": 9,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.504812899999706,
+      "gross_UI_energy_J": {
+        "min_J": 8.960368670920616,
+        "max_J": 8.972866464642266,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.00965581290642733,
+        "mid_offset_J": 8.972620103450936
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5710853861676854,
+        "max_J": 1.6047501055283204,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.011420603025936595,
+        "mid_offset_J": 1.6031976768467198
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5155152437724082,
+        1.6289082414122422
+      ],
+      "gross_J_per_accepted_update": [
+        2.240092167730154,
+        2.2432166161605664
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.37887881094310205,
+        0.40722706035306055
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 6157.6338697,
+      "id": "b09-dt-bundle",
+      "start_host_s": 6120.4003165,
+      "end_host_s": 6157.6338634,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b09-dt-bundle-before",
+        "b09-dt-bundle-after"
+      ],
+      "family": "dt",
+      "block": 9,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.233546899999965,
+      "gross_UI_energy_J": {
+        "min_J": 7.500502099250298,
+        "max_J": 7.504014057254153,
+        "at_offset_min_s": 0.05849513516831116,
+        "at_offset_max_s": 0.012163057763682112,
+        "mid_offset_J": 7.5038170740501755
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.2357909460398417,
+        "max_J": 1.2456634503066581,
+        "at_offset_min_s": 0.059009143928698465,
+        "at_offset_max_s": 0.012957969892254841,
+        "mid_offset_J": 1.2450231107163368
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.2233282984642253,
+        1.25897412484451
+      ],
+      "gross_J_per_accepted_update": [
+        0.05859767265039295,
+        0.05862510982229807
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.00955725233175176,
+        0.009835735350347735
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 6236.7666302,
+      "id": "b09-mlp_float-bundle",
+      "start_host_s": 6199.3258757,
+      "end_host_s": 6236.7666233,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b09-mlp_float-bundle-before",
+        "b09-mlp_float-bundle-after"
+      ],
+      "family": "mlp_float",
+      "block": 9,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.44074759999967,
+      "gross_UI_energy_J": {
+        "min_J": 7.435824062044276,
+        "max_J": 7.4402112810225844,
+        "at_offset_min_s": 0.05151109868624353,
+        "at_offset_max_s": 0.013697222561295923,
+        "mid_offset_J": 7.43996350447992
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.13971006641512,
+        "max_J": 1.1521701554543418,
+        "at_offset_min_s": 0.05177935735571507,
+        "at_offset_max_s": 0.01410859452155034,
+        "mid_offset_J": 1.1513919111077566
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.1206695489573217,
+        1.1701631250777096
+      ],
+      "gross_J_per_accepted_update": [
+        0.058092375484720904,
+        0.05812665063298894
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008755230851229076,
+        0.009141899414669606
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 6337.7646574,
+      "id": "b09-mlp_float-whole",
+      "start_host_s": 6294.2365453,
+      "end_host_s": 6337.7646505,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b09-mlp_float-whole-before",
+        "b09-mlp_float-whole-after"
+      ],
+      "family": "mlp_float",
+      "block": 9,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.52810520000003,
+      "gross_UI_energy_J": {
+        "min_J": 8.94783590430825,
+        "max_J": 8.960143206381417,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.011198934957736606,
+        "mid_offset_J": 8.95983969811482
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5716948711122387,
+        "max_J": 1.6048104564384191,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.012973588627780759,
+        "mid_offset_J": 1.6029633193846147
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5280304495310855,
+        1.6175660278578805
+      ],
+      "gross_J_per_accepted_update": [
+        2.2369589760770623,
+        2.2400358015953543
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.38200761238277137,
+        0.4043915069644701
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 6438.6836584,
+      "id": "b09-mlp_int8-whole",
+      "start_host_s": 6395.1278415,
+      "end_host_s": 6438.683652,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b09-mlp_int8-whole-before",
+        "b09-mlp_int8-whole-after"
+      ],
+      "family": "mlp_int8",
+      "block": 9,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.55581050000001,
+      "gross_UI_energy_J": {
+        "min_J": 8.968573660769152,
+        "max_J": 8.979711689049054,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01705097593099414,
+        "mid_offset_J": 8.979255256898114
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5731565983879956,
+        "max_J": 1.603680291141881,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.018700885255213687,
+        "mid_offset_J": 1.600950116272608
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.530761461669183,
+        1.6187190562088531
+      ],
+      "gross_J_per_accepted_update": [
+        2.242143415192288,
+        2.2449279222622636
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.38269036541729573,
+        0.4046797640522133
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 6517.566355,
+      "id": "b09-mlp_int8-bundle",
+      "start_host_s": 6480.3263716,
+      "end_host_s": 6517.5663485,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b09-mlp_int8-bundle-before",
+        "b09-mlp_int8-bundle-after"
+      ],
+      "family": "mlp_int8",
+      "block": 9,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.23997689999942,
+      "gross_UI_energy_J": {
+        "min_J": 7.300101778158478,
+        "max_J": 7.303360792856438,
+        "at_offset_min_s": 0.04357171503695779,
+        "at_offset_max_s": 0.007390049732138506,
+        "mid_offset_J": 7.303258711897797
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0426601348800824,
+        "max_J": 1.051891982024955,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.007921432597714136,
+        "mid_offset_J": 1.051560690938008
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.036769396494921,
+        1.0583576119028804
+      ],
+      "gross_J_per_accepted_update": [
+        0.05703204514186311,
+        0.05705750619419092
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.00809976091011657,
+        0.008268418842991253
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 6596.5180937,
+      "id": "b10-dt-bundle",
+      "start_host_s": 6559.2694084,
+      "end_host_s": 6596.5180867,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b10-dt-bundle-before",
+        "b10-dt-bundle-after"
+      ],
+      "family": "dt",
+      "block": 10,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.24867829999948,
+      "gross_UI_energy_J": {
+        "min_J": 7.383947431059596,
+        "max_J": 7.387792305677976,
+        "at_offset_min_s": 0.04847483263083637,
+        "at_offset_max_s": 0.01123422745873967,
+        "mid_offset_J": 7.387600322598928
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.1200358238179127,
+        "max_J": 1.1309472593101129,
+        "at_offset_min_s": 0.04878643051625481,
+        "at_offset_max_s": 0.01156280890166868,
+        "mid_offset_J": 1.1303958876131097
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.102115051934307,
+        1.1505050582103182
+      ],
+      "gross_J_per_accepted_update": [
+        0.057687089305153094,
+        0.05771712738810919
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008610273843236774,
+        0.008988320767268111
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 6697.5080387,
+      "id": "b10-dt-whole",
+      "start_host_s": 6653.9657448,
+      "end_host_s": 6697.5080328,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b10-dt-whole-before",
+        "b10-dt-whole-after"
+      ],
+      "family": "dt",
+      "block": 10,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.54228800000055,
+      "gross_UI_energy_J": {
+        "min_J": 8.962255403672316,
+        "max_J": 8.974427966094709,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.012154433539290509,
+        "mid_offset_J": 8.974105371587484
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5844965361612973,
+        "max_J": 1.6173915302706612,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.013785813052629027,
+        "mid_offset_J": 1.615540122162995
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5390800038374115,
+        1.632001220207453
+      ],
+      "gross_J_per_accepted_update": [
+        2.240563850918079,
+        2.243606991523677
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3847700009593529,
+        0.40800030505186324
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 6798.38326,
+      "id": "b10-mlp_float-whole",
+      "start_host_s": 6754.8612722,
+      "end_host_s": 6798.3832511,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b10-mlp_float-whole-before",
+        "b10-mlp_float-whole-after"
+      ],
+      "family": "mlp_float",
+      "block": 10,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.52197890000025,
+      "gross_UI_energy_J": {
+        "min_J": 8.964424967535251,
+        "max_J": 8.975945942077033,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.013902472550161625,
+        "mid_offset_J": 8.97556652506728
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5852340113462309,
+        "max_J": 1.6159370353489853,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01567230153570976,
+        "mid_offset_J": 1.613766324236955
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5425440193090632,
+        1.6294117578857952
+      ],
+      "gross_J_per_accepted_update": [
+        2.241106241883813,
+        2.243986485519258
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3856360048272658,
+        0.4073529394714488
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 6877.6130886,
+      "id": "b10-mlp_float-bundle",
+      "start_host_s": 6840.0415483,
+      "end_host_s": 6877.6130777,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b10-mlp_float-bundle-before",
+        "b10-mlp_float-bundle-after"
+      ],
+      "family": "mlp_float",
+      "block": 10,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.571529400000145,
+      "gross_UI_energy_J": {
+        "min_J": 7.541025679183576,
+        "max_J": 7.545471318054297,
+        "at_offset_min_s": 0.08672365853452906,
+        "at_offset_max_s": 0.012201635191101696,
+        "mid_offset_J": 7.5452619651318855
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.2110745777264849,
+        "max_J": 1.223632468550595,
+        "at_offset_min_s": 0.08707065020547303,
+        "at_offset_max_s": 0.012856170863132597,
+        "mid_offset_J": 1.222996301476614
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.1893660366676695,
+        1.2442282789588752
+      ],
+      "gross_J_per_accepted_update": [
+        0.05891426311862169,
+        0.05894899467229919
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.009291922161466168,
+        0.009720533429366213
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 6956.5585996,
+      "id": "b10-mlp_int8-bundle",
+      "start_host_s": 6919.3472769,
+      "end_host_s": 6956.558592,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b10-mlp_int8-bundle-before",
+        "b10-mlp_int8-bundle-after"
+      ],
+      "family": "mlp_int8",
+      "block": 10,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 37.21131510000032,
+      "gross_UI_energy_J": {
+        "min_J": 7.348922351512783,
+        "max_J": 7.352199154327991,
+        "at_offset_min_s": 0.0491578656867716,
+        "at_offset_max_s": 0.01284179655394041,
+        "mid_offset_J": 7.351984654632588
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.0901703345715372,
+        "max_J": 1.102196049604251,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.013235774091057782,
+        "mid_offset_J": 1.1015607616837189
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.0772547455254111,
+        1.1154063864969084
+      ],
+      "gross_J_per_accepted_update": [
+        0.05741345587119362,
+        0.05743905589318743
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008416052699417274,
+        0.008714112394507097
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 7057.5136176,
+      "id": "b10-mlp_int8-whole",
+      "start_host_s": 7014.026226,
+      "end_host_s": 7057.5136106,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b10-mlp_int8-whole-before",
+        "b10-mlp_int8-whole-after"
+      ],
+      "family": "mlp_int8",
+      "block": 10,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.48738460000004,
+      "gross_UI_energy_J": {
+        "min_J": 8.949226035584388,
+        "max_J": 8.961352062462993,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.011825763594214783,
+        "mid_offset_J": 8.961050526170084
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.5540340304292406,
+        "max_J": 1.5866003404355165,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01411802229723199,
+        "mid_offset_J": 1.5846835239827368
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5042094682768088,
+        1.6061118059589887
+      ],
+      "gross_J_per_accepted_update": [
+        2.237306508896097,
+        2.240338015615748
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.3760523670692022,
+        0.4015279514897472
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 7158.4805994,
+      "id": "b10-lr-whole",
+      "start_host_s": 7114.9239628,
+      "end_host_s": 7158.4805932,
+      "policy": "whole",
+      "accepted_updates": 4,
+      "baseline_ids": [
+        "b10-lr-whole-before",
+        "b10-lr-whole-after"
+      ],
+      "family": "lr",
+      "block": 10,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 43.55663040000036,
+      "gross_UI_energy_J": {
+        "min_J": 8.977111794963093,
+        "max_J": 8.989082165549462,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.011448832169041079,
+        "mid_offset_J": 8.988785472290601
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.580744362569721,
+        "max_J": 1.6132085207038158,
+        "at_offset_min_s": 0.0979956227847334,
+        "at_offset_max_s": 0.01313292302883438,
+        "mid_offset_J": 1.6114257128212914
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.5543887707442234,
+        1.617562592799664
+      ],
+      "gross_J_per_accepted_update": [
+        2.2442779487407734,
+        2.2472705413873655
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.38859719268605586,
+        0.404390648199916
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    },
+    {
+      "event": "update_block",
+      "host_s": 7237.0945787,
+      "id": "b10-lr-bundle",
+      "start_host_s": 7200.1154707,
+      "end_host_s": 7237.0945683,
+      "policy": "bundle",
+      "accepted_updates": 128,
+      "baseline_ids": [
+        "b10-lr-bundle-before",
+        "b10-lr-bundle-after"
+      ],
+      "family": "lr",
+      "block": 10,
+      "quiet_after_update_seconds": 0.2,
+      "initial_state": "both slots contain accepted releases; warm A-to-B update excluded; measured versions start at3",
+      "scope": "end-to-end accepted updates including USB protocol, validation STATUS, fixed 0.2s quiet cadence and firmware reboot",
+      "elapsed_host_s": 36.97909760000039,
+      "gross_UI_energy_J": {
+        "min_J": 7.346334884766065,
+        "max_J": 7.3495696146480896,
+        "at_offset_min_s": 0.054489235178101,
+        "at_offset_max_s": 0.017005348768121313,
+        "mid_offset_J": 7.349296615114326
+      },
+      "net_UI_energy_J": {
+        "min_J": 1.1087494383937613,
+        "max_J": 1.1216819853833968,
+        "at_offset_min_s": -0.0979956227847334,
+        "at_offset_max_s": 0.01738958136706492,
+        "mid_offset_J": 1.1208840219800247
+      },
+      "net_timing_and_baseline_sensitivity_J": [
+        1.09721758865546,
+        1.1341055740448223
+      ],
+      "gross_J_per_accepted_update": [
+        0.057393241287234886,
+        0.0574185126144382
+      ],
+      "net_J_per_accepted_update_sensitivity": [
+        0.008572012411370782,
+        0.008860199797225174
+      ],
+      "additional_energy_resolved": true,
+      "interpretation": "Mean energy of the recorded paced update scenario; includes host/USB transport, verification and fixed waiting inside block"
+    }
+  ],
+  "energy_NRG_factor_corrected": false,
+  "measurement_accuracy_calibrated": false,
+  "independent_sampling_rate_verified": false,
+  "limitations": [
+    "Marker alignment does not calibrate voltage/current, analog bandwidth, filtering or meter self-consumption.",
+    "Bounds describe sensitivity of the recorded trace to stated alignment uncertainty and adjacent idle baselines; they are not statistical confidence intervals.",
+    "Affine clock fit cannot exclude unobserved nonlinear drift or missing/duplicated physical samples.",
+    "Integral uses raw VBUS*IBUS samples, with time mapped to host seconds. Raw CFN/NRG channels are never changed.",
+    "Net energy compatible with zero is unresolved, never clipped to zero or used to claim a percentage saving.",
+    "One board; repeated blocks are technical repetitions. Whole-firmware energy includes reboot; provisioning outside the block is excluded.",
+    "Marker localization was repaired after seeing the failed 030 trace; this is not a successful prespecified energy analysis."
+  ],
+  "posthoc_repair": {
+    "stage": "031",
+    "analysis_kind": "posthoc_repair_of_coarse_marker_localization",
+    "original_prespecified_030_analysis_passed": false,
+    "original_030_gate_thresholds_unchanged": true,
+    "raw_CFN_unchanged": true,
+    "raw_UI_used_for_energy": true,
+    "hardware_access_attempted": false,
+    "repair_source_sha256": "12b5ceec0409b0085d0f3a6f9edb17e6c025859f107be9b54175507128393d0e",
+    "frozen_dependencies_sha256": {
+      "energy/analyze_continuous.py": "575a19d2fd5c9caadde42d81b1b7f2748d0768797888c8705892124ce057f546",
+      "energy/vendor/cfn_parser.py": "dd706afbddc92d58f41fc51a3dcc81e1ba685aed801e9a304604f81dc2260123",
+      "energy/vendor/energy_analysis.py": "8f31e9de2622e37bdbf8d54df8e9a87723d150eb1bd4053d6d116bf13f6659af",
+      "energy/vendor/generate_energy_windows.py": "4cc5bf8dcfde5f42fb49cba98962ba0219e08a586bd0912224d3067bc69b34f7"
+    },
+    "original_cfn_sha256": "96bb1ab6586e8fbe3260a5dc4cf72e301da3acdc6b1f2777225fdb2836e216c9",
+    "original_windows_sha256": "bff434ae9ce14e513c333bd2ce67e67d18f27104869744285574ee606772e48a",
+    "original_timeline_sha256": "79ae1a692b596f3e55b0660c01f60fe1638a060100d505c9f1abe6bacba42043",
+    "hardware_binding": {
+      "hardware_manifest_sha256": "8a9207f766beb4400ed3e66fe887b56167506ff9cb64cbc83a3a4fa4ceb0a4c2",
+      "verified_files": [
+        "summary.json",
+        "energy/energy_windows.json",
+        "energy/timeline.jsonl",
+        "campaign_before_hardware.json",
+        "costs/b01-lr-bundle/events.jsonl",
+        "costs/b01-lr-whole/events.jsonl",
+        "costs/b01-dt-whole/events.jsonl",
+        "costs/b01-dt-bundle/events.jsonl",
+        "costs/b01-mlp_float-bundle/events.jsonl",
+        "costs/b01-mlp_float-whole/events.jsonl",
+        "costs/b01-mlp_int8-whole/events.jsonl",
+        "costs/b01-mlp_int8-bundle/events.jsonl",
+        "costs/b02-dt-bundle/events.jsonl",
+        "costs/b02-dt-whole/events.jsonl",
+        "costs/b02-mlp_float-whole/events.jsonl",
+        "costs/b02-mlp_float-bundle/events.jsonl",
+        "costs/b02-mlp_int8-bundle/events.jsonl",
+        "costs/b02-mlp_int8-whole/events.jsonl",
+        "costs/b02-lr-whole/events.jsonl",
+        "costs/b02-lr-bundle/events.jsonl",
+        "costs/b03-mlp_float-bundle/events.jsonl",
+        "costs/b03-mlp_float-whole/events.jsonl",
+        "costs/b03-mlp_int8-whole/events.jsonl",
+        "costs/b03-mlp_int8-bundle/events.jsonl",
+        "costs/b03-lr-bundle/events.jsonl",
+        "costs/b03-lr-whole/events.jsonl",
+        "costs/b03-dt-whole/events.jsonl",
+        "costs/b03-dt-bundle/events.jsonl",
+        "costs/b04-mlp_int8-bundle/events.jsonl",
+        "costs/b04-mlp_int8-whole/events.jsonl",
+        "costs/b04-lr-whole/events.jsonl",
+        "costs/b04-lr-bundle/events.jsonl",
+        "costs/b04-dt-bundle/events.jsonl",
+        "costs/b04-dt-whole/events.jsonl",
+        "costs/b04-mlp_float-whole/events.jsonl",
+        "costs/b04-mlp_float-bundle/events.jsonl",
+        "costs/b05-lr-bundle/events.jsonl",
+        "costs/b05-lr-whole/events.jsonl",
+        "costs/b05-dt-whole/events.jsonl",
+        "costs/b05-dt-bundle/events.jsonl",
+        "costs/b05-mlp_float-bundle/events.jsonl",
+        "costs/b05-mlp_float-whole/events.jsonl",
+        "costs/b05-mlp_int8-whole/events.jsonl",
+        "costs/b05-mlp_int8-bundle/events.jsonl",
+        "costs/b06-dt-bundle/events.jsonl",
+        "costs/b06-dt-whole/events.jsonl",
+        "costs/b06-mlp_float-whole/events.jsonl",
+        "costs/b06-mlp_float-bundle/events.jsonl",
+        "costs/b06-mlp_int8-bundle/events.jsonl",
+        "costs/b06-mlp_int8-whole/events.jsonl",
+        "costs/b06-lr-whole/events.jsonl",
+        "costs/b06-lr-bundle/events.jsonl",
+        "costs/b07-mlp_float-bundle/events.jsonl",
+        "costs/b07-mlp_float-whole/events.jsonl",
+        "costs/b07-mlp_int8-whole/events.jsonl",
+        "costs/b07-mlp_int8-bundle/events.jsonl",
+        "costs/b07-lr-bundle/events.jsonl",
+        "costs/b07-lr-whole/events.jsonl",
+        "costs/b07-dt-whole/events.jsonl",
+        "costs/b07-dt-bundle/events.jsonl",
+        "costs/b08-mlp_int8-bundle/events.jsonl",
+        "costs/b08-mlp_int8-whole/events.jsonl",
+        "costs/b08-lr-whole/events.jsonl",
+        "costs/b08-lr-bundle/events.jsonl",
+        "costs/b08-dt-bundle/events.jsonl",
+        "costs/b08-dt-whole/events.jsonl",
+        "costs/b08-mlp_float-whole/events.jsonl",
+        "costs/b08-mlp_float-bundle/events.jsonl",
+        "costs/b09-lr-bundle/events.jsonl",
+        "costs/b09-lr-whole/events.jsonl",
+        "costs/b09-dt-whole/events.jsonl",
+        "costs/b09-dt-bundle/events.jsonl",
+        "costs/b09-mlp_float-bundle/events.jsonl",
+        "costs/b09-mlp_float-whole/events.jsonl",
+        "costs/b09-mlp_int8-whole/events.jsonl",
+        "costs/b09-mlp_int8-bundle/events.jsonl",
+        "costs/b10-dt-bundle/events.jsonl",
+        "costs/b10-dt-whole/events.jsonl",
+        "costs/b10-mlp_float-whole/events.jsonl",
+        "costs/b10-mlp_float-bundle/events.jsonl",
+        "costs/b10-mlp_int8-bundle/events.jsonl",
+        "costs/b10-mlp_int8-whole/events.jsonl",
+        "costs/b10-lr-whole/events.jsonl",
+        "costs/b10-lr-bundle/events.jsonl"
+      ],
+      "measured_accepted_update_receipts": 5280,
+      "block_count": 80,
+      "board_id": "esp32s3-a0f262ebb558"
+    },
+    "rationale": "Average before coarse 80ms point sampling to suppress intra-pulse periodic troughs. The width follows sampling intervals, not energy differences. Calibration, independent validation, uncertainty and energy formulas are unchanged."
+  }
+}

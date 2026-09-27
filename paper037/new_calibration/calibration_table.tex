@@ -1,0 +1,18 @@
+\begin{table}[H]
+\caption{Frozen calibration operating points, recomputed from the stored samples. FP is the number of normal records predicted as attacks; TP is the number of detected attack records. The displayed probability threshold is rounded for readability. INT8 decisions use the exact integer code $q$ instead.}\label{tab:calibration}
+\centering\small
+\begin{tabular}{lrrrrr}
+\toprule
+Pipeline & FP / normal & FPR (\%) & TP / attacks & Recall (\%) & Threshold \\
+\midrule
+A LR & 125/22,825 & 0.548 & 3,816/100,000 & 3.816 & 0.991120 \\
+A DT & 129/22,825 & 0.565 & 3,327/100,000 & 3.327 & 0.837721 \\
+A MLP-F32 & 228/22,825 & 0.999 & 7,389/100,000 & 7.389 & 0.531395 \\
+A MLP-I8 & 221/22,825 & 0.968 & 2,305/100,000 & 2.305 & $q\geq 8$ \\
+B LR & 11/2,088 & 0.527 & 32,228/100,000 & 32.228 & 0.982649 \\
+B DT & 2/2,088 & 0.096 & 6/100,000 & 0.006 & 0.982575 \\
+B MLP-F32 & 20/2,088 & 0.958 & 73,953/100,000 & 73.953 & 0.905355 \\
+B MLP-I8 & 19/2,088 & 0.910 & 73,531/100,000 & 73.531 & $q\geq 10$ \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,19 @@
+\begin{table}[t]
+\caption{Posthoc calibration diagnostics for the original int8 detector and compatible exports. The calibration sample contains 2088 normal and 100,000 attack rows. FPR, recall, and changed-decision rates are percentages; FP is a count. Equal-vector FPR assigns each distinct eight-feature vector total weight one, preserving within-vector class proportions. Changed decisions are measured against original B on these same calibration rows. All exports are host diagnostics.}
+\label{tab:posthoc035}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Variant & Cut & FP & Row FPR & Vector FPR & Recall & Changed \\
+\midrule
+Original B & 10 & 19 & 0.910 & 1.194 & 73.531 & 0.000 \\
+Per-tensor max-abs, transferred cut & 10 & 421 & 20.163 & 2.139 & 71.623 & 6.555 \\
+Per-tensor max-abs, recalibrated & 22 & 1 & 0.048 & 0.063 & 23.933 & 48.685 \\
+Per-channel weights, transferred cut & 10 & 419 & 20.067 & 2.014 & 72.198 & 6.501 \\
+Per-channel weights, recalibrated & 21 & 0 & 0.000 & 0.000 & 23.564 & 49.046 \\
+99.9th-percentile grid, transferred cut & 30 & 13 & 0.623 & 0.817 & 70.189 & 7.337 \\
+99.9th-percentile grid, recalibrated & 27 & 15 & 0.718 & 0.943 & 71.631 & 7.450 \\
+\bottomrule
+\end{tabular}
+\end{table}

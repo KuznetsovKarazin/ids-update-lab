@@ -1,0 +1,19 @@
+{
+  "sha256": {
+    "coverage/candidate_intervals.json": "f6a02bdefafc16a415eba4f6089e079a7712e12e27d591a0e2d15ee3107a8548",
+    "coverage/coverage_candidates.csv": "eba4ed4fa35de8f67c92db53d0bff99fa63cee8e12d708b434b1565c711219b6",
+    "coverage/coverage_roles.csv": "270f2bda6d7fa774edd3f5ad75c2bc71ca9a192943c4f9e721989675703ae9c0",
+    "coverage/coverage_summary.json": "b3548d35912a99306dd344696c3f6309d07706cb891b9d277eaa19f226e0ef03",
+    "coverage/coverage_test_groups.csv": "875f782be596e8f0ecd22055b0d71acb7491ddff9f637356f7b21418b6d68230",
+    "coverage/coverage_unseen_exposure.csv": "4710321a041958a33c30606dbcc6739ec06a0184cb7360e6e19d1c3da52dc9e1",
+    "diagnostics.json": "c66bb042a9618dcde84c3786e6273c879eac7fadaeae99323292cade513c285d",
+    "hourly_counts.csv": "b771ce2d7cbfc56c5ee10a1fa591936b14890c6aa4cdcc04ad75c33015dc1c52",
+    "per_file.json": "56bdeb119f28312dfc40966363ec7718772a7ad59aa044df27365b29320f2510",
+    "progress.jsonl": "288d3f6cf24d4dfe7117ab775e589d8e11886b1c4aa613a7b59bef4ded304873",
+    "protocol_lock_before_predictions.json": "a870dbaf786442244f719c3c2e4987fb338e51419b9d3a6db7ba299c9bd1f83f",
+    "summary.json": "2586b8bbe6afc82141b8aeb4deaf6bca2a28ff23ff59426035d06b8bd724681e",
+    "top_metadata_checkpoint.json": "7aaa3b8bda8b652d5641d7e1c272b0355092d7ea0e3dcbd8dcb83e2cc5efc67c"
+  },
+  "sqlite_cache_sha256": "72577bca0aff04c8153226c00bc73ac471388c1e8048395709914fe4a7d162b5",
+  "sqlite_cache_reconstructible": true
+}
