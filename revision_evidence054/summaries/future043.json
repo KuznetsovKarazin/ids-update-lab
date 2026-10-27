@@ -1,0 +1,11 @@
+{
+  "command": "future",
+  "hardware_access_attempted": false,
+  "measurement_origin": "host_offline",
+  "models_evaluated": 8,
+  "rows": 7462871,
+  "stage": "043",
+  "status": "complete",
+  "thresholds_reselected": false,
+  "unique_vectors": 3782505
+}

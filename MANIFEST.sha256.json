@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0+review-docs.20261027",
-  "distribution": "software-with-revision-documentation",
+  "version": "1.0.0+review-evidence.20261027",
+  "distribution": "software-and-compact-reviewer-evidence",
   "date": "2026-10-27",
   "hash_algorithm": "SHA-256",
   "excludes": [
@@ -94,8 +94,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 22526,
-      "sha256": "e109d6320964e2a7dc22ee74b8ed3b3d46c0a8a17859b77533e92ab8415ae150"
+      "bytes": 22696,
+      "sha256": "4b4d90e9eabd63b1c322dbcab84770c2223abfeac7507e66532a9a01e89262fa"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -759,8 +759,8 @@
     },
     {
       "path": "docs/REVISION_EVIDENCE.md",
-      "bytes": 10295,
-      "sha256": "e3b85cb545861fe3119cf63054b9b0787b9123ea658939524bc30c7d7887059f"
+      "bytes": 11751,
+      "sha256": "084cfc3d7daa696f744a33b0ec1420941bfaf91304e18e6c411bab3755dc8408"
     },
     {
       "path": "examples/instrumented_compatible/public.pem",
@@ -2104,8 +2104,8 @@
     },
     {
       "path": "release/REPRODUCE.md",
-      "bytes": 15008,
-      "sha256": "c3c385dc125088fa993dd19d262def6c7146a8b299911c0f3b936a95be469cb7"
+      "bytes": 15020,
+      "sha256": "48e90e4f8928cb37bbab6e1fe761e26098706c208815d1b9ec858bf880d49e71"
     },
     {
       "path": "release/ROOT_TESTS037.json",
@@ -3146,6 +3146,96 @@
       "path": "research030/validation/test_runner030_independent.py",
       "bytes": 12384,
       "sha256": "2b4b1c8c69b7a0de5be19154c80e1b7c44c40167e035500cf97a88f44995e875"
+    },
+    {
+      "path": "revision_evidence054/PROVENANCE.json",
+      "bytes": 5696,
+      "sha256": "87740409e9feed21a6707a63a70ebad37b4e0ad7dcf6e6eaa7c9c09f532d3576"
+    },
+    {
+      "path": "revision_evidence054/summaries/final200_audit_independent.json",
+      "bytes": 11929,
+      "sha256": "8631f96cd69c7c4d9a887ee175db64690c82172872ae610f19626ca0e8b94a9b"
+    },
+    {
+      "path": "revision_evidence054/summaries/future043.json",
+      "bytes": 264,
+      "sha256": "f7efd86daccf9e535d28eb46fe45e60d33523c96aaccf25141fea39209c906d8"
+    },
+    {
+      "path": "revision_evidence054/summaries/numerics_O2.json",
+      "bytes": 32918,
+      "sha256": "dcaadf0bf5f1cb115e4b024cdb8afb0b9f697bf158a7f3a53388b6edbd4d5e17"
+    },
+    {
+      "path": "revision_evidence054/summaries/numerics_Og.json",
+      "bytes": 32944,
+      "sha256": "b9c63be2639c1a14654855a1769fd6010c8d9cba5c3cbcb9eb50bff17686d66a"
+    },
+    {
+      "path": "revision_evidence054/summaries/temporal_plan.json",
+      "bytes": 129,
+      "sha256": "b2584f7673265e571cebef2049af6d9abebbf0f3bb9af087df3ad1defccf4ba3"
+    },
+    {
+      "path": "revision_evidence054/summaries/threshold_windows.json",
+      "bytes": 223,
+      "sha256": "e0c601324f28f86bebc7a2f4e1c7a65f2d3743e5cf76e123369885aa8e5eaba6"
+    },
+    {
+      "path": "revision_evidence054/tables/future043_all_weightings.csv",
+      "bytes": 5620,
+      "sha256": "e79f227764c29f0d217bf2186f1a73502672e79d63720d3a4d05625a1badf50a"
+    },
+    {
+      "path": "revision_evidence054/tables/future043_by_day_rows.csv",
+      "bytes": 6551,
+      "sha256": "ddd070e24bf0a0fb24a342aa933883d7e205419c9dd5603e902e557b8f3dad94"
+    },
+    {
+      "path": "revision_evidence054/tables/future043_by_type_rows.csv",
+      "bytes": 8709,
+      "sha256": "e235a2476191cef21b71cd66e2108be9dfe286c7cc483e2420a2e036590f9257"
+    },
+    {
+      "path": "revision_evidence054/tables/future043_clipping.csv",
+      "bytes": 4146,
+      "sha256": "bbdbaaa2cfe070858cfb807f5369e2b97c5c7df43cdc54bc7da61149fd8bfe7a"
+    },
+    {
+      "path": "revision_evidence054/tables/mcu040_cost_medians.csv",
+      "bytes": 7075,
+      "sha256": "34611c1ab00eabaebd605496871749654c458646f29c90a340d40df4f8c54926"
+    },
+    {
+      "path": "revision_evidence054/tables/mcu040_cost_observations.csv",
+      "bytes": 58564,
+      "sha256": "8e99a6e4ed13cd27f9424e2f0148315b47974b84a050c4fb34ddeb03a6b332fd"
+    },
+    {
+      "path": "revision_evidence054/tables/mcu040_numerics_models.csv",
+      "bytes": 7569,
+      "sha256": "593605c00af728726305c363dfd789b3d93919f848ce7c8f0b51355fbb7b6553"
+    },
+    {
+      "path": "revision_evidence054/tables/temporal041_compatible_exports.csv",
+      "bytes": 7760,
+      "sha256": "b306398ac0b221644cec39613497f65a3257cb0cd3f423ca3c1931a9343e77a9"
+    },
+    {
+      "path": "revision_evidence054/tables/temporal041_overview.csv",
+      "bytes": 916,
+      "sha256": "9b20eaabee317a399a2207697bdda38a7ecff7ab0df52f016dc0d735d148cd62"
+    },
+    {
+      "path": "revision_evidence054/tables/threshold041_windows.csv",
+      "bytes": 2552,
+      "sha256": "5e581d8c2f9227554813e896758f0af6a49a1f593bbd31fbdff8b5b1b5bb40cc"
+    },
+    {
+      "path": "revision_evidence054/verify_subset.py",
+      "bytes": 6988,
+      "sha256": "f42907264af8a0f4b14fbc35a072629e826f5bec95ca99e01864bd5a87963be8"
     },
     {
       "path": "stage025/BUILDING.md",

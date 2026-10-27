@@ -13,11 +13,11 @@ The primary result is a deployment study of release-level semantic consistency. 
 
 ## Revision evidence added on 27 October 2026
 
-Start with the [reviewer evidence guide](docs/REVISION_EVIDENCE.md). It maps the
-revised article to the completed experiments and gives the verification commands
-for Supplementary Material S1. The additional tables, saved summaries and primary
-logs are supplied with the revised manuscript; this documentation update does not
-add those files to the public Git tree.
+Start with the [reviewer evidence guide](docs/REVISION_EVIDENCE.md). The public
+[`revision_evidence054/`](revision_evidence054/) directory contains 16 unchanged
+numerical tables and saved summaries selected from Supplementary Material S1,
+with source paths, SHA-256 hashes and an offline consistency checker. These are
+newly documented results from completed experiments, not newly generated data.
 
 | Added evidence | Recorded result | Scope |
 |---|---|---|
@@ -29,12 +29,16 @@ add those files to the public Git tree.
 
 The three later successful observations do not replace the original unavailable
 P1 endpoints. The complete S1 submission package includes primary logs and their
-auditors. The guide distinguishes checks on saved numerical evidence from a full
-experiment rerun.
+auditors; this compact public subset supports numerical inspection and aggregate
+cross-checks, not a fresh primary-log audit or a full experiment rerun.
 
-**Availability:** the current repository contains the documentation guide, while
-`revision_supplement051.zip` is supplied with the revised manuscript and is not
-claimed to be downloadable from this Git tree. As checked on 27 October 2026,
+```bash
+python revision_evidence054/verify_subset.py
+```
+
+**Availability:** the current repository contains the compact subset above. The
+full `revision_supplement051.zip` is supplied with the revised manuscript and is
+not claimed to be downloadable from this Git tree. As checked on 27 October 2026,
 the historical GitHub `v1.0.0` release remains a draft. Public resolution of the
 reserved Zenodo identifier `10.5281/zenodo.22978008` has not been verified; it is
 not used here as a working evidence-download link.
@@ -170,7 +174,7 @@ The repository and historical release candidate contain numerical evidence, figu
 | `paper037/` | Figures, plotting and diagnostic code, tabulated results and derived summaries |
 | `closure032/`, `finalization032/` | Historical evidence index and closure reports |
 | `release/` | Reproduction instructions, integrity checker and preservation provenance |
-| `docs/REVISION_EVIDENCE.md` | Current reviewer guide to results and the S1 submission archive |
+| `docs/REVISION_EVIDENCE.md`, `revision_evidence054/` | Current reviewer guide and compact numerical evidence subset |
 | `runs/` (evidence archive) | Preserved results, training exports, event logs and analysis outputs |
 | `fnb58*.cfn` (evidence archive) | Original meter captures, including the continuous stage030 trace |
 

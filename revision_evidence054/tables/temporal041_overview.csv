@@ -1,0 +1,4 @@
+﻿scenario,test_rows,test_unique_vectors,test_days,CI_suppressed,models_evaluated,hardware_goldens_per_model,status,study_status,hardware_access_attempted,physical_power_loss_tested,scientific_full_result,source
+original030,7462871,3782505,4,True,24,258,complete,reviewer-driven protocol frozen before new fitting; collection previously explored,False,False,True,revision039-pc-042/source_evidence041/pc/temporal-runs/original030/summary.json
+window_C0038,11468146,5598724,5,True,24,258,complete,reviewer-driven protocol frozen before new fitting; collection previously explored,False,False,True,revision039-pc-042/source_evidence041/pc/temporal-runs/window_C0038/summary.json
+window_C0083,10994486,5147447,5,True,24,258,complete,reviewer-driven protocol frozen before new fitting; collection previously explored,False,False,True,revision039-pc-042/source_evidence041/pc/temporal-runs/window_C0083/summary.json

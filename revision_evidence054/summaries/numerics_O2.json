@@ -1,0 +1,1010 @@
+{
+  "all_numerical_checks_agree": false,
+  "board_id": "esp32s3-a0f262ebb558",
+  "command": "mcu",
+  "energy_measured": false,
+  "hardware_access_attempted": true,
+  "inferred_records": 26624,
+  "integer_code_mismatches": 9,
+  "integer_code_telemetry_available": true,
+  "integer_codes_compared": 10240,
+  "label_mismatches": 7,
+  "max_probability_abs_error": 0.4236266614662171,
+  "measurement_origin": "actual_mcu",
+  "model_results": [
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=9b6575c14",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.6404712677164923e-07
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.982028196596431e-08
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.4882569884799857e-07
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 8.897961423226519e-08
+        }
+      },
+      "family": "lr",
+      "inference_latency_us": {
+        "max": 159,
+        "median": 91.0,
+        "min": 65,
+        "p95": 96.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 1.6404712677164923e-07,
+      "model": "A_lr",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=9b6575c14",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 2,
+          "max_probability_abs_error": 1.7880390928981527e-07
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.1948477174339445e-07
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.7906058502603628e-07
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.978327026115224e-07
+        }
+      },
+      "family": "lr",
+      "inference_latency_us": {
+        "max": 159,
+        "median": 90.0,
+        "min": 66,
+        "p95": 94.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 2,
+      "max_probability_abs_error": 2.978327026115224e-07,
+      "model": "B_lr",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=9b6575c14",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.3855645753245724e-07
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.7843209842993701e-07
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.0846185300182896e-07
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.5739631654152504e-07
+        }
+      },
+      "family": "lr",
+      "inference_latency_us": {
+        "max": 159,
+        "median": 89.0,
+        "min": 65,
+        "p95": 95.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 3.5739631654152504e-07,
+      "model": "lr_compatible_decision",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=9b6575c14",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 1,
+          "max_probability_abs_error": 1.9407891846401348e-07
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 5.97220763953743e-08
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.7872594833268085e-07
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.6403987121438313e-07
+        }
+      },
+      "family": "lr",
+      "inference_latency_us": {
+        "max": 160,
+        "median": 89.0,
+        "min": 65,
+        "p95": 95.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 1,
+      "max_probability_abs_error": 1.9407891846401348e-07,
+      "model": "lr_compatible_probability",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=9b6575c14",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.7924051665119123e-07
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.51284103300231e-08
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.0100011444146304e-07
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.574189147981244e-07
+        }
+      },
+      "family": "lr",
+      "inference_latency_us": {
+        "max": 159,
+        "median": 89.0,
+        "min": 65,
+        "p95": 94.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 3.574189147981244e-07,
+      "model": "lr_stale_scaler",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=9b6575c14",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.7924051665119123e-07
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.51284103300231e-08
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.0100011444146304e-07
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.574189147981244e-07
+        }
+      },
+      "family": "lr",
+      "inference_latency_us": {
+        "max": 159,
+        "median": 89.0,
+        "min": 66,
+        "p95": 94.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 3.574189147981244e-07,
+      "model": "lr_stale_scaler_threshold",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=9b6575c14",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.7880390928981527e-07
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.1948477174339445e-07
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.7906058502603628e-07
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.978327026115224e-07
+        }
+      },
+      "family": "lr",
+      "inference_latency_us": {
+        "max": 159,
+        "median": 89.0,
+        "min": 66,
+        "p95": 95.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 2.978327026115224e-07,
+      "model": "lr_stale_threshold",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=a973e8c1a",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.5410153415303967e-10
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.398437087298589e-10
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.318236879186088e-10
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.5410153415303967e-10
+        }
+      },
+      "family": "dt",
+      "inference_latency_us": {
+        "max": 53,
+        "median": 38.0,
+        "min": 28,
+        "p95": 40.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 4.5410153415303967e-10,
+      "model": "A_dt",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=a973e8c1a",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.722168046531692e-10
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.1054692151144536e-10
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.02252231523903e-10
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.1054692151144536e-10
+        }
+      },
+      "family": "dt",
+      "inference_latency_us": {
+        "max": 53,
+        "median": 37.0,
+        "min": 27,
+        "p95": 39.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 4.02252231523903e-10,
+      "model": "B_dt",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=a973e8c1a",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.722168046531692e-10
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.1054692151144536e-10
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.02252231523903e-10
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.1054692151144536e-10
+        }
+      },
+      "family": "dt",
+      "inference_latency_us": {
+        "max": 54,
+        "median": 37.0,
+        "min": 28,
+        "p95": 39.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 4.02252231523903e-10,
+      "model": "dt_stale_threshold",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=1827163be",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 5.962506103296406e-07
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 7.43099670685865e-09
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 9.832012023980319e-07
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.4583317527471227e-07
+        }
+      },
+      "family": "mlp_float",
+      "inference_latency_us": {
+        "max": 243,
+        "median": 190.0,
+        "min": 147,
+        "p95": 196.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 9.832012023980319e-07,
+      "model": "A_mlp_float",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=1827163be",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 1,
+          "max_probability_abs_error": 2.3890213007859984e-07
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.1886459350129996e-07
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.470519103794146e-07
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.768102417340714e-07
+        }
+      },
+      "family": "mlp_float",
+      "inference_latency_us": {
+        "max": 248,
+        "median": 191.0,
+        "min": 164,
+        "p95": 197.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 1,
+      "max_probability_abs_error": 4.768102417340714e-07,
+      "model": "B_mlp_float",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=1827163be",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.380836792159613e-07
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 7.077176284592257e-08
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.0433338928361735e-06
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.3110589599518718e-06
+        }
+      },
+      "family": "mlp_float",
+      "inference_latency_us": {
+        "max": 244,
+        "median": 191.0,
+        "min": 159,
+        "p95": 196.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 1.3110589599518718e-06,
+      "model": "mlp_float_compatible_first_layer",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=1827163be",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.766329956273907e-07
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.5718514251881217e-07
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 7.898622818025558e-07
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 5.361134948200785e-07
+        }
+      },
+      "family": "mlp_float",
+      "inference_latency_us": {
+        "max": 244,
+        "median": 191.0,
+        "min": 165,
+        "p95": 196.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 7.898622818025558e-07,
+      "model": "mlp_float_stale_scaler",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=1827163be",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.766329956273907e-07
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.5718514251881217e-07
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 7.898622818025558e-07
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 5.361134948200785e-07
+        }
+      },
+      "family": "mlp_float",
+      "inference_latency_us": {
+        "max": 243,
+        "median": 191.0,
+        "min": 161,
+        "p95": 196.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 7.898622818025558e-07,
+      "model": "mlp_float_stale_scaler_threshold",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=1827163be",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.3890213007859984e-07
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.1886459350129996e-07
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.470519103794146e-07
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.768102417340714e-07
+        }
+      },
+      "family": "mlp_float",
+      "inference_latency_us": {
+        "max": 245,
+        "median": 191.0,
+        "min": 163,
+        "p95": 198.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 4.768102417340714e-07,
+      "model": "mlp_float_stale_threshold",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=107153fc8",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.727798077168831e-09
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.727798077168831e-09
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.727798077168831e-09
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 1.8943759928780057e-09
+        }
+      },
+      "family": "mlp_int8",
+      "inference_latency_us": {
+        "max": 275,
+        "median": 228.0,
+        "min": 200,
+        "p95": 235.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 3.727798077168831e-09,
+      "model": "A_mlp_int8",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=107153fc8",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 1,
+          "max_probability_abs_error": 0.4236266614662171
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 0.04911983382037735
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        }
+      },
+      "family": "mlp_int8",
+      "inference_latency_us": {
+        "max": 277,
+        "median": 228.0,
+        "min": 200,
+        "p95": 235.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 1,
+      "max_probability_abs_error": 0.4236266614662171,
+      "model": "B_mlp_int8",
+      "probability_tolerance_exceeded": 3,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=107153fc8",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.733829113949927e-09
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 7.809318539053756e-09
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        }
+      },
+      "family": "mlp_int8",
+      "inference_latency_us": {
+        "max": 278,
+        "median": 228.0,
+        "min": 200,
+        "p95": 236.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 3.0183746335676886e-08,
+      "model": "mlp_int8_compatible_requantized",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=107153fc8",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.725342339639838e-10
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.733829113949927e-09
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        }
+      },
+      "family": "mlp_int8",
+      "inference_latency_us": {
+        "max": 279,
+        "median": 227.0,
+        "min": 204,
+        "p95": 234.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 3.0183746335676886e-08,
+      "model": "mlp_int8_stale_input_quantization",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=107153fc8",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 1,
+          "max_probability_abs_error": 0.4236266614662171
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 0.04911983382037735
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        }
+      },
+      "family": "mlp_int8",
+      "inference_latency_us": {
+        "max": 283,
+        "median": 229.0,
+        "min": 198,
+        "p95": 235.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 1,
+      "max_probability_abs_error": 0.4236266614662171,
+      "model": "mlp_int8_stale_integer_threshold_code",
+      "probability_tolerance_exceeded": 3,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=107153fc8",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.990196229513131e-08
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        }
+      },
+      "family": "mlp_int8",
+      "inference_latency_us": {
+        "max": 277,
+        "median": 229.0,
+        "min": 199,
+        "p95": 235.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 3.0183746335676886e-08,
+      "model": "mlp_int8_stale_scaler",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=107153fc8",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.990196229513131e-08
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        }
+      },
+      "family": "mlp_int8",
+      "inference_latency_us": {
+        "max": 277,
+        "median": 228.0,
+        "min": 195,
+        "p95": 235.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 3.0183746335676886e-08,
+      "model": "mlp_int8_stale_scaler_threshold",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=107153fc8",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 1,
+          "max_probability_abs_error": 0.4236266614662171
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 0.04911983382037735
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.0183746335676886e-08
+        }
+      },
+      "family": "mlp_int8",
+      "inference_latency_us": {
+        "max": 277,
+        "median": 228.0,
+        "min": 197,
+        "p95": 235.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 1,
+      "max_probability_abs_error": 0.4236266614662171,
+      "model": "mlp_int8_stale_threshold",
+      "probability_tolerance_exceeded": 3,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=107153fc8",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.855651436486141e-10
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.023809813651468e-08
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 6.005575559075993e-08
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.9582412741646635e-08
+        }
+      },
+      "family": "mlp_int8",
+      "inference_latency_us": {
+        "max": 279,
+        "median": 229.0,
+        "min": 207,
+        "p95": 234.8499999999999
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 6.005575559075993e-08,
+      "model": "percentile999_recalibrated",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    },
+    {
+      "build": "esp-idf-v5.3.2;app=1;elf=107153fc8",
+      "category_results": {
+        "decision_boundary": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 4.855651436486141e-10
+        },
+        "range_and_grid": {
+          "inferred_records": 128,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 3.023809813651468e-08
+        },
+        "real_stratified": {
+          "inferred_records": 512,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 6.005575559075993e-08
+        },
+        "synthetic_random": {
+          "inferred_records": 256,
+          "label_mismatches": 0,
+          "max_probability_abs_error": 2.9582412741646635e-08
+        }
+      },
+      "family": "mlp_int8",
+      "inference_latency_us": {
+        "max": 279,
+        "median": 229.0,
+        "min": 203,
+        "p95": 234.0
+      },
+      "inferred_records": 1024,
+      "label_mismatches": 0,
+      "max_probability_abs_error": 6.005575559075993e-08,
+      "model": "percentile999_transferred",
+      "probability_tolerance_exceeded": 0,
+      "timing_scope": "device inference counter; no transport time"
+    }
+  ],
+  "models_completed": 26,
+  "numerical_disagreements_do_not_trigger_retuning": true,
+  "physical_power_loss_tested": false,
+  "probability_tolerance_exceeded": 9,
+  "stage": "039",
+  "status": "complete"
+}

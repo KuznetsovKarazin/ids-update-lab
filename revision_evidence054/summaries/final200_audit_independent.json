@@ -1,0 +1,342 @@
+{
+  "admission_checks_total": 36,
+  "admissions": {
+    "046": {
+      "before_after_identity": {
+        "active_slot": 1,
+        "build": "esp-idf-v5.3.2;app=1;elf=6d7f7fa92",
+        "bundle_sha256": "a63a554e39178d2ae5f71765c3d3bf2b878bb11b7215e1d9b96d989b4c87865d",
+        "chip": "esp32s3",
+        "erase_policy": "necessary_sectors",
+        "feature_count": 8,
+        "policy": "bundle",
+        "pretransform": "log1p",
+        "release": "p39B-749",
+        "runtime_abi": 4,
+        "schema": "8f3aba7e6bce09ffd8fc1fad9c054081629076299f24a209e25a443c2d5b7225",
+        "selector_sequence": 698,
+        "storage_layout": 2,
+        "storage_scheme": "journal_dualrail_v1",
+        "version": 749
+      },
+      "live_checks_verified": 12,
+      "sha256": "b320f6ab70d3305fc6da4187c1efa8a36ed37ab4ed27c964e487b79c4c4d541e",
+      "source_sha256": {
+        "continuation046.py": "c106f36404ce328a5b5606f40b3e3d4f5f7b893c3fdb0997234e70eb58f63b5f",
+        "incident061_hashes.json": "4b4927802a867c2ddca13299bcd3e2f43a7a18563de944e4cd87c854a3ed545d",
+        "run_powercut046.py": "23d461700d99438b8d91113656643a6f153cfe60d7f0cefad353f42b8e783532"
+      }
+    },
+    "048": {
+      "before_after_identity": {
+        "active_slot": 1,
+        "build": "esp-idf-v5.3.2;app=1;elf=6d7f7fa92",
+        "bundle_sha256": "bb3342b3b4375e55fc9b04d8832272a5345fc1b4e768258b4648db507835aed5",
+        "chip": "esp32s3",
+        "erase_policy": "necessary_sectors",
+        "feature_count": 8,
+        "policy": "bundle",
+        "pretransform": "log1p",
+        "release": "p39B-1136",
+        "runtime_abi": 4,
+        "schema": "8f3aba7e6bce09ffd8fc1fad9c054081629076299f24a209e25a443c2d5b7225",
+        "selector_sequence": 1044,
+        "storage_layout": 2,
+        "storage_scheme": "journal_dualrail_v1",
+        "version": 1136
+      },
+      "live_checks_verified": 12,
+      "sha256": "3560da7b9e875c690e4b5e8f0a9a2aea148022c21fbd28a3d5425d6b469ac6ab",
+      "source_sha256": {
+        "continuation048.py": "29186ec89faff50737e5716c689626ffc5913fe4815100352ffab8ccf6a8987a",
+        "incident113_hashes.json": "d46bd06fbea35d975c775b6bb4c2a7ffb1630101eb9f7d0d7711086967dc12e5",
+        "run_powercut048.py": "eff62c89cb869961a95a4d875e4c4f6b8d7e28036c41c1a14d0d909cbb7206ab"
+      }
+    },
+    "049": {
+      "before_after_identity": {
+        "active_slot": 0,
+        "build": "esp-idf-v5.3.2;app=1;elf=6d7f7fa92",
+        "bundle_sha256": "f26ac55e93547d414997a60866e4bad7418eaecd07cd95d2d21cbef2016f7eb3",
+        "chip": "esp32s3",
+        "erase_policy": "necessary_sectors",
+        "feature_count": 8,
+        "policy": "bundle",
+        "pretransform": "log1p",
+        "release": "p39A-1696",
+        "runtime_abi": 4,
+        "schema": "8f3aba7e6bce09ffd8fc1fad9c054081629076299f24a209e25a443c2d5b7225",
+        "selector_sequence": 1543,
+        "storage_layout": 2,
+        "storage_scheme": "journal_dualrail_v1",
+        "version": 1696
+      },
+      "live_checks_verified": 12,
+      "sha256": "c57aa864a2e62c810eb26e846cbc8da3d46f6df0437b610e9546de3199752240",
+      "source_sha256": {
+        "continuation049.py": "3c25980b34e1b8a5aa84a19a7454af43396a13c331b21bcc7c6d8aad32ba09b5",
+        "incident186_hashes.json": "2db00c8f6e3c3f89b57a9647cf529f5e075aa37e407777d542ade096006a3c1b",
+        "run_powercut049.py": "2cd705062168d558354982668a13e0c6ef8991290194dff32304d65f59146be1"
+      }
+    }
+  },
+  "archive": "upload/powercut-045-after049-20261027-124449.zip",
+  "archive_sha256": "8993dc6c11dd940f89995a75d29b9e0e3272f35fb11e674f94bd895695693ce3",
+  "audit_script_sha256": "5fd8752353f7a718be563b0f530d20884dded7dca5a3f4f242e353df7ccbfa50",
+  "audit_status": "pass",
+  "bounds": [
+    "Three original no_response endpoints remain failures of timely recovery; late successful observations do not reclassify them.",
+    "Twelve no-cut trials are not successful physical power-cut recoveries.",
+    "All eight phases have25 planned attempts; zero cuts have confirmed exact flash-instruction phase.",
+    "ADC evidence is measured with the supplied calibration, not independent analog calibration.",
+    "Cause of the intermittent USB/COM recovery failures is not established."
+  ],
+  "checkpoint186": {
+    "append_only_changed_files": [
+      "results/mutations.jsonl",
+      "results/replay_checks.jsonl",
+      "results/transcript.jsonl",
+      "results/trial_results.jsonl"
+    ],
+    "files_pinned": 372,
+    "hash_mismatches": [],
+    "prefix_mismatches": [],
+    "trial_results_prefix_bytes": 2341503,
+    "unchanged_files": 368
+  },
+  "checkpoint_run": "incident186/run",
+  "final_summary": {
+    "complete_means_all_planned_attempts_recorded_not_all_passed": true,
+    "final_adc_volts": 3.3255287260616155,
+    "path": "run/results/summary_1793101457837940900.json",
+    "power_at_end": "ON_measured",
+    "sha256": "71bbcdf5eb4cdebacbe2a04af270dee951490daa016287f9d930ecb25f32c7e0",
+    "status": "complete"
+  },
+  "issues": [],
+  "late186": {
+    "before_after_identity": {
+      "active_slot": 0,
+      "build": "esp-idf-v5.3.2;app=1;elf=6d7f7fa92",
+      "bundle_sha256": "f26ac55e93547d414997a60866e4bad7418eaecd07cd95d2d21cbef2016f7eb3",
+      "chip": "esp32s3",
+      "erase_policy": "necessary_sectors",
+      "feature_count": 8,
+      "policy": "bundle",
+      "pretransform": "log1p",
+      "release": "p39A-1696",
+      "runtime_abi": 4,
+      "schema": "8f3aba7e6bce09ffd8fc1fad9c054081629076299f24a209e25a443c2d5b7225",
+      "selector_sequence": 1543,
+      "storage_layout": 2,
+      "storage_scheme": "journal_dualrail_v1",
+      "version": 1696
+    },
+    "checks": 12,
+    "duration_seconds": 0.0945286,
+    "original_trial_reclassified": false,
+    "raw_bytes": 5030,
+    "serial_sha256": "ababcba73f8fea08dafd51ece59b093870b178fa5ace5eb6c184df3bc7a10fb7",
+    "start_seconds_after_original_result": 840.3495911,
+    "summary_sha256": "47996ade65cf8da6dad2b146dad8616487e53d53f71b82e2ab933fafab8efc3a"
+  },
+  "main_and_admission_numeric_total": 2400,
+  "manifest": {
+    "mismatches": [],
+    "sha256": "cecb657ba12045efa467a1d963da72b39015645a64a2e190b3e1860c11e4e591",
+    "unlisted_files": [],
+    "verified_files": 399
+  },
+  "methods": {
+    "numeric": "Compare each actual MCU response with its frozen A/B reference row, raw input, label, identity, finite probability and absolute tolerance2e-6; no fresh full-model computation.",
+    "prefix": "Verify checkpoint files against pinned186 SHA256s; unchanged files exact, changed logs must retain exact original byte prefix.",
+    "rail": "V=adc_zero_volts+raw*adc_volts_per_count; OFF requires nonempty samples at t>=100000us with max<=rail_off_max_volts and last timestamp>=900000us.",
+    "replay": "Require one replay result per valid trial; accepted=false, reason=replay_or_downgrade, and all four successful flash-byte counters zero; bind to raw-backed serial replies.",
+    "serial": "Concatenate raw rx_bytes by link; parse newline JSON and require full ordered equality with parsed rx frames; bind each trial controls between its unique cut_result and saved result timestamp."
+  },
+  "results": {
+    "attempted_trials": 200,
+    "confirmed_off_state_counts": {
+      "new_valid": 19,
+      "no_response": 3,
+      "old_valid": 166
+    },
+    "final_selected_identity": {
+      "active_slot": 1,
+      "build": "esp-idf-v5.3.2;app=1;elf=6d7f7fa92",
+      "bundle_sha256": "c21ebafbe84fb4b18190b2ba7fe0e81094fc3b1ae447e34d0ad8832684847401",
+      "chip": "esp32s3",
+      "erase_policy": "necessary_sectors",
+      "feature_count": 8,
+      "policy": "bundle",
+      "pretransform": "log1p",
+      "release": "p39B-1804",
+      "runtime_abi": 4,
+      "schema": "8f3aba7e6bce09ffd8fc1fad9c054081629076299f24a209e25a443c2d5b7225",
+      "selector_sequence": 1636,
+      "storage_layout": 2,
+      "storage_scheme": "journal_dualrail_v1",
+      "version": 1804
+    },
+    "maximum_absolute_probability_difference": 1.8766155227001313e-09,
+    "no_cut_trial_ids": [
+      2,
+      40,
+      48,
+      81,
+      83,
+      88,
+      127,
+      140,
+      141,
+      146,
+      170,
+      173
+    ],
+    "numeric_reference_comparisons": 2364,
+    "numeric_valid_trials": 197,
+    "off_tail_max_volts_range": [
+      0.009082907101225168,
+      0.024879267277268944
+    ],
+    "original_no_response_trial_ids": [
+      61,
+      113,
+      186
+    ],
+    "per_phase": {
+      "model_body": {
+        "attempted": 25,
+        "no_cut": 0,
+        "phase_confirmed": 0,
+        "rail_off_confirmed": 25,
+        "state_counts": {
+          "old_valid": 25
+        }
+      },
+      "model_erase": {
+        "attempted": 25,
+        "no_cut": 0,
+        "phase_confirmed": 0,
+        "rail_off_confirmed": 25,
+        "state_counts": {
+          "no_response": 1,
+          "old_valid": 24
+        }
+      },
+      "rotation_body": {
+        "attempted": 25,
+        "no_cut": 0,
+        "phase_confirmed": 0,
+        "rail_off_confirmed": 25,
+        "state_counts": {
+          "no_response": 1,
+          "old_valid": 24
+        }
+      },
+      "rotation_commit": {
+        "attempted": 25,
+        "no_cut": 0,
+        "phase_confirmed": 0,
+        "rail_off_confirmed": 25,
+        "state_counts": {
+          "new_valid": 9,
+          "old_valid": 16
+        }
+      },
+      "rotation_erase": {
+        "attempted": 25,
+        "no_cut": 0,
+        "phase_confirmed": 0,
+        "rail_off_confirmed": 25,
+        "state_counts": {
+          "no_response": 1,
+          "old_valid": 24
+        }
+      },
+      "selector_body": {
+        "attempted": 25,
+        "no_cut": 0,
+        "phase_confirmed": 0,
+        "rail_off_confirmed": 25,
+        "state_counts": {
+          "old_valid": 25
+        }
+      },
+      "selector_commit": {
+        "attempted": 25,
+        "no_cut": 0,
+        "phase_confirmed": 0,
+        "rail_off_confirmed": 25,
+        "state_counts": {
+          "new_valid": 10,
+          "old_valid": 15
+        }
+      },
+      "slot_commit": {
+        "attempted": 25,
+        "no_cut": 12,
+        "phase_confirmed": 0,
+        "rail_off_confirmed": 13,
+        "state_counts": {
+          "new_valid": 12,
+          "old_valid": 13
+        }
+      }
+    },
+    "phase_confirmed": 0,
+    "probability_tolerance": 2e-06,
+    "rail_off_confirmed": 188,
+    "replay_rejections_verified": 197,
+    "state_counts": {
+      "new_valid": 31,
+      "no_response": 3,
+      "old_valid": 166
+    },
+    "valid_after_confirmed_off": 185
+  },
+  "schema": "power045_final200_independent_audit_v1",
+  "serial": {
+    "mcu": {
+      "event_counts": {
+        "inference": 2388,
+        "phase_control": 402,
+        "status": 1521,
+        "update": 1525
+      },
+      "frames": 5836,
+      "raw_bytes": 2947047,
+      "raw_equals_parsed": true
+    },
+    "pico": {
+      "event_counts": {
+        "adc": 91,
+        "armed": 2,
+        "controller_id": 4,
+        "cut_result": 200,
+        "cut_started": 188,
+        "phase_armed": 200,
+        "power_on": 2
+      },
+      "frames": 687,
+      "raw_bytes": 926394,
+      "raw_equals_parsed": true
+    }
+  },
+  "source_paths": {
+    "config": "run/setup/powercut_config.json",
+    "controls": "run/plan/controls.json",
+    "plan": "run/plan/plan.json",
+    "replay": "run/results/replay_checks.jsonl",
+    "transcript": "run/results/transcript.jsonl",
+    "trial_results": "run/results/trial_results.jsonl"
+  },
+  "source_sha256": {
+    "config": "0090dc963b1f59575010d9efb482860ec94458ec5df2c041e42a7c6d9c0c5fdd",
+    "controls": "1839e9c7371fcc502fd38786dd7053a02649c82f31f4e0e0ced98e3a9aacaa53",
+    "plan": "cea659fad777b410ab055462c08a8b32c5754ac7dc807378dbc12f26f89507ec",
+    "replay": "cdbb339ec6c29268557c6d455e09ad8e9a03ccff0b9d5875956c3d264f07e374",
+    "transcript": "9f4af6e1f68fef394722cd828d219e4d86dc70bc39411600bbdb401099bdacc2",
+    "trial_results": "1c476d375bb30557f78940b501bd99b88433e5b13e3d17903aeead4ad355d2d5"
+  }
+}

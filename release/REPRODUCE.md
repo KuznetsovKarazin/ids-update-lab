@@ -1,17 +1,16 @@
 # Reproducing the study
 
-For the additional 040–049 results, start with
-[the revision guide](../docs/REVISION_EVIDENCE.md). The full supplementary archive
-is supplied with the revised manuscript; it is not part of this Git tree. The
-guide gives verified paths and offline commands for readers who have that archive.
-This Git update changes documentation only and does not publish new experimental
-payload files. The historical GitHub 1.0.0 release remains a draft as checked on
-27 October 2026, and public DOI resolution has not been verified. References below
-to the release/companion archive describe the historical distribution layout and
-dependencies, not a new availability claim.
+For the current reviewer evidence subset and the additional 040–049 results, start with
+[the revision guide](../docs/REVISION_EVIDENCE.md). Run
+`python revision_evidence054/verify_subset.py` from the repository root for an offline
+check of the 16 published tables/summaries. The full supplementary archive is supplied
+with the revised manuscript; it is not part of this Git tree. The historical GitHub
+1.0.0 release remains a draft as checked on 27 October 2026, and public DOI resolution
+has not been verified. References below to the release/companion archive describe the
+historical distribution layout and dependencies, not a new availability claim.
 
-The current root manifest includes this documentation update. The original 1.0.0
-manifest is preserved unchanged at
+The current root manifest includes this documentation and compact-subset update. The
+original 1.0.0 manifest is preserved unchanged at
 `release/provenance/MANIFEST_1.0.0_2da88c0.json`; use commit `2da88c0` to verify that
 historical snapshot. Experiment code and measurements in the baseline are unchanged.
 

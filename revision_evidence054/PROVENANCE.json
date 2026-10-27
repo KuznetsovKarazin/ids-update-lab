@@ -1,0 +1,125 @@
+{
+  "schema": "ids-reviewer-evidence-subset-v1",
+  "date": "2026-10-27",
+  "source_archive": {
+    "name": "revision_supplement051.zip",
+    "bytes": 35199436,
+    "sha256": "c1b2b7b7fb9c7f2a9a232454c7bf8d897f22ae2dff216785d9dba216ec0fac18"
+  },
+  "scope": "Selected numerical tables and saved audit summaries only. No raw serial traces, firmware, traffic arrays, retraining, or new hardware experiment. Historical source path fields are provenance, not paths in this subset.",
+  "original_evidence_identifiers_unchanged": true,
+  "files": [
+    {
+      "path": "tables/future043_all_weightings.csv",
+      "bytes": 5620,
+      "sha256": "e79f227764c29f0d217bf2186f1a73502672e79d63720d3a4d05625a1badf50a",
+      "source_archive_entry": "revision_supplement051/tables/future043_all_weightings.csv",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "tables/future043_by_day_rows.csv",
+      "bytes": 6551,
+      "sha256": "ddd070e24bf0a0fb24a342aa933883d7e205419c9dd5603e902e557b8f3dad94",
+      "source_archive_entry": "revision_supplement051/tables/future043_by_day_rows.csv",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "tables/future043_by_type_rows.csv",
+      "bytes": 8709,
+      "sha256": "e235a2476191cef21b71cd66e2108be9dfe286c7cc483e2420a2e036590f9257",
+      "source_archive_entry": "revision_supplement051/tables/future043_by_type_rows.csv",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "tables/future043_clipping.csv",
+      "bytes": 4146,
+      "sha256": "bbdbaaa2cfe070858cfb807f5369e2b97c5c7df43cdc54bc7da61149fd8bfe7a",
+      "source_archive_entry": "revision_supplement051/tables/future043_clipping.csv",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "tables/mcu040_cost_medians.csv",
+      "bytes": 7075,
+      "sha256": "34611c1ab00eabaebd605496871749654c458646f29c90a340d40df4f8c54926",
+      "source_archive_entry": "revision_supplement051/tables/mcu040_cost_medians.csv",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "tables/mcu040_cost_observations.csv",
+      "bytes": 58564,
+      "sha256": "8e99a6e4ed13cd27f9424e2f0148315b47974b84a050c4fb34ddeb03a6b332fd",
+      "source_archive_entry": "revision_supplement051/tables/mcu040_cost_observations.csv",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "tables/mcu040_numerics_models.csv",
+      "bytes": 7569,
+      "sha256": "593605c00af728726305c363dfd789b3d93919f848ce7c8f0b51355fbb7b6553",
+      "source_archive_entry": "revision_supplement051/tables/mcu040_numerics_models.csv",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "tables/temporal041_compatible_exports.csv",
+      "bytes": 7760,
+      "sha256": "b306398ac0b221644cec39613497f65a3257cb0cd3f423ca3c1931a9343e77a9",
+      "source_archive_entry": "revision_supplement051/tables/temporal041_compatible_exports.csv",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "tables/temporal041_overview.csv",
+      "bytes": 916,
+      "sha256": "9b20eaabee317a399a2207697bdda38a7ecff7ab0df52f016dc0d735d148cd62",
+      "source_archive_entry": "revision_supplement051/tables/temporal041_overview.csv",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "tables/threshold041_windows.csv",
+      "bytes": 2552,
+      "sha256": "5e581d8c2f9227554813e896758f0af6a49a1f593bbd31fbdff8b5b1b5bb40cc",
+      "source_archive_entry": "revision_supplement051/tables/threshold041_windows.csv",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "summaries/final200_audit_independent.json",
+      "bytes": 11929,
+      "sha256": "8631f96cd69c7c4d9a887ee175db64690c82172872ae610f19626ca0e8b94a9b",
+      "source_archive_entry": "revision_supplement051/powercut/final200_audit_independent.json",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "summaries/numerics_Og.json",
+      "bytes": 32944,
+      "sha256": "b9c63be2639c1a14654855a1769fd6010c8d9cba5c3cbcb9eb50bff17686d66a",
+      "source_archive_entry": "revision_supplement051/evidence040/revision039-recovery040/mcu/esp32s3-a0f262ebb558/Og/numerics/summary.json",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "summaries/numerics_O2.json",
+      "bytes": 32918,
+      "sha256": "dcaadf0bf5f1cb115e4b024cdb8afb0b9f697bf158a7f3a53388b6edbd4d5e17",
+      "source_archive_entry": "revision_supplement051/evidence040/revision039-recovery040/mcu/esp32s3-a0f262ebb558/O2/numerics/summary.json",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "summaries/temporal_plan.json",
+      "bytes": 129,
+      "sha256": "b2584f7673265e571cebef2049af6d9abebbf0f3bb9af087df3ad1defccf4ba3",
+      "source_archive_entry": "revision_supplement051/evidence041/source_evidence041/pc/temporal-plan/summary.json",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "summaries/threshold_windows.json",
+      "bytes": 223,
+      "sha256": "e0c601324f28f86bebc7a2f4e1c7a65f2d3743e5cf76e123369885aa8e5eaba6",
+      "source_archive_entry": "revision_supplement051/evidence041/source_evidence041/pc/threshold/summary.json",
+      "transformation": "none; exact original bytes"
+    },
+    {
+      "path": "summaries/future043.json",
+      "bytes": 264,
+      "sha256": "f7efd86daccf9e535d28eb46fe45e60d33523c96aaccf25141fea39209c906d8",
+      "source_archive_entry": "revision_supplement051/evidence043/revision039-pc-043/future/summary.json",
+      "transformation": "none; exact original bytes"
+    }
+  ]
+}

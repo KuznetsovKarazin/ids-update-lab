@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "models_trained": false,
+  "models_evaluated": 4,
+  "calibration_window_count": 3,
+  "study_status": "reviewer-driven protocol frozen before new fitting; collection previously explored"
+}
