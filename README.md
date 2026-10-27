@@ -2,18 +2,51 @@
 
 **Software and Experimental Evidence for Preserving Detector Semantics in TinyML Updates**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22978008.svg)](https://doi.org/10.5281/zenodo.22978008)
-
-- Release: **1.0.0** · [GitHub](https://github.com/KuznetsovKarazin/ids-update-lab) · [Versioned archive](https://doi.org/10.5281/zenodo.22978008)
+- Code baseline: **1.0.0**, commit [`2da88c0`](https://github.com/KuznetsovKarazin/ids-update-lab/tree/2da88c0407e878a2bd4f07bda4429f83ace8de81) · [Current revision evidence](docs/REVISION_EVIDENCE.md)
 - [Reproduction guide](release/REPRODUCE.md) · [License scope](LICENSE_SCOPE.md)
 - Original software author: **Oleksandr Kuznetsov** ([ORCID](https://orcid.org/0000-0003-2331-6326)).
 - The associated article retains its six authors, listed separately in [AUTHORS.md](AUTHORS.md).
 
 This project studies how an embedded intrusion detector can retain the semantics of a validated inference pipeline when it is updated. The deployment contract covers ordered features, preprocessing, model parameters, decision thresholds, and, where applicable, quantization parameters. Experiments compare signed pipeline packages, compatible parameter export where implemented, and full-image replacement on one ESP32-S3 board.
 
-The primary result is a deployment study. It does not establish a new state-of-the-art detector, production security certification, or resilience to physical power removal.
+The primary result is a deployment study of release-level semantic consistency. Physical supply-loss recovery was subsequently measured with the bounds described below; the study does not establish a new state-of-the-art detector or production security certification.
 
-## Evidence at a glance
+## Revision evidence added on 27 October 2026
+
+Start with the [reviewer evidence guide](docs/REVISION_EVIDENCE.md). It maps the
+revised article to the completed experiments and gives the verification commands
+for Supplementary Material S1. The additional tables, saved summaries and primary
+logs are supplied with the revised manuscript; this documentation update does not
+add those files to the public Git tree.
+
+| Added evidence | Recorded result | Scope |
+|---|---|---|
+| Three chronological scenarios | 24 pipeline configurations per scenario; 7.46, 11.47 and 10.99 million future rows | Overlapping TON_IoT windows; no eligible mixed old/new attack cohort |
+| Threshold and integer-export controls | 6/12/24-hour calibration windows; eight frozen artifacts evaluated on the original future test | Host calculations; QAT and per-channel MCU execution were not evaluated |
+| Stratified host/device panel | 26 configurations × 1024 inputs per `-Og`/`-O2` build; seven label differences and nine integer-code differences in each build | One ESP32-S3; the same inputs in both builds |
+| H4 installation comparison | 480 measured installations over package/raw/compressed policies and both optimization builds | Ten blocks per cell on one board; no new energy measurement or delta-OTA baseline |
+| P1 physical supply interruption | 200 attempts; 188 ADC-confirmed rail-off traces; 185 responsive expected states after confirmed OFF and three unavailable endpoints | Twelve attempts had no confirmed cut; zero exact flash phases were independently confirmed |
+
+The three later successful observations do not replace the original unavailable
+P1 endpoints. The complete S1 submission package includes primary logs and their
+auditors. The guide distinguishes checks on saved numerical evidence from a full
+experiment rerun.
+
+**Availability:** the current repository contains the documentation guide, while
+`revision_supplement051.zip` is supplied with the revised manuscript and is not
+claimed to be downloadable from this Git tree. As checked on 27 October 2026,
+the historical GitHub `v1.0.0` release remains a draft. Public resolution of the
+reserved Zenodo identifier `10.5281/zenodo.22978008` has not been verified; it is
+not used here as a working evidence-download link.
+
+## Historical evidence through series 037
+
+The sections below retain the earlier protocols and results. References to the
+companion evidence archive describe its contents, not current public-download
+availability. The newer results above and in the guide extend this historical
+baseline; experiment identifiers and recorded outcomes are unchanged.
+
+### Historical evidence at a glance
 
 | Evidence | Series | Interpretation |
 |---|---|---|
@@ -28,7 +61,7 @@ The primary result is a deployment study. It does not establish a new state-of-t
 
 Counts above are summarized in [the historical closure report](closure032/RESEARCH_CLOSURE_RU.md). It documents what was checked and the limits of independent reproduction. Original failed summaries and subsequent repair outputs remain separate; a failed historical run is never relabelled as successful.
 
-## Main numerical results
+## Historical numerical results
 
 ### Detection behavior before and after retraining
 
@@ -41,7 +74,7 @@ The table reports the common subsequent TON test with **row weighting**. All val
 | MLP-F32 | 36.871 | 21.310 | 57.780 | 43.801 | 2.151 | 70.825 |
 | MLP-I8 | 12.676 | 22.221 | 45.227 | 44.428 | 2.190 | 71.119 |
 
-These results do not support a blanket claim that every retrained model improves. The test contains attack types absent from A's fitting/calibration history; the A-known attack cohort is empty. The 1% empirical calibration FPR target does not guarantee 1% future-test FPR. All 24 pipeline conditions, row/vector/cap100 weighting, attack types and days are retained in `runs/ids-completion-030/training/evaluation.json` and related files **in the Zenodo evidence archive**, not in the GitHub tree. Consult that archive's manifest for the included paths and remaining data dependencies.
+These results do not support a blanket claim that every retrained model improves. The test contains attack types absent from A's fitting/calibration history; the A-known attack cohort is empty. The 1% empirical calibration FPR target does not guarantee 1% future-test FPR. All 24 pipeline conditions, row/vector/cap100 weighting, attack types and days are retained in `runs/ids-completion-030/training/evaluation.json` and related files **in the historical companion evidence archive**, not in the GitHub tree. Consult that archive's manifest for the included paths and remaining data dependencies.
 
 ### Semantic consistency and compatible export
 
@@ -60,7 +93,7 @@ Zero observed disagreement is not an exhaustive certificate for every float32 in
 
 ### Cost on the ESP32-S3
 
-The final runtime uses **ESP-IDF 5.3.2, 160 MHz CPU and debug-oriented `-Og` optimization**, on one ESP32-S3FH4R2 with 4 MB flash and 2 MB PSRAM. Values below are medians of ten paired blocks, using the B-to-C reused-slot observation. The requested erase policy is the necessary prefix of the 64 KiB model slot, not a claim that the slot itself is only 4 KiB.
+The historical series030 runtime uses **ESP-IDF 5.3.2, 160 MHz CPU and debug-oriented `-Og` optimization**, on one ESP32-S3FH4R2 with 4 MB flash and 2 MB PSRAM. Values below are medians of ten paired blocks, using the B-to-C reused-slot observation. The requested erase policy is the necessary prefix of the 64 KiB model slot, not a claim that the slot itself is only 4 KiB.
 
 | Family | Signed package, bytes | Package MCU interval, ms | Full-image MCU intervals summed, ms | Package USB end-to-end, s | Full-image USB end-to-end, s |
 |---|---:|---:|---:|---:|---:|
@@ -105,7 +138,7 @@ The continuous FNB58 capture provides **ten blocks per family/policy**: 128 acce
 
 These values describe the paced **USB update scenario**, including verification, delays and full-image reboot; they are not isolated flash energy. Integration uses recorded voltage/current samples. Coarse marker localization was repaired post hoc in031, with the same independent validation checks and integration formulas. The instrument was not independently calibrated; the inconsistent accumulated NRG counter is not used as a calibrated reference. Raw samples, counter observations, repair rationale and sensitivity analyses remain in the companion evidence archive. The tables support exploratory scenario comparisons, not a metrological accuracy claim.
 
-### Later calibration diagnostics: scope and reference representation
+### Historical calibration diagnostics: scope and reference representation
 
 These are host calculations on the saved B calibration sample: **102,088 records**, comprising 2088 normal and 100,000 attack records. They neither rerun the full future test nor add MCU measurements.
 
@@ -124,7 +157,7 @@ The reference matters. Complete B-F32 and B-I8 disagree on **4883/102,088 = 4.78
 
 ### Figures and manuscript
 
-The release contains numerical evidence, figures, the apparatus photograph, tabulated results and plotting scripts. The manuscript and its LaTeX submission package are maintained separately and are not included in the public release. The scientific evidence retains its original experiment identifiers; manuscript revisions do not relabel or alter frozen measurements.
+The repository and historical release candidate contain numerical evidence, figures, the apparatus photograph, tabulated results and plotting scripts. The manuscript and its LaTeX submission package are maintained separately and are not included in this repository. The scientific evidence retains its original experiment identifiers; manuscript revisions do not relabel or alter frozen measurements.
 
 ## Artifact layout
 
@@ -136,11 +169,12 @@ The release contains numerical evidence, figures, the apparatus photograph, tabu
 | `completion020/`, `stage025/`, `research028/` | Earlier fixed protocols, controls and data diagnostics |
 | `paper037/` | Figures, plotting and diagnostic code, tabulated results and derived summaries |
 | `closure032/`, `finalization032/` | Historical evidence index and closure reports |
-| `release/` | Current reproduction instructions, integrity checker and preservation provenance |
+| `release/` | Reproduction instructions, integrity checker and preservation provenance |
+| `docs/REVISION_EVIDENCE.md` | Current reviewer guide to results and the S1 submission archive |
 | `runs/` (evidence archive) | Preserved results, training exports, event logs and analysis outputs |
 | `fnb58*.cfn` (evidence archive) | Original meter captures, including the continuous stage030 trace |
 
-The GitHub tree is the code and presentation distribution. The companion Zenodo
+The GitHub tree is the code and presentation distribution. The historical companion
 evidence archive includes the 24 frozen model exports, training provenance,
 80 cost-event logs, hardware/energy timelines, recovered energy outputs and
 original CFN captures. Each archive has its own file manifest. They share a
@@ -150,10 +184,10 @@ only into a fresh working directory when reproducing an analysis.
 Raw TON CSVs, sampled NPZ arrays, exported dataset check vectors and the complete
 per-record SQLite evaluation database are not redistributed. The source manifest
 identifies the required files. Missing input arrays must be reconstructed from
-lawfully obtained sources before post-hoc diagnostics can run. The public release
-is not a copy of the entire private experimental workspace.
+lawfully obtained sources before post-hoc diagnostics can run. This repository and the historical release candidate
+are not copies of the entire private experimental workspace.
 
-Current release instructions are in English; historical protocols and laboratory reports, including `*_RU.md`, are in Russian.
+Repository reproduction instructions are in English; historical protocols and laboratory reports, including `*_RU.md`, are in Russian.
 
 Historical failed runs and repaired analyses remain distinct. Old run dates,
 paths and software version strings are evidence, not current instructions.
@@ -183,18 +217,19 @@ Training and hardware protocols are frozen records. Historical pre-experiment wo
 
 The temporal series was frozen after exploratory inspection of TON days. Fitting and threshold calibration use assigned roles, but the subsequent series is not an untouched confirmatory study. Row, equal-vector, and frequency-capped metrics answer different questions; recurring feature vectors are not independent observations. Empty attack cohorts have undefined recall.
 
-The MCU comparison uses one ESP32-S3. Its 7664 inference calls reuse 258 check vectors, chosen deterministically, with narrow feature coverage: 257 vary along a slice characterized by one destination packet and destination IP byte count. These checks support the observed export/runtime path, not uniform numerical agreement throughout the eight-dimensional input space.
+The historical series030 MCU comparison uses one ESP32-S3. Its 7664 inference calls reuse 258 check vectors, chosen deterministically, with narrow feature coverage: 257 vary along a slice characterized by one destination packet and destination IP byte count. These checks support the observed export/runtime path, not uniform numerical agreement throughout the eight-dimensional input space.
 
-Storage interruptions are software resets at completed-operation checkpoints. No physical power cut inside erase/program was tested. Secure Boot and eFuse anti-rollback were not enabled or validated. The laboratory's explicitly public development signing key in `research030/hardware_codec/` is for reproducibility and provides no production signing secrecy.
+Historical storage interruptions were software resets at completed-operation checkpoints. P1 subsequently added physical supply interruption, as summarized above; voltage collapse within a specific flash instruction was not independently confirmed. Secure Boot and eFuse anti-rollback were not enabled or validated. The laboratory's explicitly public development signing key in `research030/hardware_codec/` is for reproducibility and provides no production signing secrecy.
 
-MCU timing describes the instrumented ESP-IDF build at `-Og` and the stated measurement boundaries. The integer and floating-point kernels were not optimized to establish an architecture-wide inference-speed ranking. Requested flash bytes measure the workload, not physical flash lifetime. Delta OTA and a second MCU architecture were not evaluated.
+Historical MCU timing describes the instrumented ESP-IDF build at `-Og`; H4 adds `-O2` with separate recorded measurement boundaries. The integer and floating-point kernels were not optimized to establish an architecture-wide inference-speed ranking. Requested flash bytes measure the workload, not physical flash lifetime. Delta OTA and a second MCU architecture were not evaluated.
 
 Energy results are secondary, paced-USB scenario estimates from an independently uncalibrated FNB58. The record includes alignment repair and sensitivity analyses. This supports comparison of the recorded workloads, not an absolute metrological or battery-life claim.
 
 ## Citation, funding, and licensing
 
-Cite the original software as a work by Oleksandr Kuznetsov, using the exact released archive version specified by `CITATION.cff`. Cite the associated article with its six-author list separately. Retain its Git tag/commit and file manifest when reproducing results. The artifact DOI and journal article DOI identify different objects.
+Cite the original software as a work by Oleksandr Kuznetsov. Until a versioned archive is publicly available, identify the exact Git commit used; `CITATION.cff` retains the historical release-candidate metadata. Cite the associated article with its six-author list separately. Retain its Git tag/commit and file manifest when reproducing results. The artifact DOI and journal article DOI identify different objects.
 
 This research was funded by the Committee of Science of the Ministry of Science and Higher Education of the Republic of Kazakhstan (Grant No. BR249014/0224).
 
 Original software is MIT-licensed; original non-code study materials are CC-BY-4.0. See [LICENSE_SCOPE.md](LICENSE_SCOPE.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for component-specific terms. Source datasets and third-party components retain their own terms.
+

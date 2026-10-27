@@ -1,4 +1,19 @@
-# Reproducing the released study
+# Reproducing the study
+
+For the additional 040–049 results, start with
+[the revision guide](../docs/REVISION_EVIDENCE.md). The full supplementary archive
+is supplied with the revised manuscript; it is not part of this Git tree. The
+guide gives verified paths and offline commands for readers who have that archive.
+This Git update changes documentation only and does not publish new experimental
+payload files. The historical GitHub 1.0.0 release remains a draft as checked on
+27 October 2026, and public DOI resolution has not been verified. References below
+to the release/companion archive describe the historical distribution layout and
+dependencies, not a new availability claim.
+
+The current root manifest includes this documentation update. The original 1.0.0
+manifest is preserved unchanged at
+`release/provenance/MANIFEST_1.0.0_2da88c0.json`; use commit `2da88c0` to verify that
+historical snapshot. Experiment code and measurements in the baseline are unchanged.
 
 The release separates preserved measurements, author-written analysis code, and source data obtained from third parties. The software author is Oleksandr Kuznetsov. The article has its own six-author byline.
 
@@ -153,4 +168,5 @@ These are calculations on saved calibration/fitting inputs; they do not establis
 
 The host-only training entry point is `research030/training/run_training030.py`; its options are shown by `--help`. It requires the exact source corpus and a fresh output directory. A repeated training run is a new computational replication. Numerical differences across Python, NumPy, BLAS, scikit-learn and hardware must be reported, not silently substituted into the original evidence.
 
-The hardware entry point is `research030/run030.py`. Read `research030/START_HERE_RU.md` and inspect the intended board, partitions and port before running it. It replaces laboratory firmware and model storage. The release does not provide evidence of physical power-cut recovery, production Secure Boot, eFuse anti-rollback, another MCU architecture, or delta OTA.
+The hardware entry point is `research030/run030.py`. Read `research030/START_HERE_RU.md` and inspect the intended board, partitions and port before running it. It replaces laboratory firmware and model storage. The historical release does not provide physical power-cut evidence. The later P1 campaign is documented in the revision guide and S1; its three unavailable endpoints and lack of independently verified exact flash phases remain explicit. Production Secure Boot, eFuse anti-rollback, another MCU architecture, and delta OTA were not evaluated.
+

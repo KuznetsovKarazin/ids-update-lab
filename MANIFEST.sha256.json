@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0",
-  "distribution": "software",
-  "date": "2026-09-27",
+  "version": "1.0.0+review-docs.20261027",
+  "distribution": "software-with-revision-documentation",
+  "date": "2026-10-27",
   "hash_algorithm": "SHA-256",
   "excludes": [
     "MANIFEST.sha256.json (self)"
@@ -94,8 +94,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 19388,
-      "sha256": "39ae23b8e3a15dba5f0a8d11b0f8b982c900915d1d6f9d0ec32d7ab895c5ac7f"
+      "bytes": 22526,
+      "sha256": "e109d6320964e2a7dc22ee74b8ed3b3d46c0a8a17859b77533e92ab8415ae150"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -116,56 +116,6 @@
       "path": "completion020/README_RU.md",
       "bytes": 14279,
       "sha256": "e258de77da794318240fab598b6b86421a8a994511fcd94aeb34e65e64e49c22"
-    },
-    {
-      "path": "completion020/artifacts/dt/headers/A.h",
-      "bytes": 11001,
-      "sha256": "0dce554f790191ac34e0b755bd119af62a1b38c5d6928b7423473ff69fa43ed8"
-    },
-    {
-      "path": "completion020/artifacts/dt/headers/B.h",
-      "bytes": 10801,
-      "sha256": "c860dd1938ec200977428e46726fd4b498b25d944f4ffcca583ce906a632398c"
-    },
-    {
-      "path": "completion020/artifacts/dt/headers/C.h",
-      "bytes": 10801,
-      "sha256": "c4edd7ca5058d8082b7f80dac94b346c8833ba64c435cfc63b5b7da32c97e15f"
-    },
-    {
-      "path": "completion020/artifacts/dt/public.pem",
-      "bytes": 451,
-      "sha256": "30220bb429caa5303a96045b08570b5da251ace680baedd2c330bff2843c3082"
-    },
-    {
-      "path": "completion020/artifacts/lr/headers/A.h",
-      "bytes": 6301,
-      "sha256": "4b118371a8295afa1ca4ab562fd1ac0bb6549604a02e7c8d455f8d579a97577e"
-    },
-    {
-      "path": "completion020/artifacts/lr/headers/B.h",
-      "bytes": 6301,
-      "sha256": "795c87725f14a577ab52e1c376abf3cefbf8984a75f132669ef14be134bb7e70"
-    },
-    {
-      "path": "completion020/artifacts/lr/headers/C.h",
-      "bytes": 6301,
-      "sha256": "b21508de33a47a4883f287e64fcf810bfda1536f909a8f85cabc12d457062e6d"
-    },
-    {
-      "path": "completion020/artifacts/lr/headers/compatible_B.h",
-      "bytes": 6301,
-      "sha256": "2108120b5f5fa31be959f58df003a4b0f7d487c169bb4e8912c1357864d87fcc"
-    },
-    {
-      "path": "completion020/artifacts/lr/headers/compatible_C.h",
-      "bytes": 6301,
-      "sha256": "964146c83ef23d82e239b6b34d8677494fc0a165b20aa33be1150d34a87225cc"
-    },
-    {
-      "path": "completion020/artifacts/lr/public.pem",
-      "bytes": 451,
-      "sha256": "30220bb429caa5303a96045b08570b5da251ace680baedd2c330bff2843c3082"
     },
     {
       "path": "completion020/artifacts-export-temp/dt/headers/A.h",
@@ -214,6 +164,56 @@
     },
     {
       "path": "completion020/artifacts-export-temp/lr/public.pem",
+      "bytes": 451,
+      "sha256": "30220bb429caa5303a96045b08570b5da251ace680baedd2c330bff2843c3082"
+    },
+    {
+      "path": "completion020/artifacts/dt/headers/A.h",
+      "bytes": 11001,
+      "sha256": "0dce554f790191ac34e0b755bd119af62a1b38c5d6928b7423473ff69fa43ed8"
+    },
+    {
+      "path": "completion020/artifacts/dt/headers/B.h",
+      "bytes": 10801,
+      "sha256": "c860dd1938ec200977428e46726fd4b498b25d944f4ffcca583ce906a632398c"
+    },
+    {
+      "path": "completion020/artifacts/dt/headers/C.h",
+      "bytes": 10801,
+      "sha256": "c4edd7ca5058d8082b7f80dac94b346c8833ba64c435cfc63b5b7da32c97e15f"
+    },
+    {
+      "path": "completion020/artifacts/dt/public.pem",
+      "bytes": 451,
+      "sha256": "30220bb429caa5303a96045b08570b5da251ace680baedd2c330bff2843c3082"
+    },
+    {
+      "path": "completion020/artifacts/lr/headers/A.h",
+      "bytes": 6301,
+      "sha256": "4b118371a8295afa1ca4ab562fd1ac0bb6549604a02e7c8d455f8d579a97577e"
+    },
+    {
+      "path": "completion020/artifacts/lr/headers/B.h",
+      "bytes": 6301,
+      "sha256": "795c87725f14a577ab52e1c376abf3cefbf8984a75f132669ef14be134bb7e70"
+    },
+    {
+      "path": "completion020/artifacts/lr/headers/C.h",
+      "bytes": 6301,
+      "sha256": "b21508de33a47a4883f287e64fcf810bfda1536f909a8f85cabc12d457062e6d"
+    },
+    {
+      "path": "completion020/artifacts/lr/headers/compatible_B.h",
+      "bytes": 6301,
+      "sha256": "2108120b5f5fa31be959f58df003a4b0f7d487c169bb4e8912c1357864d87fcc"
+    },
+    {
+      "path": "completion020/artifacts/lr/headers/compatible_C.h",
+      "bytes": 6301,
+      "sha256": "964146c83ef23d82e239b6b34d8677494fc0a165b20aa33be1150d34a87225cc"
+    },
+    {
+      "path": "completion020/artifacts/lr/public.pem",
       "bytes": 451,
       "sha256": "30220bb429caa5303a96045b08570b5da251ace680baedd2c330bff2843c3082"
     },
@@ -756,6 +756,11 @@
       "path": "completion020/validation/tree_tests.txt",
       "bytes": 1678,
       "sha256": "edfa28ef7f63aea31b35c6a74e829b61889d637cbf068fff8f6b9373b9aeec7d"
+    },
+    {
+      "path": "docs/REVISION_EVIDENCE.md",
+      "bytes": 10295,
+      "sha256": "e3b85cb545861fe3119cf63054b9b0787b9123ea658939524bc30c7d7887059f"
     },
     {
       "path": "examples/instrumented_compatible/public.pem",
@@ -2099,8 +2104,8 @@
     },
     {
       "path": "release/REPRODUCE.md",
-      "bytes": 13876,
-      "sha256": "5096805763877b6e870b716a86ba7ec3bbd4ae964eb646b85e1ce389c7290c90"
+      "bytes": 15008,
+      "sha256": "c3c385dc125088fa993dd19d262def6c7146a8b299911c0f3b936a95be469cb7"
     },
     {
       "path": "release/ROOT_TESTS037.json",
@@ -2116,6 +2121,11 @@
       "path": "release/provenance/COMPLETE036.json",
       "bytes": 281,
       "sha256": "ff36821a5ed4b57ec6d8e5791853c5b1e9091369256875807816781310caebeb"
+    },
+    {
+      "path": "release/provenance/MANIFEST_1.0.0_2da88c0.json",
+      "bytes": 130661,
+      "sha256": "d23c9f5da35e4c1e68afd99acb7795f4031065c81888ca9c726c7f259bdbc56c"
     },
     {
       "path": "release/provenance/REPRODUCTION_GAPS036.json",
@@ -3637,5 +3647,7 @@
       "bytes": 20795,
       "sha256": "df37169e9943f82934f63042e4c48bb543f5ae8910f5bae291c0569d7201fee4"
     }
-  ]
+  ],
+  "baseline_commit": "2da88c0407e878a2bd4f07bda4429f83ace8de81",
+  "baseline_manifest": "release/provenance/MANIFEST_1.0.0_2da88c0.json"
 }
