@@ -32,12 +32,11 @@ corpus, replay primary serial logs, train a model, or contact hardware. A succes
 check establishes preservation and aggregate consistency, not universal correctness
 of the detector or storage implementation.
 
-The full S1 package is supplied with the revised manuscript. It contains selected
-primary logs, original nested power-cut archives and stronger auditors. It is not
-included in this Git tree. The historical GitHub `v1.0.0` release was still a draft
-on 27 October 2026. Publication of the reserved identifier
-`10.5281/zenodo.22978008` has not been verified; neither the draft release nor that
-identifier is presented as a working public evidence download.
+**Availability update, 1 November 2026:** the full S1 package, historical primary
+logs, later acquisition sources and exact prebuilt artifacts are now publicly
+restorable from this repository. Use [REPRODUCTION056.md](REPRODUCTION056.md) for
+hash-pinned download/restoration and complete audit commands. The reserved DOI and
+historical draft release are not download dependencies.
 
 ## How manuscript names map to preserved identifiers
 
@@ -73,7 +72,7 @@ the provenance inventory rather than treating every such string as a Git path.
 | Stratified numerical panel | `tables/mcu040_numerics_models.csv`, `summaries/numerics_Og.json`, `summaries/numerics_O2.json` | `evidence040/revision039-recovery040/mcu/esp32s3-a0f262ebb558/{Og,O2}/numerics/`; panel/models/goldens in `evidence040/revision039-recovery040/prepared/numerics/` |
 | H4 installation cost | `tables/mcu040_cost_observations.csv`, `tables/mcu040_cost_medians.csv` | `evidence040/revision039-recovery040/analysis/costs-recovery040-esp32s3-a0f262ebb558/` and individual `evidence040/revision039-recovery040/mcu/` observation/event streams |
 | P1 physical supply interruption | `summaries/final200_audit_independent.json` | `powercut/final200-original.zip`, `powercut/checkpoint186-original.zip`, `powercut/audit_final200_independent.py` |
-| H1–H3 and historical energy | Existing code and reports in this repository; no new primary H1–H3 logs added by this update | Historical companion archive: `runs/020-series-001/`, `runs/020-journal-rotation/`, `runs/esp32-erase-025-series/`, `runs/ids-completion-030/hardware/`, `runs/ids-completion-030-energy-031/`, `fnb58-idle-030.cfn` |
+| H1–H3 and historical energy | Sources in this repository; primary logs available through revision056 artifact restoration | Historical companion archive: `runs/020-series-001/`, `runs/020-journal-rotation/`, `runs/esp32-erase-025-series/`, `runs/ids-completion-030/hardware/`, `runs/ids-completion-030-energy-031/`, `fnb58-idle-030.cfn` |
 
 The plan summary deliberately retains `status: planned` and `models_trained: false`:
 it describes scenario selection, not the completed evaluations. Their completed

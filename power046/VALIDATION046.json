@@ -1,0 +1,39 @@
+{
+  "schema": "power046_validation_v1",
+  "date": "2026-10-27",
+  "original_author": "Oleksandr Kuznetsov",
+  "tests": 26,
+  "passed": 26,
+  "skipped": 0,
+  "hardware_access_attempted": false,
+  "test_mode": "mocked serial ports and Windows APIs; real immutable incident and late-diagnostic fixtures",
+  "prepare_only_cli": {
+    "status": "prepared_not_run",
+    "command": "run",
+    "output": "/workspace/scratch/43cab15299bb/incident061/run/results",
+    "first_continued_trial": 62,
+    "remaining_trials": 139,
+    "original_trial61_state": "no_response",
+    "hardware_access_attempted": false,
+    "original_results_changed": false,
+    "late_recovery_verified_offline": true
+  },
+  "original_run_files_unchanged": true,
+  "coverage": [
+    "pinned evidence and serial rawbytes",
+    "12-control numerical verification",
+    "skip trials1-61",
+    "never replay attempted version750",
+    "first continuation trial62 and versions751/752/753",
+    "live failure before power/flash",
+    "one-shot concurrent start guard",
+    "20-second recovery window retained",
+    "port errors saved",
+    "awake request restored and cleanup failures reported"
+  ],
+  "source_hashes": {
+    "run_powercut046.py": "23d461700d99438b8d91113656643a6f153cfe60d7f0cefad353f42b8e783532",
+    "continuation046.py": "c106f36404ce328a5b5606f40b3e3d4f5f7b893c3fdb0997234e70eb58f63b5f",
+    "tests/test_continuation046.py": "fb932857898c137b9cd8317b96e2fc3a49a8dde3e8be993dd85422e920dfb707"
+  }
+}

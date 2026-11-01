@@ -1,0 +1,1077 @@
+{
+  "A_cal": {
+    "array_sha256": {
+      "labels": "b08913d7836d8f9c1152f2b2d789c63e96b27724eee2a81099e5969bb0889000",
+      "raw": "dfbe10620484ef7b5ed9a5866990e03b95718cacd2e593f500531e56993cfbb9",
+      "row_ids": "6f5f3bbb3abfe4b33508240ff3d62a82bf927ad3aec08a400821034cfed32b71",
+      "weights": "a3532350c30a95759fedcddfcdd921b0e81db741e37f6b0b95712a1e8468a1c7"
+    },
+    "rows": 348114,
+    "strata": [
+      {
+        "label": 0,
+        "population_rows": 8255,
+        "sample_rows": 8255,
+        "type": "BenignTraffic"
+      },
+      {
+        "label": 1,
+        "population_rows": 26,
+        "sample_rows": 26,
+        "type": "Backdoor_Malware"
+      },
+      {
+        "label": 1,
+        "population_rows": 52,
+        "sample_rows": 52,
+        "type": "BrowserHijacking"
+      },
+      {
+        "label": 1,
+        "population_rows": 38,
+        "sample_rows": 38,
+        "type": "CommandInjection"
+      },
+      {
+        "label": 1,
+        "population_rows": 2118,
+        "sample_rows": 2118,
+        "type": "DDoS-ACK_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 222,
+        "sample_rows": 222,
+        "type": "DDoS-HTTP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 53322,
+        "sample_rows": 53322,
+        "type": "DDoS-ICMP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 3342,
+        "sample_rows": 3342,
+        "type": "DDoS-ICMP_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 31239,
+        "sample_rows": 31239,
+        "type": "DDoS-PSHACK_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 30121,
+        "sample_rows": 30121,
+        "type": "DDoS-RSTFINFlood"
+      },
+      {
+        "label": 1,
+        "population_rows": 30351,
+        "sample_rows": 30351,
+        "type": "DDoS-SYN_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 161,
+        "sample_rows": 161,
+        "type": "DDoS-SlowLoris"
+      },
+      {
+        "label": 1,
+        "population_rows": 26902,
+        "sample_rows": 26902,
+        "type": "DDoS-SynonymousIP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 33384,
+        "sample_rows": 33384,
+        "type": "DDoS-TCP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 40143,
+        "sample_rows": 40143,
+        "type": "DDoS-UDP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 2046,
+        "sample_rows": 2046,
+        "type": "DDoS-UDP_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 1282,
+        "sample_rows": 1282,
+        "type": "DNS_Spoofing"
+      },
+      {
+        "label": 1,
+        "population_rows": 101,
+        "sample_rows": 101,
+        "type": "DictionaryBruteForce"
+      },
+      {
+        "label": 1,
+        "population_rows": 573,
+        "sample_rows": 573,
+        "type": "DoS-HTTP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 15206,
+        "sample_rows": 15206,
+        "type": "DoS-SYN_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 19790,
+        "sample_rows": 19790,
+        "type": "DoS-TCP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 25026,
+        "sample_rows": 25026,
+        "type": "DoS-UDP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 2216,
+        "sample_rows": 2216,
+        "type": "MITM-ArpSpoofing"
+      },
+      {
+        "label": 1,
+        "population_rows": 7357,
+        "sample_rows": 7357,
+        "type": "Mirai-greeth_flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 5570,
+        "sample_rows": 5570,
+        "type": "Mirai-greip_flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 6484,
+        "sample_rows": 6484,
+        "type": "Mirai-udpplain"
+      },
+      {
+        "label": 1,
+        "population_rows": 1015,
+        "sample_rows": 1015,
+        "type": "Recon-HostDiscovery"
+      },
+      {
+        "label": 1,
+        "population_rows": 740,
+        "sample_rows": 740,
+        "type": "Recon-OSScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 16,
+        "sample_rows": 16,
+        "type": "Recon-PingSweep"
+      },
+      {
+        "label": 1,
+        "population_rows": 637,
+        "sample_rows": 637,
+        "type": "Recon-PortScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 36,
+        "sample_rows": 36,
+        "type": "SqlInjection"
+      },
+      {
+        "label": 1,
+        "population_rows": 11,
+        "sample_rows": 11,
+        "type": "Uploading_Attack"
+      },
+      {
+        "label": 1,
+        "population_rows": 308,
+        "sample_rows": 308,
+        "type": "VulnerabilityScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 24,
+        "sample_rows": 24,
+        "type": "XSS"
+      }
+    ]
+  },
+  "A_fit": {
+    "array_sha256": {
+      "labels": "4fab55c53422eadb6e425835755e7c23d4c734ea878b5539b6ab4f611d9e8a25",
+      "raw": "2bb0758dd5eeb870a54efc6858caf90e948e8d5f5bc9e775e82b18d88690562c",
+      "row_ids": "85e2321da470ac5b6e16c08084b3a6315d6f92eadf583f3465e370c091fffc10",
+      "weights": "5791327522bce7412901f4094005fdd72d76f1456bb92c7ccaa16f5ea39b3d84"
+    },
+    "rows": 650970,
+    "strata": [
+      {
+        "label": 0,
+        "population_rows": 28783,
+        "sample_rows": 28783,
+        "type": "BenignTraffic"
+      },
+      {
+        "label": 1,
+        "population_rows": 86,
+        "sample_rows": 86,
+        "type": "Backdoor_Malware"
+      },
+      {
+        "label": 1,
+        "population_rows": 148,
+        "sample_rows": 148,
+        "type": "BrowserHijacking"
+      },
+      {
+        "label": 1,
+        "population_rows": 132,
+        "sample_rows": 132,
+        "type": "CommandInjection"
+      },
+      {
+        "label": 1,
+        "population_rows": 7430,
+        "sample_rows": 7430,
+        "type": "DDoS-ACK_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 717,
+        "sample_rows": 717,
+        "type": "DDoS-HTTP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 188081,
+        "sample_rows": 50000,
+        "type": "DDoS-ICMP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 11935,
+        "sample_rows": 11935,
+        "type": "DDoS-ICMP_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 106665,
+        "sample_rows": 50000,
+        "type": "DDoS-PSHACK_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 105592,
+        "sample_rows": 50000,
+        "type": "DDoS-RSTFINFlood"
+      },
+      {
+        "label": 1,
+        "population_rows": 106079,
+        "sample_rows": 50000,
+        "type": "DDoS-SYN_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 582,
+        "sample_rows": 582,
+        "type": "DDoS-SlowLoris"
+      },
+      {
+        "label": 1,
+        "population_rows": 93512,
+        "sample_rows": 50000,
+        "type": "DDoS-SynonymousIP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 117943,
+        "sample_rows": 50000,
+        "type": "DDoS-TCP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 140714,
+        "sample_rows": 50000,
+        "type": "DDoS-UDP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 7512,
+        "sample_rows": 7512,
+        "type": "DDoS-UDP_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 4682,
+        "sample_rows": 4682,
+        "type": "DNS_Spoofing"
+      },
+      {
+        "label": 1,
+        "population_rows": 363,
+        "sample_rows": 363,
+        "type": "DictionaryBruteForce"
+      },
+      {
+        "label": 1,
+        "population_rows": 1892,
+        "sample_rows": 1892,
+        "type": "DoS-HTTP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 52903,
+        "sample_rows": 50000,
+        "type": "DoS-SYN_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 69649,
+        "sample_rows": 50000,
+        "type": "DoS-TCP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 86103,
+        "sample_rows": 50000,
+        "type": "DoS-UDP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 7974,
+        "sample_rows": 7974,
+        "type": "MITM-ArpSpoofing"
+      },
+      {
+        "label": 1,
+        "population_rows": 25915,
+        "sample_rows": 25915,
+        "type": "Mirai-greeth_flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 19862,
+        "sample_rows": 19862,
+        "type": "Mirai-greip_flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 23343,
+        "sample_rows": 23343,
+        "type": "Mirai-udpplain"
+      },
+      {
+        "label": 1,
+        "population_rows": 3535,
+        "sample_rows": 3535,
+        "type": "Recon-HostDiscovery"
+      },
+      {
+        "label": 1,
+        "population_rows": 2527,
+        "sample_rows": 2527,
+        "type": "Recon-OSScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 56,
+        "sample_rows": 56,
+        "type": "Recon-PingSweep"
+      },
+      {
+        "label": 1,
+        "population_rows": 2245,
+        "sample_rows": 2245,
+        "type": "Recon-PortScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 141,
+        "sample_rows": 141,
+        "type": "SqlInjection"
+      },
+      {
+        "label": 1,
+        "population_rows": 26,
+        "sample_rows": 26,
+        "type": "Uploading_Attack"
+      },
+      {
+        "label": 1,
+        "population_rows": 989,
+        "sample_rows": 989,
+        "type": "VulnerabilityScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 95,
+        "sample_rows": 95,
+        "type": "XSS"
+      }
+    ]
+  },
+  "B_cal": {
+    "array_sha256": {
+      "labels": "47b8f0ecfab570449ac12eb4d27ed33cab7ee2452885dc712e2ce63b1d8a603b",
+      "raw": "f1575657242cd107fcade463c001b87eda545a9ffa14a8743b3bd2d013b8e28d",
+      "row_ids": "860720a4a47fc3ce533d6dede2fdff9f1351a05dabef14390bcfe72af2da7651",
+      "weights": "6bd293d737f6e9bcc5231ca47b0b624be0110a94630cc84ef932c061296b6665"
+    },
+    "rows": 347703,
+    "strata": [
+      {
+        "label": 0,
+        "population_rows": 8291,
+        "sample_rows": 8291,
+        "type": "BenignTraffic"
+      },
+      {
+        "label": 1,
+        "population_rows": 17,
+        "sample_rows": 17,
+        "type": "Backdoor_Malware"
+      },
+      {
+        "label": 1,
+        "population_rows": 41,
+        "sample_rows": 41,
+        "type": "BrowserHijacking"
+      },
+      {
+        "label": 1,
+        "population_rows": 44,
+        "sample_rows": 44,
+        "type": "CommandInjection"
+      },
+      {
+        "label": 1,
+        "population_rows": 2087,
+        "sample_rows": 2087,
+        "type": "DDoS-ACK_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 214,
+        "sample_rows": 214,
+        "type": "DDoS-HTTP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 52714,
+        "sample_rows": 52714,
+        "type": "DDoS-ICMP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 3384,
+        "sample_rows": 3384,
+        "type": "DDoS-ICMP_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 30524,
+        "sample_rows": 30524,
+        "type": "DDoS-PSHACK_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 30266,
+        "sample_rows": 30266,
+        "type": "DDoS-RSTFINFlood"
+      },
+      {
+        "label": 1,
+        "population_rows": 30325,
+        "sample_rows": 30325,
+        "type": "DDoS-SYN_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 162,
+        "sample_rows": 162,
+        "type": "DDoS-SlowLoris"
+      },
+      {
+        "label": 1,
+        "population_rows": 26628,
+        "sample_rows": 26628,
+        "type": "DDoS-SynonymousIP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 33579,
+        "sample_rows": 33579,
+        "type": "DDoS-TCP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 40539,
+        "sample_rows": 40539,
+        "type": "DDoS-UDP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 2112,
+        "sample_rows": 2112,
+        "type": "DDoS-UDP_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 1350,
+        "sample_rows": 1350,
+        "type": "DNS_Spoofing"
+      },
+      {
+        "label": 1,
+        "population_rows": 93,
+        "sample_rows": 93,
+        "type": "DictionaryBruteForce"
+      },
+      {
+        "label": 1,
+        "population_rows": 532,
+        "sample_rows": 532,
+        "type": "DoS-HTTP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 15401,
+        "sample_rows": 15401,
+        "type": "DoS-SYN_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 19726,
+        "sample_rows": 19726,
+        "type": "DoS-TCP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 24940,
+        "sample_rows": 24940,
+        "type": "DoS-UDP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 2292,
+        "sample_rows": 2292,
+        "type": "MITM-ArpSpoofing"
+      },
+      {
+        "label": 1,
+        "population_rows": 7426,
+        "sample_rows": 7426,
+        "type": "Mirai-greeth_flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 5618,
+        "sample_rows": 5618,
+        "type": "Mirai-greip_flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 6585,
+        "sample_rows": 6585,
+        "type": "Mirai-udpplain"
+      },
+      {
+        "label": 1,
+        "population_rows": 1022,
+        "sample_rows": 1022,
+        "type": "Recon-HostDiscovery"
+      },
+      {
+        "label": 1,
+        "population_rows": 760,
+        "sample_rows": 760,
+        "type": "Recon-OSScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 22,
+        "sample_rows": 22,
+        "type": "Recon-PingSweep"
+      },
+      {
+        "label": 1,
+        "population_rows": 637,
+        "sample_rows": 637,
+        "type": "Recon-PortScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 31,
+        "sample_rows": 31,
+        "type": "SqlInjection"
+      },
+      {
+        "label": 1,
+        "population_rows": 15,
+        "sample_rows": 15,
+        "type": "Uploading_Attack"
+      },
+      {
+        "label": 1,
+        "population_rows": 299,
+        "sample_rows": 299,
+        "type": "VulnerabilityScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 27,
+        "sample_rows": 27,
+        "type": "XSS"
+      }
+    ]
+  },
+  "B_fit": {
+    "array_sha256": {
+      "labels": "c0c1e47eecb45e90adbe10d69e5cf96fb839249a9a7de377ee78640b307a3eb2",
+      "raw": "3d4f4b6be60ee17e6d5c547e524a923a80a8b54c7df0124bb0bada9052c41be9",
+      "row_ids": "766561a4c318091234c2c7424e3dee6558ae9886fac0a41c2ccba957136bb419",
+      "weights": "da6b2ed91bf9b7c72a153fb0eab2f0bcbd49de9d22f005d1834bd71ae72b08eb"
+    },
+    "rows": 737267,
+    "strata": [
+      {
+        "label": 0,
+        "population_rows": 45346,
+        "sample_rows": 45346,
+        "type": "BenignTraffic"
+      },
+      {
+        "label": 1,
+        "population_rows": 139,
+        "sample_rows": 139,
+        "type": "Backdoor_Malware"
+      },
+      {
+        "label": 1,
+        "population_rows": 238,
+        "sample_rows": 238,
+        "type": "BrowserHijacking"
+      },
+      {
+        "label": 1,
+        "population_rows": 218,
+        "sample_rows": 218,
+        "type": "CommandInjection"
+      },
+      {
+        "label": 1,
+        "population_rows": 11704,
+        "sample_rows": 11704,
+        "type": "DDoS-ACK_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 1157,
+        "sample_rows": 1157,
+        "type": "DDoS-HTTP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 295402,
+        "sample_rows": 50000,
+        "type": "DDoS-ICMP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 18574,
+        "sample_rows": 18574,
+        "type": "DDoS-ICMP_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 167533,
+        "sample_rows": 50000,
+        "type": "DDoS-PSHACK_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 165925,
+        "sample_rows": 50000,
+        "type": "DDoS-RSTFINFlood"
+      },
+      {
+        "label": 1,
+        "population_rows": 166852,
+        "sample_rows": 50000,
+        "type": "DDoS-SYN_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 976,
+        "sample_rows": 976,
+        "type": "DDoS-SlowLoris"
+      },
+      {
+        "label": 1,
+        "population_rows": 147248,
+        "sample_rows": 50000,
+        "type": "DDoS-SynonymousIP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 185142,
+        "sample_rows": 50000,
+        "type": "DDoS-TCP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 221288,
+        "sample_rows": 50000,
+        "type": "DDoS-UDP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 11765,
+        "sample_rows": 11765,
+        "type": "DDoS-UDP_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 7323,
+        "sample_rows": 7323,
+        "type": "DNS_Spoofing"
+      },
+      {
+        "label": 1,
+        "population_rows": 554,
+        "sample_rows": 554,
+        "type": "DictionaryBruteForce"
+      },
+      {
+        "label": 1,
+        "population_rows": 2978,
+        "sample_rows": 2978,
+        "type": "DoS-HTTP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 83287,
+        "sample_rows": 50000,
+        "type": "DoS-SYN_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 109760,
+        "sample_rows": 50000,
+        "type": "DoS-TCP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 135455,
+        "sample_rows": 50000,
+        "type": "DoS-UDP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 12626,
+        "sample_rows": 12626,
+        "type": "MITM-ArpSpoofing"
+      },
+      {
+        "label": 1,
+        "population_rows": 40683,
+        "sample_rows": 40683,
+        "type": "Mirai-greeth_flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 31251,
+        "sample_rows": 31251,
+        "type": "Mirai-greip_flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 36556,
+        "sample_rows": 36556,
+        "type": "Mirai-udpplain"
+      },
+      {
+        "label": 1,
+        "population_rows": 5576,
+        "sample_rows": 5576,
+        "type": "Recon-HostDiscovery"
+      },
+      {
+        "label": 1,
+        "population_rows": 4043,
+        "sample_rows": 4043,
+        "type": "Recon-OSScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 89,
+        "sample_rows": 89,
+        "type": "Recon-PingSweep"
+      },
+      {
+        "label": 1,
+        "population_rows": 3507,
+        "sample_rows": 3507,
+        "type": "Recon-PortScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 203,
+        "sample_rows": 203,
+        "type": "SqlInjection"
+      },
+      {
+        "label": 1,
+        "population_rows": 49,
+        "sample_rows": 49,
+        "type": "Uploading_Attack"
+      },
+      {
+        "label": 1,
+        "population_rows": 1565,
+        "sample_rows": 1565,
+        "type": "VulnerabilityScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 147,
+        "sample_rows": 147,
+        "type": "XSS"
+      }
+    ]
+  },
+  "B_fit_added": {
+    "array_sha256": {
+      "labels": "0b2cb7120c1840bd0e3e63a44a90ef2cdac721f7efb073acca6b09b7bcf1f3f3",
+      "raw": "f94a80de8eb7df16e5877d3ba769f7514dd05ac9b676222bc5bf8200e7789e44",
+      "row_ids": "57e59024a05c69b18aee2b2339dd126840fbac9e49a5836a73bdf5604714ab68",
+      "weights": "9bad7d214bd8becb5250f1740b6ed92a45cdd04067c5b41e8504b953bfd088e8"
+    },
+    "rows": 556144,
+    "strata": [
+      {
+        "label": 0,
+        "population_rows": 16563,
+        "sample_rows": 16563,
+        "type": "BenignTraffic"
+      },
+      {
+        "label": 1,
+        "population_rows": 53,
+        "sample_rows": 53,
+        "type": "Backdoor_Malware"
+      },
+      {
+        "label": 1,
+        "population_rows": 90,
+        "sample_rows": 90,
+        "type": "BrowserHijacking"
+      },
+      {
+        "label": 1,
+        "population_rows": 86,
+        "sample_rows": 86,
+        "type": "CommandInjection"
+      },
+      {
+        "label": 1,
+        "population_rows": 4274,
+        "sample_rows": 4274,
+        "type": "DDoS-ACK_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 440,
+        "sample_rows": 440,
+        "type": "DDoS-HTTP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 107321,
+        "sample_rows": 50000,
+        "type": "DDoS-ICMP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 6639,
+        "sample_rows": 6639,
+        "type": "DDoS-ICMP_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 60868,
+        "sample_rows": 50000,
+        "type": "DDoS-PSHACK_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 60333,
+        "sample_rows": 50000,
+        "type": "DDoS-RSTFINFlood"
+      },
+      {
+        "label": 1,
+        "population_rows": 60773,
+        "sample_rows": 50000,
+        "type": "DDoS-SYN_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 394,
+        "sample_rows": 394,
+        "type": "DDoS-SlowLoris"
+      },
+      {
+        "label": 1,
+        "population_rows": 53736,
+        "sample_rows": 50000,
+        "type": "DDoS-SynonymousIP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 67199,
+        "sample_rows": 50000,
+        "type": "DDoS-TCP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 80574,
+        "sample_rows": 50000,
+        "type": "DDoS-UDP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 4253,
+        "sample_rows": 4253,
+        "type": "DDoS-UDP_Fragmentation"
+      },
+      {
+        "label": 1,
+        "population_rows": 2641,
+        "sample_rows": 2641,
+        "type": "DNS_Spoofing"
+      },
+      {
+        "label": 1,
+        "population_rows": 191,
+        "sample_rows": 191,
+        "type": "DictionaryBruteForce"
+      },
+      {
+        "label": 1,
+        "population_rows": 1086,
+        "sample_rows": 1086,
+        "type": "DoS-HTTP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 30384,
+        "sample_rows": 30384,
+        "type": "DoS-SYN_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 40111,
+        "sample_rows": 40111,
+        "type": "DoS-TCP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 49352,
+        "sample_rows": 49352,
+        "type": "DoS-UDP_Flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 4652,
+        "sample_rows": 4652,
+        "type": "MITM-ArpSpoofing"
+      },
+      {
+        "label": 1,
+        "population_rows": 14768,
+        "sample_rows": 14768,
+        "type": "Mirai-greeth_flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 11389,
+        "sample_rows": 11389,
+        "type": "Mirai-greip_flood"
+      },
+      {
+        "label": 1,
+        "population_rows": 13213,
+        "sample_rows": 13213,
+        "type": "Mirai-udpplain"
+      },
+      {
+        "label": 1,
+        "population_rows": 2041,
+        "sample_rows": 2041,
+        "type": "Recon-HostDiscovery"
+      },
+      {
+        "label": 1,
+        "population_rows": 1516,
+        "sample_rows": 1516,
+        "type": "Recon-OSScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 33,
+        "sample_rows": 33,
+        "type": "Recon-PingSweep"
+      },
+      {
+        "label": 1,
+        "population_rows": 1262,
+        "sample_rows": 1262,
+        "type": "Recon-PortScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 62,
+        "sample_rows": 62,
+        "type": "SqlInjection"
+      },
+      {
+        "label": 1,
+        "population_rows": 23,
+        "sample_rows": 23,
+        "type": "Uploading_Attack"
+      },
+      {
+        "label": 1,
+        "population_rows": 576,
+        "sample_rows": 576,
+        "type": "VulnerabilityScan"
+      },
+      {
+        "label": 1,
+        "population_rows": 52,
+        "sample_rows": 52,
+        "type": "XSS"
+      }
+    ]
+  }
+}

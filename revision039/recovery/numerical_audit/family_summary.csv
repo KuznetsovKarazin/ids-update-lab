@@ -1,0 +1,5 @@
+family,evaluations,label_mismatches,probability_tolerance_exceeded,max_probability_abs_error,integer_codes_compared,integer_code_mismatches
+dt,3072,0,0,4.5410153415303967e-10,,
+lr,7168,3,0,3.574189147981244e-07,,
+mlp_float,6144,1,0,1.3110589599518718e-06,,
+mlp_int8,10240,3,9,0.4236266614662171,10240,9

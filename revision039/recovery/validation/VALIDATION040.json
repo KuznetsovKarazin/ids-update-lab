@@ -1,0 +1,41 @@
+{
+  "schema": "recovery040_host_validation_v1",
+  "original_software_author": "Oleksandr Kuznetsov",
+  "source_results_archive_sha256": "6d0a337ef3307faa9823cd6191376b715fecbbd5d1a39e5c4a5309e5ecaf2d89",
+  "unit_test_sets": {
+    "baseline_ota_stream": {
+      "tests": 17,
+      "passed": 17
+    },
+    "build_configuration_and_linkage": {
+      "tests": 8,
+      "passed": 8
+    },
+    "recovery_evidence_preservation": {
+      "tests": 6,
+      "passed": 6
+    }
+  },
+  "corrected_whole_builds": 8,
+  "unchanged_bundle_files_verified": 80,
+  "hardware_access_attempted": false,
+  "new_firmware_hardware_validation": "pending_user_smoke",
+  "prior_numerics": {
+    "inferences": 26624,
+    "label_mismatches": 7,
+    "integer_code_mismatches": 9,
+    "findings_preserved": true
+  },
+  "created_utc": "2026-10-23T18:24:02.249733+00:00",
+  "packaged_inspect": {
+    "status": "passed",
+    "source_files_verified": 446,
+    "delivery_files_verified_before_final_record": 1034,
+    "hardware_access_attempted": false
+  },
+  "packaged_offline_preparation": {
+    "Og": "passed_all_four_families",
+    "O2": "passed_all_four_families",
+    "hardware_access_attempted": false
+  }
+}

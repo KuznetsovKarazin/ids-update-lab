@@ -1,0 +1,326 @@
+[
+  {
+    "index": 850,
+    "feature": 0,
+    "feature_name": "duration",
+    "actual_q_score": -18,
+    "golden_q_score": -14,
+    "cases": [
+      {
+        "case": "scalar_libm",
+        "log1p_feature": 0.30845558643341064,
+        "quantizer_input_feature": 0.5,
+        "input_quantized": [
+          1,
+          7,
+          9,
+          0,
+          1,
+          2,
+          9,
+          7
+        ],
+        "layer_outputs": [
+          [
+            0,
+            3,
+            0,
+            7,
+            21,
+            0,
+            0,
+            22,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            0,
+            4
+          ],
+          [
+            0,
+            7,
+            0,
+            0,
+            18,
+            0,
+            12,
+            0
+          ],
+          [
+            -18
+          ]
+        ],
+        "output_score": -18
+      },
+      {
+        "case": "one_ulp_neighbor",
+        "log1p_feature": 0.30845555663108826,
+        "quantizer_input_feature": 0.49999988079071045,
+        "input_quantized": [
+          0,
+          7,
+          9,
+          0,
+          1,
+          2,
+          9,
+          7
+        ],
+        "layer_outputs": [
+          [
+            0,
+            2,
+            2,
+            8,
+            22,
+            0,
+            0,
+            21,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            0,
+            4
+          ],
+          [
+            0,
+            7,
+            0,
+            0,
+            19,
+            0,
+            10,
+            0
+          ],
+          [
+            -14
+          ]
+        ],
+        "output_score": -14
+      }
+    ],
+    "scope": "Native scalar frontend reproduces MCU; one-ULP neighbor is a mechanism witness, not MCU intermediate telemetry"
+  },
+  {
+    "index": 877,
+    "feature": 3,
+    "feature_name": "missed_bytes",
+    "actual_q_score": -14,
+    "golden_q_score": -9,
+    "cases": [
+      {
+        "case": "scalar_libm",
+        "log1p_feature": 0.10830190032720566,
+        "quantizer_input_feature": 0.4999999701976776,
+        "input_quantized": [
+          0,
+          7,
+          9,
+          0,
+          1,
+          2,
+          9,
+          7
+        ],
+        "layer_outputs": [
+          [
+            0,
+            2,
+            2,
+            8,
+            22,
+            0,
+            0,
+            21,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            0,
+            4
+          ],
+          [
+            0,
+            7,
+            0,
+            0,
+            19,
+            0,
+            10,
+            0
+          ],
+          [
+            -14
+          ]
+        ],
+        "output_score": -14
+      },
+      {
+        "case": "one_ulp_neighbor",
+        "log1p_feature": 0.10830190777778625,
+        "quantizer_input_feature": 0.5,
+        "input_quantized": [
+          0,
+          7,
+          9,
+          1,
+          1,
+          2,
+          9,
+          7
+        ],
+        "layer_outputs": [
+          [
+            0,
+            2,
+            2,
+            9,
+            22,
+            0,
+            0,
+            21,
+            0,
+            0,
+            0,
+            0,
+            4,
+            10,
+            0,
+            4
+          ],
+          [
+            0,
+            6,
+            0,
+            0,
+            20,
+            0,
+            10,
+            0
+          ],
+          [
+            -9
+          ]
+        ],
+        "output_score": -9
+      }
+    ],
+    "scope": "Native scalar frontend reproduces MCU; one-ULP neighbor is a mechanism witness, not MCU intermediate telemetry"
+  },
+  {
+    "index": 1004,
+    "feature": 2,
+    "feature_name": "dst_bytes",
+    "actual_q_score": 1,
+    "golden_q_score": 20,
+    "cases": [
+      {
+        "case": "scalar_libm",
+        "log1p_feature": 0.36626479029655457,
+        "quantizer_input_feature": -0.4999999701976776,
+        "input_quantized": [
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          2,
+          2
+        ],
+        "layer_outputs": [
+          [
+            3,
+            0,
+            1,
+            4,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            3
+          ],
+          [
+            0,
+            5,
+            0,
+            0,
+            5,
+            0,
+            2,
+            6
+          ],
+          [
+            1
+          ]
+        ],
+        "output_score": 1
+      },
+      {
+        "case": "one_ulp_neighbor",
+        "log1p_feature": 0.3662647604942322,
+        "quantizer_input_feature": -0.5,
+        "input_quantized": [
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          0,
+          2,
+          2
+        ],
+        "layer_outputs": [
+          [
+            3,
+            1,
+            2,
+            3,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            4,
+            1,
+            0,
+            7
+          ],
+          [
+            20
+          ]
+        ],
+        "output_score": 20
+      }
+    ],
+    "scope": "Native scalar frontend reproduces MCU; one-ULP neighbor is a mechanism witness, not MCU intermediate telemetry"
+  }
+]

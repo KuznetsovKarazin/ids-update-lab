@@ -1,0 +1,26 @@
+% The JPEG is an unchanged copy of the supplied bench photograph.
+% All lettering and arrows below are separate vector elements.
+\begin{figure}[!htbp]
+\centering
+\begin{tikzpicture}
+\node[anchor=south west,inner sep=0] (bench) at (0,0)
+  {\includegraphics[width=0.80\linewidth]{figures/powercut_bench_original.jpg}};
+\begin{scope}[x={(bench.south east)},y={(bench.north west)},
+  every node/.style={circle,draw=RevisionBlue,fill=white,inner sep=1.4pt,text=RevisionBlue,font=\small\bfseries},
+  every path/.style={draw=RevisionBlue,line width=0.7pt}]
+\node (a) at (0.72,0.89) {A};
+\draw[->] (a) -- (0.52,0.78);
+\node (b) at (0.96,0.64) {B};
+\draw[->] (b) -- (0.59,0.62);
+\node (c) at (0.19,0.37) {C};
+\draw[->] (c) -- (0.43,0.41);
+\node (d) at (0.96,0.38) {D};
+\draw[->] (d) -- (0.83,0.34);
+\node (e) at (0.10,0.06) {E};
+\draw[->] (e) -- (0.15,0.18);
+\node (f) at (0.65,0.07) {F};
+\draw[->] (f) -- (0.76,0.10);
+\end{scope}
+\end{tikzpicture}
+\caption{\textcolor{RevisionBlue}{Physical power-interruption apparatus (P1). A: Pico~2 controller; B: signal-conditioning breadboard and voltage divider; C: TPS22919EVM power switch; D: ESP32-S3 target; E and F: USB screw-terminal breakouts. The switch gates the target supply while the controller samples its 3.3~V rail. Wiring and endpoint criteria are specified in Appendix~\ref{app:p1-details}.}}\label{fig:powercut-bench}
+\end{figure}

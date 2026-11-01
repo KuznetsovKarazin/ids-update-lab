@@ -6,3 +6,8 @@ __pycache__/
 *.sqlite*
 data/
 PRIVATE*
+
+# Restored exactly from public hash-pinned artifact parts.
+/revision039/build/prebuilt/
+/revision056/build/prebuilt/
+/revision056/inputs/numerics040/

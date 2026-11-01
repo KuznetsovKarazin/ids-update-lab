@@ -1,13 +1,10 @@
 # Reproducing the study
 
-For the current reviewer evidence subset and the additional 040–049 results, start with
-[the revision guide](../docs/REVISION_EVIDENCE.md). Run
-`python revision_evidence054/verify_subset.py` from the repository root for an offline
-check of the 16 published tables/summaries. The full supplementary archive is supplied
-with the revised manuscript; it is not part of this Git tree. The historical GitHub
-1.0.0 release remains a draft as checked on 27 October 2026, and public DOI resolution
-has not been verified. References below to the release/companion archive describe the
-historical distribution layout and dependencies, not a new availability claim.
+For the complete current public distribution, begin with
+[REPRODUCTION056.md](../docs/REPRODUCTION056.md). Revision 056 makes the full S1
+package, historical primary logs and later source/prebuilt artifacts publicly
+restorable with verified hashes. The older compact subset remains unchanged.
+The historical draft GitHub release and reserved DOI are not required.
 
 The current root manifest includes this documentation and compact-subset update. The
 original 1.0.0 manifest is preserved unchanged at
@@ -16,7 +13,7 @@ historical snapshot. Experiment code and measurements in the baseline are unchan
 
 The release separates preserved measurements, author-written analysis code, and source data obtained from third parties. The software author is Oleksandr Kuznetsov. The article has its own six-author byline.
 
-The release does not include the original TON_IoT CSV corpus, extracted fitting/calibration rows, the full future-test database, or dataset-derived hardware input vectors. This is a distribution decision; no new license is assigned to those data. The source manifest records the exact filenames, sizes, acquisition URLs, and locally computed SHA-256 values. The hashes identify the bytes used in the study; they are not publisher-authenticated checksums.
+The release does not include the original TON_IoT CSV corpus, extracted fitting/calibration rows, the full future-test database, or the full raw source datasets. Frozen MCU panels and observed input/output receipts are now available as reproducibility inputs. This is a distribution decision; no new license is assigned to those data. The source manifest records the exact filenames, sizes, acquisition URLs, and locally computed SHA-256 values. The hashes identify the bytes used in the study; they are not publisher-authenticated checksums.
 
 ## What can be reproduced
 

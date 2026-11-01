@@ -1,0 +1,8 @@
+{
+  "status": "verified",
+  "delivered_files": 41,
+  "metric_rows": 72,
+  "source_dataset_rescanned": false,
+  "model_predictions_rerun": false,
+  "separate_full_source_audit": "audit.json; recreate with fetch_pinned.py, run_cic.py and audit_cic.py"
+}

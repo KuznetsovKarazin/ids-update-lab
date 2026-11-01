@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tests": 8,
+  "test_command": "python -m unittest discover -s diagnostic113 -p test_*.py -v",
+  "validation_scope": [
+    "Real incident113 inputs and revision046 source pins match",
+    "Old/candidate identity plus twelve frozen numerical controls through mocked serial link",
+    "Unknown model blocks INFER",
+    "Changed source input blocks serial access",
+    "Pico COM5 rejected before serial open",
+    "One serial-open attempt only",
+    "Partial non-finite evidence and close failures saved",
+    "Original input files unchanged"
+  ],
+  "hardware_tested": false,
+  "windows_apis_executed": false,
+  "original_experiment_status": "failed; remains unchanged"
+}

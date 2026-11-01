@@ -1,0 +1,20 @@
+{"status": "verified", "files": 313, "source_commit": "prepublication-validation", "hardware_accessed": false}
+usage: run_board056.py [-h] --identity IDENTITY --output OUTPUT [--port PORT]
+
+Acquire one C3 replication: installs test firmware and preserves every
+endpoint. Run once per physical board, using its own inspect_c3.py
+identity.json. The two boards must have distinct ROM MACs. Never overwrite or
+resume a failed campaign.
+
+options:
+  -h, --help           show this help message and exit
+  --identity IDENTITY
+  --output OUTPUT
+  --port PORT          New COM port if it changed since inspection
+{
+  "stage": "056",
+  "command": "prepare",
+  "status": "prepared",
+  "measurement_origin": "offline_preparation"
+}
+{'portable_kit_offline_preparation': 'passed', 'families': 4, 'vectors': 1024, 'models': 26, 'hardware_accessed': False}

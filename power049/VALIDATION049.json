@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "independent_tests_passed": 27,
+  "hardware_execution_performed": false,
+  "tests_use_mock_hardware": true,
+  "real_cli_prepare_only": "passed on exact incident186 with reviewed Kit inputs; incident186_live_check_pending true; zero port access",
+  "bound_run_files": 372,
+  "independent_source_review": "passed",
+  "source_sha256": {
+    "run_powercut049.py": "2cd705062168d558354982668a13e0c6ef8991290194dff32304d65f59146be1",
+    "continuation049.py": "3c25980b34e1b8a5aa84a19a7454af43396a13c331b21bcc7c6d8aad32ba09b5",
+    "incident186_hashes.json": "2db00c8f6e3c3f89b57a9647cf529f5e075aa37e407777d542ade096006a3c1b",
+    "test_continuation049.py": "e6084163b623a376d69bd01a559a3b8d1e28415e2e5bb984feb38ffcb3739682"
+  },
+  "coverage": [
+    "Exact checkpoint and previous runner hashes; all372 pinned files unchanged",
+    "Offline preparation does not invent a late state or alter original evidence",
+    "One MCU open with DTR False and RTS False; exact old1696 and12 frozen A-controls",
+    "Actual raw/decoded transcript validation before any mutation",
+    "Partial diagnostic retained for mismatch, unavailable COM, control error or changed final identity",
+    "No Pico open until all12 controls and afterSTATUS passed",
+    "Alreadyarmed exactconfig Pico and measuredON admission; no repair ARM",
+    "One-time atomic attempt marker blocks retries and races",
+    "Original186-trial prefix and three no_response outcomes preserved",
+    "Firsttrial187; setup1699/1700; firstcandidate1701",
+    "New187 failure halts and cannot automatically be admitted",
+    "Original nominal20s recovery retry logic unchanged",
+    "ADC errors cannot change an already successful STATUS decision",
+    "Failed endpoint order: recovery window thenADC thenQueryDosDevice thenport enumeration",
+    "Cleanup contains no ON; close failures retain summaries and restore awake request"
+  ],
+  "limits": [
+    "Current trial186 late recovery remains unknown until hardware execution",
+    "Root cause of COM unavailability is not established",
+    "Endpoint ADC is a point observation, not continuous rail or phase timing evidence",
+    "Blocking OS/serial calls may exceed nominal20s; prior acceptance rule is preserved",
+    "Finishing200 attempts will not erase the three original no_response outcomes"
+  ]
+}

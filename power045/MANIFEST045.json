@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "path": "power045/OPEN_FIRST.html",
+      "bytes": 27488,
+      "sha256": "fdd630e0ce643faf7e6715f41a8a1595960cf956623ea171dddb26727078724b"
+    },
+    {
+      "path": "power045/README_RU.md",
+      "bytes": 24261,
+      "sha256": "2f85f25c0322924e588fd9c9e541ccd234476f3a38c89bbc29ad706c675ebbc2"
+    },
+    {
+      "path": "power045/VALIDATION045.json",
+      "bytes": 559,
+      "sha256": "8cf5ed4d1618041e563917cb8f1741044404cb81a1969def940c282a6fe0cabb"
+    },
+    {
+      "path": "power045/bench045.py",
+      "bytes": 21015,
+      "sha256": "25f3dbbbce7058251fe3091271450c584e5615bfb5ee4a7a1f3d0a53ff1897c4"
+    },
+    {
+      "path": "power045/tests/test_bench045.py",
+      "bytes": 7653,
+      "sha256": "d473cd1ec5b0e744d9be9091f575fa4b51b02cda1501d9ce44ba4918c3885af8"
+    }
+  ]
+}

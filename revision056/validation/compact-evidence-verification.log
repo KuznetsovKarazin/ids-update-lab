@@ -1,0 +1,13 @@
+{
+  "status": "verified",
+  "payload_files": 16,
+  "checks": [
+    "16 original payload files match preserved SHA-256 and size",
+    "480 saved cost observations reproduce 384 nonempty medians in 48 cells",
+    "52 model rows agree with saved Og/O2 summaries; seven label mismatches per build retained",
+    "Three temporal scenarios and twelve threshold operating points cross-checked",
+    "24 future weighting rows reproduce FPR, recall and balanced accuracy from saved masses",
+    "Saved P1 audit retains 200 attempts, 188 confirmed OFF, three unavailable endpoints and zero verified exact phases"
+  ],
+  "scope": "Hash preservation and saved-aggregate consistency only; no fresh raw-log audit, model inference or hardware measurement"
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "revision039_delivery_validation_v1",
+  "author": "Oleksandr Kuznetsov",
+  "checked_utc": "2026-10-23T16:39:30.194191+00:00",
+  "base_commit": "2da88c0407e878a2bd4f07bda4429f83ace8de81",
+  "original_tracked_files_changed": 0,
+  "host_test_command": "python -m pytest revision039 -q",
+  "tests_passed": 68,
+  "subtests_passed": 106,
+  "execution_environment": "Linux, Python 3.12.14; dependencies pinned in requirements.txt",
+  "esp_idf_cross_compilations_passed": 17,
+  "prebuilt_artifact_and_current_source_hashes_verified": true,
+  "offline_full_matrix_preparation": "all four families, Og and O2, verified",
+  "offline_phase_flash_preparation": "frozen A model and phase GPIO4 O2 build, verified; no serial port opened",
+  "pico_pio_assembly": "both programs accepted by official MicroPython 1.26.0 host assembler; no timing measurement",
+  "native_tests": "delivered core039 numerical parity; streaming decompressor and actual OTA dispatcher with fake flash and real RSA/SHA",
+  "full_ton_campaign_executed_here": false,
+  "hardware_access_attempted": false,
+  "physical_power_loss_tested": false,
+  "windows_launcher_executed_here": false,
+  "windows_launcher_validation": "static inspection; actual Windows run pending",
+  "limitations": [
+    "Raw 23 TON CSV files and physical boards are unavailable in this build environment.",
+    "A passing host test or successful cross-compilation is not experimental evidence on MCU.",
+    "Physical-cut setup requires verified external switching and independent timing evidence.",
+    "Two distinct ESP32-S3 devices are needed for the planned between-board comparison."
+  ]
+}

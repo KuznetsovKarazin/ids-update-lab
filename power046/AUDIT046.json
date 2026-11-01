@@ -1,0 +1,82 @@
+{
+  "schema": "power046_incident061_review_v1",
+  "original_author": "Oleksandr Kuznetsov",
+  "review_date": "2026-10-27",
+  "original_archive": {
+    "name": "powercut-045-stop61-20261027-103428.zip",
+    "sha256": "ae16104c8bd7e04f469d26ea038b3895201962a87fd1711ea780784208375495",
+    "manifest_entries_verified": 108
+  },
+  "initial_results": {
+    "planned": 200,
+    "attempted": 61,
+    "confirmed_supply_off": 58,
+    "timely_old_valid": 51,
+    "timely_new_valid": 9,
+    "no_response": 1,
+    "confirmed_cuts_with_timely_recovery": 57,
+    "no_cut_trials": [
+      2,
+      40,
+      48
+    ],
+    "numeric_controls_passed": 720,
+    "replay_rejections_passed": 60,
+    "phase_confirmed": 0
+  },
+  "incident": {
+    "trial": 61,
+    "phase": "rotation_erase",
+    "original_endpoint": "no_response",
+    "previous_version": 749,
+    "candidate_version": 750,
+    "recovery_window_seconds": 20,
+    "no_mcu_transmissions_in_recovery_window": true,
+    "port_open_failure_inferred_not_proven": true,
+    "root_cause": "unresolved",
+    "late_port_present": true,
+    "late_port": "COM13",
+    "observed_cut_tail_max_volts": 0.013821815154038304
+  },
+  "late_diagnostics": {
+    "summary_sha256": "8508ebaa7103dcbf27ce918cef373b39ce3a6ddec5856898e5f2ffc50f09ee75",
+    "serial_sha256": "00b36b4087c3d216cb0e8231312ef0da37d6c4f584dd15a2bb881cc7fd2330e1",
+    "status": "passed",
+    "checks_passed": 12,
+    "max_probability_absolute_error": 1.8766155227001313e-09,
+    "same_old_identity_before_after": true,
+    "late_recovery": "old_valid",
+    "serial_command_counts": {
+      "STATUS": 2,
+      "INFER": 12
+    },
+    "flash_mutation_attempted": false,
+    "does_not_replace_original_endpoint": true
+  },
+  "operator_report": {
+    "windows_power_event_query_result": "NoMatchingEventsFound",
+    "query_start_utc": "2026-10-27T09:05:00Z",
+    "query_end_utc": "2026-10-27T09:40:00Z",
+    "source": "user pasted PowerShell output, not an exported Windows event log",
+    "sleep_proven": false
+  },
+  "continuation_constraints": {
+    "remaining_trials": 139,
+    "first_trial": 62,
+    "last_trial": 200,
+    "same_original_plan": true,
+    "same_recovery_window_seconds": 20,
+    "retry_update": false,
+    "original_logs_retained": true,
+    "late_recovery_reported_separately": true,
+    "hardware_epoch_change": [
+      "temporary Windows idle sleep request",
+      "additional serial-opening diagnostics"
+    ],
+    "independent_phase_timing_still_unverified": true,
+    "on_equipment_validation": "not run in cloud; user operates physical equipment"
+  },
+  "reference": {
+    "windows_awake_request": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-setthreadexecutionstate"
+  }
+}

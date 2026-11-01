@@ -1,0 +1,76 @@
+{
+  "feature_names_override_only": [
+    "flow_duration",
+    "Header_Length",
+    "Rate",
+    "Tot sum",
+    "Min",
+    "Max",
+    "Std",
+    "IAT"
+  ],
+  "fitting_code_sha256": "291428ec9075c26950db9ff4fbeb2c80d37017811239436da9de647215b4b4c4",
+  "model_configuration": {
+    "DT": {
+      "criterion": "gini",
+      "max_depth": 5,
+      "min_samples_leaf": 50
+    },
+    "LR": {
+      "C": 1.0,
+      "max_iter": 1000,
+      "solver": "lbfgs",
+      "tol": 1e-06
+    },
+    "MLP": {
+      "batch_size": 1024,
+      "epochs": 30,
+      "l2": 0.0001,
+      "learning_rate": 0.001,
+      "optimizer": "Adam",
+      "shape": [
+        8,
+        16,
+        8,
+        1
+      ]
+    },
+    "bootstrap_repeats": 10000,
+    "cal_cap_per_label_type": 100000,
+    "ci_minimum_days": 8,
+    "feature_contract": "nonnegative finite float32, little endian, signed zero canonicalized",
+    "features": [
+      "duration",
+      "src_bytes",
+      "dst_bytes",
+      "missed_bytes",
+      "src_pkts",
+      "src_ip_bytes",
+      "dst_pkts",
+      "dst_ip_bytes"
+    ],
+    "fit_cap_normal": 100000,
+    "fit_cap_per_attack_type": 50000,
+    "fit_weight": "population stratum count / sampled stratum count, then class balancing by population class totals",
+    "frequency_cap": 100,
+    "frequent_vectors": 20,
+    "hyperparameter_selection": "none; all fixed families are reported",
+    "input_quantization_calibration": "fitting sample only",
+    "operating_point": {
+      "rule": "strictly above normal order statistic, preserve ties, no test tuning",
+      "target_empirical_calibration_FPR": 0.01
+    },
+    "sample_method": "bottom-k SplitMix64 priority of source file ordinal and CSV row index, independent of values",
+    "schema": "030_training_v1",
+    "seed": 25092026,
+    "study_status": "prespecified after exploratory analysis; test days previously inspected",
+    "thread_limit": 1,
+    "uncertainty": "paired UTC-day block bootstrap only if >=8 observed test days; otherwise descriptive leave-one-day-out, no CI"
+  },
+  "numpy": "2.3.5",
+  "pandas": "3.1.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "reference_code_sha256": "31be2167aea816114c3d8d8a27b2fda364374f4716739f7c16472cf624b0e0c8",
+  "runner_sha256": "7dddcb1041d2e50df8dc5380dbf5c29e694c0ad95eeaf89c50509d0e106963c3"
+}

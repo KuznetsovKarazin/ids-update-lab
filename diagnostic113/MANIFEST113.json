@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "path": "diagnostic113/AUDIT113.json",
+      "sha256": "28ed5c341f3f8abf5ced520f743fa9d65890983fcffab7fd8899d0d9e30a38da",
+      "bytes": 3544
+    },
+    {
+      "path": "diagnostic113/README_RU.txt",
+      "sha256": "2e9dbe1acc75b501ed17927c5e1d9bd7ae2dc9c7ca3d4e9d4d0746555857e20a",
+      "bytes": 4180
+    },
+    {
+      "path": "diagnostic113/VALIDATION113.json",
+      "sha256": "eeaa73153edc1075295bacce0c256d06f6628bc71df1b20fbe882ac173d9032b",
+      "bytes": 694
+    },
+    {
+      "path": "diagnostic113/diagnose113.py",
+      "sha256": "b24a2ebdbba0df2ca2d8640d5c133d907b056fc445400aad1ce8f9eff1a41f1a",
+      "bytes": 15694
+    },
+    {
+      "path": "diagnostic113/test_diagnose113.py",
+      "sha256": "9982e7db5307a7a073dcc1d2f54cc6865df96559cd9b7a433eafb4ee1a7493f7",
+      "bytes": 6765
+    }
+  ]
+}

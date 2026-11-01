@@ -11,6 +11,22 @@ This project studies how an embedded intrusion detector can retain the semantics
 
 The primary result is a deployment study of release-level semantic consistency. Physical supply-loss recovery was subsequently measured with the bounds described below; the study does not establish a new state-of-the-art detector or production security certification.
 
+## Public code, primary evidence and second-round validation — 1 November 2026
+
+Start with **[REPRODUCTION056.md](docs/REPRODUCTION056.md)**. It maps the article's
+results to executable sources, primary logs, exact binaries and verification
+commands. The [public artifact registry](release/artifacts056/manifest.json)
+includes the full S1 package and primary H1–H4 / 041–043 evidence; no private link
+or unpublished release is needed. Acquisition sources through power049 are now
+included alongside the preserved earlier code.
+
+- **CICIoT2023:** completed host experiment, 3,482,483 source rows, 871,507 test
+  rows, 24 pipeline conditions. [Protocol, all results, limitations and rerun commands](revision056/cic/README.md).
+- **Two ESP32-C3 SuperMini boards:** firmware and acquisition kit prepared;
+  **physical measurements pending**. [Board procedure](revision056/README.md).
+- **Historical results:** unchanged. Failed endpoints, numerical differences and
+  missing exact-phase confirmation remain visible; the new work does not relabel them.
+
 ## Revision evidence added on 27 October 2026
 
 Start with the [reviewer evidence guide](docs/REVISION_EVIDENCE.md). The public
@@ -36,18 +52,15 @@ cross-checks, not a fresh primary-log audit or a full experiment rerun.
 python revision_evidence054/verify_subset.py
 ```
 
-**Availability:** the current repository contains the compact subset above. The
-full `revision_supplement051.zip` is supplied with the revised manuscript and is
-not claimed to be downloadable from this Git tree. As checked on 27 October 2026,
-the historical GitHub `v1.0.0` release remains a draft. Public resolution of the
-reserved Zenodo identifier `10.5281/zenodo.22978008` has not been verified; it is
-not used here as a working evidence-download link.
+**Availability:** the previously compact-only distribution is now extended by
+revision 056. Restore full archived evidence with the public, hash-verified
+[artifact helper](release/restore_artifacts056.py). The historical draft release
+and unverified reserved DOI are not required for any download.
 
 ## Historical evidence through series 037
 
 The sections below retain the earlier protocols and results. References to the
-companion evidence archive describe its contents, not current public-download
-availability. The newer results above and in the guide extend this historical
+companion evidence archive refer to paths restored by the public artifact helper. The newer results above and in the guide extend this historical
 baseline; experiment identifiers and recorded outcomes are unchanged.
 
 ### Historical evidence at a glance
@@ -78,7 +91,7 @@ The table reports the common subsequent TON test with **row weighting**. All val
 | MLP-F32 | 36.871 | 21.310 | 57.780 | 43.801 | 2.151 | 70.825 |
 | MLP-I8 | 12.676 | 22.221 | 45.227 | 44.428 | 2.190 | 71.119 |
 
-These results do not support a blanket claim that every retrained model improves. The test contains attack types absent from A's fitting/calibration history; the A-known attack cohort is empty. The 1% empirical calibration FPR target does not guarantee 1% future-test FPR. All 24 pipeline conditions, row/vector/cap100 weighting, attack types and days are retained in `runs/ids-completion-030/training/evaluation.json` and related files **in the historical companion evidence archive**, not in the GitHub tree. Consult that archive's manifest for the included paths and remaining data dependencies.
+These results do not support a blanket claim that every retrained model improves. The test contains attack types absent from A's fitting/calibration history; the A-known attack cohort is empty. The 1% empirical calibration FPR target does not guarantee 1% future-test FPR. All 24 pipeline conditions, row/vector/cap100 weighting, attack types and days are retained in `runs/ids-completion-030/training/evaluation.json` and related files **in the publicly restorable historical primary archive**. Consult that archive's manifest for the included paths and remaining data dependencies.
 
 ### Semantic consistency and compatible export
 
@@ -178,15 +191,16 @@ The repository and historical release candidate contain numerical evidence, figu
 | `runs/` (evidence archive) | Preserved results, training exports, event logs and analysis outputs |
 | `fnb58*.cfn` (evidence archive) | Original meter captures, including the continuous stage030 trace |
 
-The GitHub tree is the code and presentation distribution. The historical companion
-evidence archive includes the 24 frozen model exports, training provenance,
+The GitHub tree contains code, presentation assets and hash-pinned archive parts.
+The historical primary archive includes the 24 frozen model exports, training provenance,
 80 cost-event logs, hardware/energy timelines, recovered energy outputs and
 original CFN captures. Each archive has its own file manifest. They share a
 release root layout: extract into separate directories for inspection; combine
 only into a fresh working directory when reproducing an analysis.
 
-Raw TON CSVs, sampled NPZ arrays, exported dataset check vectors and the complete
-per-record SQLite evaluation database are not redistributed. The source manifest
+Raw TON CSVs, large sampled NPZ arrays and the complete per-record SQLite evaluation
+database are not redistributed. Frozen MCU test panels and observed input/output
+receipts are included as reproducibility inputs, with their original provenance. The source manifest
 identifies the required files. Missing input arrays must be reconstructed from
 lawfully obtained sources before post-hoc diagnostics can run. This repository and the historical release candidate
 are not copies of the entire private experimental workspace.
@@ -231,7 +245,7 @@ Energy results are secondary, paced-USB scenario estimates from an independently
 
 ## Citation, funding, and licensing
 
-Cite the original software as a work by Oleksandr Kuznetsov. Until a versioned archive is publicly available, identify the exact Git commit used; `CITATION.cff` retains the historical release-candidate metadata. Cite the associated article with its six-author list separately. Retain its Git tag/commit and file manifest when reproducing results. The artifact DOI and journal article DOI identify different objects.
+Cite the original software as a work by Oleksandr Kuznetsov. Identify the exact public Git commit and artifact-manifest hashes used; `CITATION.cff` retains the historical release-candidate metadata. Cite the associated article with its six-author list separately. Retain its Git tag/commit and file manifest when reproducing results. The artifact DOI and journal article DOI identify different objects.
 
 This research was funded by the Committee of Science of the Ministry of Science and Higher Education of the Republic of Kazakhstan (Grant No. BR249014/0224).
 

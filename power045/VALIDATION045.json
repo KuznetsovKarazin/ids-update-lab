@@ -1,0 +1,19 @@
+{
+  "stage": "045",
+  "original_author": "Oleksandr Kuznetsov",
+  "hardware_access_attempted": false,
+  "helper_tests_passed": 8,
+  "original_powercut_tests_passed": 12,
+  "real_model_plan_prepared": true,
+  "flash_preparation_only_passed": true,
+  "base_kit_archive": "ids-update-lab-recovery040.zip",
+  "base_kit_sha256": "28adadc469ac2c7c92d0f03d56681b0ddee1c691064214f0efd8080fd43172cf",
+  "on_pulldown_ohm": 2200,
+  "phase_pulldown_ohm": 4700,
+  "phase_series_ohm": 1000,
+  "adc_divider_ohm": [
+    1000,
+    1000
+  ],
+  "phase_timing_verified": false
+}

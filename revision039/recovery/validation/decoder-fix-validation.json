@@ -1,0 +1,39 @@
+{
+  "scope": "Host-side diagnosis and validation; corrected firmware still requires physical MCU confirmation",
+  "failure": "Og/b01-lr-compressed negative image_hash: final FWZ_CHUNK returned decompression_or_write",
+  "root_cause": "ESP32-S3 strong ROM tinfl_decompress symbol replaced the vendored miniz 3.0.2 function, whose decompressor context layout is incompatible with that ROM version",
+  "old_elf_sha256": "874606c12df8abafaeed8862ede4851282fb466c06d48fb1bc129ded98a076e1",
+  "old_linked_symbol": {
+    "address": "0x40000828",
+    "type": "A",
+    "name": "tinfl_decompress"
+  },
+  "fix": "Prefix all six exported inflater entrypoints with ids039_; verify updater object references and final ELF code symbol before releasing builds",
+  "regression_before_fix": {
+    "test": "test_project_inflater_is_not_replaced_by_rom_symbol",
+    "status": "failed",
+    "actual_decode_status": -1,
+    "expected_decode_status": 0
+  },
+  "regression_after_fix": {
+    "command": "python -m unittest revision039.baseline.test_stream_inflate revision039.baseline.test_ota039 revision039.build.test_build_linkage039",
+    "tests": 15,
+    "status": "passed"
+  },
+  "recorded_transfer_native_replay": {
+    "encoded_bytes": 186655,
+    "encoded_sha256": "18889426a04e3a33d45d2459920d80b7d641f94d347d4b69347a0df0bf8ea432",
+    "decoded_bytes": 342384,
+    "decoded_sha256": "7f660fd566b0c287da741e36b61020075fc86f7ff378ce2f9ac8d3fa0deace45",
+    "recorded_fwz_commands": 185,
+    "appended_command": "FWZ_END",
+    "accepted_chunks": 183,
+    "errors": [
+      "signature",
+      "image_sha256"
+    ],
+    "boot_selections": 0,
+    "aborts": 1,
+    "scope": "actual transmitted commands, host-native fake flash; not hardware evidence"
+  }
+}

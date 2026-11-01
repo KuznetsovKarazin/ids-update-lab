@@ -1,0 +1,41 @@
+{
+  "schema": "power046_release_manifest_v1",
+  "original_author": "Oleksandr Kuznetsov",
+  "files": [
+    {
+      "path": "AUDIT046.json",
+      "bytes": 2721,
+      "sha256": "536a4d44f817e9bb88fb98c3ced87d1e8e23b69e7b7871bab08d248658478bba"
+    },
+    {
+      "path": "README_RU.txt",
+      "bytes": 8974,
+      "sha256": "866229596a3131ba610f4f809b070bd019d26286418ff38c9da1ed2f3838e0a4"
+    },
+    {
+      "path": "VALIDATION046.json",
+      "bytes": 1479,
+      "sha256": "e8cb28401181579967edc045d1594a926c3c50cd88961e5d9b682e5c8ef3894d"
+    },
+    {
+      "path": "continuation046.py",
+      "bytes": 12273,
+      "sha256": "c106f36404ce328a5b5606f40b3e3d4f5f7b893c3fdb0997234e70eb58f63b5f"
+    },
+    {
+      "path": "incident061_hashes.json",
+      "bytes": 11147,
+      "sha256": "4b4927802a867c2ddca13299bcd3e2f43a7a18563de944e4cd87c854a3ed545d"
+    },
+    {
+      "path": "run_powercut046.py",
+      "bytes": 51301,
+      "sha256": "23d461700d99438b8d91113656643a6f153cfe60d7f0cefad353f42b8e783532"
+    },
+    {
+      "path": "tests/test_continuation046.py",
+      "bytes": 22634,
+      "sha256": "fb932857898c137b9cd8317b96e2fc3a49a8dde3e8be993dd85422e920dfb707"
+    }
+  ]
+}

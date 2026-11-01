@@ -1,0 +1,99 @@
+{
+  "source_archive": "powercut-045-stop113-20261027-111218.zip",
+  "source_archive_sha256": "2d64105e8174549238873bf8b2335dacc17c6e5b18f090e581f3c93d614900ea",
+  "manifest_files_verified": 172,
+  "original_trial61_prefix_preserved": true,
+  "attempted_trials": 113,
+  "physical_cuts_confirmed": 107,
+  "timely_valid_after_confirmed_cut": 105,
+  "original_no_response_trials": [
+    61,
+    113
+  ],
+  "uncut_trials": [
+    2,
+    40,
+    48,
+    81,
+    83,
+    88
+  ],
+  "phase_confirmed": 0,
+  "late_recovery_61": "old_valid; original endpoint retained",
+  "late_recovery_113": "not yet measured",
+  "controls_verified": 1332,
+  "replays_verified_rejected": 111,
+  "incident113": {
+    "trial": 113,
+    "phase": "rotation_body",
+    "delay_us": 15,
+    "old": {
+      "event": "status",
+      "ready": true,
+      "reason": "ok",
+      "version": 1136,
+      "release": "p39B-1136",
+      "policy": "bundle",
+      "erase_policy": "necessary_sectors",
+      "model_slot_capacity_bytes": 65536,
+      "erase_sector_bytes": 4096,
+      "storage_layout": 2,
+      "storage_scheme": "journal_dualrail_v1",
+      "selector_sequence": 1044,
+      "sizeof_model_bytes": 3864,
+      "sizeof_engine_bytes": 7832,
+      "runtime_abi": 4,
+      "pretransform": "log1p",
+      "schema": "8f3aba7e6bce09ffd8fc1fad9c054081629076299f24a209e25a443c2d5b7225",
+      "feature_count": 8,
+      "bundle_sha256": "bb3342b3b4375e55fc9b04d8832272a5345fc1b4e768258b4648db507835aed5",
+      "active_slot": 1,
+      "chip": "esp32s3",
+      "build": "esp-idf-v5.3.2;app=1;elf=6d7f7fa92",
+      "data_origin": "TON_IoT_temporal_030",
+      "free_heap": 314736,
+      "timing_schema": 3,
+      "crypto_context": "shared_warm",
+      "crypto_key_setup_us": 1287,
+      "crypto_first_verify_us": 18024
+    },
+    "candidate": {
+      "runtime_abi": 4,
+      "version": 1140,
+      "feature_count": 8,
+      "schema": "8f3aba7e6bce09ffd8fc1fad9c054081629076299f24a209e25a443c2d5b7225",
+      "release": "p39A-1140",
+      "bundle_sha256": "4270fea7a627d3a456a041178f303b7a5df7b3a9ab09e7273c1fac6f6c7e3a17",
+      "envelope_sha256": "23e5aa67efb647042799edf8f754d42b6b92acc04b28eb40122fff232242562c",
+      "envelope_bytes": 1588,
+      "payload_bytes": 1316,
+      "pretransform": "log1p",
+      "decision_rule": "probability>threshold"
+    },
+    "state": "no_response",
+    "rail_off_confirmed": true,
+    "tail_max_volts": 0.01540145117164268,
+    "update_transport_error": "ClearCommError failed (PermissionError(13, 'Устройство не опознает команду.', None, 22)); recovery: MCU did not return STATUS after power restoration; see recovery-attempt diagnostics"
+  },
+  "host_diagnosis": {
+    "stage": "open",
+    "attempts": 67,
+    "win32_error": 2,
+    "commands_sent_during_recovery": 0,
+    "port_present_in_snapshot_after_deadline": true,
+    "underlying_cause": "undetermined",
+    "system_awake_request_accepted": true,
+    "system_awake_restored": true
+  },
+  "important_limits": [
+    "No proof of voltage collapse within named flash phase",
+    "Listed COM device does not prove it is openable",
+    "Late recovery does not change the original 20-second endpoint",
+    "ON command acknowledgement is not a voltage measurement"
+  ],
+  "technical_references": [
+    "https://github.com/pyserial/pyserial/blob/v3.5/serial/serialwin32.py",
+    "https://github.com/pyserial/pyserial/blob/v3.5/serial/tools/list_ports_windows.py",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-setthreadexecutionstate"
+  ]
+}

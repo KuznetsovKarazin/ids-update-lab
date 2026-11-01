@@ -1,0 +1,72 @@
+{
+  "main_campaign_checkpoint": {
+    "planned_trials": 200,
+    "attempted_trials": 113,
+    "first_continued_trial": 114,
+    "remaining_trials": 87,
+    "state_counts": {
+      "old_valid": 94,
+      "new_valid": 17,
+      "no_response": 2
+    },
+    "rail_off_confirmed": 107,
+    "phase_confirmed": 0,
+    "original_unavailable_trials": [
+      61,
+      113
+    ],
+    "late_observations": {
+      "61": "old_valid,12controls",
+      "113": "old_valid,12controls"
+    },
+    "main_endpoints_not_reclassified": true
+  },
+  "control047": {
+    "archive_sha256": "491fc39f947bb68aa0f8cc271c2cfe4911bf5a47b4c1d4be64de6b3d5aeafaf9",
+    "summary_sha256": "89f1689a836fceaf6f9e295b73f7fab886beb4d048a70349e98395538dbdf993",
+    "files": 111,
+    "completed_cycles": 100,
+    "off_confirmed": 100,
+    "recovery_seconds": {
+      "min": 0.935338499955833,
+      "median": 0.9375860498985276,
+      "max": 0.9524357998743653
+    },
+    "model_preserved": "B/1136,slot1,selector1044",
+    "post_cycle_controls_passed": 1200,
+    "initial_controls_passed": 12,
+    "status_frames_verified": 202,
+    "mcu_frames_verified_against_raw_bytes": 1414,
+    "pico_frames_verified_against_raw_bytes": 303,
+    "flash_update_commands": 0,
+    "on_volts_range": [
+      3.286037825621506,
+      3.3634399904841206
+    ],
+    "final_on_volts": 3.3286879980968243,
+    "all_cycle_recovery_attempts": 3,
+    "transient_open_errors": 200,
+    "elapsed_seconds": 303.2355581
+  },
+  "scientific_limits": [
+    "The failure cause remains unknown; no-failure control does not establish that flash writes caused the earlier failures",
+    "Control cycles are a separate experiment and do not count toward the200main attempts",
+    "The two original20-second no_response endpoints remain in the main denominator",
+    "No independent physical collapse-inside-flash-phase confirmation"
+  ],
+  "continuation_intent": {
+    "new_revision": "048",
+    "same_frozen_plan": true,
+    "same_delay_grid": true,
+    "same_nominal_recovery_window_seconds": 20,
+    "new_instrumentation": "read-only ADC after a successful STATUS decision or after an exhausted recovery window, plus admission/final checks; no extra ON at cleanup; original recovery loop unchanged",
+    "next_signed_versions": {
+      "setup": [
+        1141,
+        1142
+      ],
+      "first_trial_candidate": 1143
+    },
+    "future_unsafe_or_unavailable_state": "stop for investigation; not automatically admitted"
+  }
+}

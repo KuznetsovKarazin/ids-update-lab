@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "path": "power047/PROTOCOL047.json",
+      "sha256": "12c4e21375c79f10885933c8d28d94917bceaea0089735575a8a4fc83a4d8009",
+      "bytes": 2314
+    },
+    {
+      "path": "power047/README_RU.txt",
+      "sha256": "a060b1d17ec8a79edb6d8d0ea9ffb47b3047505c6c0557eb067975768b222381",
+      "bytes": 5859
+    },
+    {
+      "path": "power047/VALIDATION047.json",
+      "sha256": "d50d04eff9c3181be0578e7bde4056fe54b86e6bbb6e129af780f50d1ba4f28a",
+      "bytes": 1683
+    },
+    {
+      "path": "power047/control_power047.py",
+      "sha256": "64790a6604aa5b66c65656d67774a321ef956c720cc679af226f99f321cd51d8",
+      "bytes": 21919
+    },
+    {
+      "path": "power047/diagnose113_helpers.py",
+      "sha256": "b24a2ebdbba0df2ca2d8640d5c133d907b056fc445400aad1ce8f9eff1a41f1a",
+      "bytes": 15694
+    },
+    {
+      "path": "power047/test_control_power047.py",
+      "sha256": "37cfc8ac121d512f0c5be3fc6c553c20878549aa4d744d3d7cd0ca96131d5fb3",
+      "bytes": 18084
+    }
+  ]
+}

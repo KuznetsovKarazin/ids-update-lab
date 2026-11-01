@@ -1,0 +1,73 @@
+{
+  "source_archive_sha256": "fe609dfe7af47789841663b8da97801cb4ce6b18f97c00f086f43abe0ac71025",
+  "archive_manifest_files_verified": 373,
+  "pinned_run_files": 372,
+  "checkpoint": {
+    "planned_trials": 200,
+    "attempted_trials": 186,
+    "state_counts": {
+      "old_valid": 152,
+      "new_valid": 31,
+      "no_response": 3
+    },
+    "rail_off_confirmed": 174,
+    "timely_valid_after_confirmed_cut": 171,
+    "new_valid_without_confirmed_cut": 12,
+    "phase_confirmed": 0,
+    "original_no_response_trials": [
+      61,
+      113,
+      186
+    ],
+    "main_endpoints_not_reclassified": true,
+    "frozen_plan_match": true,
+    "numeric_control_checks_recomputed": 2196,
+    "valid_recovery_trials": 183,
+    "replay_rejections_verified": 183
+  },
+  "incident186": {
+    "phase": "model_erase",
+    "old": {
+      "version": 1696,
+      "release": "p39A-1696",
+      "bundle_sha256": "f26ac55e93547d414997a60866e4bad7418eaecd07cd95d2d21cbef2016f7eb3",
+      "active_slot": 0,
+      "selector_sequence": 1543
+    },
+    "candidate_version": 1698,
+    "open_failures": 67,
+    "failure_stage": "open",
+    "error": "FileNotFoundError(2)",
+    "status_commands_during_failed_window": 0,
+    "failed_endpoint_adc_volts": 3.3286879980968243,
+    "final_adc_volts": 3.3334269061496373,
+    "post_cut_result_controller_commands": [
+      "ADC",
+      "ADC"
+    ],
+    "cleanup_power_command_sent": false,
+    "late_recovery": "not_yet_observed"
+  },
+  "scientific_limits": [
+    "Power was measured ON at the failed endpoint; continuous rail health, MCU execution and USB/Windows root cause are not established",
+    "COM13 enumeration after the window does not establish successful open or STATUS",
+    "Separate100-cycle control047 does not count toward the main200 trials or prove the earlier failure cause",
+    "No independent physical collapse-inside-flash-phase confirmation"
+  ],
+  "conditional_continuation": {
+    "revision": "049",
+    "first_trial": 187,
+    "remaining_trials": 14,
+    "inline_diagnostic": "one open; STATUS +12 frozen A-controls +STATUS; saved separately before any flash/power mutation",
+    "admit_only": "exact old1696/A,slot0,selector1543,hash/build/schema/ABI and12 numeric controls; exact alreadyarmed Pico and3.0..3.6V ADC",
+    "setup_versions": [
+      1699,
+      1700
+    ],
+    "first_trial_candidate": 1701,
+    "same_plan_delay_grid_and_nominal20s_retry_loop": true,
+    "new_diagnostic": "read-only QueryDosDevice after failed-endpoint ADC outside original retry window",
+    "new_failure_policy": "stop; no automatic admission",
+    "cleanup_power_command_sent": false
+  }
+}

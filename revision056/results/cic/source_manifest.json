@@ -1,0 +1,82 @@
+{
+  "catalog_sha256": "2b33d098829e8ca84b29dd5a1928e592f4139f100eba9665f2dad3d5d72e3a9b",
+  "dataset": "CICIoT2023",
+  "files": [
+    {
+      "bytes": 77214111,
+      "file": "part-00023-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+      "sha256": "48ba2b15b4ae44f5de3fcc709b486b5e1fbfbb8aadd066ad0242c27a5b42ec75",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/akashdogra/cic-iot-2023/part-00023-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv?datasetVersionNumber=1"
+    },
+    {
+      "bytes": 67392879,
+      "file": "part-00031-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+      "sha256": "141f5b1579f68215b6ebc1004249b5b8244ac6b6b189df577c0928f66f762544",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/akashdogra/cic-iot-2023/part-00031-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv?datasetVersionNumber=1"
+    },
+    {
+      "bytes": 63328378,
+      "file": "part-00037-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+      "sha256": "7cc40bf4cb8b7255c1bbb46f3a71567b849c503d211376657649fdd1a4cbb674",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/akashdogra/cic-iot-2023/part-00037-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv?datasetVersionNumber=1"
+    },
+    {
+      "bytes": 69781679,
+      "file": "part-00058-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+      "sha256": "7851a94f745858fc638296ac4370e775c87563fbf04923694edcb03b3709bfe4",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/akashdogra/cic-iot-2023/part-00058-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv?datasetVersionNumber=1"
+    },
+    {
+      "bytes": 76823868,
+      "file": "part-00072-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+      "sha256": "1dac142700d7d52ca26d8a7bd9f953f5d51e685fcf4dafaf23bb0172f6f947d5",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/akashdogra/cic-iot-2023/part-00072-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv?datasetVersionNumber=1"
+    },
+    {
+      "bytes": 75690669,
+      "file": "part-00130-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+      "sha256": "e44dd3434ef9a722595bc46bfb9074489b5a5b4a69e74d8f3e30ed6d5685fde9",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/akashdogra/cic-iot-2023/part-00130-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv?datasetVersionNumber=1"
+    },
+    {
+      "bytes": 131004617,
+      "file": "part-00136-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+      "sha256": "87d6eee2fb9ca09d35227e018beaadff19729e7153d4dfd1a082e30a08953d61",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/akashdogra/cic-iot-2023/part-00136-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv?datasetVersionNumber=1"
+    },
+    {
+      "bytes": 132388545,
+      "file": "part-00140-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+      "sha256": "5e4d56ac9a32439de2f7c67873e435891790e46bc3a0fb90b4c94224ac9c771e",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/akashdogra/cic-iot-2023/part-00140-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv?datasetVersionNumber=1"
+    },
+    {
+      "bytes": 66005625,
+      "file": "part-00141-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+      "sha256": "6e3cd06f1115a4b439da5a8f653ed02bdb7a06b19539e2efa7460cc921cd0f9b",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/akashdogra/cic-iot-2023/part-00141-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv?datasetVersionNumber=1"
+    },
+    {
+      "bytes": 70086002,
+      "file": "part-00147-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+      "sha256": "80186bffb7083c5841b9bde65d976e4bc56cf42b6d204ad70c3c8318ff4870eb",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/akashdogra/cic-iot-2023/part-00147-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv?datasetVersionNumber=1"
+    },
+    {
+      "bytes": 128196454,
+      "file": "part-00153-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+      "sha256": "070b0d89b5e54d070953f90fce39b3c2dcbba6747119da9e9529f963d4da65d4",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/akashdogra/cic-iot-2023/part-00153-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv?datasetVersionNumber=1"
+    },
+    {
+      "bytes": 68131575,
+      "file": "part-00160-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+      "sha256": "a0a635f095eaae43d790b5c6b027825485c39a00a9639d6ff12e28574ad3b41b",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/akashdogra/cic-iot-2023/part-00160-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv?datasetVersionNumber=1"
+    }
+  ],
+  "mirror": "akashdogra/cic-iot-2023",
+  "protocol_sha256": "4258a311a34b6f630edfc0c15544bd549e54baf2cfe6445fe738415d40fdaa04",
+  "provider_url": "https://www.unb.ca/cic/datasets/iotdataset-2023.html",
+  "version": 1
+}

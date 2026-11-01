@@ -1,0 +1,336 @@
+{
+  "data_origin": "CICIoT2023_selected_shards_056",
+  "feature_contract": {
+    "features": [
+      "flow_duration",
+      "Header_Length",
+      "Rate",
+      "Tot sum",
+      "Min",
+      "Max",
+      "Std",
+      "IAT"
+    ],
+    "source_units_unchanged": true
+  },
+  "feature_count": 8,
+  "feature_names": [
+    "flow_duration",
+    "Header_Length",
+    "Rate",
+    "Tot sum",
+    "Min",
+    "Max",
+    "Std",
+    "IAT"
+  ],
+  "kind": "dt",
+  "model_id": "A_dt",
+  "nodes": [
+    {
+      "feature": 6,
+      "left": 1,
+      "probability": 0.5,
+      "right": 22,
+      "threshold": 11.430529594421387
+    },
+    {
+      "feature": 7,
+      "left": 2,
+      "probability": 0.9273268580436707,
+      "right": 15,
+      "threshold": 0.04205704852938652
+    },
+    {
+      "feature": 1,
+      "left": 3,
+      "probability": 0.03636058792471886,
+      "right": 8,
+      "threshold": 241.70001220703125
+    },
+    {
+      "feature": 4,
+      "left": 4,
+      "probability": 0.9398062229156494,
+      "right": 5,
+      "threshold": 59.79999923706055
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 1.0,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": 7,
+      "left": 6,
+      "probability": 0.5811883211135864,
+      "right": 7,
+      "threshold": 0.0001477718324167654
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 1.0,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 0.36739957332611084,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": 2,
+      "left": 9,
+      "probability": 0.019542720168828964,
+      "right": 12,
+      "threshold": 330.91741943359375
+    },
+    {
+      "feature": 1,
+      "left": 10,
+      "probability": 0.011983633041381836,
+      "right": 11,
+      "threshold": 8514.400390625
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 0.11833694577217102,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 0.007958101108670235,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": 7,
+      "left": 13,
+      "probability": 0.1933690458536148,
+      "right": 14,
+      "threshold": 6.135702278697863e-05
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 0.4450347423553467,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 0.09022818505764008,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": 7,
+      "left": 16,
+      "probability": 0.9882947206497192,
+      "right": 17,
+      "threshold": 166499040.0
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 1.0,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": 7,
+      "left": 18,
+      "probability": 0.08003002405166626,
+      "right": 19,
+      "threshold": 166564128.0
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 0.0,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": 6,
+      "left": 20,
+      "probability": 1.0,
+      "right": 21,
+      "threshold": 0.02179449424147606
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 1.0,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 1.0,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": 1,
+      "left": 23,
+      "probability": 0.08426111191511154,
+      "right": 34,
+      "threshold": 789.6700439453125
+    },
+    {
+      "feature": 7,
+      "left": 24,
+      "probability": 0.8390887379646301,
+      "right": 29,
+      "threshold": 166499168.0
+    },
+    {
+      "feature": 7,
+      "left": 25,
+      "probability": 0.914246141910553,
+      "right": 28,
+      "threshold": 21367978.0
+    },
+    {
+      "feature": 7,
+      "left": 26,
+      "probability": 0.05820084735751152,
+      "right": 27,
+      "threshold": 0.0020743967033922672
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 1.0,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 0.04415811970829964,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 1.0,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": 7,
+      "left": 30,
+      "probability": 0.061729829758405685,
+      "right": 31,
+      "threshold": 166551328.0
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 0.0,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": 2,
+      "left": 32,
+      "probability": 1.0,
+      "right": 33,
+      "threshold": 2.868356227874756
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 1.0,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 1.0,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": 7,
+      "left": 35,
+      "probability": 0.041988302022218704,
+      "right": 42,
+      "threshold": 166551392.0
+    },
+    {
+      "feature": 2,
+      "left": 36,
+      "probability": 0.0359405055642128,
+      "right": 39,
+      "threshold": 276.8714294433594
+    },
+    {
+      "feature": 0,
+      "left": 37,
+      "probability": 0.01919873245060444,
+      "right": 38,
+      "threshold": 0.1447618007659912
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 0.49103015661239624,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 0.017759477719664574,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": 6,
+      "left": 40,
+      "probability": 0.22250346839427948,
+      "right": 41,
+      "threshold": 42.70697021484375
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 0.7238293290138245,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 0.13254988193511963,
+      "right": -1,
+      "threshold": 0.0
+    },
+    {
+      "feature": -1,
+      "left": -1,
+      "probability": 1.0,
+      "right": -1,
+      "threshold": 0.0
+    }
+  ],
+  "schema": "030_model_v1",
+  "threshold": 0.13254988193511963,
+  "training_version": "A",
+  "transform": "raw"
+}

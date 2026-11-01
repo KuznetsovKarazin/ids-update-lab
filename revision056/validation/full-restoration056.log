@@ -1,0 +1,4 @@
+{"artifact": "historical_primary056", "status": "restored", "files": 10633, "destination": "/workspace/scratch/43cab15299bb/round2_work056/ids-evidence056", "sha256": "892309f651e722ada148a1350168f377acdf3e898ae2fa08b4def8b099274132"}
+{"artifact": "revision040_primary056", "status": "restored", "files": 4660, "destination": "/workspace/scratch/43cab15299bb/round2_work056/ids-evidence056", "sha256": "0e7dcbac49d206ea48e54e2aa99937a972935fcc6622b9db700e6131f889aa1f"}
+{"artifact": "science041_043_primary056", "status": "restored", "files": 487, "destination": "/workspace/scratch/43cab15299bb/round2_work056/ids-evidence056", "sha256": "b769ee3f8e2ddc096022ed44f00cc66c0d09b085dac2d2ff7473516a1097b4de"}
+{"artifact": "supplement051", "status": "restored", "files": 859, "destination": "/workspace/scratch/43cab15299bb/round2_work056/ids-evidence056", "sha256": "c1b2b7b7fb9c7f2a9a232454c7bf8d897f22ae2dff216785d9dba216ec0fac18"}

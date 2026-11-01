@@ -1,0 +1,14 @@
+{
+  "A_lr": {
+    "iterations": [
+      29
+    ],
+    "warnings": []
+  },
+  "B_lr": {
+    "iterations": [
+      27
+    ],
+    "warnings": []
+  }
+}

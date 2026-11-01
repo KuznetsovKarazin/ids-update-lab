@@ -1,0 +1,3 @@
+{"artifact": "c3_prebuilt056", "status": "restored", "files": 101, "destination": "/workspace/scratch/43cab15299bb/round2_work056/restore056-smoke", "sha256": "b401d8a7c821f1da28e29fda25735b8d617a724f8750cbc178ed9970ae8616eb"}
+{"artifact": "c3_panel056", "status": "restored", "files": 57, "destination": "/workspace/scratch/43cab15299bb/round2_work056/restore056-smoke", "sha256": "15c4f5d05820b3879bcd0cf89ade8ce886ca0962582cb4cafa08b23411f4653b"}
+{"artifact": "s3_prebuilt039", "status": "restored", "files": 215, "destination": "/workspace/scratch/43cab15299bb/round2_work056/restore056-smoke", "sha256": "2e151a95cddb610bc73c16a88bc2722ba7ad2adc3c41c6d50c0c677425fbb0dd"}

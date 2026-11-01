@@ -1,0 +1,643 @@
+{
+  "schema": 1,
+  "repository": "KuznetsovKarazin/ids-update-lab",
+  "artifact_parts_in_public_git": true,
+  "artifacts": {
+    "historical_primary056": {
+      "file": "historical_primary056.tar.xz",
+      "bytes": 52171260,
+      "sha256": "892309f651e722ada148a1350168f377acdf3e898ae2fa08b4def8b099274132",
+      "format": "content-addressed-preserved-files-v1",
+      "parts": [
+        {
+          "path": "release/artifacts056/historical_primary056.part000",
+          "bytes": 2097152,
+          "sha256": "815fac544b8a2d1a72e2d1f45f00d280e385986e390dfcd72f1dc063d34373c1"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part001",
+          "bytes": 2097152,
+          "sha256": "2ae84190fec4d88ae71099bb3cbc86e5fd05b6980b6849e9ca5b7924d3e8e7db"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part002",
+          "bytes": 2097152,
+          "sha256": "57c8f8daca10d594f4f13be2440358c9c02d0c2cf074e262889f248175cb5fc7"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part003",
+          "bytes": 2097152,
+          "sha256": "530e30f86be7a999488364968feaee3cf82abd50191153db5d6135fd6679be64"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part004",
+          "bytes": 2097152,
+          "sha256": "e08f2c973d122284e070bbb7cc8624ab8b1e550c2ea3ae34670194420360de67"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part005",
+          "bytes": 2097152,
+          "sha256": "27e4129098d069e6f6123bb7726e832f0a8340243b7789781c78b801aab98b74"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part006",
+          "bytes": 2097152,
+          "sha256": "17d8d6ad613fc1005006ec225e0582e6b9791d637059f79f5dbb4da655775123"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part007",
+          "bytes": 2097152,
+          "sha256": "55014e3a3497d9512032db6642d2395c02b2257dce6c23e4ff08278fcbe67a5e"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part008",
+          "bytes": 2097152,
+          "sha256": "8442556e7299b24846059d6241470d233b9f582aebf785aea02b45feed5d1002"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part009",
+          "bytes": 2097152,
+          "sha256": "3decaf0670bacc1a8cac8be1a2b7e78b431cab4eba76db33719c75ec73035ac2"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part010",
+          "bytes": 2097152,
+          "sha256": "59bf22d88b4cb600a2eac9a3e8e69f2c80c78fe9b0aef25b51cd2c29d4ce7525"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part011",
+          "bytes": 2097152,
+          "sha256": "a3350cdd754fc96a1f7de3e03a8b00e1c65e7164846465b82986f28df05d805d"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part012",
+          "bytes": 2097152,
+          "sha256": "7bb5657159f70fcb308b35e9fb3845e173205328315a945400d257bbd581695f"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part013",
+          "bytes": 2097152,
+          "sha256": "4717de756eca990cf265afc75b7d86554a811e86d9461ef2cccebeae1b1f0faf"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part014",
+          "bytes": 2097152,
+          "sha256": "509bebacaeb090ef28d3b8bc3955419e0849ce6558ee19c3b262635dc0d7b514"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part015",
+          "bytes": 2097152,
+          "sha256": "6cbcf36f43bb5f9e3960ddd3c5d00c21b1a38133711064526622842f9832779f"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part016",
+          "bytes": 2097152,
+          "sha256": "3cd720e46f9cf79c02d16866e8388e6af3af1f28f5408b160080e18ee9a35ad7"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part017",
+          "bytes": 2097152,
+          "sha256": "522ed521c27d08bc5d0024f9d7b24809d5e497dabfcc8f7247df55848442327b"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part018",
+          "bytes": 2097152,
+          "sha256": "c78ed61277d7261df855aa1975928d9209c7429c6fe4a7da03b6e5f10e724564"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part019",
+          "bytes": 2097152,
+          "sha256": "e176e743c12eae250d2c8d56b9b4d10867e7ff13577af5f64ddb0295df8a0504"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part020",
+          "bytes": 2097152,
+          "sha256": "1cc89c12349ce6bdb3f3e29c3899e7ebb96875cd793fc9abcbe33804c7fc1fb7"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part021",
+          "bytes": 2097152,
+          "sha256": "2cbb7412522ca9ae03db3135d03cc4c92a6c13b8c063b217c9b40107945e44be"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part022",
+          "bytes": 2097152,
+          "sha256": "57c6ae806d1bff6e49a79d02e663dbef85977081e7c777a966514fdfc77b8483"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part023",
+          "bytes": 2097152,
+          "sha256": "325e9152101f18d5987179dd4dc03ce43c3deedbaf24fe875d8f1944749ed67d"
+        },
+        {
+          "path": "release/artifacts056/historical_primary056.part024",
+          "bytes": 1839612,
+          "sha256": "94de8cbca83c744a814a9944766853897b74d9d0a3741fdd0818d8064415c6aa"
+        }
+      ]
+    },
+    "revision040_primary056": {
+      "file": "revision040_primary056.tar.xz",
+      "bytes": 109337680,
+      "sha256": "0e7dcbac49d206ea48e54e2aa99937a972935fcc6622b9db700e6131f889aa1f",
+      "format": "content-addressed-preserved-files-v1",
+      "parts": [
+        {
+          "path": "release/artifacts056/revision040_primary056.part000",
+          "bytes": 2097152,
+          "sha256": "a92a1e7cdc0756d018225a88696ed8f322687df90ec6275a2857ec5d4a70d51b"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part001",
+          "bytes": 2097152,
+          "sha256": "a9928e3732aec5c70c11b4aaa402331a94ccd6b40599aec6760b4fe091158b7f"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part002",
+          "bytes": 2097152,
+          "sha256": "ea3bba6d534fcda0267a4b91f55a5d400141d89f5db61c5bfb78168a0aad068c"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part003",
+          "bytes": 2097152,
+          "sha256": "5b6f6e780f6caff38d509326995a1d4127f2ec3fbef6e6def9d2090895cef946"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part004",
+          "bytes": 2097152,
+          "sha256": "429702d23dd813f006724d24142100213eccaeef098d3e1bfcc628c568b7d808"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part005",
+          "bytes": 2097152,
+          "sha256": "07bb07961ecd1c5ff8d1a82ee91357c422bba019a6cd4322ec687591de018268"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part006",
+          "bytes": 2097152,
+          "sha256": "24684a128b83fbb59ac46a30a031450264c634c331a236f5324b4c3c986b6690"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part007",
+          "bytes": 2097152,
+          "sha256": "990e73bb62d582b3757bc8dd81385f61052ee5ce0fd62caa06a2058144d59b10"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part008",
+          "bytes": 2097152,
+          "sha256": "b0f611f44d3b9b3d97963e229d9f2aa33b3417bc65be870abfbb61b74df341d2"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part009",
+          "bytes": 2097152,
+          "sha256": "b46dab50a7e6f3ffeaccb8044a0c40ce37750c44aef45eed086d82497e5a853b"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part010",
+          "bytes": 2097152,
+          "sha256": "a476d9455d8645e6f0a60e87d79bbd47cf84e0fbe1d82e6b738cdca244dc3aaf"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part011",
+          "bytes": 2097152,
+          "sha256": "e4a75a2479e275807c9ab9816b56c8164185f1d615a820c4f06bc35175f99390"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part012",
+          "bytes": 2097152,
+          "sha256": "2f1d349ace8a45dfa8e0837796c6dd59c27a5822c3de6f71b040cb962353d376"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part013",
+          "bytes": 2097152,
+          "sha256": "93894b8c38a0f0bfb80b74d0ef3df2576f1fcdc9e407ee11766b1a9088771a3a"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part014",
+          "bytes": 2097152,
+          "sha256": "f435b6ccd89b9d7957433a6a32bbfa1afb9fa46a1af2ad6f9523e4e5c820d822"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part015",
+          "bytes": 2097152,
+          "sha256": "5f87c87888e3852a01c9574a4b69d1af43097e5e19f5d56f657f8224a8b2000f"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part016",
+          "bytes": 2097152,
+          "sha256": "0854ec9a0fe4f412c82baf6e2938776df25b51fd98dea6334ae678a1744d14e9"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part017",
+          "bytes": 2097152,
+          "sha256": "e5ba8323d6bd165ca24a4e433a5bb890c499fd5f4a25ecf52dc8f509ed4a74ad"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part018",
+          "bytes": 2097152,
+          "sha256": "ffbac4f7e8fe40ef4546657028841990b4dad203240624d3975d740a9561ac2f"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part019",
+          "bytes": 2097152,
+          "sha256": "25448cdd1e8ff9f4ecd040d275ff58ab8a94ed44916327893aa58ecd6b35eea0"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part020",
+          "bytes": 2097152,
+          "sha256": "827b6973f8ef7222d3fa1e815fb03008b29971a3d8e7e56c973d4e480e394e57"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part021",
+          "bytes": 2097152,
+          "sha256": "ce7c1c57a20de41bcaf561ac8f58951d7afead7b6525f7a422d18ab369f8f2a9"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part022",
+          "bytes": 2097152,
+          "sha256": "dc508329a310c3b5eb69ffb6440f07ca618937da4546b7a17d388819b321b98c"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part023",
+          "bytes": 2097152,
+          "sha256": "57e8fdaa682c8362aa66e1c89c62935ce84674bd2adfb4ebdf01b27d1cc913f0"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part024",
+          "bytes": 2097152,
+          "sha256": "28853ee725583ce4a11b4cd1af8c9389a7bae9edef458edf25fd327903e410aa"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part025",
+          "bytes": 2097152,
+          "sha256": "b37df64fc3ba0cd139b5e69344733ea8346d0e67469c05477a52e9c9974f21cc"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part026",
+          "bytes": 2097152,
+          "sha256": "b810a247820d6d1f5ae03fec682f40786b69d52b848d456ccc8706c9b9321b25"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part027",
+          "bytes": 2097152,
+          "sha256": "5ac2551f73e5998c33f03860ce4a89e4af5e58bc13c7b42a36b919382a54249f"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part028",
+          "bytes": 2097152,
+          "sha256": "c7be041302c3d4151a2e0b941309a5bb852e16d66fec2e8066a8944dc0de7ca4"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part029",
+          "bytes": 2097152,
+          "sha256": "8cf892b43ca3865736634e7a7db1d528a527520c8f391a393a3169afc8487e28"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part030",
+          "bytes": 2097152,
+          "sha256": "65d9ee693ab662bbdb7a08b50974e9f75fb2b0eb4119515c6e5468bae39095ba"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part031",
+          "bytes": 2097152,
+          "sha256": "935788b4f1602bd21a5499f4c5b53316a09f6b8368abe7a3510fb59bff142ffd"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part032",
+          "bytes": 2097152,
+          "sha256": "10647490802c6fa93962bd1f8e29b5ce4299269f1ba92de689abcb15b6aacb96"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part033",
+          "bytes": 2097152,
+          "sha256": "cc60b14e49c481c46fefcfe8ae41bf2b364867aa7badd9e5577f32335370531d"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part034",
+          "bytes": 2097152,
+          "sha256": "8015a472656bb1c864ef2cda1c903a4b799e8e718518371b44d2b9b9c9034615"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part035",
+          "bytes": 2097152,
+          "sha256": "cac42826e8ed5ee7c61157790974e3dc8dbf190be11c23319a6c073b93ecef2b"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part036",
+          "bytes": 2097152,
+          "sha256": "db0b93ac35f08e1610065a58a87894da57f50abbcf03a33986b063d6ab378a42"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part037",
+          "bytes": 2097152,
+          "sha256": "3b7403fea3c816ce9661489932ed17985f57ec929811d0870fc26c6e20e8bfca"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part038",
+          "bytes": 2097152,
+          "sha256": "1b1fab54018d9ce0e7b49ea38fca7a46fdaf76a6267ccdb80841fdd6e6f32f78"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part039",
+          "bytes": 2097152,
+          "sha256": "420e816fe04881182f2b1318a3ea41e04a3f5a881bf893e59a97468a837f385e"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part040",
+          "bytes": 2097152,
+          "sha256": "9be1f3784988d20f9abaf363d997ced8b8e4bc62b7a78fbaa62b95a4de9598e3"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part041",
+          "bytes": 2097152,
+          "sha256": "d0ff106020c3a639e1acb6cb76c55c638d776901137a7eb2e6d31a3f0019a22d"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part042",
+          "bytes": 2097152,
+          "sha256": "2144bb54247c906a29cf4f1e550d5d576937ff0f3ed1990342648a347cbf67a3"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part043",
+          "bytes": 2097152,
+          "sha256": "1989acfc47a18ce2fc9f0033c15cf08b63791257030acbcf0f6812b81f9e3bf5"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part044",
+          "bytes": 2097152,
+          "sha256": "4c6f634d42e70f9b71b6ecd42dc46644c247225d3fa2cf240ed9b99a265cdbf2"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part045",
+          "bytes": 2097152,
+          "sha256": "654071f95e8381d5a54b436d83369659abbf702f8b43600d63c89c07ccc49c2c"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part046",
+          "bytes": 2097152,
+          "sha256": "086d469aba46c3f2dcd0d6d2de51a45e62a092dadb3787fb562a4007b1466027"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part047",
+          "bytes": 2097152,
+          "sha256": "fd26a136c718c49d0a3770c4169c6da6b78f350608e068a390f8a491b4c5551d"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part048",
+          "bytes": 2097152,
+          "sha256": "ec826c57efa555aeaa0b45e98a123b6fe361e5ce71ffe7df492dc65d99e8aaa0"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part049",
+          "bytes": 2097152,
+          "sha256": "1001f7f5ad9f34fd4e6acf2e40986809411e12162b6fc2b3a1cacb5e8582efe6"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part050",
+          "bytes": 2097152,
+          "sha256": "fa34d5830c2c66394d04430e1fb4cf1ca30ecea2b1f7ae9a38bb27288654cfaf"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part051",
+          "bytes": 2097152,
+          "sha256": "582b3ec61c15fa9759ca65af883e3153cb28be56182707fa9353ab1b0fb6d52a"
+        },
+        {
+          "path": "release/artifacts056/revision040_primary056.part052",
+          "bytes": 285776,
+          "sha256": "6b4787f4a3d5ab111977979b8f530c9eccb146d1842f85e9b84f2540db5d18f0"
+        }
+      ]
+    },
+    "science041_043_primary056": {
+      "file": "science041_043_primary056.tar.xz",
+      "bytes": 33611172,
+      "sha256": "b769ee3f8e2ddc096022ed44f00cc66c0d09b085dac2d2ff7473516a1097b4de",
+      "format": "content-addressed-preserved-files-v1",
+      "parts": [
+        {
+          "path": "release/artifacts056/science041_043_primary056.part000",
+          "bytes": 2097152,
+          "sha256": "d48cbdd5912e1d3cf949a05296b21a1dfdaada6083273c80e9b91d3fa0481a4d"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part001",
+          "bytes": 2097152,
+          "sha256": "8eb20fa945fcb68d1d310118ab78f59875bbb1374760b5674156d8efbfc679c0"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part002",
+          "bytes": 2097152,
+          "sha256": "caadc04149281d956503a21373bece7e9512837b4d8d9c78109f247090837bb6"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part003",
+          "bytes": 2097152,
+          "sha256": "4448424cfa449df2b7eecd5a85749dd541a6789c94ceb92ed3a45bdcc788b150"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part004",
+          "bytes": 2097152,
+          "sha256": "cf8f95bfaa250d70620394ef6470f8b15194352f1f3c647e9fec7a5af7ff42f6"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part005",
+          "bytes": 2097152,
+          "sha256": "5d0c5f0863481a42f7c195984098461e7fdc247973b037c4532e3a8e62fb4feb"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part006",
+          "bytes": 2097152,
+          "sha256": "21e145a69068bd2d217a64f1aa9807efe5869bdd9a70cdc18e9495c905757c85"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part007",
+          "bytes": 2097152,
+          "sha256": "a106cbbacda8233ef848675b2a892252be280f9c72b8acd223d66b94436f7425"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part008",
+          "bytes": 2097152,
+          "sha256": "b22997dfee60d738edc0c683e3f3590dbfd26818e057bf2fe98fe0617cb10b30"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part009",
+          "bytes": 2097152,
+          "sha256": "87137163d750147f90a0d85a68219ce7735b0f9f2e58e6f2b57186e2c6644b3e"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part010",
+          "bytes": 2097152,
+          "sha256": "2cfac6e07c0537ff93bcd8ee1756165fe3d09a22bd4143362e496f95ddb55e48"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part011",
+          "bytes": 2097152,
+          "sha256": "c3ad59a49d789fdb0fa1da19df795a06cbe1eea3c253f40208f5b217fbcd4102"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part012",
+          "bytes": 2097152,
+          "sha256": "fcf3105227d9133c5bfb60f64047ee19d28e132c711a5e3de028175cb0d051af"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part013",
+          "bytes": 2097152,
+          "sha256": "bedc5cc63ad9f4a67ab66dd385971a51d703c76074ecbccc3d527248b160d3f4"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part014",
+          "bytes": 2097152,
+          "sha256": "23acf5a9ff2f712ca8d7548b10967a9b24ea93b2fe50db0ce460c5d2c9e20990"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part015",
+          "bytes": 2097152,
+          "sha256": "3c4d9247b5097d5e3825e041e23f78fe5eda8efbb0aa121ec07114d9eb5b77d2"
+        },
+        {
+          "path": "release/artifacts056/science041_043_primary056.part016",
+          "bytes": 56740,
+          "sha256": "775e3a9038bc7eae18caf90bc7af86e8c32e52fe12ce6596aa49b969972e85b3"
+        }
+      ]
+    },
+    "c3_panel056": {
+      "file": "c3_panel056.tar.xz",
+      "bytes": 166440,
+      "sha256": "15c4f5d05820b3879bcd0cf89ade8ce886ca0962582cb4cafa08b23411f4653b",
+      "format": "tar.xz",
+      "parts": [
+        {
+          "path": "release/artifacts056/c3_panel056.part000",
+          "bytes": 166440,
+          "sha256": "15c4f5d05820b3879bcd0cf89ade8ce886ca0962582cb4cafa08b23411f4653b"
+        }
+      ]
+    },
+    "c3_prebuilt056": {
+      "file": "c3_prebuilt056.tar.xz",
+      "bytes": 1941072,
+      "sha256": "b401d8a7c821f1da28e29fda25735b8d617a724f8750cbc178ed9970ae8616eb",
+      "format": "tar.xz",
+      "parts": [
+        {
+          "path": "release/artifacts056/c3_prebuilt056.part000",
+          "bytes": 1941072,
+          "sha256": "b401d8a7c821f1da28e29fda25735b8d617a724f8750cbc178ed9970ae8616eb"
+        }
+      ]
+    },
+    "s3_prebuilt039": {
+      "file": "s3_prebuilt039.tar.xz",
+      "bytes": 4089428,
+      "sha256": "2e151a95cddb610bc73c16a88bc2722ba7ad2adc3c41c6d50c0c677425fbb0dd",
+      "format": "tar.xz",
+      "parts": [
+        {
+          "path": "release/artifacts056/s3_prebuilt039.part000",
+          "bytes": 2097152,
+          "sha256": "15203bbd1120156db1486ccae2a35a47b859c5c760d4b3e417800f4738b24a7c"
+        },
+        {
+          "path": "release/artifacts056/s3_prebuilt039.part001",
+          "bytes": 1992276,
+          "sha256": "f206c6707987b187dcd99692ebbcb3842d37a0e9de54e1222879b47eb5c29450"
+        }
+      ]
+    },
+    "supplement051": {
+      "file": "revision_supplement051.zip",
+      "bytes": 35199436,
+      "sha256": "c1b2b7b7fb9c7f2a9a232454c7bf8d897f22ae2dff216785d9dba216ec0fac18",
+      "format": "zip",
+      "parts": [
+        {
+          "path": "release/artifacts056/supplement051.part000",
+          "bytes": 2097152,
+          "sha256": "f7625586791abb89bf30745742c49e6290cffe1f2529107edaa4c70aaf89c31d"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part001",
+          "bytes": 2097152,
+          "sha256": "8707f1f6395e63239dabc6a146d83a09ae5434eacd4bb26ace3ca7825f0cf878"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part002",
+          "bytes": 2097152,
+          "sha256": "8c9db4dc9fee0d56adad1989f0c8f99d6fa5fe0ab3889da677db478b0cbc64ed"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part003",
+          "bytes": 2097152,
+          "sha256": "4942edb263f4e4bf7013a1d181c6e05d825414358a54925def34dfdccc5103a0"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part004",
+          "bytes": 2097152,
+          "sha256": "140cc2e42bfa539fba8c0098e27a1e1d91771839a8b9a51016adff6cb6f8d7da"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part005",
+          "bytes": 2097152,
+          "sha256": "3242cd9bf9ce0457ca01f1280f794c59b212ef6fe7dee40f595cd86366db0e66"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part006",
+          "bytes": 2097152,
+          "sha256": "411784a162a57d5a770324574697d9551ed4091d7bf106e49961ac72f74dce31"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part007",
+          "bytes": 2097152,
+          "sha256": "b8dc64f3805f8de443b060c43afae98e6272e7ae681f94e74b27a5ea0ec4a1e0"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part008",
+          "bytes": 2097152,
+          "sha256": "2a9c7db91ad11e11420652f3d640781f271f507c7d0c439bb66cfa487c06067f"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part009",
+          "bytes": 2097152,
+          "sha256": "30b176eedb9cc663f7ca04b5d19a9c38508650a33363b1bbe86d88dd5c4c053f"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part010",
+          "bytes": 2097152,
+          "sha256": "39eed2743b2b239686a5ff29565db46fe2c7fcfc2026508412968bf3b7f5af66"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part011",
+          "bytes": 2097152,
+          "sha256": "f6ea7ee4e068a6f4ffc6004735d87de35a27bb38b3366190cf95b5d16694a2b0"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part012",
+          "bytes": 2097152,
+          "sha256": "70d18e1152fed9d08549ee661af29ad11cc6dfec378abebd4ede7553bd800a0a"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part013",
+          "bytes": 2097152,
+          "sha256": "5923cb141e3a6489a81c3531b2b957450e424e60f2e7a0c4c078b3cf6ffd4c66"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part014",
+          "bytes": 2097152,
+          "sha256": "26416fe168b0f704d94abd0bd60d586702520fedda1109948c65c521a4ee0597"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part015",
+          "bytes": 2097152,
+          "sha256": "2113d870aff31b89b8019d839dfb012531d692fcc5f8dcb6cee2d0121aecf78f"
+        },
+        {
+          "path": "release/artifacts056/supplement051.part016",
+          "bytes": 1645004,
+          "sha256": "11bd8d972f656b68f50253262fd79e7bb10df9ee5164526cbd3c8ad9c7298a44"
+        }
+      ]
+    }
+  }
+}

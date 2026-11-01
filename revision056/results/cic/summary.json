@@ -1,0 +1,14 @@
+{
+  "finished_utc": "2026-11-01T10:23:29.409622+00:00",
+  "hardware_accessed": false,
+  "measurement_origin": "host_computation_on_source_dataset",
+  "model_configurations": 24,
+  "new_MCU_experiment": false,
+  "protocol_sha256": "4258a311a34b6f630edfc0c15544bd549e54baf2cfe6445fe738415d40fdaa04",
+  "source_rows": 3482483,
+  "started_utc": "2026-11-01T10:22:13.150580+00:00",
+  "status": "complete",
+  "test_rows": 871507,
+  "test_tuning_performed": false,
+  "unique_test_vectors": 698150
+}

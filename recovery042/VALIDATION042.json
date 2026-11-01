@@ -1,0 +1,31 @@
+{
+  "original_author": "Oleksandr Kuznetsov",
+  "stage": "042",
+  "source_archive_sha256": "b14b1669a2d7f510148f918392436759a2a32545f1e73f18204c1e1fe9dcd515",
+  "source_files_verified": 238,
+  "source_completed_steps": [
+    "temporal-plan",
+    "temporal-runs",
+    "threshold"
+  ],
+  "failure": "Python integer 453 out of bounds for uint8",
+  "cause": "NumPy scalar promotion of Python group frequency to uint8 in group/day accumulation",
+  "change": "Widen prediction matrix to int64 before count multiplication",
+  "models_changed": false,
+  "thresholds_changed": false,
+  "prior_results_changed": false,
+  "regression_frequencies": [
+    255,
+    256,
+    453,
+    65536,
+    4294967303
+  ],
+  "software_tests": {
+    "numerics": 9,
+    "recovery_preservation": 8,
+    "all_passed": true
+  },
+  "full_future_evaluation_with_patch_executed": false,
+  "hardware_access_attempted": false
+}

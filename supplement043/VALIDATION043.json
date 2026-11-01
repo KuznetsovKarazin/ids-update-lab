@@ -1,0 +1,14 @@
+{
+  "schema": "supplement043_validation_v1",
+  "software_tests_passed": 13,
+  "test_command": "IDS043_KIT_ROOT=kit-restored/revision040-kit python -m unittest discover -s supplement043/tests -v",
+  "platform": "Linux host; Windows command constructed and inspected, not executed on user PC",
+  "full_TON_evaluation_executed_locally": false,
+  "hardware_access_attempted": false,
+  "independent_review": "no blocking issue; corrected original-cache provenance",
+  "original_author": "Oleksandr Kuznetsov",
+  "purpose": "Frozen q22 comparator plus distinction between raw and effective ReLU clipping; no retraining or threshold selection",
+  "audited_source042_archive_sha256": "3bc91301a7846c2ef0d4a86a52c55bd5204ab8e4d4889649b9ab90da023612fa",
+  "source042_archive_files_verified": 256,
+  "source041_imports_byte_identical": 238
+}

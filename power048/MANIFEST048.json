@@ -1,0 +1,39 @@
+{
+  "files": [
+    {
+      "path": "power048/AUDIT048.json",
+      "sha256": "1fe40d68eff876764d7a5c9cff773a3574f2ac1b519cf03b085a3e23ed759872",
+      "bytes": 2458
+    },
+    {
+      "path": "power048/README_RU.txt",
+      "sha256": "408fc6e98f22617984521e3a86c684fbc00e59b459f6decf33a5f9243462897e",
+      "bytes": 6867
+    },
+    {
+      "path": "power048/VALIDATION048.json",
+      "sha256": "d14f630959156f02c5324c3cb9a3691c8cb04e727e0cd929f24f917bb2b10031",
+      "bytes": 1983
+    },
+    {
+      "path": "power048/continuation048.py",
+      "sha256": "29186ec89faff50737e5716c689626ffc5913fe4815100352ffab8ccf6a8987a",
+      "bytes": 17789
+    },
+    {
+      "path": "power048/incident113_hashes.json",
+      "sha256": "d46bd06fbea35d975c775b6bb4c2a7ffb1630101eb9f7d0d7711086967dc12e5",
+      "bytes": 28862
+    },
+    {
+      "path": "power048/run_powercut048.py",
+      "sha256": "eff62c89cb869961a95a4d875e4c4f6b8d7e28036c41c1a14d0d909cbb7206ab",
+      "bytes": 54428
+    },
+    {
+      "path": "power048/test_continuation048.py",
+      "sha256": "7640eabad4135edfcee2a698176dc210303df6a6954a886b66502118e9d690c4",
+      "bytes": 30358
+    }
+  ]
+}

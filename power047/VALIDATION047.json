@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "independent_tests_passed": 14,
+  "tests_use_mock_hardware": true,
+  "hardware_execution_performed": false,
+  "real_evidence_validation": "prepare-only passed against incident113/run, reviewed late113 diagnostic, exact power046 runtime",
+  "source_sha256": "64790a6604aa5b66c65656d67774a321ef956c720cc679af226f99f321cd51d8",
+  "covered_behaviors": [
+    "100 separate control IDs and whitelisted commands",
+    "No serial or file writes in prepare-only",
+    "Changed config or late evidence blocks access",
+    "Wrong initial model or failed controls blocks Pico access",
+    "Unarmed Pico is not automatically armed",
+    "20-second recovery failure stops without another power command",
+    "Endpoint ADC captures persistent low rail",
+    "Initial delayed rail rise allowed",
+    "Missing OFF evidence stops before MCU reopen",
+    "Non-finite partial evidence is saved and archived",
+    "MCU close error during outage still awaits PROBE and records ADC",
+    "User stop before cycles still yields archive",
+    "Source evidence hashes remain unchanged"
+  ],
+  "limitations": [
+    "Native Windows and serial hardware behavior must be tested by the operator",
+    "Host timestamps are not physical supply-edge capture",
+    "Blocking OS calls may overrun the cooperative host deadline; late replies cannot pass",
+    "STATUS protocol has no independent request nonce or boot-age proof",
+    "A passing control does not exclude rare or update-workload-specific failure"
+  ],
+  "test_command": "POWER047_INCIDENT_RUN=<extracted incident113/run> POWER047_LATE_RECOVERY=<extracted late113 folder> python -m unittest discover -s power047 -p test_*.py -v"
+}

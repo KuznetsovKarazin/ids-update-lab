@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "source_rows": 3482483,
+  "invalid_feature_rows": 0,
+  "source_files": 12,
+  "test_rows": 871507,
+  "unique_test_vectors": 698150,
+  "models": 24,
+  "aggregate_cells": 72,
+  "type_cells": 2448,
+  "protocol_sha256": "4258a311a34b6f630edfc0c15544bd549e54baf2cfe6445fe738415d40fdaa04",
+  "saved_protocol_json_sha256": "0b691f761ee484009a7a6721a3dfb00118182ccd2457d4ba4cab5632de31096f",
+  "result_manifest_sha256": "db79a0f837967d94cfe3c1f8a6c1b6711bb6f7a5362d613022b50e4455a41d28",
+  "audit_code_sha256": "c44c6589400b9809c8d47326a6f65e80703ddfc01f249690b02f3bfc1eff2b36",
+  "source_rescan": true,
+  "independent_role_group_and_confusion_accumulation": true,
+  "shared_numerical_reference": "research030/training/model030.py",
+  "hardware_accessed": false
+}

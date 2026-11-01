@@ -1,0 +1,64 @@
+{
+  "bias": -0.18454672396183014,
+  "data_origin": "CICIoT2023_selected_shards_056",
+  "feature_contract": {
+    "features": [
+      "flow_duration",
+      "Header_Length",
+      "Rate",
+      "Tot sum",
+      "Min",
+      "Max",
+      "Std",
+      "IAT"
+    ],
+    "source_units_unchanged": true
+  },
+  "feature_count": 8,
+  "feature_names": [
+    "flow_duration",
+    "Header_Length",
+    "Rate",
+    "Tot sum",
+    "Min",
+    "Max",
+    "Std",
+    "IAT"
+  ],
+  "kind": "lr",
+  "mean": [
+    1.668255090713501,
+    8.715149879455566,
+    3.795982599258423,
+    7.285991191864014,
+    4.338293552398682,
+    5.493655681610107,
+    2.899218797683716,
+    13.7422456741333
+  ],
+  "model_id": "lr_compatible_probability",
+  "scale": [
+    1.7352463006973267,
+    4.821159362792969,
+    2.498791456222534,
+    1.3018983602523804,
+    0.793573796749115,
+    1.654135823249817,
+    2.8317103385925293,
+    8.065185546875
+  ],
+  "schema": "030_model_v1",
+  "threshold": 0.6886390447616577,
+  "training_version": "B",
+  "transform": "log1p_standardize",
+  "weights": [
+    -1.0452630519866943,
+    -2.340155601501465,
+    0.47257450222969055,
+    -1.2581850290298462,
+    1.4634101390838623,
+    -0.0686430037021637,
+    -1.3120912313461304,
+    1.772144079208374
+  ]
+}

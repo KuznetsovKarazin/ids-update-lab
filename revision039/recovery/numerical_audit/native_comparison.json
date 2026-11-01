@@ -1,0 +1,177 @@
+{
+  "A_dt": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 0.0
+  },
+  "B_dt": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 0.0
+  },
+  "dt_stale_threshold": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 0.0
+  },
+  "A_lr": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 5.899999999670058e-08
+  },
+  "B_lr": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [
+      990,
+      998
+    ],
+    "max_native_vs_MCU_probability_error": 1.199999999368373e-07
+  },
+  "lr_compatible_decision": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 1.1899999996511923e-07
+  },
+  "lr_compatible_probability": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [
+      1002
+    ],
+    "max_native_vs_MCU_probability_error": 1.199999999368373e-07
+  },
+  "lr_stale_scaler": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 1.199999999368373e-07
+  },
+  "lr_stale_scaler_threshold": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 1.199999999368373e-07
+  },
+  "lr_stale_threshold": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 1.199999999368373e-07
+  },
+  "A_mlp_float": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 5.999999996841865e-08
+  },
+  "B_mlp_float": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [
+      991
+    ],
+    "max_native_vs_MCU_probability_error": 6.000000007944095e-08
+  },
+  "mlp_float_compatible_first_layer": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 1.200000000478596e-07
+  },
+  "mlp_float_stale_scaler": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 5.899999999670058e-08
+  },
+  "mlp_float_stale_scaler_threshold": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 5.899999999670058e-08
+  },
+  "mlp_float_stale_threshold": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 6.000000007944095e-08
+  },
+  "A_mlp_int8": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 3.700000000828041e-09,
+    "native_vs_MCU_q_score_mismatch_indices": [],
+    "native_vs_golden_q_score_mismatch_indices": []
+  },
+  "percentile999_transferred": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 1.1899999996511923e-07,
+    "native_vs_MCU_q_score_mismatch_indices": [],
+    "native_vs_golden_q_score_mismatch_indices": []
+  },
+  "B_mlp_int8": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [
+      1004
+    ],
+    "max_native_vs_MCU_probability_error": 9.999999994736442e-10,
+    "native_vs_MCU_q_score_mismatch_indices": [],
+    "native_vs_golden_q_score_mismatch_indices": [
+      850,
+      877,
+      1004
+    ]
+  },
+  "mlp_int8_compatible_requantized": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 9.999999994736442e-10,
+    "native_vs_MCU_q_score_mismatch_indices": [],
+    "native_vs_golden_q_score_mismatch_indices": []
+  },
+  "mlp_int8_stale_input_quantization": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 9.999999994736442e-10,
+    "native_vs_MCU_q_score_mismatch_indices": [],
+    "native_vs_golden_q_score_mismatch_indices": []
+  },
+  "mlp_int8_stale_integer_threshold_code": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [
+      1004
+    ],
+    "max_native_vs_MCU_probability_error": 9.999999994736442e-10,
+    "native_vs_MCU_q_score_mismatch_indices": [],
+    "native_vs_golden_q_score_mismatch_indices": [
+      850,
+      877,
+      1004
+    ]
+  },
+  "mlp_int8_stale_scaler": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 9.999999994736442e-10,
+    "native_vs_MCU_q_score_mismatch_indices": [],
+    "native_vs_golden_q_score_mismatch_indices": []
+  },
+  "mlp_int8_stale_scaler_threshold": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 9.999999994736442e-10,
+    "native_vs_MCU_q_score_mismatch_indices": [],
+    "native_vs_golden_q_score_mismatch_indices": []
+  },
+  "mlp_int8_stale_threshold": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [
+      1004
+    ],
+    "max_native_vs_MCU_probability_error": 9.999999994736442e-10,
+    "native_vs_MCU_q_score_mismatch_indices": [],
+    "native_vs_golden_q_score_mismatch_indices": [
+      850,
+      877,
+      1004
+    ]
+  },
+  "percentile999_recalibrated": {
+    "native_vs_MCU_label_mismatch_indices": [],
+    "native_vs_golden_label_mismatch_indices": [],
+    "max_native_vs_MCU_probability_error": 1.1899999996511923e-07,
+    "native_vs_MCU_q_score_mismatch_indices": [],
+    "native_vs_golden_q_score_mismatch_indices": []
+  }
+}

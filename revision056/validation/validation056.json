@@ -1,0 +1,20 @@
+{
+  "status": "software_and_evidence_checks_passed",
+  "new_hardware_measurements": false,
+  "new_C3_firmware_configurations_compiled": 8,
+  "new_software_tests_passed": 12,
+  "historical_software_tests_passed": 128,
+  "historical_fixture_dependent_tests_skipped": 92,
+  "historical_subtests_passed": 119,
+  "restored_primary_files": 16639,
+  "CIC_source_rows_rescanned": 3482483,
+  "CIC_aggregate_cells_verified": 72,
+  "CIC_type_cells_verified": 2448,
+  "P1_primary_audit_issues": 0,
+  "P1_numeric_reference_comparisons": 2364,
+  "H4_recorded_installations_recomputed": 480,
+  "H4_original_two_S3_target_complete": false,
+  "portable_C3_package_preparation": "4 families, 26 configurations, 1024 unchanged inputs; no serial access",
+  "raw_CSV_training_arrays_and_databases": "reconstruct locally; not redistributed",
+  "preserved_CRLF_and_archive_source_whitespace": "not normalized; source/evidence byte hashes retained"
+}

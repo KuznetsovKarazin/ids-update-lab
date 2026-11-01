@@ -1,0 +1,50 @@
+{
+  "revision": "047",
+  "purpose": "Separate power-only control after preserved incidents61 and113",
+  "main_campaign": {
+    "planned_attempts": 200,
+    "attempted": 113,
+    "remaining": 87,
+    "next_trial": 114,
+    "original_no_response_trials": [
+      61,
+      113
+    ],
+    "late_recovery_separate": {
+      "61": "old_valid",
+      "113": "old_valid"
+    },
+    "phase_confirmed": 0
+  },
+  "control": {
+    "planned_cycles": 100,
+    "stop_at_first_fault": true,
+    "off_ms": 2000,
+    "flash_update_commands": false,
+    "model": "p39B-1136",
+    "main_trial_replacement": false,
+    "primary_recovery_window_seconds": 20,
+    "recovery_clock_origin": "host receipt of PROBE result; not a captured physical rail edge",
+    "mcu_handle_at_cut": "open, passive reads until disconnect/error or0.5s, then close before expected restoration",
+    "initial_pico_requirement": "already armed with exact reviewed configuration; no automatic ARM",
+    "pico_power_command": "PROBE2000 only; controller restores ON internally",
+    "adc": "baseline, promptly after received PROBE result, during retry window, at recovered STATUS and final fault; host timestamped point samples",
+    "after_fault": "stop; capture available ADC and host USB diagnostics; no extraON/OFF/DISARM/reset",
+    "controls": "exact initialoldidentity and12frozeninputs before powercycling; exactoldidentity and12checks aftereach recoveredcycle"
+  },
+  "interpretation": {
+    "failure_without_update": "Flash update is not a necessary condition for that observed failure. Does not isolate Windows from USB wiring, supply, device boot or other causes.",
+    "no_failure_in_100": "Does not exclude a rare or workload-dependent failure and does not certify the apparatus.",
+    "late_recovery": "Keep separate from the original20s endpoint.",
+    "phase_timing": "No inference about collapse inside a flash operation.",
+    "dmm_latest": {
+      "reported_value_volts": 3.33,
+      "reported_point": "A20 viaB20/redwire toESP32; positive display confirmed byoperator",
+      "separate_from_historical_failure": true
+    }
+  },
+  "source_archives": {
+    "incident113_sha256": "2d64105e8174549238873bf8b2335dacc17c6e5b18f090e581f3c93d614900ea",
+    "late113_sha256": "7102c8c5b2863ac2849b3a75b5b02c5d359e3526bdd048442c4d5dddc36c34f8"
+  }
+}

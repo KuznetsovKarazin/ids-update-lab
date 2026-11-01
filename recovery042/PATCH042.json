@@ -1,0 +1,16 @@
+{
+  "schema": "pc_recovery042_patch_v1",
+  "original_author": "Oleksandr Kuznetsov",
+  "original_runner_sha256": "9f25c8002233550c6f73e1b0a84f962c7386402783dfdec1723aadd63a1fedf3",
+  "coordinator_sha256": "3bf8eb5720d0be40a4d26946860dd78bde52133cf8a7d14ba94dc5de93dfe963",
+  "original_delivery_manifest_sha256": "f6afd4cb1dffadb63732e87883aeb3422f55306d3ea4a48ff1ec90b126047143",
+  "sha256": {
+    "README_RU.md": "7465e93e26a3ef9ce33e58fcfb2f1afa3f60a790432f03a85e32aa9d3d950927",
+    "VALIDATION042.json": "21320100f4f9d2173f6afadd8bdeb1a15d344af96184044b87188a55059b8c62",
+    "expected_source041.json": "e7a33213935b76f5ad56c55f86558513c527f6e25342dbcb3fe2f26501671ed6",
+    "recover_pc042.py": "ce376c88e8ab5c47ee2793ca2027d214225ca91ec10e0cfd51a7332d60cbc993",
+    "run_numerics042.py": "64a6337209794ff7f60d861174f2c5e0abe0a7de09fd515f0f66cbc90e168630",
+    "test_numerics042.py": "66a17ca20cc95970adc5e473c58d93b7c77c6d90c8e4cd02f59ffec92d1cecb7",
+    "tests/test_recovery042.py": "7e20471d2b20264cdbf2cbb14bd2c7cfa8130b8551792ad3d089735d3bd036a1"
+  }
+}

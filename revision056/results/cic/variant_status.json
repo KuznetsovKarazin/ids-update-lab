@@ -1,0 +1,66 @@
+{
+  "lr_stale_threshold": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "lr_stale_scaler": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "lr_stale_scaler_threshold": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "mlp_float_stale_threshold": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "mlp_float_stale_scaler": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "mlp_float_stale_scaler_threshold": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "mlp_int8_stale_threshold": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "mlp_int8_stale_scaler": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "mlp_int8_stale_scaler_threshold": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "mlp_int8_stale_input_quantization": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "mlp_int8_stale_integer_threshold_code": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "dt_stale_threshold": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "lr_compatible_probability": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "lr_compatible_decision": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "mlp_float_compatible_first_layer": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  },
+  "mlp_int8_compatible_requantized": {
+    "status": "evaluated",
+    "role": "explicit component ablation or compatible export, never hyperparameter selection"
+  }
+}

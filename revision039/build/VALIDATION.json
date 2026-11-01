@@ -1,0 +1,169 @@
+{
+  "all_artifact_hashes_verified": true,
+  "all_current_firmware_source_hashes_match": true,
+  "artifacts": [
+    {
+      "family": "dt",
+      "image_bytes": 345360,
+      "image_sha256": "4ffbf67e74282f91f81c0f41bf2d27b0ff0dd79db07df0c62035a473c6cb8e35",
+      "optimization": "O2",
+      "path": "revision039/build/prebuilt/O2/dt_bundle",
+      "phase_gpio": null,
+      "policy": "bundle"
+    },
+    {
+      "family": "dt",
+      "image_bytes": 352144,
+      "image_sha256": "edfe9b682786aeabdeb87c9dff95e73fdf7ddb8381b9479b904b8bd417b6b84c",
+      "optimization": "O2",
+      "path": "revision039/build/prebuilt/O2/dt_whole",
+      "phase_gpio": null,
+      "policy": "whole"
+    },
+    {
+      "family": "lr",
+      "image_bytes": 345360,
+      "image_sha256": "86ef2aca2591fae5b6b8bbb99f4e796605c34e321942dbb4ac240a4c8f2d4eaa",
+      "optimization": "O2",
+      "path": "revision039/build/prebuilt/O2/lr_bundle",
+      "phase_gpio": null,
+      "policy": "bundle"
+    },
+    {
+      "family": "lr",
+      "image_bytes": 352144,
+      "image_sha256": "be80f00606ae068285ac7e45e076c7ca874920b23cedf123474ffeec3b78f95b",
+      "optimization": "O2",
+      "path": "revision039/build/prebuilt/O2/lr_whole",
+      "phase_gpio": null,
+      "policy": "whole"
+    },
+    {
+      "family": "mlp_float",
+      "image_bytes": 345360,
+      "image_sha256": "2f44b272d784921b1e8a238e516ba743ed026402d8f7a2d7518873b730456e4c",
+      "optimization": "O2",
+      "path": "revision039/build/prebuilt/O2/mlp_float_bundle",
+      "phase_gpio": null,
+      "policy": "bundle"
+    },
+    {
+      "family": "mlp_float",
+      "image_bytes": 352144,
+      "image_sha256": "9dfed31923afae0a8d8db71cb8f5244a3fc3519e602e3a3189fda736563bbbae",
+      "optimization": "O2",
+      "path": "revision039/build/prebuilt/O2/mlp_float_whole",
+      "phase_gpio": null,
+      "policy": "whole"
+    },
+    {
+      "family": "mlp_int8",
+      "image_bytes": 345360,
+      "image_sha256": "09f403b268e2978f2362d9ff05c07fd485db9b426092178b4c5ef78b4a25b6c5",
+      "optimization": "O2",
+      "path": "revision039/build/prebuilt/O2/mlp_int8_bundle",
+      "phase_gpio": null,
+      "policy": "bundle"
+    },
+    {
+      "family": "mlp_int8",
+      "image_bytes": 352144,
+      "image_sha256": "e7b9e573cbfe401e18ac7f018aeeb92191c0f462cf7473a1f5890a33ba4effca",
+      "optimization": "O2",
+      "path": "revision039/build/prebuilt/O2/mlp_int8_whole",
+      "phase_gpio": null,
+      "policy": "whole"
+    },
+    {
+      "family": "dt",
+      "image_bytes": 335808,
+      "image_sha256": "4d82d63d0f586f8044167ff131a238585c85b8a964cfa6d2245712d5ec86fe43",
+      "optimization": "Og",
+      "path": "revision039/build/prebuilt/Og/dt_bundle",
+      "phase_gpio": null,
+      "policy": "bundle"
+    },
+    {
+      "family": "dt",
+      "image_bytes": 342384,
+      "image_sha256": "97eee33a312b4d4354b8af8bb8386ffa3d1e37cec2c96ee6c9ece33da6e7f3c4",
+      "optimization": "Og",
+      "path": "revision039/build/prebuilt/Og/dt_whole",
+      "phase_gpio": null,
+      "policy": "whole"
+    },
+    {
+      "family": "lr",
+      "image_bytes": 335808,
+      "image_sha256": "17974f19b118bb742eda0af6cb7aed69c73e756a411f209c2ab6df2ca449e367",
+      "optimization": "Og",
+      "path": "revision039/build/prebuilt/Og/lr_bundle",
+      "phase_gpio": null,
+      "policy": "bundle"
+    },
+    {
+      "family": "lr",
+      "image_bytes": 342384,
+      "image_sha256": "08bf99e2ed665d8b583442571504d0f2dacc88afa0d08903e64da72293ef3484",
+      "optimization": "Og",
+      "path": "revision039/build/prebuilt/Og/lr_whole",
+      "phase_gpio": null,
+      "policy": "whole"
+    },
+    {
+      "family": "mlp_float",
+      "image_bytes": 335808,
+      "image_sha256": "05d03d4afb9878a39905c2e3dbcd8cbb4465fb2966363d3d10c23624a5e1d7d9",
+      "optimization": "Og",
+      "path": "revision039/build/prebuilt/Og/mlp_float_bundle",
+      "phase_gpio": null,
+      "policy": "bundle"
+    },
+    {
+      "family": "mlp_float",
+      "image_bytes": 342384,
+      "image_sha256": "c182897d3cd5bf07ecf7dabc7db9a2b82efc67a2a83ccc7caa60a26a545765be",
+      "optimization": "Og",
+      "path": "revision039/build/prebuilt/Og/mlp_float_whole",
+      "phase_gpio": null,
+      "policy": "whole"
+    },
+    {
+      "family": "mlp_int8",
+      "image_bytes": 335808,
+      "image_sha256": "c10ca07786081078adc68bc28249cb6e4b80a98a048840d409da69f4fa04027e",
+      "optimization": "Og",
+      "path": "revision039/build/prebuilt/Og/mlp_int8_bundle",
+      "phase_gpio": null,
+      "policy": "bundle"
+    },
+    {
+      "family": "mlp_int8",
+      "image_bytes": 342384,
+      "image_sha256": "19f4a8bdf308d22d0c5c6d739585bd9dd737fbbf5a8092052d7f9e9b980916b2",
+      "optimization": "Og",
+      "path": "revision039/build/prebuilt/Og/mlp_int8_whole",
+      "phase_gpio": null,
+      "policy": "whole"
+    },
+    {
+      "family": "mlp_float",
+      "image_bytes": 349184,
+      "image_sha256": "5aa3151c01b9cea9001166224a28cca7f20dee6fff1eada2c546c6add6c8e45e",
+      "optimization": "O2",
+      "path": "revision039/build/prebuilt/phase_gpio4/O2/mlp_float_bundle",
+      "phase_gpio": 4,
+      "policy": "bundle"
+    }
+  ],
+  "author": "Oleksandr Kuznetsov",
+  "checked_utc": "2026-10-23T16:25:37.172946+00:00",
+  "cross_compiled_configurations": 17,
+  "hardware_accessed": false,
+  "hardware_validation": "not performed",
+  "idf_commit": "9d7f2d69f50d1288526d4f1027108e314e8c879f",
+  "idf_version": "v5.3.2",
+  "remote_ci_executed": false,
+  "revision": "039",
+  "unit_tests_passed": 4
+}

@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "independent_tests_passed": 32,
+  "hardware_execution_performed": false,
+  "tests_use_mock_hardware": true,
+  "real_cli_prepare_only": "passed with original incident113,late113,control047 and reviewed Kit inputs",
+  "bound_evidence_files": {
+    "main113_checkpoint": 171,
+    "late113": 5,
+    "control047": 111,
+    "total": 287
+  },
+  "coverage": [
+    "Original61/113 endpoints and113-row prefix preserved",
+    "Firsttrial114,remaining87,setupversions1141/1142,candidate1143",
+    "Every admission prerequisite precedes flash mutation",
+    "Changed case/late/control evidence blocks hardware",
+    "Exclusive one-time048 attempt blocks repeats",
+    "Unarmed Pico or invalid initialrail blocks updates withoutARM",
+    "New unavailable114 state cannot be automatically admitted",
+    "Original nominal20s MCU recovery loop unchanged",
+    "ADC observation failures do not change validSTATUS decisions",
+    "Failed-endpoint ADC precedes slow port enumeration",
+    "No cleanupON or other power command",
+    "Close failures stillsave summary andrestore temporary Windowsrequest",
+    "Offline preparation doesnotwrite originalinputs"
+  ],
+  "source_sha256": {
+    "run_powercut048.py": "eff62c89cb869961a95a4d875e4c4f6b8d7e28036c41c1a14d0d909cbb7206ab",
+    "continuation048.py": "29186ec89faff50737e5716c689626ffc5913fe4815100352ffab8ccf6a8987a",
+    "incident113_hashes.json": "d46bd06fbea35d975c775b6bb4c2a7ffb1630101eb9f7d0d7711086967dc12e5",
+    "test_continuation048.py": "7640eabad4135edfcee2a698176dc210303df6a6954a886b66502118e9d690c4"
+  },
+  "limits": [
+    "Cause of prior failures not established by100successful controlcycles",
+    "No hardware execution of new048 code in this environment",
+    "ADC endpoint sample isnot a power-rising-edge capture",
+    "Original blocking OS/serial calls may finish beyond nominal20seconds; their acceptance rule is deliberately unchanged",
+    "No independent analog phase timing confirmation"
+  ]
+}

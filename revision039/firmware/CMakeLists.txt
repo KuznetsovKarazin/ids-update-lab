@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.16)
+# Bind esp_app_desc.version to the compiled factory package for the full-image baseline.
+file(READ "${CMAKE_CURRENT_LIST_DIR}/main/generated/model_contract.h" IDS_CONTRACT_HEADER)
+string(REGEX MATCH "kFactoryVersion = ([0-9]+)" IDS_VERSION_MATCH "${IDS_CONTRACT_HEADER}")
+if(NOT IDS_VERSION_MATCH)
+  message(FATAL_ERROR "Generate main/generated/model_contract.h with the host export-header command first")
+endif()
+set(PROJECT_VER "${CMAKE_MATCH_1}")
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(ids_update_lab)

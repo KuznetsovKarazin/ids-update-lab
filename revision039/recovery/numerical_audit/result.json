@@ -1,0 +1,125 @@
+{
+  "status": "AUDIT_COMPLETE_DISAGREEMENTS_PRESERVED",
+  "source_summary_status": "complete",
+  "source_all_numerical_checks_agree": false,
+  "models": 26,
+  "unique_inputs": 1024,
+  "inference_records": 26624,
+  "counts_by_category": {
+    "real_stratified": {
+      "evaluations": 13312,
+      "label_mismatches": 0,
+      "probability_tolerance_exceeded": 0,
+      "integer_codes_compared": 5120,
+      "integer_code_mismatches": 0
+    },
+    "synthetic_random": {
+      "evaluations": 6656,
+      "label_mismatches": 0,
+      "probability_tolerance_exceeded": 0,
+      "integer_codes_compared": 2560,
+      "integer_code_mismatches": 0
+    },
+    "range_and_grid": {
+      "evaluations": 3328,
+      "label_mismatches": 0,
+      "probability_tolerance_exceeded": 6,
+      "integer_codes_compared": 1280,
+      "integer_code_mismatches": 6
+    },
+    "decision_boundary": {
+      "evaluations": 3328,
+      "label_mismatches": 7,
+      "probability_tolerance_exceeded": 3,
+      "integer_codes_compared": 1280,
+      "integer_code_mismatches": 3
+    }
+  },
+  "max_probability_abs_error": 0.4236266614662171,
+  "counts_by_family": {
+    "dt": {
+      "evaluations": 3072,
+      "label_mismatches": 0,
+      "probability_tolerance_exceeded": 0,
+      "max_probability_abs_error": 4.5410153415303967e-10
+    },
+    "lr": {
+      "evaluations": 7168,
+      "label_mismatches": 3,
+      "probability_tolerance_exceeded": 0,
+      "max_probability_abs_error": 3.574189147981244e-07
+    },
+    "mlp_float": {
+      "evaluations": 6144,
+      "label_mismatches": 1,
+      "probability_tolerance_exceeded": 0,
+      "max_probability_abs_error": 1.3110589599518718e-06
+    },
+    "mlp_int8": {
+      "evaluations": 10240,
+      "label_mismatches": 3,
+      "probability_tolerance_exceeded": 9,
+      "max_probability_abs_error": 0.4236266614662171,
+      "integer_codes_compared": 10240,
+      "integer_code_mismatches": 9
+    }
+  },
+  "label_mismatches": 7,
+  "integer_code_mismatches": 9,
+  "probability_tolerance_exceeded": 9,
+  "failed_unique_input_indices": [
+    850,
+    877,
+    990,
+    991,
+    998,
+    1002,
+    1004
+  ],
+  "integer_failed_unique_input_indices": [
+    850,
+    877,
+    1004
+  ],
+  "native_vs_MCU_label_mismatches": 0,
+  "native_vs_MCU_integer_code_mismatches": 0,
+  "evidence_hashes": {
+    "prepared_files_verified": 56,
+    "hardware_files_verified": 100
+  },
+  "source_hashes": {
+    "research030/validation/native030.cpp": "0135e7be6ef72f1f3dc42bd114f3f8b1e9b6a816b1c135308d78b951ece106ff",
+    "revision039/firmware/components/ids_core/ids_core.cpp": "816192fe83072fa62999ab9c42667b2b04e47fc6711dd05ecba8274ff603e3e9",
+    "revision039/firmware/components/ids_core/ids_tree.cpp": "1c535a9cdc7e006ca7c5d793f19f5019304a10d3fc2e41910617d1835cb05ab3",
+    "revision039/firmware/components/ids_core/ids_mlp.cpp": "ed8255950a740d6b94a5b1dbb05ec00ef6aeeda78fd68232c1714c889c3a9589"
+  },
+  "compile_command": [
+    "g++",
+    "-std=c++17",
+    "-O2",
+    "-ffp-contract=off",
+    "-I",
+    "/workspace/scratch/43cab15299bb/ids-update-lab-revision/revision039/firmware/components/ids_core/include",
+    "/workspace/scratch/43cab15299bb/revision039-numeric-audit/native039_qscore.cpp",
+    "/workspace/scratch/43cab15299bb/ids-update-lab-revision/revision039/firmware/components/ids_core/ids_core.cpp",
+    "/workspace/scratch/43cab15299bb/ids-update-lab-revision/revision039/firmware/components/ids_core/ids_tree.cpp",
+    "/workspace/scratch/43cab15299bb/ids-update-lab-revision/revision039/firmware/components/ids_core/ids_mlp.cpp",
+    "-lcrypto",
+    "-o",
+    "/workspace/scratch/43cab15299bb/revision039-numeric-audit/native039_qscore"
+  ],
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "libm": "libm.so.6"
+  },
+  "limits": [
+    "The panel deliberately targets boundaries; rates do not estimate real-world error probabilities.",
+    "512 real inputs are already-exposed saved fitting/calibration samples, not a new detection test.",
+    "No MCU intermediate logs were recorded; exact MCU log1p and input q values are inferred from native reproduction and sensitivity witnesses.",
+    "Original golden, models, thresholds and protocol remain unchanged. No pass is manufactured by replacing the reference.",
+    "This is Og on one board. O2 and other-board numerical runs are not present."
+  ]
+}

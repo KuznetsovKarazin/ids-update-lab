@@ -1,0 +1,30 @@
+{
+  "cost_median_rows": 48,
+  "cost_observations": 480,
+  "future_export_rows": 24,
+  "limitations": "Verifies saved references and primary recorded evidence, not fresh neural-network fitting/inference on original TON CSVs. Full power-cut audit is a separate included CLI.",
+  "manifest_files": 855,
+  "numerical_comparisons_against_frozen_references": {
+    "O2": {
+      "evaluations": 26624,
+      "integer_code_differences": 9,
+      "integer_codes_compared": 10240,
+      "label_differences": 7,
+      "max_probability_abs_error": 0.4236266614662171,
+      "probability_exceedances": 9,
+      "raw_inferences_match": true
+    },
+    "Og": {
+      "evaluations": 26624,
+      "integer_code_differences": 9,
+      "integer_codes_compared": 10240,
+      "label_differences": 7,
+      "max_probability_abs_error": 0.4236266614662171,
+      "probability_exceedances": 9,
+      "raw_inferences_match": true
+    }
+  },
+  "status": "verified",
+  "temporal_export_rows": 36,
+  "threshold_rows": 12
+}

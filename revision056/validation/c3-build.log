@@ -1,0 +1,10 @@
+WARNING: Ignoring invalid distribution ~ryptography (/workspace/scratch/43cab15299bb/round2_work056/toolchains/idf-tools/python_env/idf5.3_py3.12_env/lib/python3.12/site-packages)
+BUILD lr_bundle_O2
+BUILD lr_whole_O2
+BUILD dt_bundle_O2
+BUILD dt_whole_O2
+BUILD mlp_float_bundle_O2
+BUILD mlp_float_whole_O2
+BUILD mlp_int8_bundle_O2
+BUILD mlp_int8_whole_O2
+DONE: compiled_not_hardware_validated; no hardware accessed

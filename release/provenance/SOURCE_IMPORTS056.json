@@ -1,0 +1,91 @@
+{
+  "stage": "056",
+  "source_archives": [
+    {
+      "file": "ids-update-lab-power045-usb-fix.zip",
+      "bytes": 27179,
+      "sha256": "6a75db2e0336fb83b605cc31edfca26963f86f0fd85f386c8c2b589b51dc7034"
+    },
+    {
+      "file": "ids-update-lab-power045.zip",
+      "bytes": 28607,
+      "sha256": "52e1707963b182fd13c9deafbad6cf57aa726e2090a459df3145fabeeb6effb4"
+    },
+    {
+      "file": "ids-update-lab-recovery040.zip",
+      "bytes": 11641065,
+      "sha256": "28adadc469ac2c7c92d0f03d56681b0ddee1c691064214f0efd8080fd43172cf"
+    },
+    {
+      "file": "ids-update-lab-revision039.zip",
+      "bytes": 11507012,
+      "sha256": "1f40c476399df7a83c6fe8f32230bc8c07f3b32b3e80c49de8d5a5f927fd378f"
+    },
+    {
+      "file": "recovery042.zip",
+      "bytes": 38566,
+      "sha256": "0afe6c4188fbc616b69f27f62647705527f91b962400dcd4ae594d207879093a"
+    },
+    {
+      "file": "supplement043.zip",
+      "bytes": 69056,
+      "sha256": "f495e2c16fb7d870b82e496237392274db3565a8f0d724b82b573035339396bf"
+    },
+    {
+      "file": "ids-update-lab-diagnostic113.zip",
+      "bytes": 12924,
+      "sha256": "44eb71c073c66eb38a3da0047124097a257c31ef7ed44240256c6637d64d5c61"
+    },
+    {
+      "file": "ids-update-lab-power046-continuation.zip",
+      "bytes": 35709,
+      "sha256": "4d36ac3389c2172682b165927d200620364aad41495134a3ce95f36f5869be5e"
+    },
+    {
+      "file": "ids-update-lab-power047-control.zip",
+      "bytes": 22539,
+      "sha256": "69a64c5cc754838d577217ab372f612fb1745258a98d66eead5944d0115ee63c"
+    },
+    {
+      "file": "ids-update-lab-power048-continuation.zip",
+      "bytes": 46745,
+      "sha256": "1d469f1f654589ee9b811533bdb1131d969158639cf1c45ac3728f7694bbd772"
+    },
+    {
+      "file": "ids-update-lab-power049-continuation.zip",
+      "bytes": 50494,
+      "sha256": "4669f9802371004dcfd26510926257f80bb1ba466739cbb9fc7ca9ca0d882bc9"
+    },
+    {
+      "file": "ids-update-lab-publication-20260926-152206.zip",
+      "bytes": 45293186,
+      "sha256": "f02aae49389875d1620857f8181e8bb40bbcb7172db1a113cad45e5884bf6a02"
+    },
+    {
+      "file": "ids-update-lab-reproducibility-033.zip",
+      "bytes": 214956259,
+      "sha256": "d76553334c472cda5417f0f46b9a9d649f579b16882c47137a7c977beacc40b9"
+    },
+    {
+      "file": "ids-update-lab-results-2026-10-24.zip",
+      "bytes": 317485120,
+      "sha256": "faa77b6e0c35e272e0e569e3afb839a5d4ecd7ef26de9612f9d18c4e69bdf839"
+    },
+    {
+      "file": "powercut-045-after049-20261027-124449.zip",
+      "bytes": 7663728,
+      "sha256": "8993dc6c11dd940f89995a75d29b9e0e3272f35fb11e674f94bd895695693ce3"
+    },
+    {
+      "file": "revision_supplement051.zip",
+      "bytes": 35199436,
+      "sha256": "c1b2b7b7fb9c7f2a9a232454c7bf8d897f22ae2dff216785d9dba216ec0fac18"
+    }
+  ],
+  "packaging_changes": [
+    "historical USB CDC DTR fix applied to bench045.py and run_powercut039.py; pre-fix bytes retained",
+    "science039 verifier uses preserved 1.0.0 manifest; historical hash unchanged",
+    "two historical tests locate the same pinned inputs in the public layout"
+  ],
+  "historical_results_reclassified": false
+}

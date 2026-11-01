@@ -16,9 +16,12 @@ manuscript is not distributed in this release; its separate authorship is listed
 in AUTHORS.md.
 
 Trained model parameters are included as original project artifacts under MIT;
-this does not grant rights over their source dataset. Raw TON_IoT records,
-sampled data arrays, exported dataset check vectors and per-record evaluation
-databases are excluded. Acquire source data under the provider's terms.
+this does not grant rights over their source dataset. Full raw TON_IoT/CICIoT2023 corpora, large sampled arrays and per-record
+evaluation databases are excluded. Frozen MCU input panels and observed
+input/output receipts are included as experimental reproduction inputs. Any
+dataset-derived values retain the source provider's terms; the project's MIT
+and CC-BY notices do not relicense those data. Acquire full source data from
+the provider or identified mirror under the applicable terms.
 
 Third-party components and linked firmware libraries keep their own notices and
 licenses. Neither the MIT license nor CC-BY is a blanket relicensing of those

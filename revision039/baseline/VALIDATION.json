@@ -1,0 +1,40 @@
+{
+  "author": "Oleksandr Kuznetsov",
+  "stage": "039",
+  "date": "2026-10-23",
+  "status": "host_validation_passed",
+  "test_commands": [
+    "python -m unittest discover -s revision039/baseline -p test_*.py -v"
+  ],
+  "test_cases": 16,
+  "tests_include": [
+    "exact MCU streaming inflater across chunk and 32KiB ring boundaries",
+    "real RSA/SHA using actual OTA dispatcher with fake flash/boot API",
+    "replay and signed wrong-contract rejection before flash",
+    "corruption/truncation/extra streams/output bounds/sink failure",
+    "frozen-model, prebuilt and prepared-artifact tamper gates before provision",
+    "self-consistent noncanonical training manifest cannot override public frozen models",
+    "mixed optimization prebuilt sets rejected before preparation"
+  ],
+  "offline_full_matrix_preparation": [
+    {
+      "optimization": "Og",
+      "families": 4,
+      "verified_full_images": 16,
+      "measurement_origin": "offline_preparation",
+      "hardware_accessed": false
+    },
+    {
+      "optimization": "O2",
+      "families": 4,
+      "verified_full_images": 16,
+      "measurement_origin": "offline_preparation",
+      "hardware_accessed": false
+    }
+  ],
+  "hardware_accessed": false,
+  "physical_power_loss_tested": false,
+  "energy_measured": false,
+  "limitation": "Host tests and ESP-IDF cross-compilation are not physical MCU update, timing or recovery evidence.",
+  "mcu_measurement_result_available": false
+}

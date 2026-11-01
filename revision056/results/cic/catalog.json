@@ -1,0 +1,699 @@
+{
+  "files": [
+    {
+      "bytes": 70337132,
+      "name": "part-00000-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 64480675,
+      "name": "part-00001-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 81098243,
+      "name": "part-00002-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68051400,
+      "name": "part-00003-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67007207,
+      "name": "part-00004-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70729011,
+      "name": "part-00005-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68849887,
+      "name": "part-00006-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67153124,
+      "name": "part-00007-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 72588116,
+      "name": "part-00008-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67055876,
+      "name": "part-00009-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 74085935,
+      "name": "part-00010-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 65390551,
+      "name": "part-00011-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70266581,
+      "name": "part-00012-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70324474,
+      "name": "part-00013-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 63581910,
+      "name": "part-00014-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 79141048,
+      "name": "part-00015-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68612370,
+      "name": "part-00016-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 65811521,
+      "name": "part-00017-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69052134,
+      "name": "part-00018-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68075117,
+      "name": "part-00019-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69864603,
+      "name": "part-00020-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 65796329,
+      "name": "part-00021-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 74297036,
+      "name": "part-00022-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 77214111,
+      "name": "part-00023-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 66492051,
+      "name": "part-00024-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 131863205,
+      "name": "part-00025-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69611996,
+      "name": "part-00026-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 65160540,
+      "name": "part-00027-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 74038119,
+      "name": "part-00028-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 74134748,
+      "name": "part-00029-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70229372,
+      "name": "part-00030-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67392879,
+      "name": "part-00031-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67051812,
+      "name": "part-00032-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 131915584,
+      "name": "part-00033-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68429148,
+      "name": "part-00034-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 74443318,
+      "name": "part-00035-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 129338673,
+      "name": "part-00036-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 63328378,
+      "name": "part-00037-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69724612,
+      "name": "part-00038-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 128847605,
+      "name": "part-00039-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67877094,
+      "name": "part-00040-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 131136787,
+      "name": "part-00041-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 65548482,
+      "name": "part-00042-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 73934126,
+      "name": "part-00043-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68363042,
+      "name": "part-00044-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 72852687,
+      "name": "part-00045-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69396990,
+      "name": "part-00046-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70436360,
+      "name": "part-00047-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 64758310,
+      "name": "part-00048-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 73366528,
+      "name": "part-00049-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68827565,
+      "name": "part-00050-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 74016352,
+      "name": "part-00051-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 131237337,
+      "name": "part-00052-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 71647643,
+      "name": "part-00053-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69393256,
+      "name": "part-00054-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 65483787,
+      "name": "part-00055-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69216827,
+      "name": "part-00056-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 126559084,
+      "name": "part-00057-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69781679,
+      "name": "part-00058-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 72201522,
+      "name": "part-00059-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 74883016,
+      "name": "part-00060-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70630063,
+      "name": "part-00061-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 129950207,
+      "name": "part-00062-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69938127,
+      "name": "part-00063-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 77504476,
+      "name": "part-00064-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 72143930,
+      "name": "part-00065-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 63665600,
+      "name": "part-00066-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 78950881,
+      "name": "part-00067-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 65994215,
+      "name": "part-00068-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70749825,
+      "name": "part-00069-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67709008,
+      "name": "part-00070-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 81768949,
+      "name": "part-00071-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 76823868,
+      "name": "part-00072-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69410931,
+      "name": "part-00073-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 72796357,
+      "name": "part-00074-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 130882802,
+      "name": "part-00075-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 131641019,
+      "name": "part-00076-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 128353857,
+      "name": "part-00077-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 128139824,
+      "name": "part-00078-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 132927483,
+      "name": "part-00079-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69421521,
+      "name": "part-00080-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67969473,
+      "name": "part-00081-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67841365,
+      "name": "part-00082-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67381798,
+      "name": "part-00083-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 66230041,
+      "name": "part-00084-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 71587066,
+      "name": "part-00085-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 71624988,
+      "name": "part-00086-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69605941,
+      "name": "part-00087-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 66855519,
+      "name": "part-00088-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 71404342,
+      "name": "part-00089-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70897157,
+      "name": "part-00090-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 76621852,
+      "name": "part-00091-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 62406325,
+      "name": "part-00092-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 74783438,
+      "name": "part-00093-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 126307446,
+      "name": "part-00094-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 130884768,
+      "name": "part-00095-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 75144993,
+      "name": "part-00096-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 72043305,
+      "name": "part-00097-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 131632566,
+      "name": "part-00098-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 71182337,
+      "name": "part-00099-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 66577384,
+      "name": "part-00100-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68886307,
+      "name": "part-00101-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68355236,
+      "name": "part-00102-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 74389885,
+      "name": "part-00103-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 65859132,
+      "name": "part-00104-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68289162,
+      "name": "part-00105-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 73891212,
+      "name": "part-00106-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 65853341,
+      "name": "part-00107-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68243073,
+      "name": "part-00108-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 77472282,
+      "name": "part-00109-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69778307,
+      "name": "part-00110-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 79332993,
+      "name": "part-00111-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 74659074,
+      "name": "part-00112-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 132985640,
+      "name": "part-00113-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70684400,
+      "name": "part-00114-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 64469015,
+      "name": "part-00115-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 72152282,
+      "name": "part-00116-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 71755315,
+      "name": "part-00117-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 64761296,
+      "name": "part-00118-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70663852,
+      "name": "part-00119-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69271655,
+      "name": "part-00120-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 72670364,
+      "name": "part-00121-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 73113834,
+      "name": "part-00122-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 75568816,
+      "name": "part-00123-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 73293640,
+      "name": "part-00124-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 132131508,
+      "name": "part-00125-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69087322,
+      "name": "part-00126-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 131911597,
+      "name": "part-00127-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70598310,
+      "name": "part-00128-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67656345,
+      "name": "part-00129-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 75690669,
+      "name": "part-00130-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 131358881,
+      "name": "part-00131-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70418759,
+      "name": "part-00132-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70643676,
+      "name": "part-00133-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 71745152,
+      "name": "part-00134-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70491013,
+      "name": "part-00135-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 131004617,
+      "name": "part-00136-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 75533437,
+      "name": "part-00137-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 131640373,
+      "name": "part-00138-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 71311521,
+      "name": "part-00139-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 132388545,
+      "name": "part-00140-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 66005625,
+      "name": "part-00141-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 76802163,
+      "name": "part-00142-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70471586,
+      "name": "part-00143-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 72128631,
+      "name": "part-00144-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 130414605,
+      "name": "part-00145-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 66934350,
+      "name": "part-00146-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70086002,
+      "name": "part-00147-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69221518,
+      "name": "part-00148-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 131359680,
+      "name": "part-00149-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68381805,
+      "name": "part-00150-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67649802,
+      "name": "part-00151-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 131599898,
+      "name": "part-00152-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 128196454,
+      "name": "part-00153-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68450439,
+      "name": "part-00154-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67682865,
+      "name": "part-00155-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 75512960,
+      "name": "part-00156-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 70687117,
+      "name": "part-00157-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67910165,
+      "name": "part-00158-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68155333,
+      "name": "part-00159-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68131575,
+      "name": "part-00160-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68495768,
+      "name": "part-00161-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 129494463,
+      "name": "part-00162-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 68831773,
+      "name": "part-00163-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 131907276,
+      "name": "part-00164-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 130926988,
+      "name": "part-00165-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 132269505,
+      "name": "part-00166-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 67099665,
+      "name": "part-00167-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    },
+    {
+      "bytes": 69171708,
+      "name": "part-00168-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+    }
+  ],
+  "mirror": "akashdogra/cic-iot-2023",
+  "predictions_examined_for_selection": false,
+  "protocol_sha256": "4258a311a34b6f630edfc0c15544bd549e54baf2cfe6445fe738415d40fdaa04",
+  "selected": [
+    "part-00160-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+    "part-00141-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+    "part-00140-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+    "part-00153-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+    "part-00023-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+    "part-00072-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+    "part-00031-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+    "part-00058-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+    "part-00130-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+    "part-00136-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+    "part-00037-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv",
+    "part-00147-363d1ba3-8ab5-4f96-bc25-4d5862db7cb9-c000.csv"
+  ],
+  "selection_rule": "12 CSV shards with smallest SHA256 of UTF8('ids056-source-v1:' + file_name), from complete pinned mirror catalog; selection does not use labels or predictions",
+  "version": 1
+}

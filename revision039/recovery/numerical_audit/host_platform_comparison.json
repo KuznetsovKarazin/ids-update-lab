@@ -1,0 +1,169 @@
+{
+  "B_mlp_float": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [
+      961,
+      967,
+      991,
+      1022
+    ],
+    "max_probability_error": 9.834766387939453e-07
+  },
+  "B_lr": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [
+      954,
+      994
+    ],
+    "max_probability_error": 2.980232238769531e-07
+  },
+  "lr_stale_threshold": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 2.980232238769531e-07
+  },
+  "mlp_int8_stale_input_quantization": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 0.0,
+    "q_score_mismatch_indices": []
+  },
+  "mlp_int8_stale_scaler": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 0.0,
+    "q_score_mismatch_indices": []
+  },
+  "mlp_float_stale_threshold": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 9.834766387939453e-07
+  },
+  "B_dt": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 0.0
+  },
+  "mlp_float_compatible_first_layer": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [
+      961,
+      967
+    ],
+    "max_probability_error": 4.798173904418945e-06
+  },
+  "A_dt": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 0.0
+  },
+  "A_mlp_float": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 1.9669532775878906e-06
+  },
+  "A_mlp_int8": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 0.001962706897757016,
+    "q_score_mismatch_indices": [
+      780,
+      829
+    ]
+  },
+  "lr_stale_scaler_threshold": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 3.5762786865234375e-07
+  },
+  "lr_stale_scaler": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 3.5762786865234375e-07
+  },
+  "mlp_int8_stale_scaler_threshold": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 0.0,
+    "q_score_mismatch_indices": []
+  },
+  "A_lr": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 3.501772880554199e-07
+  },
+  "mlp_float_stale_scaler": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 1.5497207641601562e-06
+  },
+  "dt_stale_threshold": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 0.0
+  },
+  "mlp_int8_compatible_requantized": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 0.0,
+    "q_score_mismatch_indices": []
+  },
+  "B_mlp_int8": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [
+      956,
+      958,
+      962,
+      971,
+      1004
+    ],
+    "max_probability_error": 0.4236266613006592,
+    "q_score_mismatch_indices": [
+      877,
+      956,
+      958,
+      962,
+      971,
+      1004
+    ]
+  },
+  "mlp_float_stale_scaler_threshold": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 1.5497207641601562e-06
+  },
+  "percentile999_transferred": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 0.0,
+    "q_score_mismatch_indices": []
+  },
+  "mlp_int8_stale_threshold": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [
+      956,
+      958,
+      962,
+      971,
+      1004
+    ],
+    "max_probability_error": 0.4236266613006592,
+    "q_score_mismatch_indices": [
+      877,
+      956,
+      958,
+      962,
+      971,
+      1004
+    ]
+  },
+  "percentile999_recalibrated": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 0.0,
+    "q_score_mismatch_indices": []
+  },
+  "lr_compatible_decision": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [],
+    "max_probability_error": 5.960464477539062e-07
+  },
+  "mlp_int8_stale_integer_threshold_code": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [
+      956,
+      958,
+      1004
+    ],
+    "max_probability_error": 0.4236266613006592,
+    "q_score_mismatch_indices": [
+      877,
+      956,
+      958,
+      962,
+      971,
+      1004
+    ]
+  },
+  "lr_compatible_probability": {
+    "saved_Windows_vs_local_Linux_label_mismatch_indices": [
+      1021
+    ],
+    "max_probability_error": 2.2351741790771484e-07
+  }
+}

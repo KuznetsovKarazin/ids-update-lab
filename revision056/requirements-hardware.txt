@@ -1,0 +1,4 @@
+numpy==2.3.5
+cryptography==46.0.0
+pyserial==3.5
+esptool==4.12.0

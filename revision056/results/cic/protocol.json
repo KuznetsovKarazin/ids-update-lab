@@ -1,0 +1,99 @@
+{
+  "created_utc": "2026-11-01",
+  "external_data": {
+    "B_fit": "union of A_fit and B_fit_added; both calibration roles excluded",
+    "attack_calibration_cap_per_type": 100000,
+    "attack_fit_cap_per_type": 50000,
+    "calibration_target_empirical_FPR": 0.01,
+    "chronological_claim": false,
+    "contract": "original CSV columns in this exact order and their original units; finite nonnegative float32, signed zero canonicalized; no substitution for TON features",
+    "dataset": "CICIoT2023",
+    "features": [
+      "flow_duration",
+      "Header_Length",
+      "Rate",
+      "Tot sum",
+      "Min",
+      "Max",
+      "Std",
+      "IAT"
+    ],
+    "features_selected_by": "fixed descriptive timing/size/rate subset before fitting; no score-based feature search",
+    "independence_boundary": "identical admitted feature vectors stay in one atomic role; capture/session independence is not established",
+    "label_rule": "exact BenignTraffic is normal; 33 explicitly enumerated attack labels are attack; unknown labels stop execution",
+    "minimum_attack_rows_per_atomic_role": 1000,
+    "minimum_normal_rows_per_atomic_role": 1000,
+    "mirror": "akashdogra/cic-iot-2023",
+    "mirror_used_by_prior_project": "https://github.com/emanuelepiodebernardis/iot-audit",
+    "model_and_sampling_seed": 25092026,
+    "models": "unchanged 030 fitting algorithms and hyperparameters; new CIC-specific feature names and independently fitted A/B parameters",
+    "normal_calibration": "all admitted normal rows in each calibration role",
+    "normal_fit_cap": 100000,
+    "outputs": "all complete A/B pipelines and fixed component/export variants, including unfavorable and undefined outcomes",
+    "provider_url": "https://www.unb.ca/cic/datasets/iotdataset-2023.html",
+    "retuning_on_test": false,
+    "roles": {
+      "A_cal": [
+        35,
+        45
+      ],
+      "A_fit": [
+        0,
+        35
+      ],
+      "B_cal": [
+        65,
+        75
+      ],
+      "B_fit_added": [
+        45,
+        65
+      ],
+      "common_test": [
+        75,
+        100
+      ]
+    },
+    "scope": "independent-dataset controlled release-update experiment; not chronological drift, TON-to-CIC detector transfer, or full-corpus CIC benchmark",
+    "source_csv_shards": 12,
+    "source_selection": "12 CSV shards with smallest SHA256 of UTF8('ids056-source-v1:' + file_name), from complete pinned mirror catalog; selection does not use labels or predictions",
+    "split": "SHA256(UTF8('ids056-role-v1:') + eight little-endian float32 values); first 8 bytes interpreted little endian modulo 100",
+    "test": "all admitted common-test rows in selected shards; row, equal-vector and capped-frequency-100 weighting; per-attack-type counts"
+  },
+  "hardware": {
+    "analysis": "separate by board; compare with S3 O2 A-to-B cells; no pooled universal speedup",
+    "blocks_per_family_policy": 10,
+    "board_description": "ESP32-C3 SuperMini",
+    "cpu_mhz": 160,
+    "energy_measurement": false,
+    "families": [
+      "lr",
+      "dt",
+      "mlp_float",
+      "mlp_int8"
+    ],
+    "flash_minimum_bytes": 4194304,
+    "identity": "ROM chip and MAC checked before writing; distinct MACs required in combined analysis",
+    "labels_and_integer_codes": "exact comparison; retain all disagreements",
+    "measured_installations_per_board": 120,
+    "measured_transition": "A_to_B_reused",
+    "numerical_panel": "unchanged recovery040 panel: 26 configurations x 1024 inputs",
+    "optimization": "O2",
+    "phase_gpio": null,
+    "policies": [
+      "bundle",
+      "whole",
+      "compressed"
+    ],
+    "power_cut_campaign": false,
+    "probability_absolute_tolerance": 2e-06,
+    "psram": false,
+    "required_distinct_physical_boards": 2,
+    "sdk": "ESP-IDF v5.3.2",
+    "sdk_commit": "9d7f2d69f50d1288526d4f1027108e314e8c879f",
+    "target": "esp32c3"
+  },
+  "historical_reference_commit": "706951846a35a1ad04a71382c2249cb128451532",
+  "protocol": "round2-independent-validation-056",
+  "status_at_freeze": "no_new_C3_measurements_or_CIC_predictions"
+}
