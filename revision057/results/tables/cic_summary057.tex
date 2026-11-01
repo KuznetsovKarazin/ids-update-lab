@@ -1,0 +1,16 @@
+\begin{table}[!htbp]
+
+\color{RevisionBlue}
+\captionsetup{font+=revisionblue}
+\caption{Complete B releases on the CICIoT2023 test subset (871,507 rows). Percentages use row weighting; macro recall gives equal weight to each of the 33 attack types and is an additional descriptive analysis.}\label{tab:cic-summary}
+\centering\small
+\begin{tabular}{lrrr}
+\toprule Model & Recall & FPR & Macro recall\\
+\midrule
+LR & 96.782 & 1.034 & 51.911\\
+DT & 97.523 & 0.735 & 65.438\\
+MLP-F32 & 98.565 & 0.831 & 73.058\\
+MLP-I8 & 98.528 & 0.623 & 71.946\\
+\bottomrule\end{tabular}
+
+\end{table}

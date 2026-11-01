@@ -638,6 +638,141 @@
           "sha256": "11bd8d972f656b68f50253262fd79e7bb10df9ee5164526cbd3c8ad9c7298a44"
         }
       ]
+    },
+    "c3_primary057": {
+      "file": "c3_primary057.tar.xz",
+      "format": "content-addressed-preserved-files-v1",
+      "bytes": 52123516,
+      "sha256": "346d3c9cca510b3a4a6bf637c5a824614fae161b4ff45bca717f9b9d2c94d51a",
+      "files": 4044,
+      "parts": [
+        {
+          "path": "release/artifacts056/c3_primary057/part-000",
+          "bytes": 2097152,
+          "sha256": "750f301c3f010b06cf4303647892b7eb0a1908ff7670872b12a5a08be9d2ebbf"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-001",
+          "bytes": 2097152,
+          "sha256": "11292b297bb6d9699452b5b78c09fb282acb834dc556998cc855723673dffc07"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-002",
+          "bytes": 2097152,
+          "sha256": "4c66fb998959142ec23e3ae9c69964342b9ff772a2482223fddfa486e4457e87"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-003",
+          "bytes": 2097152,
+          "sha256": "9e2409bb090c79a2a29b68798f249fca65d4bf3b341fb28ceef788bad8ae8231"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-004",
+          "bytes": 2097152,
+          "sha256": "c35fbb5310644a028779d6cfc0eee4273f1061158c0dd3d114f952fa058c6af0"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-005",
+          "bytes": 2097152,
+          "sha256": "10eac4d9ea3ad097813180387b1f266c2b4e1b2cd1c1696d5f5585a0ce89b1cb"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-006",
+          "bytes": 2097152,
+          "sha256": "91554bd7061b11471dc7bca5fafcaf61d5be9660fe6fa35170c0eeadffabc524"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-007",
+          "bytes": 2097152,
+          "sha256": "58ef3d105beb8c1e988ab2493e7395c160eafed06b2e60e9b58828deb23a066f"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-008",
+          "bytes": 2097152,
+          "sha256": "a7d6d03e3ed92f9d68b5a08f0fb96c6cb63b06569f3d4a17b0a499932bef52f0"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-009",
+          "bytes": 2097152,
+          "sha256": "99138103c5dfbb3e74b758660e56bb7e11bfa168ccb9875132f2382102ead50d"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-010",
+          "bytes": 2097152,
+          "sha256": "2a2b4a470d42235f4e5dbb0246029331805fed22095ecc7123d5f4815f9f9e29"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-011",
+          "bytes": 2097152,
+          "sha256": "ac46c06186415dfd7e8de308b19f4d6325a8bead821c09d2f943d0fc1542f4da"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-012",
+          "bytes": 2097152,
+          "sha256": "fe4d1e5b4de4a9d8b3e7d3bf047bc982067ba7792c82887ba11d7aeeb3814ec2"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-013",
+          "bytes": 2097152,
+          "sha256": "3dbb43d492b961f454f669e93268627797398604f9f5e9f5bd04e4a5b7e751c4"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-014",
+          "bytes": 2097152,
+          "sha256": "0136bc86bc06448efefbf0ec09746b24eaeb40fff6a0894c59a35ea3757136b4"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-015",
+          "bytes": 2097152,
+          "sha256": "520870379132b34378b954cdb245cad47fa75b62b266930bdb7d5d11b343be2d"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-016",
+          "bytes": 2097152,
+          "sha256": "bb8c316b5fa20096ce43e7d8cc5dec2f28c2d76bd08dafefd3ab4c87d22e3d52"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-017",
+          "bytes": 2097152,
+          "sha256": "f756d1641c0171ab68c73943369d89513334b1ed65c2770a02ad3092d2306beb"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-018",
+          "bytes": 2097152,
+          "sha256": "545f67c5bdb3986b9c067e47e2ffb4e2729b98a601ecbbb8a5c60619204d220c"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-019",
+          "bytes": 2097152,
+          "sha256": "468cf1b78d626584328efab0f3337abd912e9f2c48281ed11586d81f00aa5004"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-020",
+          "bytes": 2097152,
+          "sha256": "cd0cfc6189a349b6734e36b7a1cd3017b74c5c862f1fd2a43b0ef7a20cfd9ff0"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-021",
+          "bytes": 2097152,
+          "sha256": "669d44ebf287a9f04ab44b5711b824459ab3449d377bf5c994403a5eb78f5a37"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-022",
+          "bytes": 2097152,
+          "sha256": "3622a064fcce846e344d158c11d893b37198fadeede54ec6da817aebb039cdb0"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-023",
+          "bytes": 2097152,
+          "sha256": "53603e3365a1de228bead27ae4b8ee1df7e3c62606ccee216dc14a0cd89963ea"
+        },
+        {
+          "path": "release/artifacts056/c3_primary057/part-024",
+          "bytes": 1791868,
+          "sha256": "3eaccce04f905853ff1f05aed5899b2c6d6a984a7ba27736f406057a9317f31f"
+        }
+      ],
+      "scope": "Both complete C3 primary campaigns; file bytes and original paths preserved. Recorded original ZIP hashes identify uploaded containers."
     }
   }
 }

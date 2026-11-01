@@ -1,0 +1,105 @@
+{
+  "C3_image_to_package_processing_ratio_max": 15.596264098844012,
+  "C3_image_to_package_processing_ratio_min": 14.201221320074806,
+  "C3_max_host_probability_abs_error": 0.4236266614662171,
+  "CIC_B_results": [
+    {
+      "FPR_percent": 1.0342161221728203,
+      "family": "lr",
+      "macro_attack_recall_percent": 51.91141153600256,
+      "recall_percent": 96.78202664504035
+    },
+    {
+      "FPR_percent": 0.7345834138797602,
+      "family": "dt",
+      "macro_attack_recall_percent": 65.43841124329944,
+      "recall_percent": 97.52343341384437
+    },
+    {
+      "FPR_percent": 0.8312391262323603,
+      "family": "mlp_float",
+      "macro_attack_recall_percent": 73.05789063325739,
+      "recall_percent": 98.5652580173128
+    },
+    {
+      "FPR_percent": 0.6234293446742702,
+      "family": "mlp_int8",
+      "macro_attack_recall_percent": 71.94602831397235,
+      "recall_percent": 98.5275294864336
+    }
+  ],
+  "board_results_pooled": false,
+  "descriptive_only": true,
+  "device_comparisons": [
+    {
+      "comparison": "C3-1 versus C3-2",
+      "evaluations": 26624,
+      "integer_code_differences": 0,
+      "label_differences": 0,
+      "max_probability_abs_difference": 0.0,
+      "probability_differences": 0
+    },
+    {
+      "comparison": "C3-1 versus S3 O2",
+      "evaluations": 26624,
+      "integer_code_differences": 0,
+      "label_differences": 0,
+      "max_probability_abs_difference": 5.899999998108807e-11,
+      "probability_differences": 2
+    },
+    {
+      "comparison": "C3-2 versus S3 O2",
+      "evaluations": 26624,
+      "integer_code_differences": 0,
+      "label_differences": 0,
+      "max_probability_abs_difference": 5.899999998108807e-11,
+      "probability_differences": 2
+    }
+  ],
+  "max_between_C3_cell_median_relative_difference_percent": 1.0587168689137811,
+  "measured_installations": 240,
+  "measurements_created_by_analysis": false,
+  "per_board_integer_comparisons": 10240,
+  "per_board_numerical_evaluations": 26624,
+  "status": "verified",
+  "test_counts": {
+    "attack": 850815,
+    "by_type": {
+      "Backdoor_Malware": 78,
+      "BenignTraffic": 20692,
+      "BrowserHijacking": 99,
+      "CommandInjection": 87,
+      "DDoS-ACK_Fragmentation": 5328,
+      "DDoS-HTTP_Flood": 514,
+      "DDoS-ICMP_Flood": 135274,
+      "DDoS-ICMP_Fragmentation": 8487,
+      "DDoS-PSHACK_Flood": 76472,
+      "DDoS-RSTFINFlood": 75268,
+      "DDoS-SYN_Flood": 76160,
+      "DDoS-SlowLoris": 430,
+      "DDoS-SynonymousIP_Flood": 67641,
+      "DDoS-TCP_Flood": 83528,
+      "DDoS-UDP_Flood": 100670,
+      "DDoS-UDP_Fragmentation": 5317,
+      "DNS_Spoofing": 3207,
+      "DictionaryBruteForce": 251,
+      "DoS-HTTP_Flood": 1280,
+      "DoS-SYN_Flood": 37781,
+      "DoS-TCP_Flood": 49429,
+      "DoS-UDP_Flood": 61574,
+      "MITM-ArpSpoofing": 5768,
+      "Mirai-greeth_flood": 18630,
+      "Mirai-greip_flood": 13992,
+      "Mirai-udpplain": 16549,
+      "Recon-HostDiscovery": 2501,
+      "Recon-OSScan": 1899,
+      "Recon-PingSweep": 40,
+      "Recon-PortScan": 1684,
+      "SqlInjection": 89,
+      "Uploading_Attack": 25,
+      "VulnerabilityScan": 686,
+      "XSS": 77
+    },
+    "normal": 20692
+  }
+}

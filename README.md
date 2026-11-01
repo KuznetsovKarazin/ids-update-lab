@@ -7,13 +7,13 @@
 - Original software author: **Oleksandr Kuznetsov** ([ORCID](https://orcid.org/0000-0003-2331-6326)).
 - The associated article retains its six authors, listed separately in [AUTHORS.md](AUTHORS.md).
 
-This project studies how an embedded intrusion detector can retain the semantics of a validated inference pipeline when it is updated. The deployment contract covers ordered features, preprocessing, model parameters, decision thresholds, and, where applicable, quantization parameters. Experiments compare signed pipeline packages, compatible parameter export where implemented, and full-image replacement on one ESP32-S3 board.
+This project studies how an embedded intrusion detector can retain the semantics of a validated inference pipeline when it is updated. The deployment contract covers ordered features, preprocessing, model parameters, decision thresholds, and, where applicable, quantization parameters. Experiments compare signed pipeline packages, compatible parameter export where implemented, and full-image replacement on one ESP32-S3 and two ESP32-C3 boards.
 
 The primary result is a deployment study of release-level semantic consistency. Physical supply-loss recovery was subsequently measured with the bounds described below; the study does not establish a new state-of-the-art detector or production security certification.
 
 ## Public code, primary evidence and second-round validation — 1 November 2026
 
-Start with **[REPRODUCTION056.md](docs/REPRODUCTION056.md)**. It maps the article's
+Start with **[the completed second-round results](revision057/README.md)** and **[REPRODUCTION056.md](docs/REPRODUCTION056.md)**. It maps the article's
 results to executable sources, primary logs, exact binaries and verification
 commands. The [public artifact registry](release/artifacts056/manifest.json)
 includes the full S1 package and primary H1–H4 / 041–043 evidence; no private link
@@ -22,8 +22,7 @@ included alongside the preserved earlier code.
 
 - **CICIoT2023:** completed host experiment, 3,482,483 source rows, 871,507 test
   rows, 24 pipeline conditions. [Protocol, all results, limitations and rerun commands](revision056/cic/README.md).
-- **Two ESP32-C3 SuperMini boards:** firmware and acquisition kit prepared;
-  **physical measurements pending**. [Board procedure](revision056/README.md).
+- **Two ESP32-C3 SuperMini boards:** both acquisitions complete, each with 26,624 numerical evaluations and 120 measured updates. [Audited results, primary records and new tables](revision057/README.md).
 - **Historical results:** unchanged. Failed endpoints, numerical differences and
   missing exact-phase confirmation remain visible; the new work does not relabel them.
 

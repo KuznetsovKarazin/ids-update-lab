@@ -1,0 +1,94 @@
+{
+  "status": "verified",
+  "board_ids": [
+    "esp32c3-10003bcb8d70",
+    "esp32c3-10003bcc2cc4"
+  ],
+  "numerics": [
+    {
+      "board_id": "esp32c3-10003bcb8d70",
+      "counts": {
+        "inferred_records": 26624,
+        "label_mismatches": 7,
+        "probability_tolerance_exceeded": 9,
+        "integer_codes_compared": 10240,
+        "integer_code_mismatches": 9
+      },
+      "categories": {
+        "real_stratified": {
+          "inferred_records": 13312,
+          "label_mismatches": 0,
+          "probability_tolerance_exceeded": 0,
+          "integer_codes_compared": 5120,
+          "integer_code_mismatches": 0
+        },
+        "synthetic_random": {
+          "inferred_records": 6656,
+          "label_mismatches": 0,
+          "probability_tolerance_exceeded": 0,
+          "integer_codes_compared": 2560,
+          "integer_code_mismatches": 0
+        },
+        "range_and_grid": {
+          "inferred_records": 3328,
+          "label_mismatches": 0,
+          "probability_tolerance_exceeded": 6,
+          "integer_codes_compared": 1280,
+          "integer_code_mismatches": 6
+        },
+        "decision_boundary": {
+          "inferred_records": 3328,
+          "label_mismatches": 7,
+          "probability_tolerance_exceeded": 3,
+          "integer_codes_compared": 1280,
+          "integer_code_mismatches": 3
+        }
+      }
+    },
+    {
+      "board_id": "esp32c3-10003bcc2cc4",
+      "counts": {
+        "inferred_records": 26624,
+        "label_mismatches": 7,
+        "probability_tolerance_exceeded": 9,
+        "integer_codes_compared": 10240,
+        "integer_code_mismatches": 9
+      },
+      "categories": {
+        "real_stratified": {
+          "inferred_records": 13312,
+          "label_mismatches": 0,
+          "probability_tolerance_exceeded": 0,
+          "integer_codes_compared": 5120,
+          "integer_code_mismatches": 0
+        },
+        "synthetic_random": {
+          "inferred_records": 6656,
+          "label_mismatches": 0,
+          "probability_tolerance_exceeded": 0,
+          "integer_codes_compared": 2560,
+          "integer_code_mismatches": 0
+        },
+        "range_and_grid": {
+          "inferred_records": 3328,
+          "label_mismatches": 0,
+          "probability_tolerance_exceeded": 6,
+          "integer_codes_compared": 1280,
+          "integer_code_mismatches": 6
+        },
+        "decision_boundary": {
+          "inferred_records": 3328,
+          "label_mismatches": 7,
+          "probability_tolerance_exceeded": 3,
+          "integer_codes_compared": 1280,
+          "integer_code_mismatches": 3
+        }
+      }
+    }
+  ],
+  "measured_installations": 240,
+  "historical_S3_reference": "revision_evidence054/tables/mcu040_cost_medians.csv: O2, A_to_B_reused only",
+  "board_results_pooled": false,
+  "hardware_measurements_created_by_this_auditor": false,
+  "universal_speedup_claim": false
+}

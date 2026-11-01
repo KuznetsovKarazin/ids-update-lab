@@ -1,5 +1,8 @@
 # Reproducing the study
 
+The completed second-round C3 results and corrected CIC delivered-file check are in
+[revision057/README.md](../revision057/README.md).
+
 For the complete current public distribution, begin with
 [REPRODUCTION056.md](../docs/REPRODUCTION056.md). Revision 056 makes the full S1
 package, historical primary logs and later source/prebuilt artifacts publicly

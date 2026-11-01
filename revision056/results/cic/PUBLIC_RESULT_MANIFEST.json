@@ -38,8 +38,6 @@
     "sampling.json": "28c49279b810b4d17598a9c41b4bac6e949016ffdfc0ada8ba38aab89dfff22c",
     "source_manifest.json": "e0c9fb516ba9276849b7677e8c38756317c05b9ac082a0b9d057cd2fff903dcd",
     "summary.json": "d4480e94d3f009eac63a3acf1fd594897ed72b9b5a5bb11e3e4492d652e93e10",
-    "test_vectors.sqlite-shm": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
-    "test_vectors.sqlite-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "variant_status.json": "cef3d623c832db0a1fa07da240c36df14e2323dd0d1f96e242c099daf88f5a51"
   },
   "excluded_reconstructible_inputs": {
@@ -51,5 +49,10 @@
     "test_vectors.sqlite": "4072507554cc0d696a0fa86270ebadc76c38576b7b34d10d8b324d10af103914"
   },
   "full_run_manifest_preserved": true,
-  "reconstruction": "fetch_pinned.py then run_cic.py in a fresh output directory"
+  "reconstruction": "fetch_pinned.py then run_cic.py in a fresh output directory",
+  "excluded_transient_sqlite_sidecars": {
+    "test_vectors.sqlite-shm": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+    "test_vectors.sqlite-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "packaging_correction057": "SQLite sidecars were mistakenly listed as delivered in 056 although ignored by Git. They are transient cache state; original full-run manifest and all model/metric bytes are unchanged."
 }

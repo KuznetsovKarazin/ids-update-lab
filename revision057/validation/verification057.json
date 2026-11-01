@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "date_utc": "2026-11-01",
+  "scope": "post-acquisition audit and public packaging; no new device acquisition or CIC refit",
+  "checks": {
+    "restored_C3_primary_files": 4044,
+    "C3_campaigns_audited": 2,
+    "per_board_numerical_evaluations": 26624,
+    "per_board_measured_installations": 120,
+    "CIC_delivered_files_verified": 39,
+    "CIC_metric_rows_recomputed": 72,
+    "new_protocol_unit_tests_passed": 12,
+    "historical_figures_regenerated": 9,
+    "historical_numeric_tables_regenerated": 6,
+    "C3_derived_tables_regenerated": 6,
+    "summary_equal_to_initial_audit": true
+  },
+  "limitations": [
+    "CIC source CSVs were not rescanned in this packaging check; the original full-source audit remains supplied.",
+    "No fresh hardware measurements are created by these analysis scripts.",
+    "Two C3 units do not fulfill the historical two-S3 target."
+  ]
+}

@@ -1,0 +1,4 @@
+comparison,evaluations,label_differences,probability_differences,integer_code_differences,max_probability_abs_difference
+C3-1 versus C3-2,26624,0,0,0,0.0
+C3-1 versus S3 O2,26624,0,2,0,5.899999998108807e-11
+C3-2 versus S3 O2,26624,0,2,0,5.899999998108807e-11

@@ -17,8 +17,7 @@ of independent capture sessions. All source-shard choices precede model evaluati
 
 The [CIC experiment](cic/README.md) and its full source re-scan have completed.
 All eight C3 family/policy images compiled successfully under the pinned SDK.
-They remain labelled `compiled_not_hardware_validated`. **No new C3 measurement
-has been acquired yet.** The two physical boards are required for the next step.
+Their immutable build metadata retains the preparation-time label `compiled_not_hardware_validated`. **Both C3 acquisitions have now completed.** The subsequent [057 audit](../revision057/README.md) verifies the raw physical measurements separately from those build records.
 
 Two C3 SuperMini boards address repeatability between two instances and portability
 from the original Xtensa ESP32-S3 implementation to RISC-V ESP32-C3. They are not

@@ -1,0 +1,20 @@
+\begin{table}[!htbp]
+
+\color{RevisionBlue}
+\captionsetup{font+=revisionblue}
+\caption{Optimized A-to-B installation processing on the two C3 boards. Values are medians of ten observations in milliseconds; intervals exclude transport waits and reboot, as in the S3 comparison.}\label{tab:c3-costs}
+\centering\small
+\begin{tabular}{llrrr}
+\toprule Board & Model & Package & Raw image & Compressed\\
+\midrule
+C3-1 & LR & 85.468 & 1238.393 & 1332.982\\
+C3-1 & DT & 86.868 & 1237.322 & 1330.824\\
+C3-1 & MLP-F32 & 87.692 & 1245.333 & 1323.072\\
+C3-1 & MLP-I8 & 86.280 & 1231.140 & 1332.027\\
+C3-2 & LR & 85.022 & 1240.395 & 1318.869\\
+C3-2 & DT & 86.123 & 1237.224 & 1323.049\\
+C3-2 & MLP-F32 & 87.301 & 1241.986 & 1329.831\\
+C3-2 & MLP-I8 & 85.828 & 1242.764 & 1326.990\\
+\bottomrule\end{tabular}
+
+\end{table}

@@ -1,0 +1,17 @@
+{
+  "sha256": {
+    "board_audit/costs_per_board.csv": "6465b2ec0cd54c763c4c387cee7872ed7ac3a14b29be25c510abaab1fe970eac",
+    "board_audit/summary.json": "eaebe47eb12e69607887c8256b7971a5721baa35e653b97840e01710899a6cd5",
+    "cic_B_summary.csv": "e434b3c6dd9fb9dd81f13dbb1bf7ac20cd8aa936ef1f4ba4c77d741502e8249a",
+    "cost_between_board.csv": "58581e18a77ef155ad396433a7101d7bddf8ba5b866dcb48122790050d960d3a",
+    "numerical_cross_device.csv": "5656b3036c33daa32977f009542f6b2b0ffa3c13ae1a3e55fbd908edb8e840a4",
+    "numerical_exceptions.csv": "228b972d760d24230afac13e8fa029f77d3b4213c4df422a9eb70bb5187ebaba",
+    "summary.json": "0f630af4f9c460dd094cfded4abe34b928f3dd80dbca75f39445a64eff80e4b4",
+    "tables/c3_cost_details057.tex": "8357441aaff24c366404327988b63a66d47b1eb6f0cfe5023531b79184f76c3f",
+    "tables/c3_costs057.tex": "6be1f57eb8765cb9401f7800b67206456ea30621c3bce00e63733a98a93e8d0a",
+    "tables/cic_all057.tex": "a74fd85ce5489097783362ce7b4397f64cff3d45d92402ac7d802bf711fe8c89",
+    "tables/cic_roles057.tex": "00f323b5d6ffda17a06ca49a3a6c32ae807195dc16f911a4437fbc6f3fe06655",
+    "tables/cic_summary057.tex": "56a5d2120d75e4f356aca438b30cf7d2bed791c1eb5bbf842a8230e141361d7b",
+    "tables/cic_types057.tex": "ca0f9596dd239306ac025bed8096f792efba5c90d2067860fd1092f8e2372ab1"
+  }
+}

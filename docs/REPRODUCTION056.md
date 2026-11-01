@@ -68,7 +68,7 @@ identify protocol history; they are not additional independent replications.
 | P1 physical power interruption and separately reviewed late recovery | `revision039/powercut/`, `power045/`, `power046/`, `diagnostic113/`, `power048/`, `power049/` | S1 `powercut/final200-original.zip`, `checkpoint186-original.zip`, raw/parsed traces and admission records |
 | Separate 100-cycle power control | `power047/` | Preserved inside final P1 archive; not part of its 200 attempts |
 | Independent-dataset CIC experiment | `revision056/cic/` | `revision056/results/cic/` in Git; exact source CSV hashes and URLs included |
-| Two-board C3 replication | `revision056/build_c3.py`, `revision056/firmware/`, `revision056/hardware/` | **Awaiting physical acquisition.** Compiled artifacts and software checks are not MCU results |
+| Two-board C3 replication | `revision056/build_c3.py`, `revision056/firmware/`, `revision056/hardware/` | `c3_primary057` public archive; [057 raw-receipt audit and results](../revision057/README.md) |
 
 The P1 records retain 166 old, 31 new and three unavailable initial endpoints,
 188 confirmed rail-off traces and zero confirmed exact-phase cuts. Late checks

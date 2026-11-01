@@ -1,0 +1,36 @@
+\begin{table}[!htbp]
+\begin{adjustwidth}{-\extralength}{0cm}
+\color{RevisionBlue}
+\captionsetup{font+=revisionblue}
+\caption{Complete C3 installation matrix. Each row has ten measured A-to-B updates. MCU processing is in milliseconds; host time is in seconds and includes transfer and full-image restart. Min--max gives observed MCU intervals. Signed bytes include the envelope or image manifest.}\label{tab:c3-cost-details}
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lllrrrr}
+\toprule Board & Model & Policy & MCU median & MCU min--max & Host median & Bytes\\
+\midrule
+C3-1 & LR & Package & 85.468 & 84.766--86.891 & 0.137 & 448\\
+C3-1 & LR & Raw & 1238.393 & 1182.508--1257.339 & 10.960 & 360,180\\
+C3-1 & LR & Compressed & 1332.982 & 1277.009--1349.385 & 6.983 & 212,141\\
+C3-1 & DT & Package & 86.868 & 86.461--87.291 & 0.134 & 1,104\\
+C3-1 & DT & Raw & 1237.322 & 1188.429--1265.604 & 10.941 & 360,180\\
+C3-1 & DT & Compressed & 1330.824 & 1289.107--1352.499 & 6.972 & 212,433\\
+C3-1 & MLP-F32 & Package & 87.692 & 86.624--88.086 & 0.133 & 1,588\\
+C3-1 & MLP-F32 & Raw & 1245.333 & 1200.977--1259.846 & 10.956 & 360,180\\
+C3-1 & MLP-F32 & Compressed & 1323.072 & 1281.160--1351.163 & 7.011 & 213,440\\
+C3-1 & MLP-I8 & Package & 86.280 & 85.554--87.742 & 0.135 & 840\\
+C3-1 & MLP-I8 & Raw & 1231.140 & 1222.379--1259.992 & 10.908 & 360,180\\
+C3-1 & MLP-I8 & Compressed & 1332.027 & 1297.734--1352.791 & 6.969 & 212,527\\
+C3-2 & LR & Package & 85.022 & 84.943--86.443 & 0.139 & 448\\
+C3-2 & LR & Raw & 1240.395 & 1210.816--1262.692 & 10.865 & 360,180\\
+C3-2 & LR & Compressed & 1318.869 & 1305.984--1349.645 & 6.941 & 212,141\\
+C3-2 & DT & Package & 86.123 & 86.014--87.534 & 0.134 & 1,104\\
+C3-2 & DT & Raw & 1237.224 & 1199.974--1247.893 & 10.898 & 360,180\\
+C3-2 & DT & Compressed & 1323.049 & 1287.898--1353.952 & 6.931 & 212,433\\
+C3-2 & MLP-F32 & Package & 87.301 & 86.888--88.408 & 0.133 & 1,588\\
+C3-2 & MLP-F32 & Raw & 1241.986 & 1206.565--1254.701 & 10.885 & 360,180\\
+C3-2 & MLP-F32 & Compressed & 1329.831 & 1298.174--1354.404 & 6.951 & 213,440\\
+C3-2 & MLP-I8 & Package & 85.828 & 85.732--87.282 & 0.137 & 840\\
+C3-2 & MLP-I8 & Raw & 1242.764 & 1190.306--1267.850 & 10.825 & 360,180\\
+C3-2 & MLP-I8 & Compressed & 1326.990 & 1287.692--1351.308 & 6.945 & 212,527\\
+\bottomrule\end{tabular}
+\end{adjustwidth}
+\end{table}

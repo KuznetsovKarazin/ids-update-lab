@@ -1,0 +1,36 @@
+\begin{table}[!htbp]
+\begin{adjustwidth}{-\extralength}{0cm}
+\color{RevisionBlue}
+\captionsetup{font+=revisionblue}
+\caption{All 24 fixed CIC conditions. Recall and FPR use row weighting; disagreement with the complete B release of the same family is shown under row, equal-vector, and cap-100 weighting. All values are percentages. Zero changes and unfavorable conditions are retained.}\label{tab:cic-all}
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrr}
+\toprule Condition & Recall & FPR & $\Delta_{\rm row}$ & $\Delta_{\rm vector}$ & $\Delta_{100}$\\
+\midrule
+A LR & 96.796 & 1.025 & 0.01652 & 0.02063 & 0.01656\\
+A DT & 97.457 & 0.623 & 0.08652 & 0.10800 & 0.08672\\
+A MLP-F32 & 98.483 & 0.933 & 0.17567 & 0.21929 & 0.17609\\
+A MLP-I8 & 98.440 & 0.855 & 0.17464 & 0.21800 & 0.17505\\
+B LR & 96.782 & 1.034 & 0.00000 & 0.00000 & 0.00000\\
+B DT & 97.523 & 0.735 & 0.00000 & 0.00000 & 0.00000\\
+B MLP-F32 & 98.565 & 0.831 & 0.00000 & 0.00000 & 0.00000\\
+B MLP-I8 & 98.528 & 0.623 & 0.00000 & 0.00000 & 0.00000\\
+LR stale threshold & 96.791 & 1.034 & 0.00849 & 0.01060 & 0.00851\\
+LR stale scaler & 96.787 & 1.034 & 0.00562 & 0.00702 & 0.00564\\
+LR stale scaler threshold & 96.795 & 1.034 & 0.01274 & 0.01590 & 0.01277\\
+MLP-F32 stale threshold & 98.611 & 1.015 & 0.04877 & 0.06088 & 0.04888\\
+MLP-F32 stale scaler & 98.564 & 0.831 & 0.00275 & 0.00344 & 0.00276\\
+MLP-F32 stale scaler threshold & 98.611 & 1.039 & 0.04923 & 0.06145 & 0.04934\\
+MLP-I8 stale threshold & 98.528 & 0.623 & 0.00000 & 0.00000 & 0.00000\\
+MLP-I8 stale scaler & 98.525 & 0.594 & 0.01067 & 0.01332 & 0.01070\\
+MLP-I8 stale scaler threshold & 98.525 & 0.594 & 0.01067 & 0.01332 & 0.01070\\
+MLP-I8 stale input quantization & 98.527 & 0.614 & 0.00574 & 0.00716 & 0.00575\\
+MLP-I8 stale integer threshold code & 98.528 & 0.623 & 0.00000 & 0.00000 & 0.00000\\
+DT stale threshold & 97.523 & 0.735 & 0.00000 & 0.00000 & 0.00000\\
+LR compatible probability & 96.782 & 1.034 & 0.00000 & 0.00000 & 0.00000\\
+LR compatible decision & 96.782 & 1.034 & 0.00000 & 0.00000 & 0.00000\\
+MLP-F32 compatible first layer & 98.565 & 0.831 & 0.00000 & 0.00000 & 0.00000\\
+MLP-I8 compatible requantized & 98.486 & 0.488 & 0.05083 & 0.06345 & 0.05095\\
+\bottomrule\end{tabular}
+\end{adjustwidth}
+\end{table}

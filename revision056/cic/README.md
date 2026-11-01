@@ -91,3 +91,7 @@ counts, re-scores the frozen models, and checks 72 aggregate and 2448 per-type m
 cells. It shares `model030.py` as the numerical model evaluator, so it is not an
 independent implementation of that kernel. The shipped `audit.json` records the
 completed audit. Software tests use synthetic fixtures and add no scientific rows.
+
+The 057 packaging correction explicitly excludes transient SQLite sidecars from
+the delivered-file list. All 39 delivered files verify; scientific result bytes
+and the original full-run manifest are unchanged.
